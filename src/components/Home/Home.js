@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 import data from '../../data/data.json';
-import './styles.css'
+import './styles.css';
 
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = { data: data, sortConfig: null };
+    // Sort data by projected points in descending order when initializing state
+    const sortedData = [...data].sort((a, b) => b.proj_points - a.proj_points);
+    this.state = { data: sortedData, sortConfig: { key: 'proj_points', direction: 'descending' } };
   }
 
   sortData = (key) => {
@@ -36,12 +38,10 @@ class Home extends Component {
     return (
       <div style={{ marginRight: "20%", marginLeft: "20%",  marginTop: "5%", marginBottom: "5%" }}>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* <h1 style={{ marginRight: "10%", marginLeft: "10%", marginBottom: "5%", marginTop: "5%", fontFamily: "inherit" }}>Playoff Odds</h1> */}
         <Table striped bordered hover>
           <thead>
             <tr>
-              <th></th>
-              <th onClick={() => this.sortData('name')}>Team</th>
+              <th onClick={() => this.sortData('name')} style={{ textAlign: 'left' }}>Team</th>
               <th onClick={() => this.sortData('proj_points')}>Projected PTS</th>
               <th onClick={() => this.sortData('proj_goals')}>Projected GF</th>
               <th onClick={() => this.sortData('proj_goals_against')}>Projected GA</th>
@@ -55,15 +55,15 @@ class Home extends Component {
           <tbody>
             {data.map((team) => (
               <tr key={team.name}>
-              <td>
-              <img 
-                src={team.logo} 
-                className="logo" 
-                alt={`${team.name} logo`}
-                style={{ marginRight: '10px' }} 
-                />
-              </td>
-                <td>{team.name}</td>
+                <td style={{ textAlign: 'left' }}>
+                  <img 
+                    src={team.logo} 
+                    className="logo" 
+                    alt={`${team.name} logo`}
+                    style={{ marginRight: '10px', width: '30px', height: '30px' }} 
+                  />
+                  {team.name}
+                </td>
                 <td>{team.proj_points}</td>
                 <td>{team.proj_goals}</td>
                 <td>{team.proj_goals_against}</td>

@@ -36,21 +36,22 @@ class Divisions extends Component {
               <thead className="headerStyleWest">
                 <tr>
                   <th>Team</th>
-                  <th>Projected PTS</th>
+                  <th className="pointsColumn">Projected PTS</th>
                 </tr>
               </thead>
               <tbody>
                 {centralTeams.map((team) => (
                   <tr key={team.name}>
                     <td>
-                    <img 
-                      src={team.logo} 
-                      className="logo" 
-                      alt={`${team.name} logo`}
-                      style={{ marginRight: '10px' }} 
+                      <img 
+                        src={team.logo} 
+                        className="imageColumn" 
+                        alt={`${team.name} logo`} 
+                        style={{ marginRight: '10px' }} 
                       />
+                      {team.abrv}
                     </td>
-                    <td>{team.proj_points}</td>
+                    <td className="pointsColumn">{team.proj_points}</td>
                   </tr>
                 ))}
               </tbody>
@@ -62,21 +63,22 @@ class Divisions extends Component {
               <thead className="headerStyleWest">
                 <tr>
                   <th>Team</th>
-                  <th>Projected PTS</th>
+                  <th className="pointsColumn">Projected PTS</th>
                 </tr>
               </thead>
               <tbody>
                 {pacificTeams.map((team) => (
                   <tr key={team.name}>
                     <td>
-                    <img 
-                      src={team.logo} 
-                      className="logo" 
-                      alt={`${team.name} logo`}
-                      style={{ marginRight: '10px' }} 
+                      <img 
+                        src={team.logo} 
+                        className="imageColumn"  
+                        alt={`${team.name} logo`} 
+                        style={{ marginRight: '10px' }} 
                       />
+                      {team.abrv}
                     </td>
-                    <td>{team.proj_points}</td>
+                    <td className="pointsColumn">{team.proj_points}</td>
                   </tr>
                 ))}
               </tbody>
@@ -88,21 +90,22 @@ class Divisions extends Component {
               <thead className="headerStyleEast">
                 <tr>
                   <th>Team</th>
-                  <th>Projected PTS</th>
+                  <th className="pointsColumn">Projected PTS</th>
                 </tr>
               </thead>
               <tbody>
                 {atlanticTeams.map((team) => (
                   <tr key={team.name}>
                     <td>
-                    <img 
-                      src={team.logo} 
-                      className="logo" 
-                      alt={`${team.name} logo`}
-                      style={{ marginRight: '10px' }} 
+                      <img 
+                        src={team.logo} 
+                        className="imageColumn" 
+                        alt={`${team.name} logo`} 
+                        style={{ marginRight: '10px' }} 
                       />
+                      {team.abrv}
                     </td>
-                    <td>{team.proj_points}</td>
+                    <td className="pointsColumn">{team.proj_points}</td>
                   </tr>
                 ))}
               </tbody>
@@ -114,21 +117,22 @@ class Divisions extends Component {
               <thead className="headerStyleEast">
                 <tr>
                   <th>Team</th>
-                  <th>Projected PTS</th>
+                  <th className="pointsColumn">Projected PTS</th>
                 </tr>
               </thead>
               <tbody>
                 {metroTeams.map((team) => (
                   <tr key={team.name}>
                     <td>
-                    <img 
-                      src={team.logo} 
-                      className="logo" 
-                      alt={`${team.name} logo`}
-                      style={{ marginRight: '10px' }} 
+                      <img 
+                        src={team.logo} 
+                        className="imageColumn" 
+                        alt={`${team.name} logo`} 
+                        style={{ marginRight: '10px' }} 
                       />
+                      {team.abrv}
                     </td>
-                    <td>{team.proj_points}</td>
+                    <td className="pointsColumn">{team.proj_points}</td>
                   </tr>
                 ))}
               </tbody>
