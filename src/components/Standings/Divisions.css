@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.imageColumn {
+    width: 50px;
+    height: 50px;
+    object-fit: contain; 
+    margin-right: 10px; 
+  }
+
+.abrvColumn {
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .pointsColumn {
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .imageColumn {
+    width: 50px; 
+    height: 50px; 
+    object-fit: contain; 
+    margin-right: 10px;
+  }
+
+  .headerStyleEast {
+    background-color: #960000;
+    color: #ffffff; 
+  }
+
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2em;
+  font-weight: normal;
+  color: #333;
+  text-transform: uppercase;
+}
+
+    

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 import data from '../../data/data.json';
-import './styles.css';
+import './PlayoffOdds.css';
 
-class Home extends Component {
+class PlayoffOdds extends Component {
   constructor(props) {
     super(props);
-    // Sort data by projected points in descending order when initializing state
     const sortedData = [...data].sort((a, b) => b.proj_points - a.proj_points);
     this.state = { data: sortedData, sortConfig: { key: 'proj_points', direction: 'descending' } };
   }
@@ -41,7 +40,7 @@ class Home extends Component {
         <Table striped bordered hover>
           <thead>
             <tr>
-              <th onClick={() => this.sortData('name')} style={{ textAlign: 'left' }}>Team</th>
+              <th onClick={() => this.sortData('name')}>Team</th>
               <th onClick={() => this.sortData('proj_points')}>Projected PTS</th>
               <th onClick={() => this.sortData('proj_goals')}>Projected GF</th>
               <th onClick={() => this.sortData('proj_goals_against')}>Projected GA</th>
@@ -56,13 +55,14 @@ class Home extends Component {
             {data.map((team) => (
               <tr key={team.name}>
                 <td style={{ textAlign: 'left' }}>
-                  <img 
-                    src={team.logo} 
-                    className="logo" 
-                    alt={`${team.name} logo`}
-                    style={{ marginRight: '10px', width: '30px', height: '30px' }} 
-                  />
-                  {team.name}
+                  <div className="logo-container">
+                    <img 
+                      src={team.logo} 
+                      className="logo" 
+                      alt={`${team.name} logo`} 
+                    />
+                    <span>{team.abrv}</span>
+                  </div>
                 </td>
                 <td>{team.proj_points}</td>
                 <td>{team.proj_goals}</td>
@@ -81,4 +81,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default PlayoffOdds;

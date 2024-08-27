@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 import teamsData from '../../data/data.json';
-import './styles.css';
+import './Divisions.css'; // Ensure this path is correct
 
 class Divisions extends Component {
   constructor(props) {
@@ -14,7 +14,6 @@ class Divisions extends Component {
   render() {
     const { teamsData } = this.state;
 
-    // Helper function to get teams sorted by points for a specific division
     const getSortedTeams = (division) => {
       return teamsData
         .filter((team) => team.division === division)
@@ -35,7 +34,7 @@ class Divisions extends Component {
             <Table striped bordered hover>
               <thead className="headerStyleWest">
                 <tr>
-                  <th>Team</th>
+                  <th className="pointsColumn">Team</th>
                   <th className="pointsColumn">Projected PTS</th>
                 </tr>
               </thead>
@@ -47,9 +46,8 @@ class Divisions extends Component {
                         src={team.logo} 
                         className="imageColumn" 
                         alt={`${team.name} logo`} 
-                        style={{ marginRight: '10px' }} 
                       />
-                      {team.abrv}
+                      <span className="abrvColumn">{team.abrv}</span>
                     </td>
                     <td className="pointsColumn">{team.proj_points}</td>
                   </tr>
@@ -62,7 +60,7 @@ class Divisions extends Component {
             <Table striped bordered hover>
               <thead className="headerStyleWest">
                 <tr>
-                  <th>Team</th>
+                  <th className="pointsColumn">Team</th>
                   <th className="pointsColumn">Projected PTS</th>
                 </tr>
               </thead>
@@ -74,9 +72,8 @@ class Divisions extends Component {
                         src={team.logo} 
                         className="imageColumn"  
                         alt={`${team.name} logo`} 
-                        style={{ marginRight: '10px' }} 
                       />
-                      {team.abrv}
+                      <span className="abrvColumn">{team.abrv}</span>
                     </td>
                     <td className="pointsColumn">{team.proj_points}</td>
                   </tr>
@@ -89,7 +86,7 @@ class Divisions extends Component {
             <Table striped bordered hover>
               <thead className="headerStyleEast">
                 <tr>
-                  <th>Team</th>
+                  <th className="pointsColumn">Team</th>
                   <th className="pointsColumn">Projected PTS</th>
                 </tr>
               </thead>
@@ -101,9 +98,8 @@ class Divisions extends Component {
                         src={team.logo} 
                         className="imageColumn" 
                         alt={`${team.name} logo`} 
-                        style={{ marginRight: '10px' }} 
                       />
-                      {team.abrv}
+                      <span className="abrvColumn">{team.abrv}</span>
                     </td>
                     <td className="pointsColumn">{team.proj_points}</td>
                   </tr>
@@ -116,7 +112,7 @@ class Divisions extends Component {
             <Table striped bordered hover>
               <thead className="headerStyleEast">
                 <tr>
-                  <th>Team</th>
+                  <th className="pointsColumn">Team</th>
                   <th className="pointsColumn">Projected PTS</th>
                 </tr>
               </thead>
@@ -128,9 +124,8 @@ class Divisions extends Component {
                         src={team.logo} 
                         className="imageColumn" 
                         alt={`${team.name} logo`} 
-                        style={{ marginRight: '10px' }} 
                       />
-                      {team.abrv}
+                      <span className="abrvColumn">{team.abrv}</span>
                     </td>
                     <td className="pointsColumn">{team.proj_points}</td>
                   </tr>

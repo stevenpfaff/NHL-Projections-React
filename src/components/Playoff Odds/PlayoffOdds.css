@@ -1,0 +1,23 @@
+.logo-container {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+  }
+  
+  .logo {
+    width: 40px; /* Set the desired width */
+    height: 40px; /* Set the desired height */
+    object-fit: contain; /* Ensure the logo fits within the specified dimensions without distortion */
+    margin-right: 10px; /* Spacing between logo and text */
+  }
+  
+  thead {
+    text-align: center;
+    background-color: rgb(1, 58, 104);
+    color: white;
+  }
+
+  td, th{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+  }
