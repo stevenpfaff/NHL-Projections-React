@@ -12,14 +12,25 @@ const TeamCard = () => {
         return <div>Team not found</div>;
     }
 
+
+    const headerStyle = {
+        backgroundColor: team.primaryColor,
+        height: '30px'
+    };
+
     return (
         <div className='card-container'>
             <div className="logo-section">
-            <h1>{team.name}</h1>
+                <h1>{team.name}</h1>
                 <img src={team.logo} className="big-logo" alt={`${team.name}`} />
             </div>
             <div className="stats-section">
                 <Table striped bordered hover>
+                    <thead>
+                        <tr style={headerStyle}>
+                            <th colSpan="2"></th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
                             <td>Projected Points</td>

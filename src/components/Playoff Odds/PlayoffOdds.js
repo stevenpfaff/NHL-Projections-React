@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import data from '../../data/data.json';
 import './PlayoffOdds.css';
 
@@ -61,7 +62,9 @@ class PlayoffOdds extends Component {
                       className="logo" 
                       alt={`${team.name} logo`} 
                     />
-                    <span>{team.abrv}</span>
+                    <Link to={`/team/${team.id}`} style={{ marginLeft: '8px' }}>
+                      <span>{team.abrv}</span>
+                    </Link>
                   </div>
                 </td>
                 <td>{team.proj_points}</td>

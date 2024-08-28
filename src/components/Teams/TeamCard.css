@@ -9,10 +9,12 @@
 .logo-section {
     flex: 1;
     text-align: center;
+    margin-left: 10%;
+    margin-right: 5%;
 }
 
 .logo-section h1 {
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 }
 
 .big-logo {
@@ -20,7 +22,10 @@
     height: auto;
 }
 
-.stats-section {
+.stats-section, td {
     flex: 2;
     padding-left: 20px;
+    text-align: left;
+    margin-right: 10%;
+    margin-top: 5%;
 }
