@@ -16,7 +16,7 @@ const TeamCard = () => {
         <div className='card-container'>
             <div className="logo-section">
             <h1>{team.name}</h1>
-                <img src={team.logo} className="logo" alt={`${team.name}`} />
+                <img src={team.logo} className="big-logo" alt={`${team.name}`} />
             </div>
             <div className="stats-section">
                 <Table striped bordered hover>

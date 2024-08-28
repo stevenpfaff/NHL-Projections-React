@@ -1,13 +1,13 @@
 .logo-container {
     display: flex;
-    align-items: center; /* Align items vertically centered */
+    align-items: center;
   }
   
   .logo {
-    width: 40px; /* Set the desired width */
-    height: 40px; /* Set the desired height */
-    object-fit: contain; /* Ensure the logo fits within the specified dimensions without distortion */
-    margin-right: 10px; /* Spacing between logo and text */
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 10px;
   }
   
   thead {
