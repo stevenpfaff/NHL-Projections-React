@@ -30,7 +30,7 @@ class Divisions extends Component {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <div style={{ flex: 1, marginRight: '10px' }}>
-            <h1 style={{ fontFamily: 'inherit', textAlign: 'center' }}>Central</h1>
+            <h1>Central</h1>
             <Table striped bordered hover>
               <thead className="headerStyleWest">
                 <tr>
@@ -56,7 +56,7 @@ class Divisions extends Component {
             </Table>
           </div>
           <div style={{ flex: 1, marginLeft: '10px' }}>
-            <h1 style={{ fontFamily: 'inherit', textAlign: 'center' }}>Pacific</h1>
+            <h1>Pacific</h1>
             <Table striped bordered hover>
               <thead className="headerStyleWest">
                 <tr>
@@ -82,7 +82,7 @@ class Divisions extends Component {
             </Table>
           </div>
           <div style={{ flex: 1, marginLeft: '10px' }}>
-            <h1 style={{ fontFamily: 'inherit', textAlign: 'center' }}>Atlantic</h1>
+            <h1>Atlantic</h1>
             <Table striped bordered hover>
               <thead className="headerStyleEast">
                 <tr>
@@ -108,7 +108,7 @@ class Divisions extends Component {
             </Table>
           </div>
           <div style={{ flex: 1, marginLeft: '10px' }}>
-            <h1 style={{ fontFamily: 'inherit', textAlign: 'center' }}>Metropolitan</h1>
+            <h1>Metropolitan</h1>
             <Table striped bordered hover>
               <thead className="headerStyleEast">
                 <tr>

@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "Anaheim Ducks",
         "abrv": "ANA",
         "division": "Pacific",
@@ -14,6 +15,7 @@
         "logo": "/Images/ducks.png"
     },
     {
+        "id": 2,
         "name": "Boston Bruins",
         "abrv": "BOS",
         "division": "Atlantic",
@@ -28,6 +30,7 @@
         "logo": "/Images/bruins.png"
     },
     {
+        "id": 3,
         "name": "Buffalo Sabres",
         "abrv": "BUF",
         "division": "Atlantic",
@@ -42,6 +45,7 @@
         "logo": "/Images/sabres.png"
     },
     {
+        "id": 4,
         "name": "Calgary Flames",
         "abrv": "CGY",
         "division": "Pacific",
@@ -56,6 +60,7 @@
         "logo": "/Images/flames.png"
     },
     {
+        "id": 5,
         "name": "Carolina Hurricanes",
         "abrv": "CAR",
         "division": "Metropolitan",
@@ -70,6 +75,7 @@
         "logo": "/Images/canes.png"
     },
     {
+        "id": 6,
         "name": "Chicago Blackhawks",
         "abrv": "CHI",
         "division": "Central",
@@ -84,6 +90,7 @@
         "logo": "/Images/blackhawks.png"
     },
     {
+        "id": 7,
         "name": "Colorado Avalanche",
         "abrv": "COL",
         "division": "Central",
@@ -98,6 +105,7 @@
         "logo": "/Images/avalanche.png"
     },
     {
+        "id": 8,
         "name": "Columbus Blue Jackets",
         "abrv": "CBJ",
         "division": "Metropolitan",
@@ -112,6 +120,7 @@
         "logo": "/Images/blue jackets.png"
     },
     {
+        "id": 9,
         "name": "Dallas Stars",
         "abrv": "DAL",
         "division": "Central",
@@ -126,6 +135,7 @@
         "logo": "/Images/stars.png"
     },
     {
+        "id": 10,
         "name": "Detroit Red Wings",
         "abrv": "DET",
         "division": "Atlantic",
@@ -140,6 +150,7 @@
         "logo": "/Images/red wings.png"
     },
     {
+        "id": 11,
         "name": "Edmonton Oilers",
         "abrv": "EDM",
         "division": "Pacific",
@@ -154,6 +165,7 @@
         "logo": "/Images/oilers.png"
     },
     {
+        "id": 12,
         "name": "Florida Panthers",
         "abrv": "FLA",
         "division": "Atlantic",
@@ -168,6 +180,7 @@
         "logo": "/Images/panthers.png"
     },
     {
+        "id": 13,
         "name": "Los Angeles Kings",
         "abrv": "LAK",
         "division": "Pacific",
@@ -182,6 +195,7 @@
         "logo": "/Images/kings.png"
     },
     {
+        "id": 14,
         "name": "Minnesota Wild",
         "abrv": "MIN",
         "division": "Central",
@@ -196,6 +210,7 @@
         "logo": "/Images/wild.png"
     },
     {
+        "id": 15,
         "name": "Montreal Canadiens",
         "abrv": "MTL",
         "division": "Atlantic",
@@ -210,6 +225,7 @@
         "logo": "/Images/canadiens.png"
     },
     {
+        "id": 16,
         "name": "Nashville Predators",
         "abrv": "NSH",
         "division": "Central",
@@ -224,6 +240,7 @@
         "logo": "/Images/predators.png"
     },
     {
+        "id": 17,
         "name": "New Jersey Devils",
         "abrv": "NJD",
         "division": "Metropolitan",
@@ -238,6 +255,7 @@
         "logo": "/Images/devils.png"
     },
     {
+        "id": 18,
         "name": "New York Islanders",
         "abrv": "NYI",
         "division": "Metropolitan",
@@ -252,6 +270,7 @@
         "logo": "/Images/islanders.png"
     },
     {
+        "id": 19,
         "name": "New York Rangers",
         "abrv": "NYR",
         "division": "Metropolitan",
@@ -266,6 +285,7 @@
         "logo": "/Images/rangers.png"
     },
     {
+        "id": 20,
         "name": "Ottawa Senators",
         "abrv": "OTT",
         "division": "Atlantic",
@@ -280,6 +300,7 @@
         "logo": "/Images/senators.png"
     },
     {
+        "id": 21,
         "name": "Philadelphia Flyers",
         "abrv": "PHI",
         "division": "Metropolitan",
@@ -294,6 +315,7 @@
         "logo": "/Images/flyers.png"
     },
     {
+        "id": 22,
         "name": "Pittsburgh Penguins",
         "abrv": "PIT",
         "division": "Metropolitan",
@@ -308,6 +330,7 @@
         "logo": "/Images/penguins.png"
     },
     {
+        "id": 23,
         "name": "San Jose Sharks",
         "abrv": "SJS",
         "division": "Pacific",
@@ -322,6 +345,7 @@
         "logo": "/Images/sharks.png"
     },
     {
+        "id": 24,
         "name": "Seattle Kraken",
         "abrv": "SEA",
         "division": "Pacific",
@@ -336,6 +360,7 @@
         "logo": "/Images/kraken.png"
     },
     {
+        "id": 25,
         "name": "St. Louis Blues",
         "abrv": "STL",
         "division": "Central",
@@ -350,6 +375,7 @@
         "logo": "/Images/blues.png"
     },
     {
+        "id": 26,
         "name": "Tampa Bay Lightning",
         "abrv": "TBL",
         "division": "Atlantic",
@@ -364,6 +390,7 @@
         "logo": "/Images/lightning.png"
     },
     {
+        "id": 27,
         "name": "Toronto Maple Leafs",
         "abrv": "TOR",
         "division": "Atlantic",
@@ -378,6 +405,7 @@
         "logo": "/Images/leafs.png"
     },
     {
+        "id": 28,
         "name": "Utah Hockey Club",
         "abrv": "UTA",
         "division": "Central",
@@ -392,6 +420,7 @@
         "logo": "/Images/utah.png"
     },
     {
+        "id": 29,
         "name": "Vancouver Canucks",
         "abrv": "VAN",
         "division": "Pacific",
@@ -406,6 +435,7 @@
         "logo": "/Images/canucks.png"
     },
     {
+        "id": 30,
         "name": "Vegas Golden Knights",
         "abrv": "VGK",
         "division": "Pacific",
@@ -420,6 +450,7 @@
         "logo": "/Images/golden knights.png"
     },
     {
+        "id": 31,
         "name": "Washington Capitals",
         "abrv": "WSH",
         "division": "Metropolitan",
@@ -434,6 +465,7 @@
         "logo": "/Images/capitals.png"
     },
     {
+        "id": 32,
         "name": "Winnipeg Jets",
         "abrv": "WPG",
         "division": "Central",
