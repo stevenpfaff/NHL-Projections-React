@@ -9,21 +9,14 @@
 
 .abrvColumn {
     font-size: 1.8em;
-    font-weight: bold;
     font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
   }
   
   .pointsColumn {
     font-size: 1.8em;
-    font-weight: bold;
     font-family: 'Bebas Neue', sans-serif;
-  }
-  
-  .imageColumn {
-    width: 50px; 
-    height: 50px; 
-    object-fit: contain; 
-    margin-right: 10px;
+    text-align: center;
   }
 
   .headerStyleEast {

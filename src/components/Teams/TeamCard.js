@@ -24,7 +24,7 @@ const TeamCard = () => {
                 <h1>{team.name}</h1>
                 <img src={team.logo} className="big-logo" alt={`${team.name}`} />
             </div>
-            <div className="stats-section">
+            <div className="stats-section-card">
                 <Table striped bordered hover>
                     <thead>
                         <tr style={headerStyle}>
@@ -34,35 +34,35 @@ const TeamCard = () => {
                     <tbody>
                         <tr>
                             <td>Projected Points</td>
-                            <td>{team.proj_points}</td>
+                            <td className='stat-td'>{team.proj_points}</td>
                         </tr>
                         <tr>
                             <td>Projected Goals</td>
-                            <td>{team.proj_goals}</td>
+                            <td className='stat-td'>{team.proj_goals}</td>
                         </tr>
                         <tr>
                             <td>Projected Goals Against</td>
-                            <td>{team.proj_goals_against}</td>
+                            <td className='stat-td'>{team.proj_goals_against}</td>
                         </tr>
                         <tr>
                             <td>Reach Playoffs</td>
-                            <td>{team.playoffs}%</td>
+                            <td className='stat-td'>{team.playoffs}%</td>
                         </tr>
                         <tr>
                             <td>Reach Second Round</td>
-                            <td>{team.second_round}%</td>
+                            <td className='stat-td'>{team.second_round}%</td>
                         </tr>
                         <tr>
                             <td>Reach Conference Final</td>
-                            <td>{team.conf_final}%</td>
+                            <td className='stat-td'>{team.conf_final}%</td>
                         </tr>
                         <tr>
                             <td>Reach Cup Final</td>
-                            <td>{team.cup_final}%</td>
+                            <td className='stat-td'>{team.cup_final}%</td>
                         </tr>
                         <tr>
                             <td>Win Cup</td>
-                            <td>{team.cup_win}%</td>
+                            <td className='stat-td'>{team.cup_win}%</td>
                         </tr>
                     </tbody>
                 </Table>

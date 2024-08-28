@@ -55,7 +55,7 @@ class PlayoffOdds extends Component {
           <tbody>
             {data.map((team) => (
               <tr key={team.name}>
-                <td style={{ textAlign: 'left' }}>
+                <td>
                   <div className="logo-container">
                     <img 
                       src={team.logo} 
@@ -67,14 +67,14 @@ class PlayoffOdds extends Component {
                     </Link>
                   </div>
                 </td>
-                <td>{team.proj_points}</td>
-                <td>{team.proj_goals}</td>
-                <td>{team.proj_goals_against}</td>
-                <td>{team.playoffs}%</td>
-                <td>{team.second_round}%</td>
-                <td>{team.conf_final}%</td>
-                <td>{team.cup_final}%</td>
-                <td>{team.cup_win}%</td>
+                <td className='stat-td'>{team.proj_points}</td>
+                <td className='stat-td'>{team.proj_goals}</td>
+                <td className='stat-td'>{team.proj_goals_against}</td>
+                <td className='stat-td'>{team.playoffs}%</td>
+                <td className='stat-td'>{team.second_round}%</td>
+                <td className='stat-td'>{team.conf_final}%</td>
+                <td className='stat-td'>{team.cup_final}%</td>
+                <td className='stat-td'>{team.cup_win}%</td>
               </tr>
             ))}
           </tbody>
