@@ -33,35 +33,35 @@ const TeamCard = () => {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Projected Points</td>
+                            <td className='proj-td'>Projected Points</td>
                             <td className='stat-td'>{team.proj_points}</td>
                         </tr>
                         <tr>
-                            <td>Projected Goals</td>
+                            <td className='proj-td'>Projected Goals</td>
                             <td className='stat-td'>{team.proj_goals}</td>
                         </tr>
                         <tr>
-                            <td>Projected Goals Against</td>
+                            <td className='proj-td'>Projected Goals Against</td>
                             <td className='stat-td'>{team.proj_goals_against}</td>
                         </tr>
                         <tr>
-                            <td>Reach Playoffs</td>
+                            <td className='proj-td'>Reach Playoffs</td>
                             <td className='stat-td'>{team.playoffs}%</td>
                         </tr>
                         <tr>
-                            <td>Reach Second Round</td>
+                            <td className='proj-td'>Reach Second Round</td>
                             <td className='stat-td'>{team.second_round}%</td>
                         </tr>
                         <tr>
-                            <td>Reach Conference Final</td>
+                            <td className='proj-td'>Reach Conference Final</td>
                             <td className='stat-td'>{team.conf_final}%</td>
                         </tr>
                         <tr>
-                            <td>Reach Cup Final</td>
+                            <td className='proj-td'>Reach Cup Final</td>
                             <td className='stat-td'>{team.cup_final}%</td>
                         </tr>
                         <tr>
-                            <td>Win Cup</td>
+                            <td className='proj-td'>Win Cup</td>
                             <td className='stat-td'>{team.cup_win}%</td>
                         </tr>
                     </tbody>
