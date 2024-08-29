@@ -10,6 +10,7 @@
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
 }
 
 .logo-section {
@@ -33,4 +34,64 @@
 
 .stat-td {
     text-align: center;
+}
+
+.stat-td, .category-td {
+    font-size: 22px;
+}
+
+.category-td {
+    text-align: left;
+}
+
+
+@media (min-width: 1024px) {
+    .card-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 70%;
+        max-width: 1200px;
+        padding: 40px;
+    }
+
+    .logo-section {
+        text-align: left;
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+
+    .big-logo {
+        width: 300px; 
+        height: auto;
+    }
+
+    .stats-section-card {
+        width: 60%; /* Adjust width for table */
+    }
+}
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 70%;
+        max-width: 1200px;
+        padding: 40px;
+    }
+
+    .logo-section {
+        text-align: left;
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+
+    .big-logo {
+        width: 300px;
+        height: auto;
+    }
+
+    .stats-section-card {
+        width: 60%;
+    }
 }
