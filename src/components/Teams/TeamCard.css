@@ -7,7 +7,7 @@
     padding: 20px;
     width: 80%;
     max-width: 600px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 5%;
@@ -35,6 +35,7 @@
 .stat-td {
     text-align: center;
 }
+
 .stat-td, .category-td {
     font-size: 22px;
 }
@@ -43,33 +44,8 @@
     text-align: left;
 }
 
-
+/* Apply the iPhone layout for devices up to 1024px */
 @media (min-width: 1024px) {
-    .card-container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        width: 70%;
-        max-width: 1200px;
-        padding: 40px;
-    }
-
-    .logo-section {
-        text-align: left;
-        margin-bottom: 0;
-        margin-right: 40px;
-    }
-
-    .big-logo {
-        width: 300px; 
-        height: auto;
-    }
-
-    .stats-section-card {
-        width: 60%; /* Adjust width for table */
-    }
-}
-@media (min-width: 768px) {
     .card-container {
         flex-direction: row;
         justify-content: center;
@@ -92,5 +68,32 @@
 
     .stats-section-card {
         width: 60%;
+    }
+}
+
+/* For iPad and smaller screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card-container, .logo-section, .big-logo, .stats-section-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        max-width: 600px;
+        padding: 20px;
+    }
+
+    .logo-section {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .big-logo {
+        width: 300px;
+        height: auto;
+    }
+
+    .stats-section-card {
+        width: 80%;
     }
 }
