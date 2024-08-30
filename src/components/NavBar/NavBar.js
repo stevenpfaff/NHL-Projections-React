@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import { Nav } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
-import teamData from '../../data/data.json';
+// import { LinkContainer } from 'react-router-bootstrap';
+// import teamData from '../../data/data.json';
 
 function NavBar() {
     return (

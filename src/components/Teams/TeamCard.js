@@ -12,10 +12,9 @@ const TeamCard = () => {
         return <div>Team not found</div>;
     }
 
-
     const headerStyle = {
         backgroundColor: team.primaryColor,
-        height: '30px'
+        color: 'white'
     };
 
     return (
@@ -27,8 +26,9 @@ const TeamCard = () => {
             <div className="stats-section-card">
                 <Table striped bordered hover>
                     <thead>
-                        <tr style={headerStyle}>
-                            <th colSpan="2"></th>
+                        <tr>
+                            <th style={headerStyle}>Category</th>
+                            <th style={headerStyle}>Value</th>
                         </tr>
                     </thead>
                     <tbody>

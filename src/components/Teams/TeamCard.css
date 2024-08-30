@@ -37,7 +37,7 @@
 }
 
 .stat-td, .category-td {
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .category-td {
@@ -58,11 +58,11 @@
     .logo-section {
         text-align: left;
         margin-bottom: 0;
-        margin-right: 40px;
+        margin-right: 80px;
     }
 
     .big-logo {
-        width: 300px;
+        width: 400px;
         height: auto;
     }
 

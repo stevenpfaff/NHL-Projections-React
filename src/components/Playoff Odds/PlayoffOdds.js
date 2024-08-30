@@ -36,7 +36,7 @@ class PlayoffOdds extends Component {
     const { data } = this.state;
 
     return (
-      <div style={{ marginRight: "20%", marginLeft: "20%",  marginTop: "5%", marginBottom: "5%" }}>
+      <div className="table-container">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Table striped bordered hover>
           <thead>

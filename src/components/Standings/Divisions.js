@@ -26,113 +26,110 @@ class Divisions extends Component {
     const metroTeams = getSortedTeams('Metropolitan');
 
     return (
-      <div style={{ margin: '5%' }}>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <div style={{ flex: 1, marginRight: '10px' }}>
-            <h1>Central</h1>
-            <Table striped bordered hover>
-              <thead className="headerStyleWest">
-                <tr>
-                  <th className="pointsColumn">Team</th>
-                  <th className="pointsColumn">Projected PTS</th>
+      <div className="divisions-container">
+        <div className="division-column">
+          <h1>Central</h1>
+          <Table striped bordered hover>
+            <thead className="headerStyleWest">
+              <tr>
+                <th className="pointsColumn">Team</th>
+                <th className="pointsColumn">Projected PTS</th>
+              </tr>
+            </thead>
+            <tbody>
+              {centralTeams.map((team) => (
+                <tr key={team.name}>
+                  <td>
+                    <img 
+                      src={team.logo} 
+                      className="imageColumn" 
+                      alt={`${team.name} logo`} 
+                    />
+                    <span className="abrvColumn">{team.abrv}</span>
+                  </td>
+                  <td className="pointsColumn">{team.proj_points}</td>
                 </tr>
-              </thead>
-              <tbody>
-                {centralTeams.map((team) => (
-                  <tr key={team.name}>
-                    <td>
-                      <img 
-                        src={team.logo} 
-                        className="imageColumn" 
-                        alt={`${team.name} logo`} 
-                      />
-                      <span className="abrvColumn">{team.abrv}</span>
-                    </td>
-                    <td className="pointsColumn">{team.proj_points}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </Table>
-          </div>
-          <div style={{ flex: 1, marginLeft: '10px' }}>
-            <h1>Pacific</h1>
-            <Table striped bordered hover>
-              <thead className="headerStyleWest">
-                <tr>
-                  <th className="pointsColumn">Team</th>
-                  <th className="pointsColumn">Projected PTS</th>
+              ))}
+            </tbody>
+          </Table>
+        </div>
+        <div className="division-column">
+          <h1>Pacific</h1>
+          <Table striped bordered hover>
+            <thead className="headerStyleWest">
+              <tr>
+                <th className="pointsColumn">Team</th>
+                <th className="pointsColumn">Projected PTS</th>
+              </tr>
+            </thead>
+            <tbody>
+              {pacificTeams.map((team) => (
+                <tr key={team.name}>
+                  <td>
+                    <img 
+                      src={team.logo} 
+                      className="imageColumn" 
+                      alt={`${team.name} logo`} 
+                    />
+                    <span className="abrvColumn">{team.abrv}</span>
+                  </td>
+                  <td className="pointsColumn">{team.proj_points}</td>
                 </tr>
-              </thead>
-              <tbody>
-                {pacificTeams.map((team) => (
-                  <tr key={team.name}>
-                    <td>
-                      <img 
-                        src={team.logo} 
-                        className="imageColumn"  
-                        alt={`${team.name} logo`} 
-                      />
-                      <span className="abrvColumn">{team.abrv}</span>
-                    </td>
-                    <td className="pointsColumn">{team.proj_points}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </Table>
-          </div>
-          <div style={{ flex: 1, marginLeft: '10px' }}>
-            <h1>Atlantic</h1>
-            <Table striped bordered hover>
-              <thead className="headerStyleEast">
-                <tr>
-                  <th className="pointsColumn">Team</th>
-                  <th className="pointsColumn">Projected PTS</th>
+              ))}
+            </tbody>
+          </Table>
+        </div>
+        <div className="division-column">
+          <h1>Atlantic</h1>
+          <Table striped bordered hover>
+            <thead className="headerStyleEast">
+              <tr>
+                <th className="pointsColumn">Team</th>
+                <th className="pointsColumn">Projected PTS</th>
+              </tr>
+            </thead>
+            <tbody>
+              {atlanticTeams.map((team) => (
+                <tr key={team.name}>
+                  <td>
+                    <img 
+                      src={team.logo} 
+                      className="imageColumn" 
+                      alt={`${team.name} logo`} 
+                    />
+                    <span className="abrvColumn">{team.abrv}</span>
+                  </td>
+                  <td className="pointsColumn">{team.proj_points}</td>
                 </tr>
-              </thead>
-              <tbody>
-                {atlanticTeams.map((team) => (
-                  <tr key={team.name}>
-                    <td>
-                      <img 
-                        src={team.logo} 
-                        className="imageColumn" 
-                        alt={`${team.name} logo`} 
-                      />
-                      <span className="abrvColumn">{team.abrv}</span>
-                    </td>
-                    <td className="pointsColumn">{team.proj_points}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </Table>
-          </div>
-          <div style={{ flex: 1, marginLeft: '10px' }}>
-            <h1>Metropolitan</h1>
-            <Table striped bordered hover>
-              <thead className="headerStyleEast">
-                <tr>
-                  <th className="pointsColumn">Team</th>
-                  <th className="pointsColumn">Projected PTS</th>
+              ))}
+            </tbody>
+          </Table>
+        </div>
+        <div className="division-column">
+          <h1>Metropolitan</h1>
+          <Table striped bordered hover>
+            <thead className="headerStyleEast">
+              <tr>
+                <th className="pointsColumn">Team</th>
+                <th className="pointsColumn">Projected PTS</th>
+              </tr>
+            </thead>
+            <tbody>
+              {metroTeams.map((team) => (
+                <tr key={team.name}>
+                  <td>
+                    <img 
+                      src={team.logo} 
+                      className="imageColumn" 
+                      alt={`${team.name} logo`} 
+                    />
+                    <span className="abrvColumn">{team.abrv}</span>
+                  </td>
+                  <td className="pointsColumn">{team.proj_points}</td>
                 </tr>
-              </thead>
-              <tbody>
-                {metroTeams.map((team) => (
-                  <tr key={team.name}>
-                    <td>
-                      <img 
-                        src={team.logo} 
-                        className="imageColumn" 
-                        alt={`${team.name} logo`} 
-                      />
-                      <span className="abrvColumn">{team.abrv}</span>
-                    </td>
-                    <td className="pointsColumn">{team.proj_points}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </Table>
-          </div>
+              ))}
+            </tbody>
+          </Table>
         </div>
       </div>
     );

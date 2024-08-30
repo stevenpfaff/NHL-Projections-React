@@ -1,27 +1,80 @@
+.table-container {
+    overflow-x: auto;
+    margin: 5% auto;
+    padding: 0 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative; /* Ensure that table can handle sticky elements */
+}
+
+.table td:first-child, .table th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 10;
+}
+
+.table td:first-child {
+    background-color: white; /* Ensure consistency with the table background */
+    border-right: 1px solid #dee2e6;
+}
+
+.table th:first-child {
+    background: #013a68;
+    color: white;
+    border-right: 1px solid #dee2e6;
+}
+
+/* Styling for table headers and cells */
+thead {
+    text-align: center;
+    background-color: #013a68;
+    color: white;
+}
+
+td, th {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+
+.stat-td {
+    text-align: center;
+}
+
 .logo-container {
     display: flex;
     align-items: center;
-  }
-  
-  .logo {
+}
+
+.logo {
     width: 40px;
     height: 40px;
     object-fit: contain;
     margin-right: 10px;
-  }
-  
-  thead {
-    text-align: center;
+}
+
+.headerStyleEast th {
+    background-color: #960000 !important;
+}
+
+.headerStyleWest th {
     background-color: #013a68;
-    color: white;
-  }
+}
 
-  td, th{
-    text-align: center;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 20px;
-  }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .table {
+        font-size: 14px;
+    }
 
-  .stat-td{
-    text-align: center;
-  }
+    .logo {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+}
