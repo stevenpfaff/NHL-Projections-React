@@ -15,13 +15,12 @@
 
 .logo-section {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .big-logo {
     width: 150px;
-    height: auto;
-    margin-top: 10px;
+    height: 150px;
+    object-fit: cover;
 }
 
 .table {
