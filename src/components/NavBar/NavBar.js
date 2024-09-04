@@ -14,23 +14,9 @@ function NavBar() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/">Playoff Odds</Nav.Link>
-                        <Nav.Link href="/Divisions">Division Standings</Nav.Link>                                             
+                        <Nav.Link href="/Divisions">Division Standings</Nav.Link>
+                        <Nav.Link href="/Percentiles">Percentile Outcomes</Nav.Link>                                                
                     </Nav>
-                    {/* <Nav>
-                        {teamData.map((team) => (
-                            <LinkContainer to={`/team/${team.id}`} key={team.id}>
-                                <Nav.Link>
-                                    <img 
-                                        src={team.logo} 
-                                        alt={team.name} 
-                                        height="30" 
-                                        width="30" 
-                                        title={team.name} 
-                                    />
-                                </Nav.Link>
-                            </LinkContainer>
-                        ))}
-                    </Nav> */}
                 </Navbar.Collapse>
             </Container>
         </Navbar>

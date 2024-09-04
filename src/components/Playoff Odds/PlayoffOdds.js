@@ -43,8 +43,6 @@ class PlayoffOdds extends Component {
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>
               <th onClick={() => this.sortData('proj_points')}>Projected PTS</th>
-              <th onClick={() => this.sortData('proj_goals')}>Projected GF</th>
-              <th onClick={() => this.sortData('proj_goals_against')}>Projected GA</th>
               <th onClick={() => this.sortData('playoffs')}>Playoff %</th>
               <th onClick={() => this.sortData('second_round')}>Round 2 %</th>
               <th onClick={() => this.sortData('conf_final')}>Conference Final %</th>
@@ -68,8 +66,6 @@ class PlayoffOdds extends Component {
                   </div>
                 </td>
                 <td className='stat-td'>{team.proj_points}</td>
-                <td className='stat-td'>{team.proj_goals}</td>
-                <td className='stat-td'>{team.proj_goals_against}</td>
                 <td className='stat-td'>{team.playoffs}%</td>
                 <td className='stat-td'>{team.second_round}%</td>
                 <td className='stat-td'>{team.conf_final}%</td>
