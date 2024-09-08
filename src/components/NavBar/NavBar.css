@@ -1,0 +1,14 @@
+.custom-navbar {
+    text-align: center;
+  }
+  
+  .custom-nav-links .nav-link {
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 20px;
+    color: white;
+  }
+  
+  .custom-nav-links .nav-link:hover {
+    color: #ccc;
+  }
+  

@@ -33,7 +33,7 @@ class Divisions extends Component {
             <thead className="headerStyleWest">
               <tr>
                 <th className="pointsColumn">Team</th>
-                <th className="pointsColumn">Projected PTS</th>
+                <th className="pointsColumn">Points</th>
               </tr>
             </thead>
             <tbody>
@@ -59,7 +59,7 @@ class Divisions extends Component {
             <thead className="headerStyleWest">
               <tr>
                 <th className="pointsColumn">Team</th>
-                <th className="pointsColumn">Projected PTS</th>
+                <th className="pointsColumn">Points</th>
               </tr>
             </thead>
             <tbody>
@@ -85,7 +85,7 @@ class Divisions extends Component {
             <thead className="headerStyleEast">
               <tr>
                 <th className="pointsColumn">Team</th>
-                <th className="pointsColumn">Projected PTS</th>
+                <th className="pointsColumn">Points</th>
               </tr>
             </thead>
             <tbody>
@@ -111,7 +111,7 @@ class Divisions extends Component {
             <thead className="headerStyleEast">
               <tr>
                 <th className="pointsColumn">Team</th>
-                <th className="pointsColumn">Projected PTS</th>
+                <th className="pointsColumn">Points</th>
               </tr>
             </thead>
             <tbody>
