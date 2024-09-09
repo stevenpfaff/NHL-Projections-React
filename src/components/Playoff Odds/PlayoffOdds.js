@@ -42,10 +42,10 @@ class PlayoffOdds extends Component {
           <thead>
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>
-              <th onClick={() => this.sortData('proj_points')}>Projected PTS</th>
+              <th onClick={() => this.sortData('proj_points')}>Points</th>
               <th onClick={() => this.sortData('playoffs')}>Playoff %</th>
               <th onClick={() => this.sortData('second_round')}>Round 2 %</th>
-              <th onClick={() => this.sortData('conf_final')}>Conference Final %</th>
+              <th onClick={() => this.sortData('conf_final')}>Conf Final %</th>
               <th onClick={() => this.sortData('cup_final')}>Cup Final %</th>
               <th onClick={() => this.sortData('cup_win')}>Win Cup %</th>
             </tr>
