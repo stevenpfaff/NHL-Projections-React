@@ -221,7 +221,7 @@
         "abrv": "STL",
         "primaryColor": "#002F87",
         "division": "Central",
-        "place": 7,
+        "place": 6,
         "logo": "/Images/blues.png"
     },
     {
@@ -248,7 +248,7 @@
         "abrv": "UTA",
         "primaryColor": "#5c88da",
         "division": "Central",
-        "place": 6,
+        "place": 5,
         "logo": "/Images/utah.png"
     },
     {
@@ -284,7 +284,7 @@
         "abrv": "WPG",
         "primaryColor": "#004C97",
         "division": "Central",
-        "place": 5,
+        "place": 7,
         "logo": "/Images/jets.png"
     }
 ]

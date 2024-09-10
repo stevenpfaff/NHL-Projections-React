@@ -28,11 +28,10 @@ class Vibes extends Component {
     return (
       <div className="divisions-container">
         <div className="division-column">
-          <h1>Central</h1>
           <Table striped bordered hover>
             <thead className="headerStyleWest">
               <tr>
-                <th className="pointsColumn">Team</th>
+                <th className="pointsColumn">Central</th>
               </tr>
             </thead>
             <tbody>
@@ -52,11 +51,10 @@ class Vibes extends Component {
           </Table>
         </div>
         <div className="division-column">
-          <h1>Pacific</h1>
           <Table striped bordered hover>
             <thead className="headerStyleWest">
               <tr>
-                <th className="pointsColumn">Team</th>
+                <th className="pointsColumn">Pacific</th>
               </tr>
             </thead>
             <tbody>
@@ -76,11 +74,10 @@ class Vibes extends Component {
           </Table>
         </div>
         <div className="division-column">
-          <h1>Atlantic</h1>
           <Table striped bordered hover>
             <thead className="headerStyleEast">
               <tr>
-                <th className="pointsColumn">Team</th>
+                <th className="pointsColumn">Atlantic</th>
               </tr>
             </thead>
             <tbody>
@@ -100,11 +97,10 @@ class Vibes extends Component {
           </Table>
         </div>
         <div className="division-column">
-          <h1>Metropolitan</h1>
           <Table striped bordered hover>
             <thead className="headerStyleEast">
               <tr>
-                <th className="pointsColumn">Team</th>
+                <th className="pointsColumn">Metropolitan</th>
               </tr>
             </thead>
             <tbody>
