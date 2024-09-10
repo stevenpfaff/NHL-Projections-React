@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import './NavBar.css'; // Import your CSS file
+import './NavBar.css';
 
 const NavBar = () => {
   return (
@@ -10,6 +10,7 @@ const NavBar = () => {
         <Nav className="mx-auto custom-nav-links">
           <Nav.Link href="/">Playoff Odds</Nav.Link>
           <Nav.Link href="/Divisions">Projected Standings</Nav.Link>
+          <Nav.Link href="/Picks">Picks</Nav.Link>
           <Nav.Link href="/Percentiles">Percentile Outcomes</Nav.Link>
         </Nav>
       </Navbar.Collapse>

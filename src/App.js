@@ -5,6 +5,7 @@ import PlayoffOdds from './components/Playoff Odds/PlayoffOdds';
 import Divisions from './components/Standings/Divisions';
 import TeamCard from './components/Teams/TeamCard';
 import Percentiles from './components/Percentile Outcomes/Percentiles';
+import Vibes from './components/Standings/Vibes';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/" element={<PlayoffOdds />} />
                 <Route path="/Divisions" element={<Divisions />} />
                 <Route path="/Percentiles" element={<Percentiles />} />
+                <Route path="/Picks" element={<Vibes />} />
                 <Route path="/team/:id" element={<TeamCard />} />
             </Routes>
         </Router>
