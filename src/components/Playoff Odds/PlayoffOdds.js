@@ -8,7 +8,7 @@ class PlayoffOdds extends Component {
   constructor(props) {
     super(props);
     const sortedData = [...data].sort((a, b) => b.proj_points - a.proj_points);
-    this.state = { data: sortedData, sortConfig: { key: 'proj_points', direction: 'descending' } };
+    this.state = { data: sortedData, sortConfig: { key: 'playoffs', direction: 'descending' } };
   }
 
   sortData = (key) => {
@@ -38,11 +38,11 @@ class PlayoffOdds extends Component {
     return (
       <div className="table-container">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <p>Playoff odds based on 100,000 simulations of the 2024/2025 NHL season</p>
         <Table striped bordered hover>
           <thead>
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>
-              <th onClick={() => this.sortData('proj_points')}>Points</th>
               <th onClick={() => this.sortData('playoffs')}>Playoff %</th>
               <th onClick={() => this.sortData('second_round')}>Round 2 %</th>
               <th onClick={() => this.sortData('conf_final')}>Conf Final %</th>
@@ -65,7 +65,6 @@ class PlayoffOdds extends Component {
                     </Link>
                   </div>
                 </td>
-                <td className='stat-td'>{team.proj_points}</td>
                 <td className='stat-td'>{team.playoffs}%</td>
                 <td className='stat-td'>{team.second_round}%</td>
                 <td className='stat-td'>{team.conf_final}%</td>
