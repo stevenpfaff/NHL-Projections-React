@@ -126,14 +126,22 @@ This is a great team with top tier talent to bail them out on any given night. I
                                 <td>{stars.cup_final}%</td>
                                 <td>{stars.cup_win}%</td>
                             </tr>
-                        </tbody>
+                        </tbody>  
                     </table>
-                </section>
-                <section id="about">
-                    As bad as I feel for hockey fans in Arizona, I am glad the Frankenstein experiment with the Coyotes is finally over. 
-                    Arizona looked to be a fringe playoff team until around the time the rumors of relocation came about last year.
-                    There is an exciting core of young players here and I love what they did with their blue line. Ingram looks like he could be a solid 1A goaltender for them as well. 
-                    New ownership and a concrete direction should go a long way for this group. I’d love to see them sneak into the playoffs.
+                    </section>
+                    <section id="about">
+                    This team rocks. I think it’s the best in the Western Conference.
+
+Robertson-Hintz-Johnston might be the best line in hockey. After that, their forward depth is excellent and has a good mix of veterans and young guys. I am fully expecting a Logan Stankoven breakout and I am excited to see Mavrik Bourque get a full slate of NHL games this year as well.
+
+They have a solid core of guys on the blueline, especially with the breakout of Thomas Harley last season. It gets a little thin after the big three guys though.
+
+Oettinger and DeSmith are coming off down years for their standards. I believe they will bounce back.
+
+If I had to pick a cup winner this early on, it would be these guys.
+
+                
+                    
                 </section>
                 <section id="projections">
                     <h2><img src={wild.logo} alt={`${wild.name} Logo`} className="team-logo" />{wild.name}</h2>
@@ -164,19 +172,16 @@ This is a great team with top tier talent to bail them out on any given night. I
                             </tr>
                         </tbody>
                     </table>
+                    
                 </section>
                 
                 <section id="about">
-                This team rocks. I think it’s the best in the Western Conference.
-
-Robertson-Hintz-Johnston might be the best line in hockey. After that, their forward depth is excellent and has a good mix of veterans and young guys. I am fully expecting a Logan Stankoven breakout and I am excited to see Mavrik Bourque get a full slate of NHL games this year as well.
-
-They have a solid core of guys on the blueline, especially with the breakout of Thomas Harley last season. It gets a little thin after the big three guys though.
-
-Oettinger and DeSmith are coming off down years for their standards. I believe they will bounce back.
-
-If I had to pick a cup winner this early on, it would be these guys.
-
+                    Of all simulation results this one might be the most on brand. The Wild are a great defensive team who could not get a save last year, 
+                    really struggled on the PK, and were in the bottom half of the league in scoring. 
+                    This team has a decent core of players up front and on defense. The Kaprizov-Ek-Boldy combo is absolutely deadly. Marco Rossi established himself as a full-time NHLer after all he has been through since being drafted.
+                    Brock Faber was excellent as a rookie. He should be able to play a more sheltered role with the return of Jared Spurgeon. Between the two of those guys and Jonas Brodin, this is a very strong blueline.
+                    Gustavsson took a step back and Fleury is 40. I think Gus bounces back and I would imagine Fleury is motivated to finish his Hall of Fame career on a high note. I am banking on this tandem to produce a save percentage higher than .897 this year. Wallstedt might be close to ready if things go sideways. 
+                    I don’t think Minnesota had a spectacular offseason by any means. They are still very hindered by the Suter and Parise buyouts so it’s hard for them to really do anything. I do believe Minnesota will be back in the playoff hunt with a save or two this year.
                 </section>
                 <section id="projections">
                     <h2><img src={predators.logo} alt={`${predators.name} Logo`} className="team-logo" />{predators.name}</h2>
@@ -290,12 +295,10 @@ Overall I think this is a contender in the Western Conference and I am excited t
                 </section>
             
                 <section id="about">
-                    Of all simulation results this one might be the most on brand. The Wild are a great defensive team who could not get a save last year, 
-                    really struggled on the PK, and were in the bottom half of the league in scoring. 
-                    This team has a decent core of players up front and on defense. The Kaprizov-Ek-Boldy combo is absolutely deadly. Marco Rossi established himself as a full-time NHLer after all he has been through since being drafted.
-                    Brock Faber was excellent as a rookie. He should be able to play a more sheltered role with the return of Jared Spurgeon. Between the two of those guys and Jonas Brodin, this is a very strong blueline.
-                    Gustavsson took a step back and Fleury is 40. I think Gus bounces back and I would imagine Fleury is motivated to finish his Hall of Fame career on a high note. I am banking on this tandem to produce a save percentage higher than .897 this year. Wallstedt might be close to ready if things go sideways. 
-                    I don’t think Minnesota had a spectacular offseason by any means. They are still very hindered by the Suter and Parise buyouts so it’s hard for them to really do anything. I do believe Minnesota will be back in the playoff hunt with a save or two this year.
+                As bad as I feel for hockey fans in Arizona, I am glad the Frankenstein experiment with the Coyotes is finally over. Arizona looked to be a fringe playoff team until around the time the rumors of relocation came about last year.
+
+There is an exciting core of young players here and I love what they did with their blue line. Ingram looks like he could be a solid 1A goaltender for them as well. New ownership and a concrete direction should go a long way for this group. I’d love to see them sneak into the playoffs.
+
                 </section>
                 <section id="projections">
                     <h2><img src={jets.logo} alt={`${jets.name} Logo`} className="team-logo" />{jets.name}</h2>

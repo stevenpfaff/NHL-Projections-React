@@ -35,7 +35,6 @@ class Percentiles extends Component {
         return (
           <div className="table-container">
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <p>Percentile outcomes based on 100,000 simulations of the 2024/2025 NHL season</p>
             <Table striped bordered hover>
               <thead>
                 <tr>
