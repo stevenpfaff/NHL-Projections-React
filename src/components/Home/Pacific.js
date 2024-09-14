@@ -50,8 +50,10 @@ class Pacific extends Component {
                     </table>
                 </section>
                 <section id="about">
-                These guys are not good. Anaheim has been rebuilding since 2018 and haven’t shown any signs of being near competitive. 
-                There are some exciting young pieces here, but I am skeptical of them taking the next step into a playoff team.
+                These guys are not good. Anaheim has been rebuilding since 2018 and haven’t shown any signs of being near competitive.
+                 John Gibson hasn’t been good in half of a decade, they are allegedly working on shipping Cam Fowler out of town, and 
+                 who knows what is going on with Trevor Zegras. There are some exciting young pieces here, but this looks like a bottom 
+                 5 team in the league.
                 </section>
                 <section id="projections">
                     <h2><img src={flames.logo} alt={`${flames.name} Logo`} className="team-logo" />{flames.name}</h2>
@@ -200,7 +202,7 @@ LA is a stingy defensive team and should still do a solid job of keeping pucks o
                     </table>
                 </section>
                 <section id="about">
-                These guys are not good. Despite that, San Jose had an active offseason and I would say they did an alright job. 
+                This is a bad NHL team. Despite that, San Jose had an active offseason and I would say they did an alright job. 
                 I love the Askarov trade for them. Trading for Walman was a nice piece of business as well. Obviously
                 Mack Celebrini is a huge get for their rebuild. Will Smith appears to be an exciting young prospect as well. 
                 Eklund should have a better year with some more talent in the lineup around him.
