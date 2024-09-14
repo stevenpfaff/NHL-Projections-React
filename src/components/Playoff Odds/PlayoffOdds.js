@@ -7,8 +7,8 @@ import './PlayoffOdds.css';
 class PlayoffOdds extends Component {
   constructor(props) {
     super(props);
-    const sortedData = [...data].sort((a, b) => b.proj_points - a.proj_points);
-    this.state = { data: sortedData, sortConfig: { key: 'playoffs', direction: 'descending' } };
+    const sortedData = [...data].sort((a, b) => b.cup_win - a.cup_win);
+    this.state = { data: sortedData, sortConfig: { key: 'cup_win', direction: 'descending' } };
   }
 
   sortData = (key) => {
@@ -38,7 +38,6 @@ class PlayoffOdds extends Component {
     return (
       <div className="table-container">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <p>Playoff odds based on 100,000 simulations of the 2024/2025 NHL season</p>
         <Table striped bordered hover>
           <thead>
             <tr>

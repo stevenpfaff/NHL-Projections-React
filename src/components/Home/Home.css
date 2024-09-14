@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+h2 {
+    color: #444;
+    font-size: 2em;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 950px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#about p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-position: outside;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.projection-table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.projection-table th, .projection-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.projection-table th {
+    color: white;
+}
+
+.team-logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+    align-content: center;
+}
+
+.page-header {
+    text-align: center;
+    margin: 40px; /* Adjust the margin as needed */
+    font-size: 2.5rem; /* Make the text larger */
+    color: #013a68; /* Example color, you can change this */
+}
+
+
+
+/* Photo Gallery */
+#gallery {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

@@ -1,4 +1,5 @@
-[
+{
+    "teams":[
     {
         "id": 1,
         "name": "Anaheim Ducks",
@@ -704,3 +705,4 @@
         "logo": "/Images/jets.png"
     }
 ]
+}
