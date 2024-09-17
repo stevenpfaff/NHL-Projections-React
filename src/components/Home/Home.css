@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap');
 
-/* General Styles */
 body {
     font-family: 'Bebas Neue', sans-serif;
     background-color: #f4f4f4;
@@ -21,7 +20,6 @@ h2 {
     margin-top: 20px;
 }
 
-/* About Section */
 #about {
     background-color: #fff;
     margin: 40px auto;
@@ -48,9 +46,11 @@ li {
     line-height: 1.6;
 }
 
+/* Table Styles */
 .projection-table {
-    width: 50%;
-    margin: 0 auto;
+    width: 100%; /* Full width within the section */
+    max-width: 950px; /* Limit width to match the text body's width */
+    margin: 0 auto; /* Center the table */
     border-collapse: collapse;
     margin-bottom: 20px;
 }
@@ -73,37 +73,68 @@ li {
 
 .page-header {
     text-align: center;
-    margin: 40px; /* Adjust the margin as needed */
-    font-size: 2.5rem; /* Make the text larger */
-    color: #013a68; /* Example color, you can change this */
+    margin: 40px;
+    font-size: 2.5rem;
+    color: #013a68;
 }
 
 
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
 
-/* Photo Gallery */
-#gallery {
-    margin: 40px auto;
-    max-width: 900px;
-    padding: 10px;
-    text-align: center;
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .projection-table th, .projection-table td {
+        padding: 8px;
+        font-size: 0.8em; 
+    }
+
+    .projection-table {
+        width: 100%;
+    }
+
+    .team-logo {
+        max-width: 80px;
+    }
+
+    h2 {
+        font-size: 1.5em; 
+    }
+
+    #about {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .page-header {
+        font-size: 2rem;
+        margin: 20px;
+    }
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-}
+@media (max-width: 480px) {
+    .projection-table th, .projection-table td {
+        padding: 6px;
+        font-size: 0.7em;
+    }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
+    h2 {
+        font-size: 1.5em;
+    }
 
-.gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    .team-logo {
+        max-width: 80px;
+    }
+
+    #about {
+        padding: 10px;
+    }
+
+    .page-header {
+        font-size: 1.8rem;
+    }
 }

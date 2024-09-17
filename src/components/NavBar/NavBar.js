@@ -15,6 +15,7 @@ const NavBar = () => {
           <NavDropdown title="Division Previews">
             <NavDropdown.Item href="/Central">Central</NavDropdown.Item>
             <NavDropdown.Item href="/Pacific">Pacific</NavDropdown.Item>
+            <NavDropdown.Item href="/Atlantic">Atlantic</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
