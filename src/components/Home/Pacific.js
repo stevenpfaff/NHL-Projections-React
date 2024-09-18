@@ -51,9 +51,9 @@ class Pacific extends Component {
                 </section>
                 <section id="about">
                 These guys are not good. Anaheim has been rebuilding since 2018 and haven’t shown any signs of being near competitive.
-                 John Gibson hasn’t been good in half of a decade, they are allegedly working on shipping Cam Fowler out of town, and 
-                 who knows what is going on with Trevor Zegras. There are some exciting young pieces here, but this looks like a bottom 
-                 5 team in the league.
+                John Gibson hasn’t been good in half of a decade, they are allegedly working on shipping Cam Fowler out of town, and 
+                who knows what is going on with Trevor Zegras. There are some exciting young pieces here, but this looks like a bottom 
+                5 team in the league.
                 </section>
                 <section id="projections">
                     <h2><img src={flames.logo} alt={`${flames.name} Logo`} className="team-logo" />{flames.name}</h2>
@@ -124,13 +124,10 @@ class Pacific extends Component {
                     </table>
                 </section>
                 <section id="about">
-                What a season the Oilers had. They almost pulled off the impossible after being down 3-0 to Florida in the final. For the flaws that this team has, they have the best player in the sport to bail them out on any given night.
-
-Minus hiring Stan Bowman, I like what Edmonton did this summer. Getting rid of Ceci was a nice bit of business. Coaches seem to love putting Mr. Ceci into situations he cannot handle, so taking him away is a plus. Viktor Arvidsson is an excellent add as well as Jeff Skinner. 
-
-This team is going to score a ton of goals and are going to be cup contenders once again.
-
-
+                What a season the Oilers had. They almost pulled off the impossible after being down 3-0 to Florida in the final. For the flaws that this team has, they have 
+                the best player in the sport to bail them out on any given night. Minus hiring Stan Bowman, I like what Edmonton did this summer. Getting rid of Ceci was a nice 
+                bit of business. Coaches seem to love putting Mr. Ceci into situations he cannot handle, so taking him away is a plus. Viktor Arvidsson is an excellent add as well 
+                as Jeff Skinner (if you can get him on a good year). This team is going to score a ton of goals and are going to be cup contenders once again.
                 </section>
                 <section id="projections">
                     <h2><img src={kings.logo} alt={`${kings.name} Logo`} className="team-logo" />{kings.name}</h2>
@@ -163,13 +160,12 @@ This team is going to score a ton of goals and are going to be cup contenders on
                     </table>
                 </section>
                 <section id="about">
-                This feels high for the Kings. They played very well under Jim Hiller last year but I think they had a very poor offseason. Losing Roy and Arvidsson in free agency hurts. Getting out from the Dubois deal was a success as it very clearly wasn’t a fit, but the situation still stings based on what they had to give up to get him in the first place. I am optimistic Kuemper can bounce back from a tough season in Washington. That contract they gave Joel Edmundson is insane. I don’t think he is worth half of that at half of the term.
-
-It was great to see Byfield establish himself last year. I’d like to see him take the step into being a superstar. Trevor Moore continues to be found gold for them as well.
-
-LA is a stingy defensive team and should still do a solid job of keeping pucks out of the net despite some key losses. The goal scoring might be middling to below average. I think this team gets into the playoffs.
-
-
+                This feels high for the Kings. They played very well under Jim Hiller last year but I think they had a very poor offseason. Losing Roy and Arvidsson in free 
+                agency hurts. Getting out from the Dubois deal was a success as it very clearly wasn’t a fit, but the situation still stings based on what they had to give up 
+                to get him in the first place. I am optimistic Kuemper can bounce back from a tough season in Washington. That contract they gave Joel Edmundson is insane. I 
+                don’t think he is worth half of that at half of the term. It was great to see Byfield establish himself last year. I’d like to see him take the step into being 
+                a superstar. Trevor Moore continues to be found gold for them as well. LA is a stingy defensive team and should still do a solid job of keeping pucks out of the
+                net despite some key losses. The goal scoring might be middling to below average.
                 </section>
                 <section id="projections">
                     <h2><img src={sharks.logo} alt={`${sharks.name} Logo`} className="team-logo" />{sharks.name}</h2>
@@ -207,7 +203,6 @@ LA is a stingy defensive team and should still do a solid job of keeping pucks o
                 Mack Celebrini is a huge get for their rebuild. Will Smith appears to be an exciting young prospect as well. 
                 Eklund should have a better year with some more talent in the lineup around him.
                 The Sharks should be more competitive this year, but there are still going to be lots of tough nights in San Jose. 
-
                 </section>
                 <section id="projections">
                     <h2><img src={kraken.logo} alt={`${kraken.name} Logo`} className="team-logo" />{kraken.name}</h2>
@@ -242,8 +237,8 @@ LA is a stingy defensive team and should still do a solid job of keeping pucks o
                 <section id="about">
                 Seattle took a major step back last season as they could not score goals. 
                 They were plenty effective keeping the puck out of the net and got a pleasantly
-                 surprising season from Joey Daccord in net. I really like the Kraken blueline. 
-                 I’d bet Matty Beniers bounces back offensively this year. Seattle should be on the playoff bubble.
+                surprising season from Joey Daccord in net. I really like the Kraken blueline. 
+                I’d bet Matty Beniers bounces back offensively this year. Seattle should be on the playoff bubble.
                 </section>
                 <section id="projections">
                     <h2><img src={canucks.logo} alt={`${canucks.name} Logo`} className="team-logo" />{canucks.name}</h2>
@@ -276,13 +271,11 @@ LA is a stingy defensive team and should still do a solid job of keeping pucks o
                     </table>
                 </section>
                 <section id="about">
-                The Canucks have finally arrived. This team rocks and is a legit cup contender. 
-
-Miller and Pettersson are killers. Boeser returned to form when his time in Vancouver looked finished (not sure he is going to shoot 19% again). Joshua, Hoglander, and Garland are awesome depth pieces. They also added Jake DeBrusk who is awesome (so glad he is out of the Leafs division).
-
-Hughes and Hronek have turned out to be a near perfect match. Forbort is a nice depth add on defense that will help out the PK. Tyler Myers is still Tyler Myers and plays way too much but the Canucks love him.
-
-The only question is around Demko’s health. Silovs might be thrown into the fire once again to start the season.
+                The Canucks have finally arrived. This team rocks and is a legit cup contender. Miller and Pettersson are killers. Boeser returned to form when his time 
+                in Vancouver looked finished (not sure he is going to shoot 19% again). Joshua, Hoglander, and Garland are awesome depth pieces. They also added Jake DeBrusk 
+                who is solid (so glad he is out of the Leafs division). Hughes and Hronek have turned out to be a near perfect match. Forbort is a nice depth add on defense
+                that will help out the PK. Tyler Myers is still Tyler Myers and plays way too much but the Canucks love him. The only question is around Demko’s health. Silovs 
+                might be thrown into the fire once again to start the season.
 
                 </section>
                 <section id="projections">
@@ -319,7 +312,7 @@ The only question is around Demko’s health. Silovs might be thrown into the fi
                 Vegas had a very on brand season last year. Slightly above league average in just about every category. 
                 They cut bait with an original Golden Knight in Jonathan Marchessault which definitely leaves a hole on the wing. 
                 Their newfound center depth with Tomas Hertl is very impressive. Hanifin is a nice add to an already strong blueline as well.
-                 I think Vegas will do what they always do and cruise to a playoff spot.
+                I think Vegas will do what they always do and cruise to a playoff spot.
 
                 </section>
             </div>

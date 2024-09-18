@@ -13,7 +13,7 @@ class Home extends Component {
         This simulation is run 100,000 times to get the widest range of outcomes.
       </p>
 
-      <h3>Main Logic</h3>
+      <h2>Main Logic</h2>
       <p>
         Players are evaluated based on how they perform at even strength both offensively and defensively. 
         Passing and shooting ratings are also applied but weigh less than the even strength categories. 

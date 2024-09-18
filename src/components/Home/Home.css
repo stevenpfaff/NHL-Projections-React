@@ -27,13 +27,15 @@ h2 {
     max-width: 950px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: justify;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 #about p {
     font-size: 1.2em;
     margin: 10px 0 20px;
+    text-align: justify;
+    text-align-last: left;
 }
 
 ul {

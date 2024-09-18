@@ -49,11 +49,11 @@ class Central extends Component {
                     </table>
                 </section>
                 <section id="about">
-                        Believe it or not, I saw the Blackhawks beat the Senators in person last year. 
-                        The Hawks were nothing short of abysmal in season 1 of the Bedard era. They finished 7 standings points worse in 2024 than 2023. 
-                        I don’t believe Chicago had any playoff intentions last season but I’m sure they wanted to be far more competitive than they were. 
-                        Getting 54 combined games out of Perry, Hall, and Athanasiou was a big blow in terms of having NHL caliber talent on the ice. 
-                        Lukas Reichel not taking a step forward was also a bummer. Despite all of this, Petr Mrazek was… good?
+                    Believe it or not, I saw the Blackhawks beat the Senators in person last year. 
+                    The Hawks were nothing short of abysmal in season 1 of the Bedard era. They finished 7 standings points worse in 2024 than 2023. 
+                    I don’t believe Chicago had any playoff intentions last season but I’m sure they wanted to be far more competitive than they were. 
+                    Getting 54 combined games out of Perry, Hall, and Athanasiou was a big blow in terms of having NHL caliber talent on the ice. 
+                    Lukas Reichel not taking a step forward was also a bummer. Despite all of this, Petr Mrazek was… good?
                     I like what Chicago did this offseason. I think they have improved in all categories. 
                     Getting actual NHL players to surround Bedard should help him out quite a bit after being fed to the wolves last season. 
                     Brodie and Martinez to patch up the third pair (Jarred Tinordi played 59 games?!) is a huge improvement. 
@@ -91,13 +91,13 @@ class Central extends Component {
                     </table>
                 </section>
                 <section id="about">
-                Talk about a top heavy roster. The Avs are still a strong team but their cap situation has left them in a bit of a tizzy. Val Nichushkin not being available is a huge blow and who knows what or how much they are going to get out of Landeskog. Hopefully Lehkonen can put together a healthy season as well. Jonathan Drouin reviving his career is an awesome story. Mittelstadt appears to be developing into a very capable 2C. Ross Colton and Logan O’Connor are nice depth pieces as well. After that, it gets real thin real quick.
-
-Makar and Toews are a ridiculous top pair. Girard and Manson are fine enough as a second pair. I like the Brannstrom acquisition too, it never felt like he got a full look in Ottawa. 
-
-Georgiev was not great last year. Not sure if it was a workload issue for him or what, but they will need him to bounce back. Annunen was spectacular in 14 games as a backup, they may need to give him a few more starts this year.
-
-This is a great team with top tier talent to bail them out on any given night. I expect the Avs near the top of the West again and they should contend for the cup.
+                Talk about a top heavy roster. The Avs are still a strong team but their cap situation has left them in a bit of a tizzy. Val Nichushkin not being available
+                is a huge blow and who knows what or how much they are going to get out of Landeskog. Hopefully Lehkonen can put together a healthy season as well. Jonathan 
+                Drouin reviving his career is an awesome story. Mittelstadt appears to be developing into a very capable 2C. Ross Colton and Logan O’Connor are nice depth 
+                pieces as well. After that, it gets real thin real quick. Makar and Toews are a ridiculous top pair. Girard and Manson are fine enough as a second pair. I like 
+                the Brannstrom acquisition too, it never felt like he got a full look in Ottawa. Georgiev was not great last year. Not sure if it was a workload issue for him or
+                what, but they will need him to bounce back. Annunen was spectacular in 14 games as a backup, they may need to give him a few more starts this year. This is a great 
+                team with top tier talent to bail them out on any given night. I expect the Avs near the top of the West again and they should contend for the cup.
                 </section>
                 <section id="projections">
                     <h2><img src={stars.logo} alt={`${stars.name} Logo`} className="team-logo" />{stars.name}</h2>
@@ -130,18 +130,11 @@ This is a great team with top tier talent to bail them out on any given night. I
                     </table>
                     </section>
                     <section id="about">
-                    This team rocks. I think it’s the best in the Western Conference.
-
-Robertson-Hintz-Johnston might be the best line in hockey. After that, their forward depth is excellent and has a good mix of veterans and young guys. I am fully expecting a Logan Stankoven breakout and I am excited to see Mavrik Bourque get a full slate of NHL games this year as well.
-
-They have a solid core of guys on the blueline, especially with the breakout of Thomas Harley last season. It gets a little thin after the big three guys though.
-
-Oettinger and DeSmith are coming off down years for their standards. I believe they will bounce back.
-
-If I had to pick a cup winner this early on, it would be these guys.
-
-                
-                    
+                    This team rocks. I think it’s the best in the Western Conference. Robertson-Hintz-Johnston might be the best line in hockey. After that, their forward 
+                    depth is excellent and has a good mix of veterans and young guys. I am fully expecting a Logan Stankoven breakout and I am excited to see Mavrik Bourque 
+                    get a full slate of NHL games this year as well. They have a solid core of guys on the blueline, especially with the breakout of Thomas Harley last season. 
+                    It gets a little thin after the big three guys though. Oettinger and DeSmith are coming off down years for their standards. I believe they will bounce back.
+                    If I had to pick a cup winner this early on, it would be these guys.  
                 </section>
                 <section id="projections">
                     <h2><img src={wild.logo} alt={`${wild.name} Logo`} className="team-logo" />{wild.name}</h2>
@@ -214,13 +207,14 @@ If I had to pick a cup winner this early on, it would be these guys.
                     </table>
                 </section>
                 <section id="about">
-                Did anyone have more fun this summer than Nashville Predator fans? Brady Skjei, Jonathan Marchessault, and Steven Stamkos all came to town via free agency. They also extended their pending superstar free agent Juuse Saros. The lone low point was the Yaroslav Askarov trade saga that went down at the end of summer.
-
-Nashville was already a bit of a surprise success last year. They looked dead in the water after a 9-2 loss at the hand of Dallas in mid February. They went 20-5-3 from that point on. Filip Forsberg set a career high in points with new linemates Ryan O’Reilly and Gustav Nyquist. Roman Josi was once again a Norris candidate. Despite a uncharacteristically poor start from Saros, he righted the ship at the end of the season.
-
-Nashville is a very interesting team in the fact they are not exactly a young team and are carried by solid veterans. Evangelista is the only NHL mainstay of their “young” players. Parssinen and Tomasino split time between the AHL and NHL again. It would be nice to see one of those two take a spot and keep it.
-
-Overall I think this is a contender in the Western Conference and I am excited to see what they can do.
+                Did anyone have more fun this summer than Nashville Predator fans? Brady Skjei, Jonathan Marchessault, and Steven Stamkos all came to town via free agency. 
+                They also extended their pending superstar free agent Juuse Saros. The lone low point was the Yaroslav Askarov trade saga that went down at the end of summer.
+                Nashville was already a bit of a surprise success last year. They looked dead in the water after a 9-2 loss at the hand of Dallas in mid February. They went 
+                20-5-3 from that point on. Filip Forsberg set a career high in points with new linemates Ryan O’Reilly and Gustav Nyquist. Roman Josi was once again a Norris 
+                candidate. Despite a uncharacteristically poor start from Saros, he righted the ship at the end of the season. Nashville is a very interesting team in the fact 
+                they are not exactly a young team and are carried by solid veterans. Evangelista is the only NHL mainstay of their “young” players. Parssinen and Tomasino split 
+                time between the AHL and NHL again. It would be nice to see one of those two take a spot and keep it. Overall I think this is a contender in the Western Conference 
+                and I am excited to see what they can do.
 
                 </section>
                 <section id="projections">
@@ -295,10 +289,10 @@ Overall I think this is a contender in the Western Conference and I am excited t
                 </section>
             
                 <section id="about">
-                As bad as I feel for hockey fans in Arizona, I am glad the Frankenstein experiment with the Coyotes is finally over. Arizona looked to be a fringe playoff team until around the time the rumors of relocation came about last year.
-
-There is an exciting core of young players here and I love what they did with their blue line. Ingram looks like he could be a solid 1A goaltender for them as well. New ownership and a concrete direction should go a long way for this group. I’d love to see them sneak into the playoffs.
-
+                As bad as I feel for hockey fans in Arizona, I am glad the Frankenstein experiment with the Coyotes is finally over. Arizona looked to be a fringe playoff 
+                team until around the time the rumors of relocation came about last year. There is an exciting core of young players here and I love what they did with their
+                 blue line. Ingram looks like he could be a solid 1A goaltender for them as well. New ownership and a concrete direction should go a long way for this group. 
+                 I’d love to see them sneak into the playoffs.
                 </section>
                 <section id="projections">
                     <h2><img src={jets.logo} alt={`${jets.name} Logo`} className="team-logo" />{jets.name}</h2>
@@ -331,16 +325,15 @@ There is an exciting core of young players here and I love what they did with th
                     </table>
                 </section>
                 <section id="about">
-                Connor Hellebuyck went supernova again and propelled the Jets into a 110 point season. Josh Morrissey has solidified himself as a legit Number 1 defenseman. Scheifele, Connor, and Ehlers did a good enough job doing the heavy lifting on offense too.
-
-I am dying for a fully healthy season for Gabe Vilardi. The Jets could benefit from Perfetti taking a step this year as well. I am skeptical on Winnipeg’s center depth behind Scheifele and Lowry. Outside of that, they have pretty solid depth on the wings. Alex Iaffalo is still incredibly effective defensively, but has taken on a lesser role in Winnipeg that seems to have limited his offensive ceiling.
-
-This blueline has potential to be a disaster outside of Morrissey and DeMelo. Gone are the days of underrated Colin Miller. Neal Pionk on the second pair is a nightmare. Logan Stanley can’t stay healthy and isn’t very good when he is in the lineup. Maybe they have something in Samberg?
-
-The Jets ace in their back pocket is obviously Mr. Hellebuyck. Kaapo Kahkonen and Eric Comrie being behind him in case of emergency causes concerns to say the least. 
-
-You can argue that every hockey team lives and dies by their goaltender. However, the situation in Winnipeg feels a bit more extreme with the lack of goaltending and defensive depth. I think Winnipeg is closer to a bubble playoff team rather than a 110 point juggernaut regardless of health.
-
+                Connor Hellebuyck went supernova again and propelled the Jets into a 110 point season. Josh Morrissey has solidified himself as a legit Number 1 defenseman. 
+                Scheifele, Connor, and Ehlers did a good enough job doing the heavy lifting on offense too. I am dying for a fully healthy season for Gabe Vilardi. The Jets 
+                could benefit from Perfetti taking a step this year as well. I am skeptical on Winnipeg’s center depth behind Scheifele and Lowry. Outside of that, they have 
+                pretty solid depth on the wings. Alex Iaffalo is still incredibly effective defensively, but has taken on a lesser role in Winnipeg that seems to have limited 
+                his offensive ceiling. This blueline has potential to be a disaster outside of Morrissey and DeMelo. Gone are the days of underrated Colin Miller. Neal Pionk 
+                on the second pair is a nightmare. Logan Stanley can’t stay healthy and isn’t very good when he is in the lineup. Maybe they have something in Samberg? The Jets
+                ace in their back pocket is obviously Mr. Hellebuyck. Kaapo Kahkonen and Eric Comrie being behind him in case of emergency causes concerns to say the least. You 
+                can argue that every hockey team lives and dies by their goaltender. However, the situation in Winnipeg feels a bit more extreme with the lack of goaltending and 
+                defensive depth. I think Winnipeg is closer to a bubble playoff team rather than a 110 point juggernaut regardless of health.
                 </section>
             </div>
         );
