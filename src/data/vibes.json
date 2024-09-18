@@ -155,10 +155,10 @@
     {
         "id": 18,
         "name": "New York Islanders",
-        "abrv": "NYI",
+        "abrv": "NYI - X",
         "primaryColor": "#00539b",
         "division": "Metropolitan",
-        "place": 5,
+        "place": 4,
         "logo": "/Images/islanders.png"
     },
     {
@@ -272,10 +272,10 @@
     {
         "id": 31,
         "name": "Washington Capitals",
-        "abrv": "WSH - X",
+        "abrv": "WSH",
         "primaryColor": "#041E42",
         "division": "Metropolitan",
-        "place": 4,
+        "place": 5,
         "logo": "/Images/capitals.png"
     },
     {
