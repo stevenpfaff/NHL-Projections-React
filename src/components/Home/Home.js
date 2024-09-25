@@ -7,9 +7,9 @@ class Home extends Component {
         return (
             <div>
                 <section id="about">
-                <h2>NHL 2024/2025 Season Simulation Results</h2>
+                <h2>Only North</h2>
       <p>
-        These are the results of a Python script written to simulate the 2024/2025 NHL season. 
+        This website displays the results of a program written to simulate the 2024/2025 NHL season. 
         This simulation is run 100,000 times to get the widest range of outcomes.
       </p>
 
@@ -18,8 +18,7 @@ class Home extends Component {
         Players are evaluated based on how they perform at even strength both offensively and defensively. 
         Passing and shooting ratings are also applied but weigh less than the even strength categories. 
         A version of the baseball scouting scale is used (20-80 ratings), where 20 is the minimum, 
-        50 is average, and 80 is the top of the league. Superstars are given ratings between 85 and 90 to 
-        weigh them a bit heavier.
+        50 is average, and 80 is the top of the league.
       </p>
 
       <p>

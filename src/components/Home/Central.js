@@ -95,7 +95,7 @@ class Central extends Component {
                 is a huge blow and who knows what or how much they are going to get out of Landeskog. Hopefully Lehkonen can put together a healthy season as well. Jonathan 
                 Drouin reviving his career is an awesome story. Mittelstadt appears to be developing into a very capable 2C. Ross Colton and Logan O’Connor are nice depth 
                 pieces as well. After that, it gets real thin real quick. Makar and Toews are a ridiculous top pair. Girard and Manson are fine enough as a second pair. I like 
-                the Brannstrom acquisition too, it never felt like he got a full look in Ottawa. Georgiev was not great last year. Not sure if it was a workload issue for him or
+                the Brannstrom acquisition, it never felt like he got a full look in Ottawa. Georgiev was not great last year. Not sure if it was a workload issue for him or
                 what, but they will need him to bounce back. Annunen was spectacular in 14 games as a backup, they may need to give him a few more starts this year. This is a great 
                 team with top tier talent to bail them out on any given night. I expect the Avs near the top of the West again and they should contend for the cup.
                 </section>

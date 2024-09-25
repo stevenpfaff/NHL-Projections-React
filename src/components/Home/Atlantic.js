@@ -95,7 +95,7 @@ class Atlantic extends Component {
                 <section id="about">
                 I bought into the Buffalo hype coming into the 2023/2024 season. Unfortunately the high flying offensive team fell from 296 goals in 2023 to 246 in 2024.
                 Thompson, Cozens, and Tuch regressed in terms of offensive production. In what continues to be one of the most bizarre careers, Jeff Skinner had a below
-                average Jeff Skinner season which led to his buyout. Buffalo was a lot better at keeping pucks out of the net last year. UPL took a huge step last year 
+                average Jeff Skinner season and subsequently led to his buyout. Buffalo was a lot better at keeping pucks out of the net last year. UPL took a huge step last year 
                 and looks to be a legitimate answer for a starting goalie. If Levi takes a step, this could be a solid goaltending tandem. Rasmus Dahlin has established 
                 himself as a truly elite number 1 on defense. Owen Power took a huge stride in his defensive game last season as well. Bowen Byrams career has obviously 
                 been disappointing so far (at least he played 73 games last year) hopefully Buffalo can unlock something there. I think there are exciting pieces here.
@@ -143,7 +143,7 @@ class Atlantic extends Component {
                 faces the leagues toughest competition. The forward group is pretty similar to last year. Tarasenko is a scoring upgrade on Perron from last year. Having Kane
                 for a full season will help the offense as well. The Wings got made fun of for signing a ton of goalies, but I actually like it. Talbot, while on the wrong
                 side of 30, has been pretty consistent since 2020. Lyon was huge for them when Husso went down/was bad last season after doing the same thing for the Panthers
-                in 2023. There are much worse 4th goalies you can have than Jack Campbell. I will always cheer for Jack Campbell. Being close to home whether he is in the NHL
+                in 2023. There are much worse 4th goalies you can have than Jack Campbell, who I will always be cheering for. Being close to home whether he is in the NHL
                 or AHL might be awesome for him. I am skeptical of this team and I think they overperformed last season. I don’t like the way Steve Yzerman has handled free 
                 agency the past few years. There are exciting players on this team and in the system that they need to step up to truly turn this franchise around. Detroit
                 is young, not bad enough to be a lottery team, and stuck behind good Atlantic teams.
@@ -261,15 +261,15 @@ class Atlantic extends Component {
                     </table>
                 </section>
                 <section id="about">
-                Not much has gone right in Ottawa since their 2017 run to the conference finals. After taking a step in 2022/2023, they pretty much treaded water.
+                Not much has gone right in Ottawa since their 2017 run to the conference finals. After taking a step in 2022/2023, they tread water last year.
                 They could not get a save last year as Joonas Korpisalo was one of the worst goalies in the NHL. Anton Forsberg has not been the same since getting
                 knee surgery following the 2022 season. Ottawa’s top 4 defenders are very solid. Sanderson has emerged as a solid top pair guy. Chabot, while flawed 
                 defensively, is an elite offensive defenseman (who could use a fully healthy season). Newly acquired Nick Jensen could bring some stability to Chabot’s 
                 game. Jensen has been a steady defensive defenseman for years, and could be a better fit than Chychrun was. Zub is also as steady as they come back there. 
                 Kleven and Bernard-Docker are interesting enough pieces on the third pair, hopefully they keep Travis Hamonic out of the lineup. Their top 9 forwards 
-                are solid as well. Giroux has aged and fit in wonderfully with Tkachuk and Stutzle. Drake Batherson has sort of underrated as a second line winger in my 
+                are solid as well. Giroux has aged and fit in wonderfully with Tkachuk and Stutzle. Drake Batherson has been underrated as a second line winger in my 
                 opinion. David Perron was brought in to bolster the power play. A healthy season from Josh Norris would go a long way for the Sens, but that appears to be 
-                a longshot at this point. Some peace and quiet could go a long way for Ottawa. New ownership has to be a little bit settled in now, they shouldn’t be losing
+                a longshot at this point. Some peace and quiet could do wonders for Ottawa. New ownership has to be a little bit settled in now, they shouldn’t be losing
                 a first round pick for the previous regimes errors, and one of their players shouldn’t be facing any gambling suspensions. Ottawa addressed their biggest 
                 issue in goal and I believe it will go a long way for them. 
                 </section>
