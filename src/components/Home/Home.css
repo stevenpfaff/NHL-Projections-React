@@ -24,7 +24,7 @@ h2 {
     background-color: #fff;
     margin: 40px auto;
     padding: 20px;
-    max-width: 950px;
+    max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: justify;
@@ -32,7 +32,7 @@ h2 {
 }
 
 #about p {
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 10px 0 20px;
     text-align: justify;
     text-align-last: left;
@@ -51,7 +51,7 @@ li {
 /* Table Styles */
 .projection-table {
     width: 100%; /* Full width within the section */
-    max-width: 950px; /* Limit width to match the text body's width */
+    max-width: 800px; /* Limit width to match the text body's width */
     margin: 0 auto; /* Center the table */
     border-collapse: collapse;
     margin-bottom: 20px;
