@@ -50,10 +50,24 @@ class Pacific extends Component {
                     </table>
                 </section>
                 <section id="about">
-                These guys are not good. Anaheim has been rebuilding since 2018 and haven’t shown any signs of being near competitive.
-                John Gibson hasn’t been good in half of a decade, they are allegedly working on shipping Cam Fowler out of town, and 
-                who knows what is going on with Trevor Zegras. There are some exciting young pieces here, but this looks like a bottom 
-                5 team in the league.
+                    <p>
+                    Anaheim has been rebuilding since 2018 and haven’t shown any signs of being near competitive. The Ducks have had back to back sub 60 point seasons.
+                    </p>
+                    <p>
+                    John Gibson hasn’t been good in half of a decade and it appears he is going to miss some time to begin the year. They are allegedly working on shipping 
+                    Cam Fowler out of town. It’s hard to make out what Trevor Zegras’ future with the team is after a year riddled with contract negotiations, injuries, and 
+                    trade rumors. Ryan Strome has really fallen off since coming to Anaheim.
+                    </p>
+                    <p>
+                    It isn’t all bad for Anaheim as they have a very promising young core. Mason McTavish took a step forward, Leo Carlsson was spectacular in limited action 
+                    as a rookie, and Pavel Mintyukov had a great rookie season as well. There is also hope for this Ducks team that my model doesn’t currently take into account. 
+                    They have high end prospects with little to no NHL experience that are going to crack the lineup and play significant roles. Cutter Gauthier is one of the most 
+                    exciting prospects in hockey and had a monster sophomore year at Boston College. Sam Colangeo also had a great senior year in the NCAA. 
+                    </p>
+                    <p>
+                    Anaheim probably isn’t a playoff team this year, but I wouldn’t be surprised to be on the bubble. They are in a pretty weak division and young talent goes a long 
+                    way in today’s NHL. 
+                    </p>
                 </section>
                 <section id="projections">
                     <h2><img src={flames.logo} alt={`${flames.name} Logo`} className="team-logo" />{flames.name}</h2>
@@ -86,12 +100,22 @@ class Pacific extends Component {
                     </table>
                 </section>
                 <section id="about">
-                Things have not been going well in Calgary. So many of their stars have left town and alot of players
-                on this team lost a friend in a horrific way this summer. It could be a really tough season in Calgary for multiple reasons.
-                They need to figure out a way to salvage the Jonathan Huberdeau disaster that's occurring. Their blueline might be one of 
-                the worst in the league. If Dustin Wolf doesn’t take a step their goaltending could be at the bottom of the league as well. 
-                I feel really bad for the Flames and their fans. I hope they prove me wrong and have an awesome season.
-
+                <p>
+                Things have not been going well in Calgary. So many of their stars have left town and alot of players on this team lost a friend in a horrific way this summer. 
+                This could be a really tough season in Calgary for a multitude of reasons.  
+                </p>
+                <p>
+                The best part of this team is their forward core and that is pretty uninspiring. Andrei Kuzmenko was awesome in 29 games after coming over from Vancouver. Nazem 
+                Kadri had a much better second year in Calgary. Connor Zary looks like he could be an awesome two-way forward. They need to figure out a way to salvage the Jonathan 
+                Huberdeau disaster that's occurring. 
+                </p>
+                <p>
+                Their blueline might be one of the worst in the league. Weegar and Andersson are good, after that it is pretty scary to look at. They are banking pretty heavily on 
+                Dustin Wolf to be ready to take on the starter role. Otherwise it’s Dan Vladar time and that also sounds horrifying.
+                </p>
+                <p>
+                I feel really bad for the Flames and their fans. I hope they prove me wrong and have an awesome season.  I think this might be a bottom 5 team in the league though.
+                </p>
                 </section>
                 <section id="projections">
                     <h2><img src={oilers.logo} alt={`${oilers.name} Logo`} className="team-logo" />{oilers.name}</h2>
@@ -124,10 +148,19 @@ class Pacific extends Component {
                     </table>
                 </section>
                 <section id="about">
-                What a season the Oilers had. They almost pulled off the impossible after being down 3-0 to Florida in the final. For the flaws that this team has, they have 
-                the best player in the sport to bail them out on any given night. Minus hiring Stan Bowman, I like what Edmonton did this summer. Getting rid of Ceci was a nice 
-                bit of business. Coaches seem to love putting Mr. Ceci into situations he cannot handle, so taking him away is a plus. Viktor Arvidsson is an excellent add as well 
-                as Jeff Skinner (if you can get him on a good year). This team is going to score a ton of goals and are going to be cup contenders once again.
+                    <p>
+                    What a season the Oilers had. They almost pulled off the impossible after being down 3-0 to Florida in the final. For the flaws that this team has, they have 
+                    the best player in the sport to bail them out on any given night. 
+                    </p>
+                    <p>
+                    Minus hiring Stan Bowman, I like what Edmonton did this summer. Extending Draisaitl is huge. Getting rid of Ceci and his contract was a nice bit of business. 
+                    Coaches seem to love putting Mr. Ceci into situations he cannot handle, so taking him away is a plus. Viktor Arvidsson is an excellent addition as well as Jeff 
+                    Skinner. Losing Broberg does hurt, as it looked like he began to figure it out at the NHL level during their cup run. Ty Emberson, Josh Brown, and Troy Stetcher 
+                    are now their 5, 6, and 7 on defense which definitely isn't great!
+                    </p>
+                    <p>
+                    This team is going to score a ton of goals and are going to be cup contenders once again.
+                    </p>
                 </section>
                 <section id="projections">
                     <h2><img src={kings.logo} alt={`${kings.name} Logo`} className="team-logo" />{kings.name}</h2>
@@ -160,12 +193,28 @@ class Pacific extends Component {
                     </table>
                 </section>
                 <section id="about">
-                This feels high for the Kings. They played very well under Jim Hiller last year but I think they had a very poor offseason. Losing Roy and Arvidsson in free 
-                agency hurts. Getting out from the Dubois deal was a success as it very clearly wasn’t a fit, but the situation still stings based on what they had to give up 
-                to get him in the first place. I am optimistic Kuemper can bounce back from a tough season in Washington. That contract they gave Joel Edmundson is insane. I 
-                don’t think he is worth half of that at half of the term. It was great to see Byfield establish himself last year. I’d like to see him take the step into being 
-                a superstar. Trevor Moore continues to be found gold for them as well. LA is a stingy defensive team and should still do a solid job of keeping pucks out of the
-                net despite some key losses. The goal scoring might be middling to below average.
+                <p>
+                The Kings had another solid regular season, which did not come without ups and downs. Todd McLellan was fired after going 23-15-10 and replaced by Jim Hiller who 
+                led them to a 21-12-1 stretch to end the season.  
+                </p>
+                <p>
+                The Kings had a tough offseason. Losing Matt Roy and Viktor Arvidsson in free agency hurts. That contract they gave Joel Edmundson is insane. I don’t think he is 
+                worth half of what he got. Getting out from the Dubois deal was a success as it very clearly wasn’t a fit, but the situation still stings based on what they had to 
+                give up to get him in the first place. As I am writing this, the Kings just announced that Drew Doughty will be out month to month with an ankle break, ouch. Despite 
+                all of this, the situation isn’t bleak in Los Angeles.  
+                </p>
+                <p>
+                Kopitar, Kempe, and Fiala continue to be awesome. It was great to see Quinton Byfield establish himself last year. We might be looking at him turning into a superstar this
+                year. Trevor Moore continues to be found gold for them. Phillip Danault has been one of the best two-way forwards in the game for the past eight seasons. 
+                </p>
+                <p>
+                The Kings have great young pieces on the blueline with Mikey Anderson, Jordan Spence, and Brandt Clarke. Clarke looks primed and ready to take on a full NHL season after dominating 
+                the American league last year. I am optimistic Kuemper can bounce back from a tough season in Washington, especially playing behind this group of guys.
+                </p>
+                <p>
+                LA is a stingy defensive team and should still do a solid job of keeping pucks out of the net. The offense will probably hover around the middle of the pack to slightly above average. 
+                This is more than likely a playoff team but I am hesitant to call them a cup contender. 
+                </p>
                 </section>
                 <section id="projections">
                     <h2><img src={sharks.logo} alt={`${sharks.name} Logo`} className="team-logo" />{sharks.name}</h2>
@@ -198,11 +247,21 @@ class Pacific extends Component {
                     </table>
                 </section>
                 <section id="about">
-                This is a bad NHL team. Despite that, San Jose had an active offseason and I would say they did an alright job. 
-                I love the Askarov trade for them. Trading for Walman was a nice piece of business as well. Obviously
-                Mack Celebrini is a huge get for their rebuild. Will Smith appears to be an exciting young prospect as well. 
-                Eklund should have a better year with some more talent in the lineup around him.
-                The Sharks should be more competitive this year, but there are still going to be lots of tough nights in San Jose. 
+                <p>
+                San Jose barely finished better than the 2017 Avalanche last year. Unlike Colorado, San Jose does not have the talent in house to make the turnaround the Avalanche did.
+                </p>
+                <p>
+                Mike Grier was able to capitalize on some teams who were in a bind this summer. Cody Ceci is not an awesome player by any means. However he can at least play at the NHL 
+                level and fetch a mid round pick at the trade deadline. Jake Walman is an awesome addition from a team improvement standpoint and they didn’t have to give up much for him. 
+                They got their goalie of the future in Yaroslav Askarov in a nice deal with Nashville as well. 
+                </p>
+                <p>
+                The biggest prize of the summer was obviously drafting Mack Celebrini. Getting Tyler Toffoli to play with him was a great move. Toffoli is still an awesome player who should 
+                help Celebrini out in his first few years.
+                </p>
+                <p>
+                It’s going to be another rough year in San Jose, but the Sharks should be more watchable than they were last year.
+                </p>
                 </section>
                 <section id="projections">
                     <h2><img src={kraken.logo} alt={`${kraken.name} Logo`} className="team-logo" />{kraken.name}</h2>
