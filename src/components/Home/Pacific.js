@@ -65,8 +65,8 @@ class Pacific extends Component {
                     exciting prospects in hockey and had a monster sophomore year at Boston College. Sam Colangeo also had a great senior year in the NCAA. 
                     </p>
                     <p>
-                    Anaheim probably isn’t a playoff team this year, but I wouldn’t be surprised to be on the bubble. They are in a pretty weak division and young talent goes a long 
-                    way in today’s NHL. 
+                    Anaheim probably isn’t a playoff team this year, but I wouldn’t be surprised for them to wind up on the bubble. They are in a pretty weak division and young talent 
+                    goes a long way in today’s NHL. 
                     </p>
                 </section>
                 <section id="projections">
@@ -111,10 +111,10 @@ class Pacific extends Component {
                 </p>
                 <p>
                 Their blueline might be one of the worst in the league. Weegar and Andersson are good, after that it is pretty scary to look at. They are banking pretty heavily on 
-                Dustin Wolf to be ready to take on the starter role. Otherwise it’s Dan Vladar time and that also sounds horrifying.
+                Dustin Wolf to be ready to take on the starter role. Otherwise it’s Dan Vladar time and that sounds horrifying.
                 </p>
                 <p>
-                I feel really bad for the Flames and their fans. I hope they prove me wrong and have an awesome season.  I think this might be a bottom 5 team in the league though.
+                I feel really bad for the Flames and their fans. I hope they prove me wrong and have an awesome season.  Unfortunately this might be a bottom 5 team in the league.
                 </p>
                 </section>
                 <section id="projections">
@@ -260,7 +260,7 @@ class Pacific extends Component {
                 help Celebrini out in his first few years.
                 </p>
                 <p>
-                It’s going to be another rough year in San Jose, but the Sharks should be more watchable than they were last year.
+                It’s going to be another rough year in San Jose, but the Sharks should be more watchable than they were last year with some young talent in the lineup.
                 </p>
                 </section>
                 <section id="projections">
@@ -294,10 +294,25 @@ class Pacific extends Component {
                     </table>
                 </section>
                 <section id="about">
-                Seattle took a major step back last season as they could not score goals. 
-                They were plenty effective keeping the puck out of the net and got a pleasantly
-                surprising season from Joey Daccord in net. I really like the Kraken blueline. 
-                I’d bet Matty Beniers bounces back offensively this year. Seattle should be on the playoff bubble.
+                <p>
+                Seattle took a major step back last season as they could not score goals. They were plenty effective keeping the puck out of the 
+                net and got a pleasantly surprising season from Joey Daccord in net. 
+                </p>
+                <p>
+                Seattle’s 5 on 5 shooting percentage dropped from 9.5% in 2023 to 7.1% in 2024. Eeli Tolvanen, Matty Beniers, and Andre Burakovsky 
+                each experienced a five point drop in shooting percentage, resulting in only 38 combined goals between the three of them. Burakovsky 
+                is a different circumstance as he had another season plagued with injuries. Jared McCann came back to Earth from a 19% back to roughly 
+                his career average. Jordan Eberle regressed to typical Jordan Eberle numbers (which are still more than fine). I think the offensive 
+                truth about Seattle lies somewhere in the middle of the 2023 and 2024 results, and they are due for a bit more shooting percentage luck 
+                this year. Chandler Stephenson got way too much money this summer, but he does add some scoring to the lineup as well.
+                </p>
+                <p>
+                The Kraken blueline is solid in that five of their top six guys are well above average. Adam Larsson being the outlier here, who Seattle 
+                really likes and my model does not. Brandon Montour was a big add this summer and should fit in nicely alongside Oleksiak.
+                </p>
+                <p>
+                Seattle should bounce back towards the playoff bubble with what I am expecting will be a better offensive season. 
+                </p>
                 </section>
                 <section id="projections">
                     <h2><img src={canucks.logo} alt={`${canucks.name} Logo`} className="team-logo" />{canucks.name}</h2>
@@ -330,12 +345,25 @@ class Pacific extends Component {
                     </table>
                 </section>
                 <section id="about">
-                The Canucks have finally arrived. This team rocks and is a legit cup contender. Miller and Pettersson are killers. Boeser returned to form when his time 
-                in Vancouver looked finished (not sure he is going to shoot 19% again). Joshua, Hoglander, and Garland are awesome depth pieces. They also added Jake DeBrusk 
-                who is solid (so glad he is out of the Leafs division). Hughes and Hronek have turned out to be a near perfect match. Forbort is a nice depth add on defense
-                that will help out the PK. Tyler Myers is still Tyler Myers and plays way too much but the Canucks love him. The only question is around Demko’s health. Silovs 
-                might be thrown into the fire once again to start the season.
-
+                <p>
+                It took awhile but the Canucks finally arrived and burst onto the scene with a 109 point season in 2024.
+                </p>
+                <p>
+                Miller and Pettersson are killers. Boeser returned to form when his time in Vancouver looked finished (not sure he is going to shoot 19% again). 
+                Joshua, Hoglander, and Garland are awesome depth pieces. They also added Jake DeBrusk who my model absolutely loves (so glad he is out of the 
+                Leafs division).
+                </p>
+                <p>
+                Hughes and Hronek have turned out to be a near perfect match. Forbort is a nice depth add on defense that will help out the PK. Tyler Myers is still 
+                Tyler Myers and plays way too much but the Canucks love him.
+                </p>
+                <p>
+                There is some mystery around Thatcher Demko’s health. It looks like they are going to try and patch the hole with a mixture of Kevin Lankinen and Arturs 
+                Silovs. Tampa survived a similar situation with Andrei Vasilevskiy last year, Vancouver can probably be expected to do the same without Demko.
+                </p>
+                <p>
+                Despite a high PDO last year, I think Vancouver improved over the summer and have established themselves as cup contenders.
+                </p>
                 </section>
                 <section id="projections">
                     <h2><img src={knights.logo} alt={`${knights.name} Logo`} className="team-logo" />{knights.name}</h2>
@@ -368,11 +396,23 @@ class Pacific extends Component {
                     </table>
                 </section>
                 <section id="about">
+                <p>
                 Vegas had a very on brand season last year. Slightly above league average in just about every category. 
+                </p>
+                <p>
                 They cut bait with an original Golden Knight in Jonathan Marchessault which definitely leaves a hole on the wing. 
-                Their newfound center depth with Tomas Hertl is very impressive. Hanifin is a nice add to an already strong blueline as well.
-                I think Vegas will do what they always do and cruise to a playoff spot.
-
+                They are attempting to patch it with the likes of Victor Olofsson and Alexander Holtz. Jack Eichel, William Karlsson, 
+                and Tomas Hertl as a three headed monster down the middle will more than suffice for their lack of talent on the wings.
+                </p>
+                <p>
+                Noah Hanifin came over from Calgary at the trade deadline and earned himself a nice extension with Vegas. There are no holes 
+                on this blueline. Adin Hill and Ilya Samsonov should be a more than capable tandem (as long as Samsonov doesn’t randomly forget 
+                how to play again).
+                </p>
+                <p>
+                It will be business as usual in Vegas and they will more than likely cruise to a playoff spot. This is not as strong as their cup 
+                winning team, but they are still a major threat in the Western Conference.
+                </p>
                 </section>
             </div>
         );

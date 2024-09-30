@@ -5,16 +5,16 @@
         "abrv": "ANA",
         "primaryColor": "#00685e",
         "division": "Pacific",
-        "place": 7,
+        "place": 6,
         "logo": "/Images/ducks.png"
     },
     {
         "id": 2,
         "name": "Boston Bruins",
-        "abrv": "BOS - X",
+        "abrv": "BOS",
         "primaryColor": "#FFB81C",
         "division": "Atlantic",
-        "place": 2,
+        "place": 6,
         "logo": "/Images/bruins.png"
     },
     {
@@ -32,7 +32,7 @@
         "abrv": "CGY",
         "primaryColor": "#D2001C",
         "division": "Pacific",
-        "place": 6,
+        "place": 7,
         "logo": "/Images/flames.png"
     },
     {
@@ -86,7 +86,7 @@
         "abrv": "DET",
         "primaryColor": "#ce1126",
         "division": "Atlantic",
-        "place": 6,
+        "place": 5,
         "logo": "/Images/red wings.png"
     },
     {
@@ -227,10 +227,10 @@
     {
         "id": 26,
         "name": "Tampa Bay Lightning",
-        "abrv": "TBL",
+        "abrv": "TBL - X",
         "primaryColor": "#002868",
         "division": "Atlantic",
-        "place": 5,
+        "place": 3,
         "logo": "/Images/lightning.png"
     },
     {
@@ -239,7 +239,7 @@
         "abrv": "TOR - X",
         "primaryColor": "#00205b",
         "division": "Atlantic",
-        "place": 3,
+        "place": 2,
         "logo": "/Images/leafs.png"
     },
     {
