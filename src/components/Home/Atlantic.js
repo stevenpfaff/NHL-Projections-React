@@ -160,13 +160,14 @@ class Atlantic extends Component {
                 </p>
                 <p>
                 There are some nightmare contracts on this team, especially on defense. Justin Holl is being paid $3.4 million for the next two years 
-                to be a healthy scratch and Ben Chiarot is just plain bad. Andrew Copp was another bad deal from the day it was signed.
+                to be a healthy scratch and Ben Chiarot is just plain bad. I like the addition of Erik Gustafsson and it looks like Simon Edvinsson is 
+                ready to take on a full NHL season. Seider has not been able to replicate his fantastic rookie season, but he has been stapled to Chiarot 
+                and faces the leagues toughest competition. 
                 </p>
                 <p>
-                I like the addition of Erik Gustafsson and it looks like Simon Edvinsson is ready to take on a full NHL season. Seider has not been 
-                able to replicate his fantastic rookie season, but he has been stapled to Chiarot and faces the leagues toughest competition. The forward 
-                group is pretty similar to last year. Tarasenko is a scoring upgrade on Perron from last year. Having Kane for a full season will help 
-                the offense as well. 
+                Lucas Raymond took a major step last year after a down sophomore year. He could be emerging as the superstar forward this team desperately needs. 
+                Tarasenko is a scoring upgrade on Perron from last year. Having Kane for a full season will help the offense as well. Overall, the forward group
+                from last year is pretty much the same.
                 </p>
                 <p>
                 The Wings got made fun of for signing a ton of goalies, but I actually like it. Talbot, while on the wrong side of 30, has been pretty 
@@ -175,7 +176,7 @@ class Atlantic extends Component {
                 whether he is in the NHL or AHL might be awesome for him.
                 </p>
                 <p>
-                I am skeptical of this team and I think they overperformed last season. I don’t like the way Steve Yzerman has handled free agency the 
+                I am a bit skeptical of this team and I think they overperformed last season. I don’t like the way Steve Yzerman has handled free agency the 
                 past few years. There are exciting players on this team and in the system that they need to step up to truly turn this franchise around. 
                 Detroit is young, not bad enough to be a lottery team, and stuck behind good Atlantic teams.
                 </p>
