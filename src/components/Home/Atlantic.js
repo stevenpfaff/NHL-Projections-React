@@ -68,7 +68,8 @@ class Atlantic extends Component {
                     </p>
                     <p>
                     This is a well coached team with good roster depth and some star power. It doesn’t sound like Jeremy Swayman will be joining the team for the 
-                    foreseeable future which does cause major concern. Boston will probably find themselves near the top of the Eastern Conference again.
+                    foreseeable future which does cause major concern. The Bruins never look that dangerous on paper but always perform above that expectation. Boston 
+                    will probably find themselves near the top of the Eastern Conference again.
                     </p>
                 </section>
                 <section id="projections">
@@ -115,7 +116,8 @@ class Atlantic extends Component {
                 </p>
                 <p>
                 Buffalo didn’t do much this offseason to get better. Acquiring Ryan McLeod in exchange for Matthew Savoie sounds like a disaster to me. I think there are exciting 
-                pieces here. JJ Peterka has been developing into a nice scoring option. Jack Quinn has looked great when he has been available. Zach Benson had a nice enough rookie year.
+                pieces here. JJ Peterka has been developing into a nice scoring option. Jack Quinn has looked great when he has been available. Zach Benson is another extremely
+                exciting young player. They are going to need to rely on the young forward talent to push them into playoff contention.
                 </p>
                 <p>
                 This is a team I am pulling for to make a step but I don’t foresee Buffalo taking a spot from any of the Atlantic teams.
@@ -155,13 +157,13 @@ class Atlantic extends Component {
                 <section id="about">
                 <p>
                 After seven years of non-competitive hockey, the Red Wings found themselves in the playoff conversation until game 82. Detroit went 
-                8-12-3 down the stretch after holding a playoff spot for most of the year. They rode a high shooting percentage pretty much all year 
-                and finished top 10 in league scoring.
+                8-12-3 down the stretch after holding a playoff spot for most of the year. They rode a high shooting percentage and elite power play 
+                to finish top 10 in league scoring.
                 </p>
                 <p>
                 There are some nightmare contracts on this team, especially on defense. Justin Holl is being paid $3.4 million for the next two years 
-                to be a healthy scratch and Ben Chiarot is just plain bad. I like the addition of Erik Gustafsson and it looks like Simon Edvinsson is 
-                ready to take on a full NHL season. Seider has not been able to replicate his fantastic rookie season, but he has been stapled to Chiarot 
+                to be a healthy scratch and Ben Chiarot is just plain bad. However, I like the addition of Erik Gustafsson and it looks like Simon Edvinsson 
+                is ready to take on a full NHL season. Seider has not been able to replicate his fantastic rookie season, but he has been stapled to Chiarot 
                 and faces the leagues toughest competition. 
                 </p>
                 <p>
@@ -176,9 +178,8 @@ class Atlantic extends Component {
                 whether he is in the NHL or AHL might be awesome for him.
                 </p>
                 <p>
-                I am a bit skeptical of this team and I think they overperformed last season. I don’t like the way Steve Yzerman has handled free agency the 
-                past few years. There are exciting players on this team and in the system that they need to step up to truly turn this franchise around. 
-                Detroit is young, not bad enough to be a lottery team, and stuck behind good Atlantic teams.
+                My model is skeptical of this team and I understand why. They might have over perfomed a bit and don't have the deepest roster. There are 
+                exciting players on this team and in the system that could put them over the hump and into the playoffs.
                 </p>
                 </section>
                 <section id="projections">

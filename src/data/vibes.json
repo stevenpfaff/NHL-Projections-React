@@ -41,7 +41,7 @@
         "abrv": "CAR - X",
         "primaryColor": "#CE1126",
         "division": "Metropolitan",
-        "place": 2,
+        "place": 3,
         "logo": "/Images/canes.png"
     },
     {
@@ -74,7 +74,7 @@
     {
         "id": 9,
         "name": "Dallas Stars",
-        "abrv": "DAL - Z",
+        "abrv": "DAL - X",
         "primaryColor": "#006847",
         "division": "Central",
         "place": 1,
@@ -83,7 +83,7 @@
     {
         "id": 10,
         "name": "Detroit Red Wings",
-        "abrv": "DET",
+        "abrv": "DET - X",
         "primaryColor": "#ce1126",
         "division": "Atlantic",
         "place": 5,
@@ -92,7 +92,7 @@
     {
         "id": 11,
         "name": "Edmonton Oilers",
-        "abrv": "EDM - X",
+        "abrv": "EDM - Z",
         "primaryColor": "#FF4C00",
         "division": "Pacific",
         "place": 1,
@@ -101,7 +101,7 @@
     {
         "id": 12,
         "name": "Florida Panthers",
-        "abrv": "FLA - Y",
+        "abrv": "FLA - X",
         "primaryColor": "#c8102E",
         "division": "Atlantic",
         "place": 1,
@@ -149,25 +149,25 @@
         "abrv": "NJD - X",
         "primaryColor": "#CE1126",
         "division": "Metropolitan",
-        "place": 1,
+        "place": 2,
         "logo": "/Images/devils.png"
     },
     {
         "id": 18,
         "name": "New York Islanders",
-        "abrv": "NYI - X",
+        "abrv": "NYI",
         "primaryColor": "#00539b",
         "division": "Metropolitan",
-        "place": 4,
+        "place": 6,
         "logo": "/Images/islanders.png"
     },
     {
         "id": 19,
         "name": "New York Rangers",
-        "abrv": "NYR - X",
+        "abrv": "NYR - Y",
         "primaryColor": "#0038A8",
         "division": "Metropolitan",
-        "place": 3,
+        "place": 1,
         "logo": "/Images/rangers.png"
     },
     {
@@ -185,7 +185,7 @@
         "abrv": "PHI",
         "primaryColor": "#F74902",
         "division": "Metropolitan",
-        "place": 6,
+        "place": 5,
         "logo": "/Images/flyers.png"
     },
     {
@@ -275,7 +275,7 @@
         "abrv": "WSH",
         "primaryColor": "#041E42",
         "division": "Metropolitan",
-        "place": 5,
+        "place": 4,
         "logo": "/Images/capitals.png"
     },
     {
