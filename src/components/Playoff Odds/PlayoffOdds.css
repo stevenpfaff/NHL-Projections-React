@@ -21,7 +21,7 @@
 }
 
 .table td:first-child {
-    background-color: white; /* Match the default table row background */
+    background-color: #fff; /* Match the default table row background */
 }
 
 .table th:first-child {
