@@ -8,6 +8,10 @@
   margin-top: 2%;
 }
 
+.table td:first-child {
+  background-color: #fff;
+}
+
 .division-column {
   flex: 1;
   margin: 10px;
