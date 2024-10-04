@@ -16,13 +16,11 @@
     position: sticky;
     left: 0;
     z-index: 10;
-    background-color: inherit; /* Match the background of the rest of the table */
+    background-color: #fff; /* Match the default table row background */
     border-right: 1px solid #dee2e6;
 }
 
-.table td:first-child {
-    background-color: #fff; /* Match the default table row background */
-}
+
 
 .table th:first-child {
     background-color: #013a68; /* Match header row background */
