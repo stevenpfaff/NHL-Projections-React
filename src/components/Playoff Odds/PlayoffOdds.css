@@ -24,7 +24,6 @@
 
 .table th:first-child {
     background-color: #013a68; /* Match header row background */
-    border-right: 1px solid #dee2e6;
 }
 
 p {
