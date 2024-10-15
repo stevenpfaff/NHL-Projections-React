@@ -17,7 +17,7 @@ class Divisions extends Component {
     const getSortedTeams = (division) => {
       return teamsData
         .filter((team) => team.division === division)
-        .sort((a, b) => b.proj_points - a.proj_points);
+        .sort((a, b) => b.current_points - a.current_points);
     };
 
     const centralTeams = getSortedTeams('Central');
@@ -46,7 +46,7 @@ class Divisions extends Component {
                     />
                     <span className="abrvColumn">{team.abrv}</span>
                   </td>
-                  <td className="pointsColumn">{team.proj_points}</td>
+                  <td className="pointsColumn">{team.current_points}</td>
                 </tr>
               ))}
             </tbody>
@@ -71,7 +71,7 @@ class Divisions extends Component {
                     />
                     <span className="abrvColumn">{team.abrv}</span>
                   </td>
-                  <td className="pointsColumn">{team.proj_points}</td>
+                  <td className="pointsColumn">{team.current_points}</td>
                 </tr>
               ))}
             </tbody>
@@ -96,7 +96,7 @@ class Divisions extends Component {
                     />
                     <span className="abrvColumn">{team.abrv}</span>
                   </td>
-                  <td className="pointsColumn">{team.proj_points}</td>
+                  <td className="pointsColumn">{team.current_points}</td>
                 </tr>
               ))}
             </tbody>
@@ -121,7 +121,7 @@ class Divisions extends Component {
                     />
                     <span className="abrvColumn">{team.abrv}</span>
                   </td>
-                  <td className="pointsColumn">{team.proj_points}</td>
+                  <td className="pointsColumn">{team.current_points}</td>
                 </tr>
               ))}
             </tbody>

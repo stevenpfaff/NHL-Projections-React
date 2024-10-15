@@ -10,6 +10,7 @@ import Divisions from './components/Standings/Divisions';
 import TeamCard from './components/Teams/TeamCard';
 import Percentiles from './components/Percentile Outcomes/Percentiles';
 import Vibes from './components/Standings/Vibes';
+import PowerRankings from './components/Power Rankings/PowerRankings';
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/Percentiles" element={<Percentiles />} />
                 <Route path="/Picks" element={<Vibes />} />
                 <Route path="/team/:id" element={<TeamCard />} />
+                <Route path="/PowerRankings" element={<PowerRankings />} />
             </Routes>
         </Router>
     );

@@ -28,41 +28,48 @@ const TeamCard = () => {
                     <thead>
                         <tr>
                             <th style={headerStyle}>Category</th>
-                            <th style={headerStyle}>Value</th>
+                            <th style={headerStyle}>Start</th>
+                            <th style={headerStyle}>Current</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td className='category-td'>Projected Points</td>
                             <td className='stat-td'>{team.proj_points}</td>
+                            <td className='stat-td'>{team.current_points}</td>
                         </tr>
-                        <tr>
+                        {/* <tr>
                             <td className='category-td'>Projected Goals</td>
                             <td className='stat-td'>{team.proj_goals}</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Projected Goals Against</td>
                             <td className='stat-td'>{team.proj_goals_against}</td>
-                        </tr>
+                        </tr> */}
                         <tr>
                             <td className='category-td'>Reach Playoffs</td>
                             <td className='stat-td'>{team.playoffs}%</td>
+                            <td className='stat-td'>{team.current_playoffs}%</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Reach Second Round</td>
                             <td className='stat-td'>{team.second_round}%</td>
+                            <td className='stat-td'>{team.current_round2}%</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Reach Conference Final</td>
                             <td className='stat-td'>{team.conf_final}%</td>
+                            <td className='stat-td'>{team.current_conf}%</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Reach Cup Final</td>
                             <td className='stat-td'>{team.cup_final}%</td>
+                            <td className='stat-td'>{team.current_final}%</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Win Cup</td>
                             <td className='stat-td'>{team.cup_win}%</td>
+                            <td className='stat-td'>{team.current_win}%</td>
                         </tr>
                     </tbody>
                 </Table>

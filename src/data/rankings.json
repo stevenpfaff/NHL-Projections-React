@@ -1,0 +1,259 @@
+[
+    {
+        "id": 1,
+        "name": "Anaheim Ducks",
+        "abrv": "ANA",
+        "primaryColor": "#00685e",
+        "tier": "Could Be Sneaky",
+        "place": 30,
+        "logo": "/Images/ducks.png"
+    },
+    {
+        "id": 2,
+        "name": "Boston Bruins",
+        "abrv": "BOS",
+        "primaryColor": "#FFB81C",
+        "place": 14,
+        "logo": "/Images/bruins.png"
+    },
+    {
+        "id": 3,
+        "name": "Buffalo Sabres",
+        "abrv": "BUF",
+        "primaryColor": "#003087",
+        "place": 26,
+        "logo": "/Images/sabres.png"
+    },
+    {
+        "id": 4,
+        "name": "Calgary Flames",
+        "abrv": "CGY",
+        "primaryColor": "#D2001C",
+        "place": 27,
+        "logo": "/Images/flames.png"
+    },
+    {
+        "id": 5,
+        "name": "Carolina Hurricanes",
+        "abrv": "CAR",
+        "primaryColor": "#CE1126",
+        "place": 2,
+        "logo": "/Images/canes.png"
+    },
+    {
+        "id": 6,
+        "name": "Chicago Blackhawks",
+        "abrv": "CHI",
+        "primaryColor": "#CF0A2C",
+        "place": 28,
+        "logo": "/Images/blackhawks.png"
+    },
+    {
+        "id": 7,
+        "name": "Colorado Avalanche",
+        "abrv": "COL",
+        "primaryColor": "#6F263D",
+        "place": 6,
+        "logo": "/Images/avalanche.png"
+    },
+    {
+        "id": 8,
+        "name": "Columbus Blue Jackets",
+        "abrv": "CBJ",
+        "primaryColor": "#002654",
+        "place": 31,
+        "logo": "/Images/blue jackets.png"
+    },
+    {
+        "id": 9,
+        "name": "Dallas Stars",
+        "abrv": "DAL",
+        "primaryColor": "#006847",
+        "place": 1,
+        "logo": "/Images/stars.png"
+    },
+    {
+        "id": 10,
+        "name": "Detroit Red Wings",
+        "abrv": "DET",
+        "primaryColor": "#ce1126",
+        "place": 22,
+        "logo": "/Images/red wings.png"
+    },
+    {
+        "id": 11,
+        "name": "Edmonton Oilers",
+        "abrv": "EDM",
+        "primaryColor": "#FF4C00",
+        "place": 3,
+        "logo": "/Images/oilers.png"
+    },
+    {
+        "id": 12,
+        "name": "Florida Panthers",
+        "abrv": "FLA",
+        "primaryColor": "#c8102E",
+        "place": 5,
+        "logo": "/Images/panthers.png"
+    },
+    {
+        "id": 13,
+        "name": "Los Angeles Kings",
+        "abrv": "LAK",
+        "primaryColor": "#A2AAAD",
+        "place": 17,
+        "logo": "/Images/kings.png"
+    },
+    {
+        "id": 14,
+        "name": "Minnesota Wild",
+        "abrv": "MIN",
+        "primaryColor": "#154734",
+        "place": 18,
+        "logo": "/Images/wild.png"
+    },
+    {
+        "id": 15,
+        "name": "Montreal Canadiens",
+        "abrv": "MTL",
+        "primaryColor": "#AF1E2D",
+        "place": 29,
+        "logo": "/Images/canadiens.png"
+    },
+    {
+        "id": 16,
+        "name": "Nashville Predators",
+        "abrv": "NSH",
+        "primaryColor": "#FFB81C",
+        "place": 8,
+        "logo": "/Images/predators.png"
+    },
+    {
+        "id": 17,
+        "name": "New Jersey Devils",
+        "abrv": "NJD",
+        "primaryColor": "#CE1126",
+        "place": 4,
+        "logo": "/Images/devils.png"
+    },
+    {
+        "id": 18,
+        "name": "New York Islanders",
+        "abrv": "NYI",
+        "primaryColor": "#00539b",
+        "place": 15,
+        "logo": "/Images/islanders.png"
+    },
+    {
+        "id": 19,
+        "name": "New York Rangers",
+        "abrv": "NYR",
+        "primaryColor": "#0038A8",
+        "place": 12,
+        "logo": "/Images/rangers.png"
+    },
+    {
+        "id": 20,
+        "name": "Ottawa Senators",
+        "abrv": "OTT",
+        "primaryColor": "#DA1A32",
+        "place": 19,
+        "logo": "/Images/senators.png"
+    },
+    {
+        "id": 21,
+        "name": "Philadelphia Flyers",
+        "abrv": "PHI",
+        "primaryColor": "#F74902",
+        "place": 24,
+        "logo": "/Images/flyers.png"
+    },
+    {
+        "id": 22,
+        "name": "Pittsburgh Penguins",
+        "abrv": "PIT",
+        "primaryColor": "#FCB514",
+        "place": 23,
+        "logo": "/Images/penguins.png"
+    },
+    {
+        "id": 23,
+        "name": "San Jose Sharks",
+        "abrv": "SJS",
+        "primaryColor": "#006D75",
+        "place": 32,
+        "logo": "/Images/sharks.png"
+    },
+    {
+        "id": 24,
+        "name": "Seattle Kraken",
+        "abrv": "SEA",
+        "primaryColor": "#68a2b9",
+        "place": 21,
+        "logo": "/Images/kraken.png"
+    },
+    {
+        "id": 25,
+        "name": "St. Louis Blues",
+        "abrv": "STL",
+        "primaryColor": "#002F87",
+        "place": 25,
+        "logo": "/Images/blues.png"
+    },
+    {
+        "id": 26,
+        "name": "Tampa Bay Lightning",
+        "abrv": "TBL",
+        "primaryColor": "#002868",
+        "place": 11,
+        "logo": "/Images/lightning.png"
+    },
+    {
+        "id": 27,
+        "name": "Toronto Maple Leafs",
+        "abrv": "TOR",
+        "primaryColor": "#00205b",
+        "place": 9,
+        "logo": "/Images/leafs.png"
+    },
+    {
+        "id": 28,
+        "name": "Utah Hockey Club",
+        "abrv": "UTA",
+        "primaryColor": "#5c88da",
+        "place": 20,
+        "logo": "/Images/utah.png"
+    },
+    {
+        "id": 29,
+        "name": "Vancouver Canucks",
+        "abrv": "VAN",
+        "primaryColor": "#00205B",
+        "place": 7,
+        "logo": "/Images/canucks.png"
+    },
+    {
+        "id": 30,
+        "name": "Vegas Golden Knights",
+        "abrv": "VGK",
+        "primaryColor": "#B4975A",
+        "place": 13,
+        "logo": "/Images/golden knights.png"
+    },
+    {
+        "id": 31,
+        "name": "Washington Capitals",
+        "abrv": "WSH",
+        "primaryColor": "#041E42",
+        "place": 16,
+        "logo": "/Images/capitals.png"
+    },
+    {
+        "id": 32,
+        "name": "Winnipeg Jets",
+        "abrv": "WPG",
+        "primaryColor": "#004C97",
+        "place": 10,
+        "logo": "/Images/jets.png"
+    }
+]

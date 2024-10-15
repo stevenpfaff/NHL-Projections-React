@@ -7,8 +7,8 @@ import './PlayoffOdds.css';
 class PlayoffOdds extends Component {
   constructor(props) {
     super(props);
-    const sortedData = [...data].sort((a, b) => b.cup_win - a.cup_win);
-    this.state = { data: sortedData, sortConfig: { key: 'cup_win', direction: 'descending' } };
+    const sortedData = [...data].sort((a, b) => b.current_win - a.current_win);
+    this.state = { data: sortedData, sortConfig: { key: 'current_win', direction: 'descending' } };
   }
 
   sortData = (key) => {
@@ -42,11 +42,11 @@ class PlayoffOdds extends Component {
           <thead>
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>
-              <th onClick={() => this.sortData('playoffs')}>Playoff %</th>
-              <th onClick={() => this.sortData('second_round')}>Round 2 %</th>
-              <th onClick={() => this.sortData('conf_final')}>Conf Final %</th>
-              <th onClick={() => this.sortData('cup_final')}>Cup Final %</th>
-              <th onClick={() => this.sortData('cup_win')}>Win Cup %</th>
+              <th onClick={() => this.sortData('current_playoffs')}>Playoff %</th>
+              <th onClick={() => this.sortData('current_round2')}>Round 2 %</th>
+              <th onClick={() => this.sortData('current_conf')}>Conf Final %</th>
+              <th onClick={() => this.sortData('current_final')}>Cup Final %</th>
+              <th onClick={() => this.sortData('current_win')}>Win Cup %</th>
             </tr>
           </thead>
           <tbody>
@@ -64,11 +64,11 @@ class PlayoffOdds extends Component {
                     </Link>
                   </div>
                 </td>
-                <td className='stat-td'>{team.playoffs}%</td>
-                <td className='stat-td'>{team.second_round}%</td>
-                <td className='stat-td'>{team.conf_final}%</td>
-                <td className='stat-td'>{team.cup_final}%</td>
-                <td className='stat-td'>{team.cup_win}%</td>
+                <td className='stat-td'>{team.current_playoffs}%</td>
+                <td className='stat-td'>{team.current_round2}%</td>
+                <td className='stat-td'>{team.current_conf}%</td>
+                <td className='stat-td'>{team.current_final}%</td>
+                <td className='stat-td'>{team.current_win}%</td>
               </tr>
             ))}
           </tbody>

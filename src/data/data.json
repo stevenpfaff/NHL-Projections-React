@@ -19,6 +19,12 @@
         "high_goals": 250,
         "low_goals_against": 299,
         "high_goals_against": 274,
+        "current_points": 75,
+        "current_playoffs": 3.8,
+        "current_round2": 0.9,
+        "current_conf": 0.2,
+        "current_final": 0.04,
+        "current_win": 0.01,
         "logo": "/Images/ducks.png"
     },
     {
@@ -41,6 +47,12 @@
         "high_goals": 261,
         "low_goals_against": 250,
         "high_goals_against": 226,
+        "current_points": 93,
+        "current_playoffs": 66.9,
+        "current_round2": 34.7,
+        "current_conf": 17.8,
+        "current_final": 8.9,
+        "current_win": 4.3,
         "logo": "/Images/bruins.png"
     },
     {
@@ -63,6 +75,12 @@
         "high_goals": 261,
         "low_goals_against": 282,
         "high_goals_against": 257,
+        "current_points": 82,
+        "current_playoffs": 18.3,
+        "current_round2": 6.2,
+        "current_conf": 2.1,
+        "current_final": 0.7,
+        "current_win": 0.2,
         "logo": "/Images/sabres.png"
     },
     {
@@ -85,6 +103,12 @@
         "high_goals": 252,
         "low_goals_against": 276,
         "high_goals_against": 252,
+        "current_points": 86,
+        "current_playoffs": 28.4,
+        "current_round2": 9,
+        "current_conf": 2.8,
+        "current_final": 0.8,
+        "current_win": 0.3,
         "logo": "/Images/flames.png"
     },
     {
@@ -107,6 +131,12 @@
         "high_goals": 296,
         "low_goals_against": 244,
         "high_goals_against": 220,
+        "current_points": 101,
+        "current_playoffs": 90.9,
+        "current_round2": 56.7,
+        "current_conf": 32.5,
+        "current_final": 18.9,
+        "current_win": 10.2,
         "logo": "/Images/canes.png"
     },
     {
@@ -129,6 +159,12 @@
         "high_goals": 239,
         "low_goals_against": 277,
         "high_goals_against": 253,
+        "current_points": 78,
+        "current_playoffs": 5.3,
+        "current_round2": 1.3,
+        "current_conf": 0.3,
+        "current_final": 0.1,
+        "current_win": 0.03,
         "logo": "/Images/blackhawks.png"
     },
     {
@@ -151,6 +187,12 @@
         "high_goals": 296,
         "low_goals_against": 262,
         "high_goals_against": 237,
+        "current_points": 96,
+        "current_playoffs": 72.2,
+        "current_round2": 36.7,
+        "current_conf": 18.9,
+        "current_final": 9.2,
+        "current_win": 4.7,
         "logo": "/Images/avalanche.png"
     },
     {
@@ -173,6 +215,12 @@
         "high_goals": 250,
         "low_goals_against": 308,
         "high_goals_against": 283,
+        "current_points": 68,
+        "current_playoffs": 0.5,
+        "current_round2": 0.1,
+        "current_conf": 0.02,
+        "current_final": 0.0,
+        "current_win": 0.0,
         "logo": "/Images/blue jackets.png"
     },
     {
@@ -195,6 +243,12 @@
         "high_goals": 296,
         "low_goals_against": 249,
         "high_goals_against": 225,
+        "current_points": 106,
+        "current_playoffs": 96,
+        "current_round2": 59.6,
+        "current_conf": 35,
+        "current_final": 20.1,
+        "current_win": 11.5,
         "logo": "/Images/stars.png"
     },
     {
@@ -217,6 +271,12 @@
         "high_goals": 253,
         "low_goals_against": 265,
         "high_goals_against": 241,
+        "current_points": 85,
+        "current_playoffs": 27.6,
+        "current_round2": 10.6,
+        "current_conf": 4.1,
+        "current_final": 1.6,
+        "current_win": 0.6,
         "logo": "/Images/red wings.png"
     },
     {
@@ -239,6 +299,12 @@
         "high_goals": 310,
         "low_goals_against": 262,
         "high_goals_against": 237,
+        "current_points": 101,
+        "current_playoffs": 90.5,
+        "current_round2": 59.6,
+        "current_conf": 34.6,
+        "current_final": 20.6,
+        "current_win": 12,
         "logo": "/Images/oilers.png"
     },
     {
@@ -261,6 +327,12 @@
         "high_goals": 272,
         "low_goals_against": 239,
         "high_goals_against": 216,
+        "current_points": 99,
+        "current_playoffs": 86.4,
+        "current_round2": 51.2,
+        "current_conf": 28.9,
+        "current_final": 16.3,
+        "current_win": 8.6,
         "logo": "/Images/panthers.png"
     },
     {
@@ -283,6 +355,12 @@
         "high_goals": 262,
         "low_goals_against": 246,
         "high_goals_against": 223,
+        "current_points": 91,
+        "current_playoffs": 51.8,
+        "current_round2": 21.1,
+        "current_conf": 8.2,
+        "current_final": 3,
+        "current_win": 1.2,
         "logo": "/Images/kings.png"
     },
     {
@@ -305,6 +383,12 @@
         "high_goals": 252,
         "low_goals_against": 249,
         "high_goals_against": 226,
+        "current_points": 92,
+        "current_playoffs": 55.3,
+        "current_round2": 22.2,
+        "current_conf": 9.4,
+        "current_final": 3.8,
+        "current_win": 1.6,
         "logo": "/Images/wild.png"
     },
     {
@@ -327,6 +411,12 @@
         "high_goals": 251,
         "low_goals_against": 298,
         "high_goals_against": 273,
+        "current_points": 76,
+        "current_playoffs": 5.4,
+        "current_round2": 1.3,
+        "current_conf": 0.3,
+        "current_final": 0.1,
+        "current_win": 0.02,
         "logo": "/Images/canadiens.png"
     },
     {
@@ -349,6 +439,12 @@
         "high_goals": 281,
         "low_goals_against": 258,
         "high_goals_against": 233,
+        "current_points": 96,
+        "current_playoffs": 71.1,
+        "current_round2": 36.3,
+        "current_conf": 19,
+        "current_final": 9.5,
+        "current_win": 4.9,
         "logo": "/Images/predators.png"
     },
     {
@@ -371,6 +467,12 @@
         "high_goals": 298,
         "low_goals_against": 270,
         "high_goals_against": 245,
+        "current_points": 100,
+        "current_playoffs": 90.3,
+        "current_round2": 51.6,
+        "current_conf": 27.2,
+        "current_final": 14,
+        "current_win": 6.8,
         "logo": "/Images/devils.png"
     },
     {
@@ -393,6 +495,12 @@
         "high_goals": 262,
         "low_goals_against": 252,
         "high_goals_against": 228,
+        "current_points": 91,
+        "current_playoffs": 54.6,
+        "current_round2": 23.3,
+        "current_conf": 10,
+        "current_final": 4.3,
+        "current_win": 1.7,
         "logo": "/Images/islanders.png"
     },
     {
@@ -415,6 +523,12 @@
         "high_goals": 262,
         "low_goals_against": 252,
         "high_goals_against": 229,
+        "current_points": 95,
+        "current_playoffs": 74.8,
+        "current_round2": 35.4,
+        "current_conf": 16.9,
+        "current_final": 8,
+        "current_win": 3.6,
         "logo": "/Images/rangers.png"
     },
     {
@@ -437,6 +551,12 @@
         "high_goals": 263,
         "low_goals_against": 267,
         "high_goals_against": 242,
+        "current_points": 89,
+        "current_playoffs": 46.2,
+        "current_round2": 19,
+        "current_conf": 8.2,
+        "current_final": 3.4,
+        "current_win": 1.3,
         "logo": "/Images/senators.png"
     },
     {
@@ -459,6 +579,12 @@
         "high_goals": 263,
         "low_goals_against": 288,
         "high_goals_against": 263,
+        "current_points": 83,
+        "current_playoffs": 20.6,
+        "current_round2": 6.5,
+        "current_conf": 2.2,
+        "current_final": 0.7,
+        "current_win": 0.2,
         "logo": "/Images/flyers.png"
     },
     {
@@ -481,6 +607,12 @@
         "high_goals": 273,
         "low_goals_against": 286,
         "high_goals_against": 261,
+        "current_points": 85,
+        "current_playoffs": 25.4,
+        "current_round2": 9,
+        "current_conf": 3.4,
+        "current_final": 1.2,
+        "current_win": 0.4,
         "logo": "/Images/penguins.png"
     },
     {
@@ -503,6 +635,12 @@
         "high_goals": 217,
         "low_goals_against": 308,
         "high_goals_against": 283,
+        "current_points": 58,
+        "current_playoffs": 0.01,
+        "current_round2": 0.0,
+        "current_conf": 0.0,
+        "current_final": 0.0,
+        "current_win": 0.0,
         "logo": "/Images/sharks.png"
     },
     {
@@ -525,6 +663,12 @@
         "high_goals": 254,
         "low_goals_against": 256,
         "high_goals_against": 233,
+        "current_points": 87,
+        "current_playoffs": 34.6,
+        "current_round2": 13.2,
+        "current_conf": 5,
+        "current_final": 1.8,
+        "current_win": 0.7,
         "logo": "/Images/kraken.png"
     },
     {
@@ -547,6 +691,12 @@
         "high_goals": 253,
         "low_goals_against": 275,
         "high_goals_against": 251,
+        "current_points": 83,
+        "current_playoffs": 15.7,
+        "current_round2": 4.4,
+        "current_conf": 1.4,
+        "current_final": 0.4,
+        "current_win": 0.1,
         "logo": "/Images/blues.png"
     },
     {
@@ -569,6 +719,12 @@
         "high_goals": 273,
         "low_goals_against": 261,
         "high_goals_against": 236,
+        "current_points": 94,
+        "current_playoffs": 68.1,
+        "current_round2": 35.2,
+        "current_conf": 18.1,
+        "current_final": 9.1,
+        "current_win": 4.3,
         "logo": "/Images/lightning.png"
     },
     {
@@ -591,6 +747,12 @@
         "high_goals": 284,
         "low_goals_against": 259,
         "high_goals_against": 235,
+        "current_points": 96,
+        "current_playoffs": 77.9,
+        "current_round2": 40.4,
+        "current_conf": 20.3,
+        "current_final": 9.8,
+        "current_win": 4.4,
         "logo": "/Images/leafs.png"
     },
     {
@@ -613,6 +775,12 @@
         "high_goals": 261,
         "low_goals_against": 267,
         "high_goals_against": 243,
+        "current_points": 90,
+        "current_playoffs": 45.5,
+        "current_round2": 16,
+        "current_conf": 6.1,
+        "current_final": 2.3,
+        "current_win": 0.8,
         "logo": "/Images/utah.png"
     },
     {
@@ -635,6 +803,12 @@
         "high_goals": 274,
         "low_goals_against": 245,
         "high_goals_against": 222,
+        "current_points": 96,
+        "current_playoffs": 77.4,
+        "current_round2": 43.3,
+        "current_conf": 21.5,
+        "current_final": 10.5,
+        "current_win": 5.2,
         "logo": "/Images/canucks.png"
     },
     {
@@ -657,6 +831,12 @@
         "high_goals": 275,
         "low_goals_against": 265,
         "high_goals_against": 241,
+        "current_points": 95,
+        "current_playoffs": 70.4,
+        "current_round2": 31.4,
+        "current_conf": 13,
+        "current_final": 5,
+        "current_win": 2.2,
         "logo": "/Images/golden knights.png"
     },
     {
@@ -679,6 +859,12 @@
         "high_goals": 270,
         "low_goals_against": 261,
         "high_goals_against": 237,
+        "current_points": 89,
+        "current_playoffs": 46.2,
+        "current_round2": 19,
+        "current_conf": 8,
+        "current_final": 3.2,
+        "current_win": 1.2,
         "logo": "/Images/capitals.png"
     },
     {
@@ -701,6 +887,12 @@
         "high_goals": 254,
         "low_goals_against": 243,
         "high_goals_against": 220,
+        "current_points": 99,
+        "current_playoffs": 81.8,
+        "current_round2": 44.9,
+        "current_conf": 24.6,
+        "current_final": 12.9,
+        "current_win": 6.8,
         "logo": "/Images/jets.png"
     }
 ]
