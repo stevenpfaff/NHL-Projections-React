@@ -52,7 +52,7 @@
         justify-content: center;
         align-items: flex-start;
         width: 70%;
-        max-width: 1200px;
+        max-width: 950px;
         padding: 40px;
     }
 
@@ -78,9 +78,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 80%;
-        max-width: 600px;
-        padding: 20px;
+        width: 100%;
+        max-width: 500px;
+        padding: 10px;
     }
 
     .logo-section {
