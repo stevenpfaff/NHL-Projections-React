@@ -11,13 +11,13 @@ const NavBar = () => {
         <Nav className="mx-auto custom-nav-links">
         <img src={logo} alt="..." height="50" width="50"></img>
           <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/PlayoffOdds">Playoff Odds</Nav.Link>
-          <Nav.Link href="/Divisions">Projected Standings</Nav.Link>
-          <Nav.Link href="/Percentiles">Percentile Outcomes</Nav.Link>
-          <NavDropdown title="Division Previews">
-            <NavDropdown.Item href="/Central">Central</NavDropdown.Item>
-            <NavDropdown.Item href="/Pacific">Pacific</NavDropdown.Item>
-            <NavDropdown.Item href="/Atlantic">Atlantic</NavDropdown.Item>
+          <NavDropdown title="Projections">
+            <NavDropdown.Item href="/PlayoffOdds">Playoff Odds</NavDropdown.Item>
+            <NavDropdown.Item href="/Divisions">Projected Standings</NavDropdown.Item>
+            <NavDropdown.Item href="/PreseasonOdds">Preseason Playoff Odds</NavDropdown.Item>
+            <NavDropdown.Item href="/PreseasonStandings">Preseason Projected Standings</NavDropdown.Item>
+            <NavDropdown.Item href="/Picks">Preseason Picks</NavDropdown.Item>
+            <NavDropdown.Item href="/Percentiles">Preseason Percentile Outcomes</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>

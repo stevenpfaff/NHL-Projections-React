@@ -7,6 +7,8 @@ import Pacific from './components/Home/Pacific';
 import Atlantic from './components/Home/Atlantic';
 import PlayoffOdds from './components/Playoff Odds/PlayoffOdds';
 import Divisions from './components/Standings/Divisions';
+import Preseason from './components/Standings/Preseason';
+import PreseasonOdds from './components/Playoff Odds/PreseasonPO';
 import TeamCard from './components/Teams/TeamCard';
 import Percentiles from './components/Percentile Outcomes/Percentiles';
 import Vibes from './components/Standings/Vibes';
@@ -23,6 +25,8 @@ function App() {
                 <Route path="/Atlantic" element={<Atlantic />} />
                 <Route path="/PlayoffOdds" element={<PlayoffOdds />} />
                 <Route path="/Divisions" element={<Divisions />} />
+                <Route path="/PreseasonStandings" element={<Preseason />} />
+                <Route path="/PreseasonOdds" element={<PreseasonOdds />} />
                 <Route path="/Percentiles" element={<Percentiles />} />
                 <Route path="/Picks" element={<Vibes />} />
                 <Route path="/team/:id" element={<TeamCard />} />
