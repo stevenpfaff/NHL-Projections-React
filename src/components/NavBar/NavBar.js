@@ -21,6 +21,7 @@ const NavBar = () => {
             <NavDropdown.Item href="/Picks">Preseason Picks</NavDropdown.Item>
             <NavDropdown.Item href="/Percentiles">Preseason Percentile Outcomes</NavDropdown.Item>
           </NavDropdown>
+          <Nav.Link href="/PowerRankings">Power Rankings</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
