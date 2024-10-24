@@ -17,7 +17,7 @@
     left: 0;
     z-index: 10;
     background-color: #fff; /* Match the default table row background */
-    border-right: 1px solid #dee2e6;
+    /* border-right: 1px solid #dee2e6; */
 }
 
 

@@ -28,7 +28,7 @@ class Divisions extends Component {
     return (
       <div className="divisions-container">
         <div className="division-column">
-          <Table bordered hover>
+          <Table striped bordered hover>
             <thead className="headerStyleWest">
               <tr>
                 <th className="pointsColumn">Central</th>
@@ -53,7 +53,7 @@ class Divisions extends Component {
           </Table>
         </div>
         <div className="division-column">
-          <Table bordered hover>
+          <Table striped bordered hover>
             <thead className="headerStyleWest">
               <tr>
                 <th className="pointsColumn">Pacific</th>
@@ -78,7 +78,7 @@ class Divisions extends Component {
           </Table>
         </div>
         <div className="division-column">
-          <Table bordered hover>
+          <Table striped bordered hover>
             <thead className="headerStyleEast">
               <tr>
                 <th className="pointsColumn">Atlantic</th>
@@ -103,7 +103,7 @@ class Divisions extends Component {
           </Table>
         </div>
         <div className="division-column">
-          <Table bordered hover>
+          <Table striped bordered hover>
             <thead className="headerStyleEast">
               <tr>
                 <th className="pointsColumn">Metropolitan</th>
