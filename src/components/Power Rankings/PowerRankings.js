@@ -46,7 +46,7 @@ class PowerRankings extends Component {
     const tiers = this.groupByTier();
 
     return (
-      <div className="table-container">
+      <div className="power-table-container">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {Object.keys(tiers).map((tier) => (
           <div key={tier} className={`tier-section tier-${tier.toLowerCase().replace(/\s+/g, '-')}`}>

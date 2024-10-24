@@ -1,11 +1,11 @@
-.table-container {
+.power-table-container {
     width: 60%;
     margin: 0 auto;
     padding: 20px;
   }
   
 
-  .table-container table {
+  .power-table-container table {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
