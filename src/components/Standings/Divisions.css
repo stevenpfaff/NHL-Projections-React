@@ -35,12 +35,12 @@
 
 .headerStyleEast, .th {
   background-color: #960000;
-  color: #ffffff; 
+  /* color: #ffffff;  */
 }
 
 .headerStyleWest {
   background-color: #013a68;
-  color: #ffffff; 
+  /* color: #ffffff;  */
 }
 
 h1 {
