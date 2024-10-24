@@ -12,12 +12,12 @@
     border-collapse: collapse;
   }
   
-  .table-container th {
+  .power-table-container th {
     background-color: #f8f9fa;
     padding: 10px;
   }
   
-  .table-container td {
+  .power-table-container td {
     padding: 15px;
   }
   
