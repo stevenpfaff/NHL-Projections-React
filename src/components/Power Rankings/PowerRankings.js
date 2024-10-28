@@ -51,7 +51,7 @@ class PowerRankings extends Component {
         {Object.keys(tiers).map((tier) => (
           <div key={tier} className={`tier-section tier-${tier.toLowerCase().replace(/\s+/g, '-')}`}>
             <h2>{tier}</h2>
-            <Table striped bordered hover>
+            <Table bordered hover>
               <thead>
                 <tr>
                   <th onClick={() => this.sortData('place')}>Rank</th>
