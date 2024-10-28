@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import { Table } from 'react-bootstrap';
+import { Button, Table } from 'react-bootstrap';
 import data from '../../data/rankings.json';
 import './PowerRankings.css';
 
 class PowerRankings extends Component {
   constructor(props) {
     super(props);
-    // Sort data by 'place' initially
     const sortedData = [...data].sort((a, b) => a.place - b.place);
-    this.state = { data: sortedData, sortConfig: { key: 'place', direction: 'ascending' } };
+    this.state = {
+      data: sortedData,
+      sortConfig: { key: 'place', direction: 'ascending' },
+      viewMode: 'tiered',
+    };
   }
 
-  // Sorting function
   sortData = (key) => {
     const { data, sortConfig } = this.state;
     let direction = 'ascending';
@@ -29,7 +31,6 @@ class PowerRankings extends Component {
     this.setState({ data: sortedData, sortConfig: { key, direction } });
   };
 
-  // Group teams by tier
   groupByTier = () => {
     const { data } = this.state;
     return data.reduce((acc, team) => {
@@ -42,42 +43,62 @@ class PowerRankings extends Component {
     }, {});
   };
 
+  toggleView = () => {
+    this.setState((prevState) => ({
+      viewMode: prevState.viewMode === 'tiered' ? 'ranked' : 'tiered',
+    }));
+  };
+
   render() {
+    const { viewMode, data } = this.state;
     const tiers = this.groupByTier();
 
     return (
       <div className="power-table-container">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {Object.keys(tiers).map((tier) => (
-          <div key={tier} className={`tier-section tier-${tier.toLowerCase().replace(/\s+/g, '-')}`}>
-            <h2>{tier}</h2>
-            <Table bordered hover>
-              <thead>
-                <tr>
-                  <th onClick={() => this.sortData('place')}>Rank</th>
-                  <th onClick={() => this.sortData('name')}>Team</th>
-                </tr>
-              </thead>
-              <tbody>
-                {tiers[tier].map((team) => (
-                  <tr key={team.name}>
-                    <td className='stat-td'>{team.place}</td>
-                    <td>
-                      <div className="logo-container">
-                        <img 
-                          src={team.logo} 
-                          className="logo" 
-                          alt={`${team.name} logo`} 
-                        />
-                        <span>{team.name}</span>
-                      </div>
-                    </td>
+        <Button onClick={this.toggleView} variant="primary" style={{ marginBottom: '15px' }}>
+          Toggle {viewMode === 'tiered' ? 'Ranked' : 'Tiered'} View
+        </Button>
+
+        {viewMode === 'tiered' ? (
+          Object.keys(tiers).map((tier) => (
+            <div key={tier} className={`tier-section tier-${tier.toLowerCase().replace(/\s+/g, '-')}`}>
+              <h2>{tier}</h2>
+              <Table bordered hover>
+                <thead>
+                  <tr>
+                    <th onClick={() => this.sortData('place')}>Rank</th>
+                    <th onClick={() => this.sortData('name')}>Team</th>
                   </tr>
-                ))}
-              </tbody>
-            </Table>
+                </thead>
+                <tbody>
+                  {tiers[tier].map((team) => (
+                    <tr key={team.name}>
+                      <td className="stat-td">{team.place}</td>
+                      <td>
+                        <div className="logo-container">
+                          <img src={team.logo} className="logo" alt={`${team.name} logo`} />
+                          <span>{team.name}</span>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </Table>
+            </div>
+          ))
+        ) : (
+          <div className="ranked-grid">
+            {data.map((team) => (
+              <div key={team.name} className="grid-item">
+                <div className="rank">{team.place}</div>
+                <div className="logo-container-grid">
+                  <img src={team.logo} className="logo-grid" alt={`${team.name} logo`} />
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
+        )}
       </div>
     );
   }
