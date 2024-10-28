@@ -3,6 +3,7 @@
     margin: 2% auto;
     padding: 0 10px;
     background-color: #ffffff;
+    max-width: fit-content;
 }
 
 .table {
