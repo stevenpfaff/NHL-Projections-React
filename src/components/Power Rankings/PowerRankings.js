@@ -59,7 +59,7 @@ class PowerRankings extends Component {
         <Button onClick={this.toggleView} variant="primary" style={{ marginBottom: '15px' }}>
           Toggle {viewMode === 'tiered' ? 'Ranked' : 'Tiered'} View
         </Button>
-
+      <h1>NHL Power Rankings</h1>
         {viewMode === 'tiered' ? (
           Object.keys(tiers).map((tier) => (
             <div key={tier} className={`tier-section tier-${tier.toLowerCase().replace(/\s+/g, '-')}`}>

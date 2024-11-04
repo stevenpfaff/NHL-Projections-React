@@ -1,8 +1,9 @@
 .power-table-container {
     width: 60%;
-    margin: 0 auto;
+    margin: 2% auto;
     padding: 20px;
     background-color: #ffffff;
+    align-items: center;
   }
   
   .ranked-grid {
@@ -37,7 +38,7 @@
   .logo-grid {
     width: 80px;
     height: 80px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
   }
   
   .tier-section {
