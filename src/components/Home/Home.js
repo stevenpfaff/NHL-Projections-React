@@ -15,15 +15,11 @@ class Home extends Component {
 
       <h2>Main Logic</h2>
       <p>
-        Players are evaluated based on how they perform at even strength both offensively and defensively. 
-        Passing and shooting ratings are also applied but weigh less than the even strength categories. 
-        A version of the baseball scouting scale is used (20-80 ratings), where 20 is the minimum, 
-        50 is average, and 80 is the top of the league.
-      </p>
-
-      <p>
-        Skaters are grouped together by team and assigned a role. The higher the role, the heavier the weight 
-        each skater has for their team rating.
+        We use JFresh's player cards in which he uses Patrick Bacon's WAR model to evaluate players.
+        Their findings are then converted into a version of the baseball scouting scale (20-80 scale),
+        where 20 is the minimum, 50 is average, and 80 is the top of the league. Skaters are grouped 
+        together by team and assigned a role. The higher the role, the heavier the weight each skater
+        has for their team rating.
       </p>
 
       <p>
@@ -33,14 +29,13 @@ class Home extends Component {
       </p>
 
       <p>
-        Team offensive and defensive ratings are calculated by taking skater rankings into account and weighing 
-        them with the parameters above. Offense and defense ratings are then compared to generate likely 
-        outcomes for shots on goal by each team. A slight advantage is applied for the home team, and save 
+        Team offensive, defensive, powerplay, penalty kill, and penalty ratio ratings are calculated by taking skater
+        rankings into account and weighing them with the parameters above. Offense and defense ratings are then compared
+        to generate likely outcomes for each team. A slight advantage is applied for the home team, and save 
         percentage logic is applied using each team's dynamically selected goalie.
       </p>
-                </section>
-
-            </div>
+      </section>
+      </div>
         );
     }
 }
