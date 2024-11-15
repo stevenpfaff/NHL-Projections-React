@@ -44,8 +44,8 @@
 .category-td {
     text-align: left;
 }
-
-/* Apply the iPhone layout for devices up to 1024px */
+/* 
+Apply the iPhone layout for devices up to 1024px */
 @media (min-width: 1024px) {
     .card-container {
         flex-direction: row;
@@ -73,28 +73,32 @@
 }
 
 /* For iPad and smaller screens */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 768px) {
     .card-container, .logo-section, .big-logo, .stats-section-card {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
-        max-width: 500px;
+        max-width: 350px;
         padding: 10px;
     }
 
     .logo-section {
         text-align: center;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         margin-right: 0;
     }
 
     .big-logo {
-        width: 300px;
+        width: 150px;
         height: auto;
     }
 
     .stats-section-card {
-        width: 80%;
+        width: 100%;
+    }
+    
+    .category-td, .stat-td{
+        font-size: 18px;
     }
 }
