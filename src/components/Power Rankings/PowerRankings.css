@@ -84,4 +84,23 @@
     text-align: center;
     margin-bottom: 15px;
   }
+
+  .rank-change {
+    margin-left: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  
+  .rank-change.up {
+    color: green;
+  }
+  
+  .rank-change.down {
+    color: red;
+  }
+  
+  .rank-change.unchanged {
+    color: gray;
+  }
+  
   

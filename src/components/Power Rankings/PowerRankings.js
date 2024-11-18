@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Table } from 'react-bootstrap';
 import data from '../../data/rankings.json';
 import './PowerRankings.css';
+import { FaArrowUp, FaArrowDown } from 'react-icons/fa';
 
 class PowerRankings extends Component {
   constructor(props) {
@@ -49,18 +50,35 @@ class PowerRankings extends Component {
     }));
   };
 
+  renderRankChange(rankChange) {
+    if (rankChange > 0) {
+      return (
+        <span className="rank-change up">
+          <FaArrowUp /> {rankChange}
+        </span>
+      );
+    } else if (rankChange < 0) {
+      return (
+        <span className="rank-change down">
+          <FaArrowDown /> {Math.abs(rankChange)}
+        </span>
+      );
+    } else {
+      return <span className="rank-change unchanged">–</span>;
+    }
+  }
+
   render() {
     const { viewMode, data } = this.state;
     const tiers = this.groupByTier();
-
+  
     return (
       <div className="power-table-container">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Button onClick={this.toggleView} variant="primary" style={{ marginBottom: '15px' }}>
           Toggle {viewMode === 'tiered' ? 'Ranked' : 'Tiered'} View
         </Button>
-      <h1>NHL Power Rankings</h1>
-      <p>Last Updated 11/18/2024</p>
+        <h1>NHL Power Rankings</h1>
+        <p>Last Updated 11/18/2024</p>
         {viewMode === 'tiered' ? (
           Object.keys(tiers).map((tier) => (
             <div key={tier} className={`tier-section tier-${tier.toLowerCase().replace(/\s+/g, '-')}`}>
@@ -75,7 +93,9 @@ class PowerRankings extends Component {
                 <tbody>
                   {tiers[tier].map((team) => (
                     <tr key={team.name}>
-                      <td className="stat-td">{team.place}</td>
+                      <td className="stat-td">
+                        {team.place} {this.renderRankChange(team.rankChange)}
+                      </td>
                       <td>
                         <div className="logo-container">
                           <img src={team.logo} className="logo" alt={`${team.name} logo`} />
@@ -92,7 +112,9 @@ class PowerRankings extends Component {
           <div className="ranked-grid">
             {data.map((team) => (
               <div key={team.name} className="grid-item">
-                <div className="rank">{team.place}</div>
+                <div className="rank">
+                  {team.place} {this.renderRankChange(team.rankChange)}
+                </div>
                 <div className="logo-container-grid">
                   <img src={team.logo} className="logo-grid" alt={`${team.name} logo`} />
                 </div>

@@ -6,7 +6,8 @@
         "primaryColor": "#00685e",
         "place": 26,
         "tier": "Spoiler Alert",
-        "logo": "/Images/ducks.png"
+        "logo": "/Images/ducks.png",
+        "rankChange": 2
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "primaryColor": "#FFB81C",
         "place": 19,
         "tier": "The Fringe",
-        "logo": "/Images/bruins.png"
+        "logo": "/Images/bruins.png",
+        "rankChange": -2
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
         "primaryColor": "#003087",
         "place": 23,
         "tier": "The Fringe",
-        "logo": "/Images/sabres.png"
+        "logo": "/Images/sabres.png",
+        "rankChange": -6
     },
     {
         "id": 4,
@@ -33,7 +36,8 @@
         "primaryColor": "#D2001C",
         "place": 15,
         "tier": "The Fringe",
-        "logo": "/Images/flames.png"
+        "logo": "/Images/flames.png",
+        "rankChange": 1
     },
     {
         "id": 5,
@@ -42,7 +46,8 @@
         "primaryColor": "#CE1126",
         "place": 2,
         "tier": "Best Of The Best",
-        "logo": "/Images/canes.png"
+        "logo": "/Images/canes.png",
+        "rankChange": 0
     },
     {
         "id": 6,
@@ -51,7 +56,8 @@
         "primaryColor": "#CF0A2C",
         "place": 31,
         "tier": "Spoiler Alert",
-        "logo": "/Images/blackhawks.png"
+        "logo": "/Images/blackhawks.png",
+        "rankChange": -2
     },
     {
         "id": 7,
@@ -60,7 +66,8 @@
         "primaryColor": "#6F263D",
         "place": 18,
         "tier": "The Fringe",
-        "logo": "/Images/avalanche.png"
+        "logo": "/Images/avalanche.png",
+        "rankChange": 1
     },
     {
         "id": 8,
@@ -69,7 +76,8 @@
         "primaryColor": "#002654",
         "place": 29,
         "tier": "Spoiler Alert",
-        "logo": "/Images/blue jackets.png"
+        "logo": "/Images/blue jackets.png",
+        "rankChange": -2
     },
     {
         "id": 9,
@@ -78,7 +86,8 @@
         "primaryColor": "#006847",
         "place": 7,
         "tier": "Solid Contender",
-        "logo": "/Images/stars.png"
+        "logo": "/Images/stars.png",
+        "rankChange": 3
     },
     {
         "id": 10,
@@ -87,7 +96,8 @@
         "primaryColor": "#ce1126",
         "place": 24,
         "tier": "No Mans Land",
-        "logo": "/Images/red wings.png"
+        "logo": "/Images/red wings.png",
+        "rankChange": -1
     },
     {
         "id": 11,
@@ -96,7 +106,8 @@
         "primaryColor": "#FF4C00",
         "place": 14,
         "tier": "The Fringe",
-        "logo": "/Images/oilers.png"
+        "logo": "/Images/oilers.png",
+        "rankChange": 4
     },
     {
         "id": 12,
@@ -106,6 +117,8 @@
         "place": 5,
         "tier": "Best Of The Best",
         "logo": "/Images/panthers.png"
+        ,
+        "rankChange": -2
     },
     {
         "id": 13,
@@ -114,7 +127,8 @@
         "primaryColor": "#A2AAAD",
         "place": 13,
         "tier": "Solid Contender",
-        "logo": "/Images/kings.png"
+        "logo": "/Images/kings.png",
+        "rankChange": -4
     },
     {
         "id": 14,
@@ -123,7 +137,8 @@
         "primaryColor": "#154734",
         "place": 6,
         "tier": "Solid Contender",
-        "logo": "/Images/wild.png"
+        "logo": "/Images/wild.png",
+        "rankChange": -1
     },
     {
         "id": 15,
@@ -132,7 +147,8 @@
         "primaryColor": "#AF1E2D",
         "place": 30,
         "tier": "Spoiler Alert",
-        "logo": "/Images/canadiens.png"
+        "logo": "/Images/canadiens.png",
+        "rankChange": 2
     },
     {
         "id": 16,
@@ -141,7 +157,8 @@
         "primaryColor": "#FFB81C",
         "place": 27,
         "tier": "No Mans Land",
-        "logo": "/Images/predators.png"
+        "logo": "/Images/predators.png",
+        "rankChange": -2
     },
     {
         "id": 17,
@@ -150,7 +167,8 @@
         "primaryColor": "#CE1126",
         "place": 9,
         "tier": "Solid Contender",
-        "logo": "/Images/devils.png"
+        "logo": "/Images/devils.png",
+        "rankChange": 3
     },
     {
         "id": 18,
@@ -159,7 +177,8 @@
         "primaryColor": "#00539b",
         "place": 21,
         "tier": "The Fringe",
-        "logo": "/Images/islanders.png"
+        "logo": "/Images/islanders.png",
+        "rankChange": -1
     },
     {
         "id": 1,
@@ -168,7 +187,8 @@
         "primaryColor": "#0038A8",
         "place": 4,
         "tier": "Best Of The Best",
-        "logo": "/Images/rangers.png"
+        "logo": "/Images/rangers.png",
+        "rankChange": 0
     },
     {
         "id": 20,
@@ -177,7 +197,8 @@
         "primaryColor": "#DA1A32",
         "place": 16,
         "tier": "The Fringe",
-        "logo": "/Images/senators.png"
+        "logo": "/Images/senators.png",
+        "rankChange": -1
     },
     {
         "id": 21,
@@ -186,7 +207,8 @@
         "primaryColor": "#F74902",
         "place": 20,
         "tier": "The Fringe",
-        "logo": "/Images/flyers.png"
+        "logo": "/Images/flyers.png",
+        "rankChange": 9
     },
     {
         "id": 22,
@@ -195,7 +217,8 @@
         "primaryColor": "#FCB514",
         "place": 28,
         "tier": "No Mans Land",
-        "logo": "/Images/penguins.png"
+        "logo": "/Images/penguins.png",
+        "rankChange": -2
     },
     {
         "id": 23,
@@ -204,7 +227,8 @@
         "primaryColor": "#006D75",
         "place": 32,
         "tier": "Spoiler Alert",
-        "logo": "/Images/sharks.png"
+        "logo": "/Images/sharks.png",
+        "rankChange": -1
     },
     {
         "id": 24,
@@ -213,7 +237,8 @@
         "primaryColor": "#68a2b9",
         "place": 17,
         "tier": "The Fringe",
-        "logo": "/Images/kraken.png"
+        "logo": "/Images/kraken.png",
+        "rankChange": 7
     },
     {
         "id": 25,
@@ -223,6 +248,8 @@
         "place": 25,
         "tier": "No Mans Land",
         "logo": "/Images/blues.png"
+        ,
+        "rankChange": -3
     },
     {
         "id": 26,
@@ -231,7 +258,8 @@
         "primaryColor": "#002868",
         "place": 12,
         "tier": "Solid Contender",
-        "logo": "/Images/lightning.png"
+        "logo": "/Images/lightning.png",
+        "rankChange": 1
     },
     {
         "id": 27,
@@ -240,7 +268,8 @@
         "primaryColor": "#00205b",
         "place": 10,
         "tier": "Solid Contender",
-        "logo": "/Images/leafs.png"
+        "logo": "/Images/leafs.png",
+        "rankChange": -2
     },
     {
         "id": 28,
@@ -249,7 +278,8 @@
         "primaryColor": "#5c88da",
         "place": 22,
         "tier": "The Fringe",
-        "logo": "/Images/utah.png"
+        "logo": "/Images/utah.png",
+        "rankChange": -3
     },
     {
         "id": 29,
@@ -258,7 +288,8 @@
         "primaryColor": "#00205B",
         "place": 11,
         "tier": "Solid Contender",
-        "logo": "/Images/canucks.png"
+        "logo": "/Images/canucks.png",
+        "rankChange": 0
     },
     {
         "id": 30,
@@ -267,7 +298,8 @@
         "primaryColor": "#B4975A",
         "place": 8,
         "tier": "Solid Contender",
-        "logo": "/Images/golden knights.png"
+        "logo": "/Images/golden knights.png",
+        "rankChange": -2
     },
     {
         "id": 31,
@@ -276,7 +308,8 @@
         "primaryColor": "#041E42",
         "place": 3,
         "tier": "Best Of The Best",
-        "logo": "/Images/capitals.png"
+        "logo": "/Images/capitals.png",
+        "rankChange": 4
     },
     {
         "id": 32,
@@ -285,6 +318,7 @@
         "primaryColor": "#004C97",
         "place": 1,
         "tier": "Best Of The Best",
-        "logo": "/Images/jets.png"
+        "logo": "/Images/jets.png",
+        "rankChange": 0
     }
 ]
