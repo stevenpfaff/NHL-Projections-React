@@ -24,7 +24,7 @@
         "name": "Buffalo Sabres",
         "abrv": "BUF",
         "primaryColor": "#003087",
-        "place": 23,
+        "place": 20,
         "tier": "The Fringe",
         "logo": "/Images/sabres.png",
         "rankChange": -6
@@ -175,7 +175,7 @@
         "name": "New York Islanders",
         "abrv": "NYI",
         "primaryColor": "#00539b",
-        "place": 21,
+        "place": 22,
         "tier": "The Fringe",
         "logo": "/Images/islanders.png",
         "rankChange": -1
@@ -205,7 +205,7 @@
         "name": "Philadelphia Flyers",
         "abrv": "PHI",
         "primaryColor": "#F74902",
-        "place": 20,
+        "place": 21,
         "tier": "The Fringe",
         "logo": "/Images/flyers.png",
         "rankChange": 9
@@ -276,7 +276,7 @@
         "name": "Utah Hockey Club",
         "abrv": "UTA",
         "primaryColor": "#5c88da",
-        "place": 22,
+        "place": 23,
         "tier": "The Fringe",
         "logo": "/Images/utah.png",
         "rankChange": -3
