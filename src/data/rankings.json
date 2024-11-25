@@ -4,40 +4,40 @@
         "name": "Anaheim Ducks",
         "abrv": "ANA",
         "primaryColor": "#00685e",
-        "place": 26,
+        "place": 22,
         "tier": "Spoiler Alert",
         "logo": "/Images/ducks.png",
-        "rankChange": 2
+        "rankChange": 4
     },
     {
         "id": 2,
         "name": "Boston Bruins",
         "abrv": "BOS",
         "primaryColor": "#FFB81C",
-        "place": 19,
+        "place": 20,
         "tier": "The Fringe",
         "logo": "/Images/bruins.png",
-        "rankChange": -2
+        "rankChange": -1
     },
     {
         "id": 3,
         "name": "Buffalo Sabres",
         "abrv": "BUF",
         "primaryColor": "#003087",
-        "place": 20,
+        "place": 16,
         "tier": "The Fringe",
         "logo": "/Images/sabres.png",
-        "rankChange": -6
+        "rankChange": 4
     },
     {
         "id": 4,
         "name": "Calgary Flames",
         "abrv": "CGY",
         "primaryColor": "#D2001C",
-        "place": 15,
+        "place": 17,
         "tier": "The Fringe",
         "logo": "/Images/flames.png",
-        "rankChange": 1
+        "rankChange": -2
     },
     {
         "id": 5,
@@ -55,37 +55,37 @@
         "abrv": "CHI",
         "primaryColor": "#CF0A2C",
         "place": 31,
-        "tier": "Spoiler Alert",
+        "tier": "Hope Deferred",
         "logo": "/Images/blackhawks.png",
-        "rankChange": -2
+        "rankChange": 0
     },
     {
         "id": 7,
         "name": "Colorado Avalanche",
         "abrv": "COL",
         "primaryColor": "#6F263D",
-        "place": 18,
-        "tier": "The Fringe",
+        "place": 15,
+        "tier": "Solid Contenders",
         "logo": "/Images/avalanche.png",
-        "rankChange": 1
+        "rankChange": 3
     },
     {
         "id": 8,
         "name": "Columbus Blue Jackets",
         "abrv": "CBJ",
         "primaryColor": "#002654",
-        "place": 29,
+        "place": 21,
         "tier": "Spoiler Alert",
         "logo": "/Images/blue jackets.png",
-        "rankChange": -2
+        "rankChange": 8
     },
     {
         "id": 9,
         "name": "Dallas Stars",
         "abrv": "DAL",
         "primaryColor": "#006847",
-        "place": 7,
-        "tier": "Solid Contender",
+        "place": 4,
+        "tier": "Best Of The Best",
         "logo": "/Images/stars.png",
         "rankChange": 3
     },
@@ -94,71 +94,71 @@
         "name": "Detroit Red Wings",
         "abrv": "DET",
         "primaryColor": "#ce1126",
-        "place": 24,
+        "place": 26,
         "tier": "No Mans Land",
         "logo": "/Images/red wings.png",
-        "rankChange": -1
+        "rankChange": -2
     },
     {
         "id": 11,
         "name": "Edmonton Oilers",
         "abrv": "EDM",
         "primaryColor": "#FF4C00",
-        "place": 14,
-        "tier": "The Fringe",
+        "place": 13,
+        "tier": "Solid Contenders",
         "logo": "/Images/oilers.png",
-        "rankChange": 4
+        "rankChange": 1
     },
     {
         "id": 12,
         "name": "Florida Panthers",
         "abrv": "FLA",
         "primaryColor": "#c8102E",
-        "place": 5,
-        "tier": "Best Of The Best",
+        "place": 10,
+        "tier": "Solid Contenders",
         "logo": "/Images/panthers.png"
         ,
-        "rankChange": -2
+        "rankChange": -5
     },
     {
         "id": 13,
         "name": "Los Angeles Kings",
         "abrv": "LAK",
         "primaryColor": "#A2AAAD",
-        "place": 13,
-        "tier": "Solid Contender",
+        "place": 11,
+        "tier": "Solid Contenders",
         "logo": "/Images/kings.png",
-        "rankChange": -4
+        "rankChange": 2
     },
     {
         "id": 14,
         "name": "Minnesota Wild",
         "abrv": "MIN",
         "primaryColor": "#154734",
-        "place": 6,
-        "tier": "Solid Contender",
+        "place": 5,
+        "tier": "Best Of The Best",
         "logo": "/Images/wild.png",
-        "rankChange": -1
+        "rankChange": 1
     },
     {
         "id": 15,
         "name": "Montreal Canadiens",
         "abrv": "MTL",
         "primaryColor": "#AF1E2D",
-        "place": 30,
+        "place": 29,
         "tier": "Spoiler Alert",
         "logo": "/Images/canadiens.png",
-        "rankChange": 2
+        "rankChange": 1
     },
     {
         "id": 16,
         "name": "Nashville Predators",
         "abrv": "NSH",
         "primaryColor": "#FFB81C",
-        "place": 27,
+        "place": 28,
         "tier": "No Mans Land",
         "logo": "/Images/predators.png",
-        "rankChange": -2
+        "rankChange": -1
     },
     {
         "id": 17,
@@ -166,57 +166,57 @@
         "abrv": "NJD",
         "primaryColor": "#CE1126",
         "place": 9,
-        "tier": "Solid Contender",
+        "tier": "Solid Contenders",
         "logo": "/Images/devils.png",
-        "rankChange": 3
+        "rankChange": 0
     },
     {
         "id": 18,
         "name": "New York Islanders",
         "abrv": "NYI",
         "primaryColor": "#00539b",
-        "place": 22,
+        "place": 19,
         "tier": "The Fringe",
         "logo": "/Images/islanders.png",
-        "rankChange": -1
+        "rankChange": 3
     },
     {
         "id": 1,
         "name": "New York Rangers",
         "abrv": "NYR",
         "primaryColor": "#0038A8",
-        "place": 4,
-        "tier": "Best Of The Best",
+        "place": 8,
+        "tier": "Solid Contenders",
         "logo": "/Images/rangers.png",
-        "rankChange": 0
+        "rankChange": -4
     },
     {
         "id": 20,
         "name": "Ottawa Senators",
         "abrv": "OTT",
         "primaryColor": "#DA1A32",
-        "place": 16,
-        "tier": "The Fringe",
+        "place": 24,
+        "tier": "No Mans Land",
         "logo": "/Images/senators.png",
-        "rankChange": -1
+        "rankChange": -8
     },
     {
         "id": 21,
         "name": "Philadelphia Flyers",
         "abrv": "PHI",
         "primaryColor": "#F74902",
-        "place": 21,
-        "tier": "The Fringe",
+        "place": 23,
+        "tier": "No Mans Land",
         "logo": "/Images/flyers.png",
-        "rankChange": 9
+        "rankChange": -2
     },
     {
         "id": 22,
         "name": "Pittsburgh Penguins",
         "abrv": "PIT",
         "primaryColor": "#FCB514",
-        "place": 28,
-        "tier": "No Mans Land",
+        "place": 30,
+        "tier": "Hope Deferred",
         "logo": "/Images/penguins.png",
         "rankChange": -2
     },
@@ -226,30 +226,29 @@
         "abrv": "SJS",
         "primaryColor": "#006D75",
         "place": 32,
-        "tier": "Spoiler Alert",
+        "tier": "Hope Deferred",
         "logo": "/Images/sharks.png",
-        "rankChange": -1
+        "rankChange": 0
     },
     {
         "id": 24,
         "name": "Seattle Kraken",
         "abrv": "SEA",
         "primaryColor": "#68a2b9",
-        "place": 17,
+        "place": 18,
         "tier": "The Fringe",
         "logo": "/Images/kraken.png",
-        "rankChange": 7
+        "rankChange": -1
     },
     {
         "id": 25,
         "name": "St. Louis Blues",
         "abrv": "STL",
         "primaryColor": "#002F87",
-        "place": 25,
+        "place": 27,
         "tier": "No Mans Land",
-        "logo": "/Images/blues.png"
-        ,
-        "rankChange": -3
+        "logo": "/Images/blues.png",
+        "rankChange": -2
     },
     {
         "id": 26,
@@ -257,49 +256,49 @@
         "abrv": "TBL",
         "primaryColor": "#002868",
         "place": 12,
-        "tier": "Solid Contender",
+        "tier": "Solid Contenders",
         "logo": "/Images/lightning.png",
-        "rankChange": 1
+        "rankChange": 0
     },
     {
         "id": 27,
         "name": "Toronto Maple Leafs",
         "abrv": "TOR",
         "primaryColor": "#00205b",
-        "place": 10,
-        "tier": "Solid Contender",
+        "place": 7,
+        "tier": "Solid Contenders",
         "logo": "/Images/leafs.png",
-        "rankChange": -2
+        "rankChange": 3
     },
     {
         "id": 28,
         "name": "Utah Hockey Club",
         "abrv": "UTA",
         "primaryColor": "#5c88da",
-        "place": 23,
-        "tier": "The Fringe",
+        "place": 25,
+        "tier": "No Mans Land",
         "logo": "/Images/utah.png",
-        "rankChange": -3
+        "rankChange": -2
     },
     {
         "id": 29,
         "name": "Vancouver Canucks",
         "abrv": "VAN",
         "primaryColor": "#00205B",
-        "place": 11,
-        "tier": "Solid Contender",
+        "place": 14,
+        "tier": "Solid Contenders",
         "logo": "/Images/canucks.png",
-        "rankChange": 0
+        "rankChange": -3
     },
     {
         "id": 30,
         "name": "Vegas Golden Knights",
         "abrv": "VGK",
         "primaryColor": "#B4975A",
-        "place": 8,
-        "tier": "Solid Contender",
+        "place": 6,
+        "tier": "Solid Contenders",
         "logo": "/Images/golden knights.png",
-        "rankChange": -2
+        "rankChange": 2
     },
     {
         "id": 31,
@@ -309,7 +308,7 @@
         "place": 3,
         "tier": "Best Of The Best",
         "logo": "/Images/capitals.png",
-        "rankChange": 4
+        "rankChange": 0
     },
     {
         "id": 32,
