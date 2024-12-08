@@ -1,14 +1,33 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
-import teamsData from '../../data/data.json';
-import './Divisions.css'; // Ensure this path is correct
+import Papa from 'papaparse';
+import './Divisions.css';
 
 class Divisions extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      teamsData: teamsData,
+      teamsData: [],
     };
+  }
+
+  componentDidMount() {
+    Papa.parse('/currentdata.csv', {
+      download: true,
+      header: true,
+      skipEmptyLines: true,
+      complete: (result) => {
+        const parsedData = result.data.map((team) => ({
+          ...team,
+          current_points: parseFloat(team.current_points),
+        }));
+        console.log('Parsed Data:', parsedData);
+        this.setState({ teamsData: parsedData });
+      },
+      error: (error) => {
+        console.error('Error loading CSV:', error);
+      },
+    });
   }
 
   render() {
@@ -16,14 +35,15 @@ class Divisions extends Component {
 
     const getSortedTeams = (division) => {
       return teamsData
-        .filter((team) => team.division === division)
+        .filter((team) => team.division?.toLowerCase().trim() === division.toLowerCase().trim())
         .sort((a, b) => b.current_points - a.current_points);
     };
-
+    
     const centralTeams = getSortedTeams('Central');
     const pacificTeams = getSortedTeams('Pacific');
     const atlanticTeams = getSortedTeams('Atlantic');
     const metroTeams = getSortedTeams('Metropolitan');
+    
 
     return (
       <div className="divisions-container">

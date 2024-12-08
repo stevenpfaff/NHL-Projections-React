@@ -1,14 +1,55 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import data from '../../data/data.json';
+import Papa from 'papaparse';
 import './PlayoffOdds.css';
 
 class PreseasonOdds extends Component {
   constructor(props) {
     super(props);
-    const sortedData = [...data].sort((a, b) => b.cup_win - a.cup_win);
-    this.state = { data: sortedData, sortConfig: { key: 'cup_win', direction: 'descending' } };
+    this.state = {
+      data: [],
+      loading: true,
+      error: null,
+      sortConfig: { key: 'cup_win', direction: 'descending' },
+    };
+  }
+
+  fetchCSVData = async () => {
+    try {
+      const response = await fetch('/startdata.csv');
+      const csvData = await response.text();
+
+      // Parse the CSV data
+      Papa.parse(csvData, {
+        header: true,
+        skipEmptyLines: true,
+        complete: (result) => {
+          const processedData = result.data.map((team) => ({
+            ...team,
+            playoffs: parseFloat(team.playoffs), 
+            second_round: parseFloat(team.second_round),
+            conf_final: parseFloat(team.conf_final),
+            cup_final: parseFloat(team.cup_final),
+            cup_win: parseFloat(team.cup_win),
+          }));
+
+          const sortedData = [...processedData].sort((a, b) => b.cup_win - a.cup_win);
+          this.setState({ data: sortedData, loading: false });
+        },
+        error: (err) => {
+          console.error('Error parsing CSV:', err);
+          this.setState({ error: 'Failed to load data.', loading: false });
+        },
+      });
+    } catch (error) {
+      console.error('Error fetching CSV:', error);
+      this.setState({ error: 'Failed to fetch data.', loading: false });
+    }
+  };
+
+  componentDidMount() {
+    this.fetchCSVData();
   }
 
   sortData = (key) => {
@@ -20,10 +61,18 @@ class PreseasonOdds extends Component {
     }
 
     const sortedData = [...data].sort((a, b) => {
-      if (a[key] < b[key]) {
+      let aValue = a[key];
+      let bValue = b[key];
+
+      if (typeof aValue === 'string') {
+        aValue = aValue.toLowerCase();
+        bValue = bValue.toLowerCase();
+      }
+
+      if (aValue < bValue) {
         return direction === 'ascending' ? -1 : 1;
       }
-      if (a[key] > b[key]) {
+      if (aValue > bValue) {
         return direction === 'ascending' ? 1 : -1;
       }
       return 0;
@@ -33,7 +82,10 @@ class PreseasonOdds extends Component {
   };
 
   render() {
-    const { data } = this.state;
+    const { data, loading, error } = this.state;
+
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>{error}</div>;
 
     return (
       <div className="table-container">

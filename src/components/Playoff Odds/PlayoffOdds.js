@@ -1,14 +1,39 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import data from '../../data/data.json';
+import Papa from 'papaparse';
 import './PlayoffOdds.css';
 
 class PlayoffOdds extends Component {
   constructor(props) {
     super(props);
-    const sortedData = [...data].sort((a, b) => b.current_win - a.current_win);
-    this.state = { data: sortedData, sortConfig: { key: 'current_win', direction: 'descending' } };
+    this.state = {
+      data: [],
+      sortConfig: { key: 'current_win', direction: 'descending' },
+    };
+  }
+
+  componentDidMount() {
+    Papa.parse('/currentdata.csv', {
+      download: true,
+      header: true,
+      skipEmptyLines: true,
+      complete: (result) => {
+        const parsedData = result.data.map((team) => ({
+          ...team,
+          current_playoffs: parseFloat(team.current_playoffs),
+          current_round2: parseFloat(team.current_round2),
+          current_conf: parseFloat(team.current_conf),
+          current_final: parseFloat(team.current_final),
+          current_win: parseFloat(team.current_win),
+        }));
+        const sortedData = [...parsedData].sort((a, b) => b.current_win - a.current_win);
+        this.setState({ data: sortedData });
+      },
+      error: (error) => {
+        console.error('Error loading CSV:', error);
+      },
+    });
   }
 
   sortData = (key) => {
@@ -20,6 +45,9 @@ class PlayoffOdds extends Component {
     }
 
     const sortedData = [...data].sort((a, b) => {
+      if (typeof a[key] === 'number' && typeof b[key] === 'number') {
+        return direction === 'ascending' ? a[key] - b[key] : b[key] - a[key];
+      }
       if (a[key] < b[key]) {
         return direction === 'ascending' ? -1 : 1;
       }
@@ -38,7 +66,7 @@ class PlayoffOdds extends Component {
     return (
       <div className="table-container">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <p>Updated as of 12/7/2024</p>
+        <p>Updated as of 12/8/2024</p>
         <Table striped bordered hover>
           <thead>
             <tr>
@@ -51,8 +79,8 @@ class PlayoffOdds extends Component {
             </tr>
           </thead>
           <tbody>
-            {data.map((team) => (
-              <tr key={team.name}>
+            {data.map((team, index) => (
+              <tr key={index}>
                 <td>
                   <div className="logo-container">
                     <img 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 import teamsData from '../../data/vibes.json';
-import './Divisions.css'; // Ensure this path is correct
+import './Divisions.css';
 
 class Vibes extends Component {
   constructor(props) {

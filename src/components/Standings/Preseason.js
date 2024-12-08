@@ -1,19 +1,44 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
-import teamsData from '../../data/data.json';
-import './Divisions.css'; // Ensure this path is correct
+import Papa from 'papaparse';
+import './Divisions.css';
 
 class Preseason extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      teamsData: teamsData,
+      teamsData: [],
     };
   }
+
+  componentDidMount() {
+    this.loadCSVData('/startdata.csv');
+  }
+
+  loadCSVData = (filePath) => {
+    fetch(filePath)
+      .then((response) => response.text())
+      .then((csvData) => {
+        Papa.parse(csvData, {
+          header: true,
+          skipEmptyLines: true,
+          complete: (result) => {
+            this.setState({ teamsData: result.data });
+          },
+          error: (err) => {
+            console.error('Error parsing CSV:', err);
+          },
+        });
+      })
+      .catch((err) => {
+        console.error('Error fetching CSV:', err);
+      });
+  };
 
   render() {
     const { teamsData } = this.state;
 
+    // Helper function to get sorted teams by division
     const getSortedTeams = (division) => {
       return teamsData
         .filter((team) => team.division === division)
@@ -39,10 +64,10 @@ class Preseason extends Component {
               {centralTeams.map((team) => (
                 <tr key={team.name}>
                   <td>
-                    <img 
-                      src={team.logo} 
-                      className="imageColumn" 
-                      alt={`${team.name} logo`} 
+                    <img
+                      src={team.logo}
+                      className="imageColumn"
+                      alt={`${team.name} logo`}
                     />
                     <span className="abrvColumn">{team.abrv}</span>
                   </td>
@@ -64,10 +89,10 @@ class Preseason extends Component {
               {pacificTeams.map((team) => (
                 <tr key={team.name}>
                   <td>
-                    <img 
-                      src={team.logo} 
-                      className="imageColumn" 
-                      alt={`${team.name} logo`} 
+                    <img
+                      src={team.logo}
+                      className="imageColumn"
+                      alt={`${team.name} logo`}
                     />
                     <span className="abrvColumn">{team.abrv}</span>
                   </td>
@@ -89,10 +114,10 @@ class Preseason extends Component {
               {atlanticTeams.map((team) => (
                 <tr key={team.name}>
                   <td>
-                    <img 
-                      src={team.logo} 
-                      className="imageColumn" 
-                      alt={`${team.name} logo`} 
+                    <img
+                      src={team.logo}
+                      className="imageColumn"
+                      alt={`${team.name} logo`}
                     />
                     <span className="abrvColumn">{team.abrv}</span>
                   </td>
@@ -114,10 +139,10 @@ class Preseason extends Component {
               {metroTeams.map((team) => (
                 <tr key={team.name}>
                   <td>
-                    <img 
-                      src={team.logo} 
-                      className="imageColumn" 
-                      alt={`${team.name} logo`} 
+                    <img
+                      src={team.logo}
+                      className="imageColumn"
+                      alt={`${team.name} logo`}
                     />
                     <span className="abrvColumn">{team.abrv}</span>
                   </td>

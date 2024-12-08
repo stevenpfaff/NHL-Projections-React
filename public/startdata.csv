@@ -1,0 +1,33 @@
+id,name,abrv,division,primaryColor,logo,playoffs,second_round,conf_final,cup_final,cup_win,low_points,proj_points,high_points,low_goals,proj_goals,high_goals,high_goals_against,proj_goals_against,low_goals_against,DIF
+1,Anaheim Ducks,ANA,Pacific,#00685e,/Images/ducks.png,2.5%,0.5%,0.1%,0.01%,0.00%,67,73.0,79,204,214,224,253,264,275,-50
+2,Boston Bruins,BOS,Atlantic,#FFB81C,/Images/bruins.png,66.7%,33.9%,16.6%,7.8%,4.1%,88,94.1,100,215,224,234,201,210,220,14
+3,Buffalo Sabres,BUF,Atlantic,,/Images/sabres.png,16.3%,4.5%,1.4%,0.4%,0.1%,76,82.1,88,215,225,235,235,246,256,-21
+4,Calgary Flames,CGY,Pacific,,/Images/flames.png,14.8%,4.3%,1.3%,0.4%,0.1%,75,81.1,87,206,216,226,229,239,250,-23
+5,Carolina Hurricanes,CAR,Metropolitan,,/Images/canes.png,90.9%,54.5%,30.0%,16.6%,9.6%,96,101.8,107,235,245,256,197,206,216,39
+6,Chicago Blackhawks,CHI,Central,,/Images/blackhawks.png,5.8%,1.7%,0.5%,0.1%,0.01%,72,77.1,83,195,204,214,229,239,249,-35
+7,Colorado Avalanche,COL,Central,,/Images/avalanche.png,78.7%,38.8%,18.4%,8.3%,3.8%,91,97.1,103,247,257,268,221,231,241,26
+8,Columbus Blue Jackets,CBJ,Metropolitan,,/Images/blue jackets.png,0.8%,0.2%,0.01%,0.00%,0.00%,64,70.0,76,192,202,211,249,259,270,-57
+9,Dallas Stars,DAL,Central,,/Images/stars.png,91.4%,55.2%,30.7%,17.7%,9.2%,96,101.9,108,248,259,269,208,218,228,41
+10,Detroit Red Wings,DET,Atlantic,,/Images/red wings.png,31.9%,11.5%,4.2%,1.4%,0.6%,81,86.6,92,215,225,235,222,233,243,-8
+11,Edmonton Oilers,EDM,Pacific,,/Images/oilers.png,91.4%,54.6%,31.2%,17.4%,9.1%,96,101.4,107,260,271,283,220,230,240,41
+12,Florida Panthers,FLA,Atlantic,,/Images/panthers.png,87.8%,51.5%,28.7%,16.2%,9.4%,95,100.3,106,221,231,241,189,199,209,32
+13,Los Angeles Kings,LAK,Pacific,,/Images/kings.png,69.0%,35.2%,18.3%,9.2%,4.2%,88,94.1,100,217,227,237,203,212,222,15
+14,Minnesota Wild,MIN,Central,,/Images/wild.png,49.9%,19.8%,8.0%,3.1%,1.1%,85,90.5,96,207,217,227,203,213,223,4
+15,Montreal Canadiens,MTL,Atlantic,,/Images/canadiens.png,2.6%,0.4%,0.1%,0.01%,0.01%,68,73.9,80,204,214,224,250,261,272,-47
+16,Nashville Predators,NSH,Central,,/Images/predators.png,75.8%,41.6%,21.8%,11.1%,5.3%,91,96.2,102,234,244,254,212,222,233,22
+17,New Jersey Devils,NJD,Metropolitan,,/Images/devils.png,83.1%,43.1%,21.6%,10.6%,5.5%,93,98.3,104,249,259,269,219,229,239,30
+18,New York Islanders,NYI,Metropolitan,,/Images/islanders.png,57.9%,23.7%,10.2%,4.4%,1.7%,87,92.2,98,216,226,236,208,217,227,9
+19,New York Rangers,NYR,Metropolitan,,/Images/rangers.png,89.2%,52.7%,29.1%,16.1%,9.1%,95,100.9,107,228,237,248,194,203,213,34
+20,Ottawa Senators,OTT,Atlantic,,/Images/senators.png,45.7%,19.8%,8.4%,3.3%,1.5%,84,89.5,95,215,225,235,215,224,234,1
+21,Philadelphia Flyers,PHI,Metropolitan,,/Images/flyers.png,8.3%,1.8%,0.6%,0.1%,0.02%,73,78.6,84,213,223,233,243,254,264,-31
+22,Pittsburgh Penguins,PIT,Metropolitan,,/Images/penguins.png,24.2%,8.4%,2.8%,1.0%,0.3%,79,84.6,90,223,234,244,237,248,258,-14
+23,San Jose Sharks,SJS,Pacific,,/Images/sharks.png,0.01%,0.00%,0.00%,0.00%,0.00%,51,56.1,62,173,183,192,274,285,297,-102
+24,Seattle Kraken,SEA,Pacific,,/Images/kraken.png,44.5%,17.9%,7.5%,2.8%,1.0%,83,89.0,95,215,225,235,215,225,234,0
+25,St. Louis Blues,STL,Central,,/Images/blues.png,25.3%,8.4%,2.8%,0.9%,0.4%,79,85.0,91,206,216,226,219,229,239,-13
+26,Tampa Bay Lightning,TBL,Atlantic,,/Images/lightning.png,62.0%,30.7%,15.9%,7.6%,4.1%,87,92.9,99,223,234,244,213,223,233,11
+27,Toronto Maple Leafs,TOR,Atlantic,,/Images/leafs.png,86.3%,47.0%,24.4%,12.2%,6.4%,94,99.6,105,235,245,256,203,213,223,32
+28,Utah Hockey Club,UTA,Central,,/Images/utah.png,40.7%,16.5%,6.5%,2.7%,0.9%,83,88.6,94,215,225,235,216,225,235,0
+29,Vancouver Canucks,VAN,Pacific,,/Images/canucks.png,83.6%,47.1%,25.3%,13.6%,6.5%,93,98.2,104,222,232,242,196,205,215,27
+30,Vegas Golden Knights,VGK,Pacific,,/Images/golden knights.png,63.3%,27.1%,12.2%,5.4%,2.1%,87,92.9,99,233,243,254,221,231,241,12
+31,Washington Capitals,WSH,Metropolitan,,/Images/capitals.png,46.4%,16.3%,6.0%,2.2%,0.9%,84,89.8,96,219,229,240,218,227,237,2
+32,Winnipeg Jets,WPG,Central,,/Images/jets.png,63.3%,31.2%,15.4%,7.3%,3.1%,88,93.3,99,208,218,228,197,207,216,11
