@@ -69,7 +69,7 @@ const TeamCard = () => {
                         <tr>
                             <td className='category-td'>Reach Playoffs</td>
                             <td className='stat-td'>{team.start_playoffs}%</td>
-                            <td className='stat-td'>{team.current_playoffs}</td>
+                            <td className='stat-td'>{team.current_playoffs}%</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Reach Second Round</td>
