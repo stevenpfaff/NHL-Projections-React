@@ -2,9 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
-import Central from './components/Home/Central';
-import Pacific from './components/Home/Pacific';
-import Atlantic from './components/Home/Atlantic';
 import PlayoffOdds from './components/Playoff Odds/PlayoffOdds';
 import Divisions from './components/Standings/Divisions';
 import OddsStandings from './components/Standings/OddsStandings';
@@ -21,9 +18,6 @@ function App() {
             <NavBar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/Central" element={<Central />} />
-                <Route path="/Pacific" element={<Pacific />} />
-                <Route path="/Atlantic" element={<Atlantic />} />
                 <Route path="/PlayoffOdds" element={<PlayoffOdds />} />
                 <Route path="/Divisions" element={<Divisions />} />
                 <Route path="/OddsDivisional" element={<OddsStandings />} />
