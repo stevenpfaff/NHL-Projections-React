@@ -51,6 +51,8 @@ class Preseason extends Component {
     const metroTeams = getSortedTeams('Metropolitan');
 
     return (
+      <div>
+        <h1 style={{ marginTop: '2%' }}>NHL Preseason Projected Standings</h1>
       <div className="divisions-container">
         <div className="division-column">
           <Table striped bordered hover>
@@ -152,6 +154,7 @@ class Preseason extends Component {
             </tbody>
           </Table>
         </div>
+      </div>
       </div>
     );
   }

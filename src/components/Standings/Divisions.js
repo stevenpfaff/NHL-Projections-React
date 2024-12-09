@@ -46,6 +46,9 @@ class Divisions extends Component {
     
 
     return (
+      <div>
+      <h1 style={{ marginTop: '2%' }}>NHL Projected Standings</h1>
+      <p>Last Updated 12/9/2024</p>
       <div className="divisions-container">
         <div className="division-column">
           <Table striped bordered hover>
@@ -147,6 +150,7 @@ class Divisions extends Component {
             </tbody>
           </Table>
         </div>
+      </div>
       </div>
     );
   }

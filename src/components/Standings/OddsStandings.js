@@ -56,6 +56,8 @@ class OddsStandings extends Component {
     const metroTeams = this.getSortedTeams('Metropolitan');
 
     return (
+      <div>
+        <h1 style={{ marginTop: '2%' }}>NHL Playoff Odds</h1>
       <div className="divisions-container">
         <div className="division-column">
           <Table striped bordered hover>
@@ -157,6 +159,7 @@ class OddsStandings extends Component {
             </tbody>
           </Table>
         </div>
+      </div>
       </div>
     );
   }

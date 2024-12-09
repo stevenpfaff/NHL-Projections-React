@@ -1,0 +1,33 @@
+place,name,logo,tier,rankChange
+1,Washington Capitals,/Images/capitals.png,Best of the Best,0
+2,Minnesota Wild,/Images/wild.png,Best of the Best,2
+3,Winnipeg Jets,/Images/jets.png,Best of the Best,-1
+4,Carolina Hurricanes,/Images/canes.png,Best of the Best,-1
+5,Vegas Golden Knights,/Images/golden knights.png,Solid Contender,0
+6,Dallas Stars,/Images/stars.png,Solid Contender,0
+7,Florida Panthers,/Images/panthers.png,Solid Contender,2
+8,Los Angeles Kings,/Images/kings.png,Solid Contender,3
+9,New Jersey Devils,/Images/devils.png,Solid Contender,-1
+10,Toronto Maple Leafs,/Images/leafs.png,Solid Contender,-3
+11,Edmonton Oilers,/Images/oilers.png,Solid Contender,-1
+12,Tampa Bay Lightning,/Images/lightning.png,Solid Contender,0
+13,Vancouver Canucks,/Images/canucks.png,Solid Contender,0
+14,New York Rangers,/Images/rangers.png,The Fringe,0
+15,Colorado Avalanche,/Images/avalanche.png,The Fringe,0
+16,Boston Bruins,/Images/bruins.png,The Fringe,4
+17,Calgary Flames,/Images/flames.png,The Fringe,0
+18,Utah Hockey Club,/Images/utah.png,The Fringe,1
+19,Seattle Kraken,/Images/kraken.png,The Fringe,8
+20,Ottawa Senators,/Images/senators.png,Pure Mid,6
+21,New York Islanders,/Images/islanders.png,Pure Mid,2
+22,Philadelphia Flyers,/Images/flyers.png,Pure Mid,-4
+23,Buffalo Sabres,/Images/sabres.png,Pure Mid,-7
+24,St. Louis Blues,/Images/blues.png,No Mans Land,1
+25,Columbus Blue Jackets,/Images/blue jackets.png,Spoiler Alert,-4
+26,Pittsburgh Penguins,/Images/penguins.png,No Mans Land,2
+27,Anaheim Ducks,/Images/ducks.png,Spoiler Alert,-5
+28,Detroit Red Wings,/Images/red wings.png,No Mans Land,-4
+29,Montreal Canadiens,/Images/canadiens.png,Spoiler Alert,0
+30,San Jose Sharks,/Images/sharks.png,Spoiler Alert,0
+31,Nashville Predators,/Images/predators.png,Hope Deferred,0
+32,Chicago Blackhawks,/Images/blackhawks.png,Hope Deferred,0

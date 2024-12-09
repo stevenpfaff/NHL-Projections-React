@@ -1,19 +1,47 @@
 import React, { Component } from 'react';
 import { Button, Table } from 'react-bootstrap';
-import data from '../../data/rankings.json';
+import Papa from 'papaparse';
 import './PowerRankings.css';
 import { FaArrowUp, FaArrowDown } from 'react-icons/fa';
 
 class PowerRankings extends Component {
   constructor(props) {
     super(props);
-    const sortedData = [...data].sort((a, b) => a.place - b.place);
     this.state = {
-      data: sortedData,
+      data: [],
       sortConfig: { key: 'place', direction: 'ascending' },
       viewMode: 'tiered',
+      isLoading: true,
     };
   }
+
+  componentDidMount() {
+    this.loadCSVData();
+  }
+
+  loadCSVData = () => {
+    fetch('/rankings.csv')
+      .then((response) => response.text())
+      .then((csvText) => {
+        Papa.parse(csvText, {
+          header: true,
+          skipEmptyLines: true,
+          complete: (result) => {
+            const parsedData = result.data.map((item) => ({
+              ...item,
+              place: parseInt(item.place, 10),
+              rankChange: parseInt(item.rankChange, 10),
+            }));
+            const sortedData = [...parsedData].sort((a, b) => a.place - b.place);
+            this.setState({ data: sortedData, isLoading: false });
+          },
+        });
+      })
+      .catch((error) => {
+        console.error('Error loading CSV file:', error);
+        this.setState({ isLoading: false });
+      });
+  };
 
   sortData = (key) => {
     const { data, sortConfig } = this.state;
@@ -69,16 +97,21 @@ class PowerRankings extends Component {
   }
 
   render() {
-    const { viewMode, data } = this.state;
+    const { viewMode, data, isLoading } = this.state;
+
+    if (isLoading) {
+      return <div>Loading...</div>;
+    }
+
     const tiers = this.groupByTier();
-  
+
     return (
       <div className="power-table-container">
         <Button onClick={this.toggleView} variant="primary" style={{ marginBottom: '15px' }}>
           Toggle {viewMode === 'tiered' ? 'Ranked' : 'Tiered'} View
         </Button>
         <h1>NHL Power Rankings</h1>
-        <p>Last Updated 12/2/2024</p>
+        <p>Last Updated 12/9/2024</p>
         {viewMode === 'tiered' ? (
           Object.keys(tiers).map((tier) => (
             <div key={tier} className={`tier-section tier-${tier.toLowerCase().replace(/\s+/g, '-')}`}>
