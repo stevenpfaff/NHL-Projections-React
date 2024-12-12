@@ -26,6 +26,7 @@ class PlayoffOdds extends Component {
           current_conf: parseFloat(team.current_conf),
           current_final: parseFloat(team.current_final),
           current_win: parseFloat(team.current_win),
+          current_points: parseFloat(team.current_points),
         }));
         const sortedData = [...parsedData].sort((a, b) => b.current_win - a.current_win);
         this.setState({ data: sortedData });
@@ -71,6 +72,7 @@ class PlayoffOdds extends Component {
           <thead>
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>
+              <th onClick={() => this.sortData('current_points')}>Proj PTS</th>
               <th onClick={() => this.sortData('current_playoffs')}>Playoff %</th>
               <th onClick={() => this.sortData('current_round2')}>Round 2 %</th>
               <th onClick={() => this.sortData('current_conf')}>Conf Final %</th>
@@ -93,6 +95,7 @@ class PlayoffOdds extends Component {
                     </Link>
                   </div>
                 </td>
+                <td className='stat-td'>{team.current_points}</td>
                 <td className='stat-td'>{team.current_playoffs}%</td>
                 <td className='stat-td'>{team.current_round2}%</td>
                 <td className='stat-td'>{team.current_conf}%</td>

@@ -32,6 +32,7 @@ class PreseasonOdds extends Component {
             conf_final: parseFloat(team.conf_final),
             cup_final: parseFloat(team.cup_final),
             cup_win: parseFloat(team.cup_win),
+            proj_points: parseFloat(team.proj_points),
           }));
 
           const sortedData = [...processedData].sort((a, b) => b.cup_win - a.cup_win);
@@ -94,6 +95,7 @@ class PreseasonOdds extends Component {
           <thead>
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>
+              <th onClick={() => this.sortData('proj_points')}>Proj Points</th>
               <th onClick={() => this.sortData('playoffs')}>Playoff %</th>
               <th onClick={() => this.sortData('second_round')}>Round 2 %</th>
               <th onClick={() => this.sortData('conf_final')}>Conf Final %</th>
@@ -116,6 +118,7 @@ class PreseasonOdds extends Component {
                     </Link>
                   </div>
                 </td>
+                <td className='stat-td'>{team.proj_points}</td>
                 <td className='stat-td'>{team.playoffs}%</td>
                 <td className='stat-td'>{team.second_round}%</td>
                 <td className='stat-td'>{team.conf_final}%</td>
