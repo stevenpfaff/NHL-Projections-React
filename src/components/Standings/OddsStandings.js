@@ -64,7 +64,8 @@ class OddsStandings extends Component {
             <thead className="headerStyleWest">
               <tr>
                 <th className="pointsColumn">Central</th>
-                <th className="pointsColumn">Playoff%</th>
+                <th className="pointsColumn">PO%</th>
+                <th className="pointsColumn">Cup%</th>
               </tr>
             </thead>
             <tbody>
@@ -79,6 +80,7 @@ class OddsStandings extends Component {
                     <span className="abrvColumn">{team.abrv}</span>
                   </td>
                   <td className="pointsColumn">{team.current_playoffs}</td>
+                  <td className="pointsColumn">{team.current_win}</td>
                 </tr>
               ))}
             </tbody>
@@ -89,7 +91,8 @@ class OddsStandings extends Component {
             <thead className="headerStyleWest">
               <tr>
                 <th className="pointsColumn">Pacific</th>
-                <th className="pointsColumn">Playoff%</th>
+                <th className="pointsColumn">PO%</th>
+                <th className="pointsColumn">Cup%</th>
               </tr>
             </thead>
             <tbody>
@@ -104,6 +107,7 @@ class OddsStandings extends Component {
                     <span className="abrvColumn">{team.abrv}</span>
                   </td>
                   <td className="pointsColumn">{team.current_playoffs}</td>
+                  <td className="pointsColumn">{team.current_win}</td>
                 </tr>
               ))}
             </tbody>
@@ -114,7 +118,8 @@ class OddsStandings extends Component {
             <thead className="headerStyleEast">
               <tr>
                 <th className="pointsColumn">Atlantic</th>
-                <th className="pointsColumn">Playoff%</th>
+                <th className="pointsColumn">PO%</th>
+                <th className="pointsColumn">Cup%</th>
               </tr>
             </thead>
             <tbody>
@@ -129,6 +134,7 @@ class OddsStandings extends Component {
                     <span className="abrvColumn">{team.abrv}</span>
                   </td>
                   <td className="pointsColumn">{team.current_playoffs}</td>
+                  <td className="pointsColumn">{team.current_win}</td>
                 </tr>
               ))}
             </tbody>
@@ -138,8 +144,9 @@ class OddsStandings extends Component {
           <Table striped bordered hover>
             <thead className="headerStyleEast">
               <tr>
-                <th className="pointsColumn">Metropolitan</th>
-                <th className="pointsColumn">Playoff%</th>
+                <th className="pointsColumn">Metro</th>
+                <th className="pointsColumn">PO%</th>
+                <th className="pointsColumn">Cup%</th>
               </tr>
             </thead>
             <tbody>
@@ -154,6 +161,7 @@ class OddsStandings extends Component {
                     <span className="abrvColumn">{team.abrv}</span>
                   </td>
                   <td className="pointsColumn">{team.current_playoffs}</td>
+                  <td className="pointsColumn">{team.current_win}</td>
                 </tr>
               ))}
             </tbody>
