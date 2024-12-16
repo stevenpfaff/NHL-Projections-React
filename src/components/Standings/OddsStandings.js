@@ -59,7 +59,7 @@ class OddsStandings extends Component {
       <div>
         <h1 style={{ marginTop: '2%' }}>NHL Playoff Odds</h1>
         <p>Last Updated 12/16/2024</p>
-      <div className="divisions-container">
+      <div className="divisionOdds-container">
         <div className="division-column">
           <Table striped bordered hover>
             <thead className="headerStyleWest">
@@ -75,7 +75,7 @@ class OddsStandings extends Component {
                   <td>
                     <img 
                       src={team.logo} 
-                      className="imageColumn" 
+                      className="imageColumnOdds" 
                       alt={`${team.name} logo`} 
                     />
                     <span className="abrvColumnOdds">{team.abrv}</span>
@@ -102,7 +102,7 @@ class OddsStandings extends Component {
                   <td>
                     <img 
                       src={team.logo} 
-                      className="imageColumn" 
+                      className="imageColumnOdds" 
                       alt={`${team.name} logo`} 
                     />
                     <span className="abrvColumnOdds">{team.abrv}</span>
@@ -129,7 +129,7 @@ class OddsStandings extends Component {
                   <td>
                     <img 
                       src={team.logo} 
-                      className="imageColumn" 
+                      className="imageColumnOdds" 
                       alt={`${team.name} logo`} 
                     />
                     <span className="abrvColumnOdds">{team.abrv}</span>
@@ -156,7 +156,7 @@ class OddsStandings extends Component {
                   <td>
                     <img 
                       src={team.logo} 
-                      className="imageColumn" 
+                      className="imageColumnOdds" 
                       alt={`${team.name} logo`} 
                     />
                     <span className="abrvColumnOdds">{team.abrv}</span>
