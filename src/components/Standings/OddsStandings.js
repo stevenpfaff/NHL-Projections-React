@@ -58,14 +58,15 @@ class OddsStandings extends Component {
     return (
       <div>
         <h1 style={{ marginTop: '2%' }}>NHL Playoff Odds</h1>
+        <p>Last Updated 12/16/2024</p>
       <div className="divisions-container">
         <div className="division-column">
           <Table striped bordered hover>
             <thead className="headerStyleWest">
               <tr>
-                <th className="pointsColumn">Central</th>
-                <th className="pointsColumn">PO%</th>
-                <th className="pointsColumn">Cup%</th>
+                <th className="oddsColumn">Central</th>
+                <th className="oddsColumn">PO%</th>
+                <th className="oddsColumn">Cup%</th>
               </tr>
             </thead>
             <tbody>
@@ -77,10 +78,10 @@ class OddsStandings extends Component {
                       className="imageColumn" 
                       alt={`${team.name} logo`} 
                     />
-                    <span className="abrvColumn">{team.abrv}</span>
+                    <span className="abrvColumnOdds">{team.abrv}</span>
                   </td>
-                  <td className="pointsColumn">{team.current_playoffs}</td>
-                  <td className="pointsColumn">{team.current_win}</td>
+                  <td className="oddsColumn">{team.current_playoffs}</td>
+                  <td className="oddsColumn">{team.current_win}</td>
                 </tr>
               ))}
             </tbody>
@@ -90,9 +91,9 @@ class OddsStandings extends Component {
           <Table striped bordered hover>
             <thead className="headerStyleWest">
               <tr>
-                <th className="pointsColumn">Pacific</th>
-                <th className="pointsColumn">PO%</th>
-                <th className="pointsColumn">Cup%</th>
+                <th className="oddsColumn">Pacific</th>
+                <th className="oddsColumn">PO%</th>
+                <th className="oddsColumn">Cup%</th>
               </tr>
             </thead>
             <tbody>
@@ -104,10 +105,10 @@ class OddsStandings extends Component {
                       className="imageColumn" 
                       alt={`${team.name} logo`} 
                     />
-                    <span className="abrvColumn">{team.abrv}</span>
+                    <span className="abrvColumnOdds">{team.abrv}</span>
                   </td>
-                  <td className="pointsColumn">{team.current_playoffs}</td>
-                  <td className="pointsColumn">{team.current_win}</td>
+                  <td className="oddsColumn">{team.current_playoffs}</td>
+                  <td className="oddsColumn">{team.current_win}</td>
                 </tr>
               ))}
             </tbody>
@@ -117,9 +118,9 @@ class OddsStandings extends Component {
           <Table striped bordered hover>
             <thead className="headerStyleEast">
               <tr>
-                <th className="pointsColumn">Atlantic</th>
-                <th className="pointsColumn">PO%</th>
-                <th className="pointsColumn">Cup%</th>
+                <th className="oddsColumn">Atlantic</th>
+                <th className="oddsColumn">PO%</th>
+                <th className="oddsColumn">Cup%</th>
               </tr>
             </thead>
             <tbody>
@@ -131,10 +132,10 @@ class OddsStandings extends Component {
                       className="imageColumn" 
                       alt={`${team.name} logo`} 
                     />
-                    <span className="abrvColumn">{team.abrv}</span>
+                    <span className="abrvColumnOdds">{team.abrv}</span>
                   </td>
-                  <td className="pointsColumn">{team.current_playoffs}</td>
-                  <td className="pointsColumn">{team.current_win}</td>
+                  <td className="oddsColumn">{team.current_playoffs}</td>
+                  <td className="oddsColumn">{team.current_win}</td>
                 </tr>
               ))}
             </tbody>
@@ -144,9 +145,9 @@ class OddsStandings extends Component {
           <Table striped bordered hover>
             <thead className="headerStyleEast">
               <tr>
-                <th className="pointsColumn">Metro</th>
-                <th className="pointsColumn">PO%</th>
-                <th className="pointsColumn">Cup%</th>
+                <th className="oddsColumn">Metropolitan</th>
+                <th className="oddsColumn">PO%</th>
+                <th className="oddsColumn">Cup%</th>
               </tr>
             </thead>
             <tbody>
@@ -158,10 +159,10 @@ class OddsStandings extends Component {
                       className="imageColumn" 
                       alt={`${team.name} logo`} 
                     />
-                    <span className="abrvColumn">{team.abrv}</span>
+                    <span className="abrvColumnOdds">{team.abrv}</span>
                   </td>
-                  <td className="pointsColumn">{team.current_playoffs}</td>
-                  <td className="pointsColumn">{team.current_win}</td>
+                  <td className="oddsColumn">{team.current_playoffs}</td>
+                  <td className="oddsColumn">{team.current_win}</td>
                 </tr>
               ))}
             </tbody>

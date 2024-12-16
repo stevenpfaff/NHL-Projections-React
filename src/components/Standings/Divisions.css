@@ -34,6 +34,19 @@
   text-align: center;
 }
 
+.abrvColumnOdds {
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+}
+
+.oddsColumn {
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+}
+
+
 .headerStyleEast, .th {
   background-color: #960000;
   /* color: #ffffff;  */
