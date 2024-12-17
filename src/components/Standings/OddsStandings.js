@@ -58,7 +58,7 @@ class OddsStandings extends Component {
     return (
       <div>
         <h1 style={{ marginTop: '2%' }}>NHL Playoff Odds</h1>
-        <p>Last Updated 12/16/2024</p>
+        <p>Last Updated 12/17/2024</p>
       <div className="divisionOdds-container">
         <div className="division-column">
           <Table striped bordered hover>
