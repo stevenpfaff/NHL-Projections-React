@@ -11,6 +11,7 @@ import TeamCard from './components/Teams/TeamCard';
 import Percentiles from './components/Percentile Outcomes/Percentiles';
 import Vibes from './components/Standings/Vibes';
 import PowerRankings from './components/Power Rankings/PowerRankings';
+import PlayoffOddsChart from './components/Playoff Odds/OddsChart';
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/Picks" element={<Vibes />} />
                 <Route path="/team/:id" element={<TeamCard />} />
                 <Route path="/PowerRankings" element={<PowerRankings />} />
+                <Route path="/Timeline" element={<PlayoffOddsChart />} />
             </Routes>
         </Router>
     );

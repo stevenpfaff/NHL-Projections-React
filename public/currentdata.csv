@@ -1,7 +1,7 @@
 id,name,abrv,division,primaryColor,logo,current_standing,current_playoffs,current_round2,current_conf,current_final,current_win,current_points,goals,goals against,dif
 1,Anaheim Ducks,ANA,Pacific,#00685e,/Images/ducks.png,7,0.5%,0.1%,0.04%,0.01%,0.0%,73,214,269,-55
 2,Boston Bruins,BOS,Atlantic,#FFB81C,/Images/bruins.png,3,59.3%,27.2%,12.4%,5.7%,2.6%,91,232,246,-14
-3,Buffalo Sabres,BUF,Atlantic,#0037087,/Images/sabres.png,8,3.3%,1.2%,0.4%,0.1%,0.1%,77,235,262,-27
+3,Buffalo Sabres,BUF,Atlantic,#003087,/Images/sabres.png,8,3.3%,1.2%,0.4%,0.1%,0.1%,77,235,262,-27
 4,Calgary Flames,CGY,Pacific,#D2001C,/Images/flames.png,5,28.8%,9.8%,3.4%,1.2%,0.4%,88,229,249,-20
 5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,3,96.0%,58.1%,34.0%,20.0%,11.2%,101,266,225,41
 6,Chicago Blackhawks,CHI,Central,#CF0A2C,/Images/blackhawks.png,7,0.6%,0.2%,0.1%,0.01%,0.0%,73,217,252,-35

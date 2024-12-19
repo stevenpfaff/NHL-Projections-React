@@ -23,6 +23,7 @@ const NavBar = () => {
             <NavDropdown.Item href="/Percentiles">Preseason Percentile Outcomes</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href="/PowerRankings">Power Rankings</Nav.Link>
+          <Nav.Link href="/Timeline">Playoff Odds Timeline</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
