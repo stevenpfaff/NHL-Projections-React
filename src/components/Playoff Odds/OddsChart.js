@@ -11,31 +11,32 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
-const CustomTooltip = ({ active, payload, label }) => {
-  if (active && payload && payload.length) {
-    const hoveredLine = payload[0];
-    const teamName = hoveredLine.dataKey;
-    const odds = hoveredLine.value;
-
-    return (
-      <div
-        style={{
-          backgroundColor: '#fff',
-          border: '1px solid #ccc',
-          padding: '10px',
-          borderRadius: '5px',
-        }}
-      >
-        <p><strong>Date:</strong> {label}</p>
-        <p><strong>Team:</strong> {teamName}</p>
-        <p><strong>Playoff Odds:</strong> {odds}%</p>
-      </div>
-    );
-  }
-  return null;
+const CustomTooltip = ({ active, payload, label, hoveredTeam }) => {
+    if (active && payload && payload.length) {
+      const hoveredLine = payload.find(item => item.dataKey === hoveredTeam); // Get the hovered team's data
+      if (hoveredLine) {
+        const teamName = hoveredLine.dataKey;
+        const odds = hoveredLine.value;
+        return (
+          <div
+            style={{
+              backgroundColor: '#fff',
+              border: '1px solid #ccc',
+              padding: '10px',
+              borderRadius: '5px',
+            }}
+          >
+            <p><strong>Date:</strong> {label}</p>
+            <p><strong>Team:</strong> {teamName}</p>
+            <p><strong>Playoff Odds:</strong> {odds}%</p>
+          </div>
+        );
+      }
+    }
+    return null;
 };
 
-const CustomLogoLabel = ({ x, y, logo }) => {
+const CustomLogoLabel = ({ x, y, logo, team, onMouseEnter, onMouseLeave }) => {
     return (
       <image
         href={logo}
@@ -44,9 +45,11 @@ const CustomLogoLabel = ({ x, y, logo }) => {
         width={30}
         height={30}
         alt="team logo"
+        onMouseEnter={() => onMouseEnter(team)} // Trigger hover on logo
+        onMouseLeave={onMouseLeave} // Reset hover on logo leave
       />
     );
-  };
+};
 
 const PlayoffOddsChart = () => {
   const [chartData, setChartData] = useState([]);
@@ -54,14 +57,15 @@ const PlayoffOddsChart = () => {
   const [teamColors, setTeamColors] = useState({});
   const [selectedTeams, setSelectedTeams] = useState([]);
   const [teamLogos, setTeamLogos] = useState({});
+  const [hoveredTeam, setHoveredTeam] = useState(null); // State for hovered team
 
   const handleSelectAll = () => {
     setSelectedTeams([...teams]);
-    };
-    
-    const handleDeselectAll = () => {
+  };
+
+  const handleDeselectAll = () => {
     setSelectedTeams([]);
-    };
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -103,7 +107,6 @@ const PlayoffOddsChart = () => {
         },
       });
     };
-      
 
     fetchData();
   }, []);
@@ -120,67 +123,106 @@ const PlayoffOddsChart = () => {
   };
 
   return (
-    <div>
+    <div style={styles.chartContainer}>
       <h1 style={{ marginTop: '2%' }}>NHL Playoff Odds Timeline</h1>
       <TeamSelectorDropdown
-    teams={teams}
-    selectedTeams={selectedTeams}
-    handleTeamSelection={handleTeamSelection}
-    handleSelectAll={handleSelectAll}
-    handleDeselectAll={handleDeselectAll}
-    />
-      <ResponsiveContainer width="100%" height={750}>
-        <LineChart
-          data={chartData}
-          margin={{ top: 20, right: 50, left: 20, bottom: 30 }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis
-            dataKey="date"
-            label={{ value: 'Date', position: 'insideBottom', offset: -5 }}
-            tick={{ fontSize: 12 }}
-            angle={-45}
-            textAnchor="end"
-          />
-          <YAxis
-            label={{ value: 'Playoff Odds (%)', angle: -90, position: 'insideLeft' }}
-          />
-          <Tooltip content={<CustomTooltip />} />
-          {selectedTeams.length === 0
-            ? teams.map((team) => (
-                <Line
-                  key={team}
-                  type="monotone"
-                  dataKey={team}
-                  name={team}
-                  stroke={teamColors[team]}
-                  dot={{ r: 4 }}
-                  label={({ x, y, value, index }) =>
-                    index === chartData.length - 1 ? (
-                      <CustomLogoLabel x={x} y={y} logo={teamLogos[team]} />
-                    ) : null
-                  }
-                />
-              ))
-            : selectedTeams.map((team) => (
-                <Line
-                  key={team}
-                  type="monotone"
-                  dataKey={team}
-                  name={team}
-                  stroke={teamColors[team]}
-                  dot={{ r: 4 }}
-                  label={({ x, y, value, index }) =>
-                    index === chartData.length - 1 ? (
-                      <CustomLogoLabel x={x} y={y} logo={teamLogos[team]} />
-                    ) : null
-                  }
-                />
-              ))}
-        </LineChart>
-      </ResponsiveContainer>
+        teams={teams}
+        selectedTeams={selectedTeams}
+        handleTeamSelection={handleTeamSelection}
+        handleSelectAll={handleSelectAll}
+        handleDeselectAll={handleDeselectAll}
+      />
+      <div style={styles.chartWrapper}>
+        <ResponsiveContainer width="80%" height={800}>
+          <LineChart
+            data={chartData}
+            margin={{ top: 20, right: 50, left: 20, bottom: 30 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis
+              dataKey="date"
+              label={{ value: 'Date', position: 'insideBottom', offset: -5 }}
+              tick={{ fontSize: 12 }}
+              angle={-45}
+              textAnchor="end"
+            />
+            <YAxis
+              label={{ value: 'Playoff Odds (%)', angle: -90, position: 'insideLeft' }}
+            />
+            <Tooltip content={<CustomTooltip hoveredTeam={hoveredTeam} />} />
+            {selectedTeams.length === 0
+              ? teams.map((team) => (
+                  <Line
+                    key={team}
+                    type="monotone"
+                    dataKey={team}
+                    name={team}
+                    stroke={hoveredTeam === team ? '#ff0000' : teamColors[team]} 
+                    strokeWidth={hoveredTeam === team ? 4 : 2} 
+                    dot={{ r: 4 }}
+                    label={({ x, y, value, index }) =>
+                      index === chartData.length - 1 ? (
+                        <CustomLogoLabel
+                          x={x}
+                          y={y}
+                          logo={teamLogos[team]}
+                          team={team}
+                          onMouseEnter={setHoveredTeam} 
+                          onMouseLeave={() => setHoveredTeam(null)} 
+                        />
+                      ) : null
+                    }
+                    onMouseEnter={() => setHoveredTeam(team)} 
+                    onMouseLeave={() => setHoveredTeam(null)} 
+                  />
+                ))
+              : selectedTeams.map((team) => (
+                  <Line
+                    key={team}
+                    type="monotone"
+                    dataKey={team}
+                    name={team}
+                    stroke={hoveredTeam === team ? '#ff0000' : teamColors[team]} 
+                    strokeWidth={hoveredTeam === team ? 4 : 2} 
+                    dot={{ r: 4 }}
+                    label={({ x, y, value, index }) =>
+                      index === chartData.length - 1 ? (
+                        <CustomLogoLabel
+                          x={x}
+                          y={y}
+                          logo={teamLogos[team]}
+                          team={team}
+                          onMouseEnter={setHoveredTeam} 
+                          onMouseLeave={() => setHoveredTeam(null)} 
+                        />
+                      ) : null
+                    }
+                    onMouseEnter={() => setHoveredTeam(team)} 
+                    onMouseLeave={() => setHoveredTeam(null)} 
+                  />
+                ))}
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
+};
+
+const styles = {
+  chartContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center', 
+    minHeight: '100vh',
+    flexDirection: 'column',
+  },
+  chartWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',  
+    marginTop: '20px', 
+  }
 };
 
 export default PlayoffOddsChart;
