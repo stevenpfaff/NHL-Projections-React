@@ -3,7 +3,7 @@ import { Table } from 'react-bootstrap';
 import './Divisions.css';
 import Papa from 'papaparse';
 
-class OddsStandings extends Component {
+class SimulatedPoints extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,7 +15,7 @@ class OddsStandings extends Component {
 
   fetchTeamsData = async () => {
     try {
-      const response = await fetch('/currentdata.csv');
+      const response = await fetch('/simulatedpoints.csv');
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
@@ -41,7 +41,7 @@ class OddsStandings extends Component {
     const { teamsData } = this.state;
     return teamsData
       .filter((team) => team.division === division)
-      .sort((a, b) => a.current_standing - b.current_standing);
+      .sort((b, a) => a.points - b.points);
   };
 
   render() {
@@ -57,7 +57,7 @@ class OddsStandings extends Component {
 
     return (
       <div>
-        <h1 style={{ marginTop: '2%' }}>NHL Playoff Odds</h1>
+        <h1 style={{ marginTop: '2%' }}>Simulated Points</h1>
         <p>Last Updated 12/24/2024</p>
       <div className="divisionOdds-container">
         <div className="division-column">
@@ -65,8 +65,9 @@ class OddsStandings extends Component {
             <thead className="headerStyleWest">
               <tr>
                 <th className="oddsColumn">Central</th>
-                <th className="oddsColumn">PO%</th>
-                <th className="oddsColumn">Cup%</th>
+                <th className="oddsColumn">PTS</th>
+                <th className="oddsColumn">Sim PTS</th>
+                <th className="oddsColumn">DIF</th>
               </tr>
             </thead>
             <tbody>
@@ -80,8 +81,9 @@ class OddsStandings extends Component {
                     />
                     <span className="abrvColumnOdds">{team.abrv}</span>
                   </td>
-                  <td className="oddsColumn">{team.current_playoffs}</td>
-                  <td className="oddsColumn">{team.current_win}</td>
+                  <td className="oddsColumn">{team.points}</td>
+                  <td className="oddsColumn">{team.sim_points}</td>
+                  <td className="oddsColumn">{team.dif}</td>
                 </tr>
               ))}
             </tbody>
@@ -92,8 +94,9 @@ class OddsStandings extends Component {
             <thead className="headerStyleWest">
               <tr>
                 <th className="oddsColumn">Pacific</th>
-                <th className="oddsColumn">PO%</th>
-                <th className="oddsColumn">Cup%</th>
+                <th className="oddsColumn">PTS</th>
+                <th className="oddsColumn">Sim PTS</th>
+                <th className="oddsColumn">DIF</th>
               </tr>
             </thead>
             <tbody>
@@ -107,8 +110,9 @@ class OddsStandings extends Component {
                     />
                     <span className="abrvColumnOdds">{team.abrv}</span>
                   </td>
-                  <td className="oddsColumn">{team.current_playoffs}</td>
-                  <td className="oddsColumn">{team.current_win}</td>
+                  <td className="oddsColumn">{team.points}</td>
+                  <td className="oddsColumn">{team.sim_points}</td>
+                  <td className="oddsColumn">{team.dif}</td>
                 </tr>
               ))}
             </tbody>
@@ -119,8 +123,9 @@ class OddsStandings extends Component {
             <thead className="headerStyleEast">
               <tr>
                 <th className="oddsColumn">Atlantic</th>
-                <th className="oddsColumn">PO%</th>
-                <th className="oddsColumn">Cup%</th>
+                <th className="oddsColumn">PTS</th>
+                <th className="oddsColumn">Sim PTS</th>
+                <th className="oddsColumn">DIF</th>
               </tr>
             </thead>
             <tbody>
@@ -134,8 +139,9 @@ class OddsStandings extends Component {
                     />
                     <span className="abrvColumnOdds">{team.abrv}</span>
                   </td>
-                  <td className="oddsColumn">{team.current_playoffs}</td>
-                  <td className="oddsColumn">{team.current_win}</td>
+                  <td className="oddsColumn">{team.points}</td>
+                  <td className="oddsColumn">{team.sim_points}</td>
+                  <td className="oddsColumn">{team.dif}</td>
                 </tr>
               ))}
             </tbody>
@@ -146,8 +152,9 @@ class OddsStandings extends Component {
             <thead className="headerStyleEast">
               <tr>
                 <th className="oddsColumn">Metropolitan</th>
-                <th className="oddsColumn">PO%</th>
-                <th className="oddsColumn">Cup%</th>
+                <th className="oddsColumn">PTS</th>
+                <th className="oddsColumn">Sim PTS</th>
+                <th className="oddsColumn">DIF</th>
               </tr>
             </thead>
             <tbody>
@@ -161,8 +168,9 @@ class OddsStandings extends Component {
                     />
                     <span className="abrvColumnOdds">{team.abrv}</span>
                   </td>
-                  <td className="oddsColumn">{team.current_playoffs}</td>
-                  <td className="oddsColumn">{team.current_win}</td>
+                  <td className="oddsColumn">{team.points}</td>
+                  <td className="oddsColumn">{team.sim_points}</td>
+                  <td className="oddsColumn">{team.dif}</td>
                 </tr>
               ))}
             </tbody>
@@ -174,4 +182,4 @@ class OddsStandings extends Component {
   }
 }
 
-export default OddsStandings;
+export default SimulatedPoints;

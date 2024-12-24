@@ -15,6 +15,7 @@ const NavBar = () => {
             <NavDropdown.Item href="/PlayoffOdds">Playoff Odds</NavDropdown.Item>
             <NavDropdown.Item href="/Divisions">Projected Standings</NavDropdown.Item>
             <NavDropdown.Item href="/OddsDivisional">Playoff Odds Standings</NavDropdown.Item>
+            <NavDropdown.Item href="/SimulatedPoints">Simulated Points</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="Preseason Projections">
           <NavDropdown.Item href="/PreseasonOdds">Preseason Playoff Odds</NavDropdown.Item>
