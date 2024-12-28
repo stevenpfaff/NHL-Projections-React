@@ -58,7 +58,7 @@ class SimulatedPoints extends Component {
     return (
       <div>
         <h1 style={{ marginTop: '2%' }}>Simulated Points</h1>
-        <p>Last Updated 12/24/2024</p>
+        <p>Last Updated 12/28/2024</p>
       <div className="divisionOdds-container">
         <div className="division-column">
           <Table striped bordered hover>
