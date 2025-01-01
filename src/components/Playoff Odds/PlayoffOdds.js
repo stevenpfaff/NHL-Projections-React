@@ -67,7 +67,7 @@ class PlayoffOdds extends Component {
     return (
       <div className="table-container">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <p>Updated as of 12/31/2024</p>
+        <p>Updated as of 1/1/2025</p>
         <Table striped bordered hover>
           <thead>
             <tr>
