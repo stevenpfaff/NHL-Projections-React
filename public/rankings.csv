@@ -10,9 +10,9 @@ place,name,logo,tier,rankChange
 9,Florida Panthers,/Images/panthers.png,Solid Contender,-1
 10,New Jersey Devils,/Images/devils.png,Solid Contender,-5
 11,Toronto Maple Leafs,/Images/leafs.png,Solid Contender,-1
-12,Minnesota Wild,/Images/wild.png,Solid Contender,-1
-13,Colorado Avalanche,/Images/avalanche.png,Solid Contender,0
-14,Ottawa Senators,/Images/senators.png,The Fringe,1
+12,Colorado Avalanche,/Images/avalanche.png,Solid Contender,1
+13,Minnesota Wild,/Images/wild.png,Playoff Team,-2
+14,Ottawa Senators,/Images/senators.png,Playoff Team,1
 15,Vancouver Canucks,/Images/canucks.png,The Fringe,-1
 16,Calgary Flames,/Images/flames.png,The Fringe,1
 17,Columbus Blue Jackets,/Images/blue jackets.png,The Fringe,2
