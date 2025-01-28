@@ -48,7 +48,7 @@ class Divisions extends Component {
     return (
       <div>
       <h1 style={{ marginTop: '2%' }}>NHL Projected Standings</h1>
-      <p>Last Updated 1/27/2025</p>
+      <p>Last Updated 1/28/2025</p>
       <div className="divisions-container">
         <div className="division-column">
           <Table striped bordered hover>
