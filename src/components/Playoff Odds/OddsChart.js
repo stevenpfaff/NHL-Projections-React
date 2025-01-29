@@ -48,6 +48,14 @@ const PlayoffOddsChart = () => {
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
 
+  const handleSelectAll = () => {
+    setSelectedTeams([...teams]);
+  };
+
+  const handleDeselectAll = () => {
+    setSelectedTeams([]);
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       const csvFilePath = '/timelineOdds.csv';
@@ -105,10 +113,18 @@ const PlayoffOddsChart = () => {
 
   const handleTeamSelection = (event) => {
     const { value, checked } = event.target;
-    setSelectedTeams((prevSelectedTeams) =>
-      checked ? [...prevSelectedTeams, value] : prevSelectedTeams.filter((team) => team !== value)
-    );
+  
+    if (value === "selectAll") {
+      setSelectedTeams(teams);  // Select all teams
+    } else if (value === "deselectAll") {
+      setSelectedTeams([]);  // Deselect all teams
+    } else {
+      setSelectedTeams((prevSelectedTeams) =>
+        checked ? [...prevSelectedTeams, value] : prevSelectedTeams.filter((team) => team !== value)
+      );
+    }
   };
+  
 
   return (
     <div style={styles.chartContainer}>
@@ -126,6 +142,8 @@ const PlayoffOddsChart = () => {
         teams={teams}
         selectedTeams={selectedTeams}
         handleTeamSelection={handleTeamSelection}
+        handleSelectAll={handleSelectAll}
+        handleDeselectAll={handleDeselectAll}
       />
 
       <div style={styles.chartWrapper}>
