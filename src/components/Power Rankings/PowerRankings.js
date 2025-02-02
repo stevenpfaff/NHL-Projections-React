@@ -111,7 +111,7 @@ class PowerRankings extends Component {
           Toggle {viewMode === 'tiered' ? 'Ranked' : 'Tiered'} View
         </Button>
         <h1>NHL Power Rankings</h1>
-        <p>Last Updated 1/20/2025</p>
+        <p>Last Updated 2/2/2025</p>
         {viewMode === 'tiered' ? (
           Object.keys(tiers).map((tier) => (
             <div key={tier} className={`tier-section tier-${tier.toLowerCase().replace(/\s+/g, '-')}`}>
