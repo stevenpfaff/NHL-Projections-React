@@ -2,11 +2,11 @@ abrv,logo,division,points,sim_points,dif
 ANA,/Images/ducks.png,Pacific,50,47.9,2.1
 BOS,/Images/bruins.png,Atlantic,58,56.6,1.4
 BUF,/Images/sabres.png,Atlantic,47,51.2,-4.2
-CAR,/Images/canes.png,Metropolitan,68,56.3,11.7
-CBJ,/Images/blue jackets.png,Metropolitan,59,62.4,-3.4
-CGY,/Images/flames.png,Pacific,59,49.4,9.6
-CHI,/Images/blackhawks.png,Central,37,60.6,-23.6
-COL,/Images/avalanche.png,Central,64,44.9,19.1
+CGY,/Images/flames.png,Pacific,59,56.3,2.7
+CAR,/Images/canes.png,Metropolitan,68,62.4,5.6
+CHI,/Images/blackhawks.png,Central,37,49.4,-12.4
+COL,/Images/avalanche.png,Central,64,60.6,3.4
+CBJ,/Images/blue jackets.png,Metropolitan,59,44.9,14.1
 DAL,/Images/stars.png,Central,69,59.7,9.3
 DET,/Images/red wings.png,Atlantic,59,57.6,1.4
 EDM,/Images/oilers.png,Pacific,68,64.2,3.8
@@ -14,20 +14,20 @@ FLA,/Images/panthers.png,Atlantic,67,62.8,4.2
 LAK,/Images/kings.png,Pacific,60,59.7,0.3
 MIN,/Images/wild.png,Central,66,60.3,5.7
 MTL,/Images/canadiens.png,Atlantic,53,47.3,5.7
-NJD,/Images/devils.png,Metropolitan,64,57.5,6.5
-NSH,/Images/predators.png,Central,43,65.6,-22.6
+NSH,/Images/predators.png,Central,43,57.5,-14.5
+NJD,/Images/devils.png,Metropolitan,64,65.6,-1.6
 NYI,/Images/islanders.png,Metropolitan,55,59.4,-4.4
 NYR,/Images/rangers.png,Metropolitan,54,58.7,-4.7
 OTT,/Images/senators.png,Atlantic,62,61.1,0.9
 PHI,/Images/flyers.png,Metropolitan,52,53.9,-1.9
 PIT,/Images/penguins.png,Metropolitan,52,50.5,1.5
-SEA,/Images/kraken.png,Pacific,49,47.4,1.6
-SJS,/Images/sharks.png,Pacific,36,52.5,-16.5
+SJS,/Images/sharks.png,Pacific,36,47.4,-11.4
+SEA,/Images/kraken.png,Pacific,49,52.5,-3.5
 STL,/Images/blues.png,Central,52,54.5,-2.5
 TBL,/Images/lightning.png,Atlantic,58,60.0,-2.0
 TOR,/Images/leafs.png,Atlantic,64,61.1,2.9
 UTA,/Images/utah.png,Central,51,56.3,-5.3
 VAN,/Images/canucks.png,Pacific,57,61.0,-4.0
 VGK,/Images/golden knights.png,Pacific,68,59.9,8.1
-WPG,/Images/jets.png,Central,77,60.0,17.0
-WSH,/Images/capitals.png,Metropolitan,75,60.6,14.4
+WSH,/Images/capitals.png,Metropolitan,75,60.0,15.0
+WPG,/Images/jets.png,Central,77,60.6,16.4
