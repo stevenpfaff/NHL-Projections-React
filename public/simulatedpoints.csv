@@ -1,33 +1,33 @@
 abrv,logo,division,points,sim_points,dif
-ANA,/Images/ducks.png,Pacific,50,47.9,2.1
-BOS,/Images/bruins.png,Atlantic,58,56.6,1.4
-BUF,/Images/sabres.png,Atlantic,47,51.2,-4.2
-CGY,/Images/flames.png,Pacific,59,56.3,2.7
-CAR,/Images/canes.png,Metropolitan,68,62.4,5.6
-CHI,/Images/blackhawks.png,Central,37,49.4,-12.4
-COL,/Images/avalanche.png,Central,64,60.6,3.4
-CBJ,/Images/blue jackets.png,Metropolitan,59,44.9,14.1
-DAL,/Images/stars.png,Central,69,59.7,9.3
-DET,/Images/red wings.png,Atlantic,59,57.6,1.4
-EDM,/Images/oilers.png,Pacific,68,64.2,3.8
-FLA,/Images/panthers.png,Atlantic,67,62.8,4.2
-LAK,/Images/kings.png,Pacific,60,59.7,0.3
-MIN,/Images/wild.png,Central,66,60.3,5.7
-MTL,/Images/canadiens.png,Atlantic,53,47.3,5.7
-NSH,/Images/predators.png,Central,43,57.5,-14.5
-NJD,/Images/devils.png,Metropolitan,64,65.6,-1.6
-NYI,/Images/islanders.png,Metropolitan,55,59.4,-4.4
-NYR,/Images/rangers.png,Metropolitan,54,58.7,-4.7
-OTT,/Images/senators.png,Atlantic,62,61.1,0.9
-PHI,/Images/flyers.png,Metropolitan,52,53.9,-1.9
-PIT,/Images/penguins.png,Metropolitan,52,50.5,1.5
-SJS,/Images/sharks.png,Pacific,36,47.4,-11.4
-SEA,/Images/kraken.png,Pacific,49,52.5,-3.5
-STL,/Images/blues.png,Central,52,54.5,-2.5
-TBL,/Images/lightning.png,Atlantic,58,60.0,-2.0
-TOR,/Images/leafs.png,Atlantic,64,61.1,2.9
-UTA,/Images/utah.png,Central,51,56.3,-5.3
-VAN,/Images/canucks.png,Pacific,57,61.0,-4.0
-VGK,/Images/golden knights.png,Pacific,68,59.9,8.1
-WSH,/Images/capitals.png,Metropolitan,75,60.0,15.0
-WPG,/Images/jets.png,Central,77,60.6,16.4
+ANA,/Images/ducks.png,Pacific,52,48.7,3.3
+BOS,/Images/bruins.png,Atlantic,60,58.3,1.7
+BUF,/Images/sabres.png,Atlantic,49,52.4,-3.4
+CGY,/Images/flames.png,Pacific,59,57.4,1.6
+CAR,/Images/canes.png,Metropolitan,68,63.7,4.3
+CHI,/Images/blackhawks.png,Central,38,50.2,-12.2
+COL,/Images/avalanche.png,Central,64,61.5,2.5
+CBJ,/Images/blue jackets.png,Metropolitan,59,45.8,13.2
+DAL,/Images/stars.png,Central,69,60.9,8.1
+DET,/Images/red wings.png,Atlantic,61,58.8,2.2
+EDM,/Images/oilers.png,Pacific,72,66.7,5.3
+FLA,/Images/panthers.png,Atlantic,67,63.9,3.1
+LAK,/Images/kings.png,Pacific,62,61.1,0.9
+MIN,/Images/wild.png,Central,66,61.5,4.5
+MTL,/Images/canadiens.png,Atlantic,55,49.0,6.0
+NSH,/Images/predators.png,Central,43,57.6,-14.6
+NJD,/Images/devils.png,Metropolitan,66,67.0,-1.0
+NYI,/Images/islanders.png,Metropolitan,57,60.5,-3.5
+NYR,/Images/rangers.png,Metropolitan,56,60.1,-4.1
+OTT,/Images/senators.png,Atlantic,62,62.1,-0.1
+PHI,/Images/flyers.png,Metropolitan,53,54.9,-1.9
+PIT,/Images/penguins.png,Metropolitan,53,51.3,1.7
+SJS,/Images/sharks.png,Pacific,36,48.5,-12.5
+SEA,/Images/kraken.png,Pacific,50,53.3,-3.3
+STL,/Images/blues.png,Central,53,55.5,-2.5
+TBL,/Images/lightning.png,Atlantic,60,61.2,-1.2
+TOR,/Images/leafs.png,Atlantic,66,62.5,3.5
+UTA,/Images/utah.png,Central,53,57.5,-4.5
+VAN,/Images/canucks.png,Pacific,59,62.3,-3.3
+VGK,/Images/golden knights.png,Pacific,68,60.9,7.1
+WSH,/Images/capitals.png,Metropolitan,77,61.1,15.9
+WPG,/Images/jets.png,Central,79,61.5,17.5
