@@ -57,8 +57,14 @@ class SimulatedPoints extends Component {
 
     return (
       <div>
-        <h1 style={{ marginTop: '2%' }}>Simulated Points</h1>
-        <p>Last Updated 2/10/2025</p>
+      <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+      <img 
+          src="../../Images/OnlyNorthCircle.png" 
+          alt="Mini Logo" 
+          style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
+        />
+        Simulated Points
+      </h1>
       <div className="divisionOdds-container">
         <div className="division-column">
           <Table striped bordered hover>

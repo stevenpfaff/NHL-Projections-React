@@ -110,8 +110,14 @@ class PowerRankings extends Component {
         <Button onClick={this.toggleView} variant="primary" style={{ marginBottom: '15px' }}>
           Toggle {viewMode === 'tiered' ? 'Ranked' : 'Tiered'} View
         </Button>
-        <h1>NHL Power Rankings</h1>
-        <p>Last Updated 2/10/2025</p>
+        <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+      <img 
+          src="../../Images/OnlyNorthCircle.png" 
+          alt="Mini Logo" 
+          style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
+        />
+        Power Rankings
+      </h1>
         {viewMode === 'tiered' ? (
           Object.keys(tiers).map((tier) => (
             <div key={tier} className={`tier-section tier-${tier.toLowerCase().replace(/\s+/g, '-')}`}>
