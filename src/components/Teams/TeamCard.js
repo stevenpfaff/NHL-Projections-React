@@ -1,20 +1,18 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Papa from 'papaparse';
 import { Table } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import html2canvas from 'html2canvas';
 import './TeamCard.css';
 
 const TeamCard = () => {
     const { id } = useParams();
     const [team, setTeam] = useState(null);
     const [loading, setLoading] = useState(true);
-    const cardRef = useRef(null);
 
     useEffect(() => {
         const fetchAndCombineData = async () => {
             try {
+                // Parse both CSVs
                 const [startData, currentData] = await Promise.all([
                     parseCSV('/startdata.csv'),
                     parseCSV('/currentdata.csv'),
@@ -34,28 +32,6 @@ const TeamCard = () => {
         fetchAndCombineData();
     }, [id]);
 
-    const saveAsImage = () => {
-        if (cardRef.current) {
-            // Hide the save button before capturing
-            const saveButton = document.querySelector('.save-btn');
-            saveButton.style.display = 'none';
-    
-            html2canvas(cardRef.current, { 
-                scale: 2,
-                useCORS: true // Ensures external images are captured correctly
-            }).then((canvas) => {
-                // Restore the button after capturing
-                saveButton.style.display = 'block';
-    
-                const link = document.createElement('a');
-                link.href = canvas.toDataURL('image/png');
-                link.download = `${team.name}_TeamCard.png`;
-                link.click();
-            });
-        }
-    };
-    
-
     if (loading) {
         return <div>Loading team data...</div>;
     }
@@ -68,11 +44,19 @@ const TeamCard = () => {
         backgroundColor: team.primaryColor,
         color: 'white',
     };
-    return (  
-        <div className='card-container' ref={cardRef}>
-            <Link onClick={saveAsImage} className="save-btn">Save as Image</Link>
+
+    return (
+        <div className='card-container'>
+        <h1>
+      <img 
+          src="../../Images/OnlyNorthCircle.png" 
+          alt="Mini Logo" 
+          style={{ width: '50px', height: '50px', }} 
+        />
+      </h1>
             <div className="logo-section">
-                <h1>{team.name}</h1>
+      <h1>{team.name}</h1>
+                
                 <img src={team.logo} className="big-logo" alt={`${team.name}`} />
             </div>
             <div className="stats-section-card">
@@ -139,6 +123,7 @@ const parseCSV = (filePath) => {
 
 // Helper function to combine data from two CSV files
 const combineData = (startData, currentData) => {
+    // Convert IDs to integers for proper comparison
     const normalizedStartData = startData.map((item) => ({
         ...item,
         id: parseInt(item.id, 10),
@@ -148,6 +133,7 @@ const combineData = (startData, currentData) => {
         id: parseInt(item.id, 10),
     }));
 
+    // Combine the data by matching IDs
     return normalizedStartData.map((startItem) => {
         const currentItem = normalizedCurrentData.find(
             (current) => current.id === startItem.id
