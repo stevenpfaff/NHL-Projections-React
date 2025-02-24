@@ -66,7 +66,14 @@ class PlayoffOdds extends Component {
 
     return (
       <div className="table-container">
-        <h1 style={{ marginTop: '2%' }}>NHL Playoff Odds</h1>
+      <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+              <img 
+                  src="../../Images/OnlyNorthCircle.png" 
+                  alt="Mini Logo" 
+                  style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
+                />
+                NHL Playoff Odds
+              </h1>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <p>Updated as of 2/24/2025</p>
         <Table striped bordered hover>

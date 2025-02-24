@@ -44,6 +44,18 @@
 .category-td {
     text-align: left;
 }
+
+.mini-logo-container {
+    display: flex;
+    justify-content: right;
+    margin-top: 5px;
+}
+
+.mini-logo {
+    width: 50px;
+    height: 50px;
+}
+
 /* 
 Apply the iPhone layout for devices up to 1024px */
 @media (min-width: 1024px) {
@@ -70,6 +82,7 @@ Apply the iPhone layout for devices up to 1024px */
     .stats-section-card {
         width: 60%;
     }
+    
 }
 
 /* For iPad and smaller screens */
@@ -100,5 +113,16 @@ Apply the iPhone layout for devices up to 1024px */
     
     .category-td, .stat-td{
         font-size: 18px;
+    }
+
+    .mini-logo-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    
+    .mini-logo {
+        width: 40px;
+        height: 40px;
     }
 }

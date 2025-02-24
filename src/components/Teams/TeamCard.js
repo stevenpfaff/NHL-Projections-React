@@ -47,13 +47,6 @@ const TeamCard = () => {
 
     return (
         <div className='card-container'>
-        <h1>
-      <img 
-          src="../../Images/OnlyNorthCircle.png" 
-          alt="Mini Logo" 
-          style={{ width: '50px', height: '50px', }} 
-        />
-      </h1>
             <div className="logo-section">
       <h1>{team.name}</h1>
                 
@@ -101,6 +94,13 @@ const TeamCard = () => {
                         </tr>
                     </tbody>
                 </Table>
+                <div className="mini-logo-container">
+                <img 
+                    src="../../Images/OnlyNorthCircle.png" 
+                    alt="Mini Logo" 
+                    className="mini-logo"
+                />
+                </div>
             </div>
         </div>
     );
