@@ -11,7 +11,7 @@ id,name,abrv,division,primaryColor,logo,current_standing,current_playoffs,curren
 10,Detroit Red Wings,DET,Atlantic,#ce1126,/Images/red wings.png,4,42.1%,12.2%,3.8%,1.0%,0.4%,88,236,255,-19
 11,Edmonton Oilers,EDM,Pacific,#FF4C00,/Images/oilers.png,2,99.6%,60.5%,37.5%,22.6%,11.2%,103,274,236,38
 12,Florida Panthers,FLA,Atlantic,#c8102E,/Images/panthers.png,2,99.4%,54.4%,27.3%,14.4%,8.5%,101,269,231,38
-13,Los Angeles Kings,LAK,Pacific,#A2AAAD,/Images/kings.png,3,98.7%,52.1%,29.5%,15.6%,6.8%,101,236,208,28
+13,Los Angeles Kings,LAK,Pacific,#A2AAAD,/Images/kings.png,3,98.7%,52.1%,29.5%,15.6%,6.8%,101.1,236,208,28
 14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,3,97.7%,43.7%,18.0%,7.6%,2.6%,100,237,230,7
 15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,7,2.5%,0.5%,0.1%,0%,0%,80,242,284,-42
 16,Nashville Predators,NSH,Central,#FFB81C,/Images/predators.png,7,0.5%,0.3%,0.1%,0.1%,0%,78,228,257,-29
@@ -28,6 +28,6 @@ id,name,abrv,division,primaryColor,logo,current_standing,current_playoffs,curren
 27,Toronto Maple Leafs,TOR,Atlantic,#00205b,/Images/leafs.png,1,99.8%,52.4%,25.1%,11.6%,6.4%,103,264,232,32
 28,Utah Hockey Club,UTA,Central,#5c88da,/Images/utah.png,5,11.7%,5.2%,2.3%,1.1%,0.4%,86,235,245,-10
 29,Vancouver Canucks,VAN,Pacific,#00205B,/Images/canucks.png,4,79.2%,39.5%,21.2%,10.8%,4.4%,94,235,237,-2
-30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,1,99.1%,43.9%,21.8%,9.7%,3.6%,101,266,231,35
+30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,1,99.1%,43.9%,21.8%,9.7%,3.6%,101.5,266,231,35
 31,Washington Capitals,WSH,Metropolitan,#041E42,/Images/capitals.png,1,100.0%,62.5%,32.7%,14.9%,8.5%,115,292,213,79
 32,Winnipeg Jets,WPG,Central,#004C97,/Images/jets.png,1,100.0%,53.1%,24.9%,12.0%,4.8%,110,277,208,69
