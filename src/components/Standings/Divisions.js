@@ -32,7 +32,7 @@ class Divisions extends Component {
 
   render() {
     const { teamsData } = this.state;
-
+  
     const getSortedTeams = (division) => {
       return teamsData
         .filter((team) => team.division?.toLowerCase().trim() === division.toLowerCase().trim())
@@ -43,123 +43,125 @@ class Divisions extends Component {
     const pacificTeams = getSortedTeams('Pacific');
     const atlanticTeams = getSortedTeams('Atlantic');
     const metroTeams = getSortedTeams('Metropolitan');
-    
-
+    const roundPoints = (points) => {
+      return points.toFixed(0);
+    };
+  
     return (
       <div>
-      <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-      <img 
-          src="../../Images/OnlyNorthCircle.png" 
-          alt="Mini Logo" 
-          style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
-        />
-        NHL Projected Standings
-      </h1>
-      <div className="divisions-container">
-        <div className="division-column">
-          <Table striped bordered hover>
-            <thead className="headerStyleWest">
-              <tr>
-                <th className="pointsColumn">Central</th>
-                <th className="pointsColumn">Points</th>
-              </tr>
-            </thead>
-            <tbody>
-              {centralTeams.map((team) => (
-                <tr key={team.name}>
-                  <td>
-                    <img 
-                      src={team.logo} 
-                      className="imageColumn" 
-                      alt={`${team.name} logo`} 
-                    />
-                    <span className="abrvColumn">{team.abrv}</span>
-                  </td>
-                  <td className="pointsColumn">{team.current_points}</td>
+        <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+          <img 
+            src="../../Images/OnlyNorthCircle.png" 
+            alt="Mini Logo" 
+            style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
+          />
+          NHL Projected Standings
+        </h1>
+        <div className="divisions-container">
+          <div className="division-column">
+            <Table striped bordered hover>
+              <thead className="headerStyleWest">
+                <tr>
+                  <th className="pointsColumn">Central</th>
+                  <th className="pointsColumn">Points</th>
                 </tr>
-              ))}
-            </tbody>
-          </Table>
-        </div>
-        <div className="division-column">
-          <Table striped bordered hover>
-            <thead className="headerStyleWest">
-              <tr>
-                <th className="pointsColumn">Pacific</th>
-                <th className="pointsColumn">Points</th>
-              </tr>
-            </thead>
-            <tbody>
-              {pacificTeams.map((team) => (
-                <tr key={team.name}>
-                  <td>
-                    <img 
-                      src={team.logo} 
-                      className="imageColumn" 
-                      alt={`${team.name} logo`} 
-                    />
-                    <span className="abrvColumn">{team.abrv}</span>
-                  </td>
-                  <td className="pointsColumn">{team.current_points}</td>
+              </thead>
+              <tbody>
+                {centralTeams.map((team) => (
+                  <tr key={team.name}>
+                    <td>
+                      <img 
+                        src={team.logo} 
+                        className="imageColumn" 
+                        alt={`${team.name} logo`} 
+                      />
+                      <span className="abrvColumn">{team.abrv}</span>
+                    </td>
+                    <td className="pointsColumn">{roundPoints(team.current_points)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </div>
+          <div className="division-column">
+            <Table striped bordered hover>
+              <thead className="headerStyleWest">
+                <tr>
+                  <th className="pointsColumn">Pacific</th>
+                  <th className="pointsColumn">Points</th>
                 </tr>
-              ))}
-            </tbody>
-          </Table>
-        </div>
-        <div className="division-column">
-          <Table striped bordered hover>
-            <thead className="headerStyleEast">
-              <tr>
-                <th className="pointsColumn">Atlantic</th>
-                <th className="pointsColumn">Points</th>
-              </tr>
-            </thead>
-            <tbody>
-              {atlanticTeams.map((team) => (
-                <tr key={team.name}>
-                  <td>
-                    <img 
-                      src={team.logo} 
-                      className="imageColumn" 
-                      alt={`${team.name} logo`} 
-                    />
-                    <span className="abrvColumn">{team.abrv}</span>
-                  </td>
-                  <td className="pointsColumn">{team.current_points}</td>
+              </thead>
+              <tbody>
+                {pacificTeams.map((team) => (
+                  <tr key={team.name}>
+                    <td>
+                      <img 
+                        src={team.logo} 
+                        className="imageColumn" 
+                        alt={`${team.name} logo`} 
+                      />
+                      <span className="abrvColumn">{team.abrv}</span>
+                    </td>
+                    <td className="pointsColumn">{roundPoints(team.current_points)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </div>
+          <div className="division-column">
+            <Table striped bordered hover>
+              <thead className="headerStyleEast">
+                <tr>
+                  <th className="pointsColumn">Atlantic</th>
+                  <th className="pointsColumn">Points</th>
                 </tr>
-              ))}
-            </tbody>
-          </Table>
-        </div>
-        <div className="division-column">
-          <Table striped bordered hover>
-            <thead className="headerStyleEast">
-              <tr>
-                <th className="pointsColumn">Metropolitan</th>
-                <th className="pointsColumn">Points</th>
-              </tr>
-            </thead>
-            <tbody>
-              {metroTeams.map((team) => (
-                <tr key={team.name}>
-                  <td>
-                    <img 
-                      src={team.logo} 
-                      className="imageColumn" 
-                      alt={`${team.name} logo`} 
-                    />
-                    <span className="abrvColumn">{team.abrv}</span>
-                  </td>
-                  <td className="pointsColumn">{team.current_points}</td>
+              </thead>
+              <tbody>
+                {atlanticTeams.map((team) => (
+                  <tr key={team.name}>
+                    <td>
+                      <img 
+                        src={team.logo} 
+                        className="imageColumn" 
+                        alt={`${team.name} logo`} 
+                      />
+                      <span className="abrvColumn">{team.abrv}</span>
+                    </td>
+                    <td className="pointsColumn">{roundPoints(team.current_points)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </div>
+          <div className="division-column">
+            <Table striped bordered hover>
+              <thead className="headerStyleEast">
+                <tr>
+                  <th className="pointsColumn">Metropolitan</th>
+                  <th className="pointsColumn">Points</th>
                 </tr>
-              ))}
-            </tbody>
-          </Table>
+              </thead>
+              <tbody>
+                {metroTeams.map((team) => (
+                  <tr key={team.name}>
+                    <td>
+                      <img 
+                        src={team.logo} 
+                        className="imageColumn" 
+                        alt={`${team.name} logo`} 
+                      />
+                      <span className="abrvColumn">{team.abrv}</span>
+                    </td>
+                    <td className="pointsColumn">{roundPoints(team.current_points)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </div>
         </div>
-      </div>
       </div>
     );
   }
+  
 }
-
 export default Divisions;
