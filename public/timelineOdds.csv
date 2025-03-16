@@ -703,35 +703,35 @@ id,date,name,abrv,primaryColor,logo,current_playoffs,current_round2,current_conf
 30,2025-03-09,Vegas Golden Knights,VGK,#B4975A,/Images/golden knights.png,100%,60.7%,34.5%,18.6%,9.4%
 31,2025-03-09,Washington Capitals,WSH,#041E42,/Images/capitals.png,100%,61.5%,31.1%,15.0%,7.8%
 32,2025-03-09,Winnipeg Jets,WPG,#004C97,/Images/jets.png,100%,55.2%,25.9%,12.2%,5.5%
-1,2025-03-15,Anaheim Ducks,ANA,#00685e,/Images/ducks.png,0.5%,0.1%,0.1%,0%,0%
-2,2025-03-15,Boston Bruins,BOS,#FFB81C,/Images/bruins.png,4.8%,1.3%,0.4%,0.1%,0%
-3,2025-03-15,Buffalo Sabres,BUF,#003087,/Images/sabres.png,0%,0%,0%,0%,0%
-4,2025-03-15,Calgary Flames,CGY,#D2001C,/Images/flames.png,22.5%,6.7%,2.1%,0.6%,0.2%
-5,2025-03-15,Carolina Hurricanes,CAR,#CE1126,/Images/canes.png,100%,64.9%,33.8%,18.5%,10.4%
-6,2025-03-15,Chicago Blackhawks,CHI,#CF0A2C,/Images/blackhawks.png,0%,0%,0%,0%,0%
-7,2025-03-15,Colorado Avalanche,COL,#6F263D,/Images/avalanche.png,99.6%,43.1%,18.7%,8.6%,3.7%
-8,2025-03-15,Columbus Blue Jackets,CBJ,#002654,/Images/blue jackets.png,16.3%,3.6%,0.8%,0.2%,0.1%
-9,2025-03-15,Dallas Stars,DAL,#006847,/Images/stars.png,100%,59.7%,29.8%,16.0%,7.8%
-10,2025-03-15,Detroit Red Wings,DET,#ce1126,/Images/red wings.png,8.0%,2.9%,1.1%,0.4%,0.1%
-11,2025-03-15,Edmonton Oilers,EDM,#FF4C00,/Images/oilers.png,99.4%,51.6%,28.8%,15.7%,7.8%
-12,2025-03-15,Florida Panthers,FLA,#c8102E,/Images/panthers.png,100%,51.7%,27.0%,13.4%,7.0%
-13,2025-03-15,Los Angeles Kings,LAK,#A2AAAD,/Images/kings.png,99.6%,50.6%,27.7%,14.7%,7.1%
-14,2025-03-15,Minnesota Wild,MIN,#154734,/Images/wild.png,95.9%,34.0%,13.5%,5.1%,1.8%
-15,2025-03-15,Montreal Canadiens,MTL,#AF1E2D,/Images/canadiens.png,12.3%,2.9%,0.7%,0.2%,0%
-16,2025-03-15,Nashville Predators,NSH,#FFB81C,/Images/predators.png,0%,0%,0%,0%,0%
-17,2025-03-15,New Jersey Devils,NJD,#CE1126,/Images/devils.png,97.2%,34.3%,12.8%,5.1%,2.1%
-18,2025-03-15,New York Islanders,NYI,#00539b,/Images/islanders.png,10.0%,3.3%,1.1%,0.4%,0.1%
-19,2025-03-15,New York Rangers,NYR,#0038A8,/Images/rangers.png,55.8%,27.0%,13.5%,6.6%,3.3%
-20,2025-03-15,Ottawa Senators,OTT,#DA1A32,/Images/senators.png,95.1%,41.9%,20.1%,8.9%,4.2%
-21,2025-03-15,Philadelphia Flyers,PHI,#F74902,/Images/flyers.png,1.0%,0.4%,0.1%,0.1%,0%
-22,2025-03-15,Pittsburgh Penguins,PIT,#FCB514,/Images/penguins.png,0.1%,0%,0%,0%,0%
-23,2025-03-15,San Jose Sharks,SJS,#006D75,/Images/sharks.png,0%,0%,0%,0%,0%
-24,2025-03-15,Seattle Kraken,SEA,#68a2b9,/Images/kraken.png,0%,0%,0%,0%,0%
-25,2025-03-15,St. Louis Blues,STL,#002F87,/Images/blues.png,8.7%,2.3%,0.7%,0.2%,0.1%
-26,2025-03-15,Tampa Bay Lightning,TBL,#002868,/Images/lightning.png,99.5%,56.2%,32.7%,18.9%,11.1%
-27,2025-03-15,Toronto Maple Leafs,TOR,#00205b,/Images/leafs.png,99.9%,49.6%,26.1%,13.1%,6.9%
-28,2025-03-15,Utah Hockey Club,UTA,#5c88da,/Images/utah.png,13.3%,5.4%,2.3%,0.9%,0.3%
-29,2025-03-15,Vancouver Canucks,VAN,#00205B,/Images/canucks.png,60.4%,28.6%,14.7%,6.9%,3.1%
-30,2025-03-15,Vegas Golden Knights,VGK,#B4975A,/Images/golden knights.png,100%,61.5%,35.0%,19.0%,9.7%
-31,2025-03-15,Washington Capitals,WSH,#041E42,/Images/capitals.png,100%,60.1%,29.9%,14.2%,7.4%
-32,2025-03-15,Winnipeg Jets,WPG,#004C97,/Images/jets.png,100%,56.3%,26.8%,12.4%,5.6%
+1,2025-03-16,Anaheim Ducks,ANA,#00685e,/Images/ducks.png,0.5%,0.1%,0.1%,0%,0%
+2,2025-03-16,Boston Bruins,BOS,#FFB81C,/Images/bruins.png,2.5%,0.7%,0.2%,0.1%,0%
+3,2025-03-16,Buffalo Sabres,BUF,#003087,/Images/sabres.png,0%,0%,0%,0%,0%
+4,2025-03-16,Calgary Flames,CGY,#D2001C,/Images/flames.png,20.6%,6.0%,1.9%,0.6%,0.1%
+5,2025-03-16,Carolina Hurricanes,CAR,#CE1126,/Images/canes.png,100%,64.2%,33.6%,18.5%,10.6%
+6,2025-03-16,Chicago Blackhawks,CHI,#CF0A2C,/Images/blackhawks.png,0%,0%,0%,0%,0%
+7,2025-03-16,Colorado Avalanche,COL,#6F263D,/Images/avalanche.png,99.6%,43.4%,18.5%,8.5%,3.5%
+8,2025-03-16,Columbus Blue Jackets,CBJ,#002654,/Images/blue jackets.png,9.9%,2.2%,0.5%,0.1%,0%
+9,2025-03-16,Dallas Stars,DAL,#006847,/Images/stars.png,100%,59.3%,29.9%,16.1%,7.9%
+10,2025-03-16,Detroit Red Wings,DET,#ce1126,/Images/red wings.png,7.3%,2.7%,1.0%,0.3%,0.1%
+11,2025-03-16,Edmonton Oilers,EDM,#FF4C00,/Images/oilers.png,99.2%,51.4%,28.7%,15.6%,7.8%
+12,2025-03-16,Florida Panthers,FLA,#c8102E,/Images/panthers.png,100%,51.3%,26.8%,13.1%,6.9%
+13,2025-03-16,Los Angeles Kings,LAK,#A2AAAD,/Images/kings.png,99.8%,51.3%,27.9%,14.4%,7.0%
+14,2025-03-16,Minnesota Wild,MIN,#154734,/Images/wild.png,92.7%,33.4%,13.3%,5.1%,1.8%
+15,2025-03-16,Montreal Canadiens,MTL,#AF1E2D,/Images/canadiens.png,16.6%,4.0%,1.0%,0.2%,0.1%
+16,2025-03-16,Nashville Predators,NSH,#FFB81C,/Images/predators.png,0%,0%,0%,0%,0%
+17,2025-03-16,New Jersey Devils,NJD,#CE1126,/Images/devils.png,94.7%,33.6%,12.6%,4.9%,2.0%
+18,2025-03-16,New York Islanders,NYI,#00539b,/Images/islanders.png,9.2%,3.0%,1.0%,0.4%,0.1%
+19,2025-03-16,New York Rangers,NYR,#0038A8,/Images/rangers.png,62.6%,29.9%,14.8%,7.3%,3.7%
+20,2025-03-16,Ottawa Senators,OTT,#DA1A32,/Images/senators.png,97.1%,42.2%,20.1%,8.9%,4.2%
+21,2025-03-16,Philadelphia Flyers,PHI,#F74902,/Images/flyers.png,0.3%,0.1%,0.1%,0%,0%
+22,2025-03-16,Pittsburgh Penguins,PIT,#FCB514,/Images/penguins.png,0.2%,0%,0%,0%,0%
+23,2025-03-16,San Jose Sharks,SJS,#006D75,/Images/sharks.png,0%,0%,0%,0%,0%
+24,2025-03-16,Seattle Kraken,SEA,#68a2b9,/Images/kraken.png,0%,0%,0%,0%,0%
+25,2025-03-16,St. Louis Blues,STL,#002F87,/Images/blues.png,11.3%,3.2%,1.0%,0.3%,0.1%
+26,2025-03-16,Tampa Bay Lightning,TBL,#002868,/Images/lightning.png,99.7%,57.1%,33.2%,19.1%,11.1%
+27,2025-03-16,Toronto Maple Leafs,TOR,#00205b,/Images/leafs.png,99.8%,49.3%,25.8%,13.1%,6.9%
+28,2025-03-16,Utah Hockey Club,UTA,#5c88da,/Images/utah.png,11.7%,4.6%,1.9%,0.8%,0.3%
+29,2025-03-16,Vancouver Canucks,VAN,#00205B,/Images/canucks.png,64.6%,30.5%,15.8%,7.6%,3.4%
+30,2025-03-16,Vegas Golden Knights,VGK,#B4975A,/Images/golden knights.png,100%,60.5%,34.5%,18.7%,9.6%
+31,2025-03-16,Washington Capitals,WSH,#041E42,/Images/capitals.png,100%,59.8%,29.6%,14.1%,7.2%
+32,2025-03-16,Winnipeg Jets,WPG,#004C97,/Images/jets.png,100%,56.4%,26.6%,12.5%,5.6%
