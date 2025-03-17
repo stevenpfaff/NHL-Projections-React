@@ -2,32 +2,32 @@ place,name,logo,tier,rankChange
 1,Winnipeg Jets,/Images/jets.png,Best Of The Best,0
 2,Washington Capitals,/Images/capitals.png,Best Of The Best,0
 3,Dallas Stars,/Images/stars.png,Best Of The Best,0
-4,Tampa Bay Lightning,/Images/lightning.png,Solid Contenders,0
-5,Florida Panthers,/Images/panthers.png,Solid Contenders,5
-6,Vegas Golden Knights,/Images/golden knights.png,Solid Contenders,-1
-7,Carolina Hurricanes,/Images/canes.png,Solid Contenders,1
-8,New Jersey Devils,/Images/devils.png,Solid Contenders,-1
-9,Toronto Maple Leafs,/Images/leafs.png,Solid Contenders,-3
-10,Colorado Avalanche,/Images/avalanche.png,Solid Contenders,3
-11,Edmonton Oilers,/Images/oilers.png,Solid Contenders,-2
-12,Los Angeles Kings,/Images/kings.png,Solid Contenders,-1
-13,Ottawa Senators,/Images/senators.png,Playoff Teams,1
-14,Minnesota Wild,/Images/wild.png,Playoff Teams,-1
+4,Carolina Hurricanes,/Images/canes.png,Solid Contenders,3
+5,Tampa Bay Lightning,/Images/lightning.png,Solid Contenders,-1
+6,Vegas Golden Knights,/Images/golden knights.png,Solid Contenders,0
+7,Colorado Avalanche,/Images/avalanche.png,Solid Contenders,3
+8,Florida Panthers,/Images/panthers.png,Solid Contenders,-3
+9,New Jersey Devils,/Images/devils.png,Solid Contenders,-1
+10,Edmonton Oilers,/Images/oilers.png,Solid Contenders,1
+11,Los Angeles Kings,/Images/kings.png,Solid Contenders,1
+12,Toronto Maple Leafs,/Images/leafs.png,Playoff Teams,-3
+13,Ottawa Senators,/Images/senators.png,Playoff Teams,0
+14,Minnesota Wild,/Images/wild.png,Playoff Teams,0
 15,New York Rangers,/Images/rangers.png,The Bubble,0
-16,Columbus Blue Jackets,/Images/blue jackets.png,The Bubble,3
-17,Calgary Flames,/Images/flames.png,The Bubble,1
-18,Vancouver Canucks,/Images/canucks.png,The Bubble,-1
-19,St. Louis Blues,/Images/blues.png,The Bubble,3
-20,Utah Hockey Club,/Images/utah.png,The Bubble,0
-21,Montreal Canadiens,/Images/canadiens.png,The Bubble,0
-22,Detroit Red Wings,/Images/red wings.png,The Bubble,-6
-23,New York Islanders,/Images/islanders.png,The Bubble,2
-24,Boston Bruins,/Images/bruins.png,No Mans Land,-1
-25,Seattle Kraken,/Images/kraken.png,No Mans Land,-1
-26,Anaheim Ducks,/Images/ducks.png,No Mans Land,2
-27,Philadelphia Flyers,/Images/flyers.png,No Mans Land,0
-28,Pittsburgh Penguins,/Images/penguins.png,Hope Deferred,1
-29,Buffalo Sabres,/Images/sabres.png,Hope Deferred,-5
-30,Nashville Predators,/Images/predators.png,Hope Deferred,0
+16,Vancouver Canucks,/Images/canucks.png,The Bubble,2
+17,St. Louis Blues,/Images/blues.png,The Bubble,2
+18,Utah Hockey Club,/Images/utah.png,The Bubble,2
+19,Montreal Canadiens,/Images/canadiens.png,The Bubble,2
+20,Detroit Red Wings,/Images/red wings.png,The Bubble,2
+21,Calgary Flames,/Images/flames.png,The Bubble,-4
+22,Columbus Blue Jackets,/Images/blue jackets.png,The Bubble,-6
+23,New York Islanders,/Images/islanders.png,The Bubble,0
+24,Boston Bruins,/Images/bruins.png,No Mans Land,0
+25,Seattle Kraken,/Images/kraken.png,No Mans Land,0
+26,Pittsburgh Penguins,/Images/penguins.png,Hope Deferred,2
+27,Anaheim Ducks,/Images/ducks.png,No Mans Land,-1
+28,Buffalo Sabres,/Images/sabres.png,Hope Deferred,1
+29,Nashville Predators,/Images/predators.png,Hope Deferred,1
+30,Philadelphia Flyers,/Images/flyers.png,No Mans Land,-3
 31,Chicago Blackhawks,/Images/blackhawks.png,Hope Deferred,0
 32,San Jose Sharks,/Images/sharks.png,Hope Deferred,0
