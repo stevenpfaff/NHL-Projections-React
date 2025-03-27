@@ -13,6 +13,7 @@ import Vibes from './components/Standings/Vibes';
 import PowerRankings from './components/Power Rankings/PowerRankings';
 import PlayoffOddsChart from './components/Playoff Odds/OddsChart';
 // import SimulatedPoints from './components/Standings/SimulatedPoints';
+import FinalResults from './components/Playoff Odds/FinalResults';
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                 <Route path="/team/:id" element={<TeamCard />} />
                 <Route path="/PowerRankings" element={<PowerRankings />} />
                 <Route path="/Timeline" element={<PlayoffOddsChart />} />
+                <Route path="/FinalResults" element={<FinalResults />} />
                 {/* <Route path="/SimulatedPoints" element={<SimulatedPoints />} /> */}
             </Routes>
         </Router>

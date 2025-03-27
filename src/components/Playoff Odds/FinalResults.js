@@ -4,31 +4,33 @@ import { Link } from 'react-router-dom';
 import Papa from 'papaparse';
 import './PlayoffOdds.css';
 
-class PlayoffOdds extends Component {
+class FinalResults extends Component {
   constructor(props) {
     super(props);
     this.state = {
       data: [],
-      sortConfig: { key: 'current_win', direction: 'descending' },
+      sortConfig: { key: 'name', direction: 'ascending' },
     };
   }
 
   componentDidMount() {
-    Papa.parse('/currentdata.csv', {
+    Papa.parse('/finalresults.csv', {
       download: true,
       header: true,
       skipEmptyLines: true,
       complete: (result) => {
         const parsedData = result.data.map((team) => ({
           ...team,
-          current_playoffs: parseFloat(team.current_playoffs),
-          current_round2: parseFloat(team.current_round2),
-          current_conf: parseFloat(team.current_conf),
-          current_final: parseFloat(team.current_final),
-          current_win: parseFloat(team.current_win),
-          current_points: parseFloat(team.current_points),
+          playoffs: parseFloat(team.playoffs),
+          proj_goals: parseFloat(team.proj_goals),
+          proj_goals_ag: parseFloat(team.proj_goals_ag),
+          actual_goals: parseFloat(team.actual_goals),
+          actual_goals_ag: parseFloat(team.actual_goals_ag),
+          proj_points: parseFloat(team.proj_points),
+          actual_points: parseFloat(team.actual_points),
+          error: parseFloat(team.actual_points - team.proj_points),
         }));
-        const sortedData = [...parsedData].sort((a, b) => b.current_win - a.current_win);
+        const sortedData = [...parsedData].sort((a, b) => b.name - a.name);
         this.setState({ data: sortedData });
       },
       error: (error) => {
@@ -66,26 +68,27 @@ class PlayoffOdds extends Component {
 
     return (
       <div className="table-container">
-      <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+      <h1 style={{ marginTop: '2%', marginBottom: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
               <img 
                   src="../../Images/OnlyNorthCircle.png" 
                   alt="Mini Logo" 
                   style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
                 />
-                NHL Playoff Odds
+                Final Results
               </h1>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <p>Updated as of 3/27/2025</p>
         <Table striped bordered hover>
           <thead>
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>
-              <th onClick={() => this.sortData('current_points')}>Proj PTS</th>
-              <th onClick={() => this.sortData('current_playoffs')}>Playoff %</th>
-              <th onClick={() => this.sortData('current_round2')}>Round 2 %</th>
-              <th onClick={() => this.sortData('current_conf')}>Conf Final %</th>
-              <th onClick={() => this.sortData('current_final')}>Cup Final %</th>
-              <th onClick={() => this.sortData('current_win')}>Win Cup %</th>
+              <th onClick={() => this.sortData('playoffs')}>Playoff %</th>
+              <th onClick={() => this.sortData('proj_points')}>Proj PTS</th>
+              <th onClick={() => this.sortData('actual_points')}>PTS</th>
+              <th onClick={() => this.sortData('error')}>Error</th>
+              <th onClick={() => this.sortData('proj_goals')}>Proj GF</th>
+              <th onClick={() => this.sortData('proj_goals_ag')}>Proj GA</th>
+              <th onClick={() => this.sortData('actual_goals')}>GF</th>
+              <th onClick={() => this.sortData('actual_goals_ag')}>GA</th>
             </tr>
           </thead>
           <tbody>
@@ -103,12 +106,14 @@ class PlayoffOdds extends Component {
                     </Link>
                   </div>
                 </td>
-                <td className='stat-td'>{team.current_points}</td>
-                <td className='stat-td'>{team.current_playoffs}%</td>
-                <td className='stat-td'>{team.current_round2}%</td>
-                <td className='stat-td'>{team.current_conf}%</td>
-                <td className='stat-td'>{team.current_final}%</td>
-                <td className='stat-td'>{team.current_win}%</td>
+                <td className='stat-td'>{team.playoffs}%</td>
+                <td className='stat-td'>{team.proj_points}</td>
+                <td className='stat-td'>{team.actual_points}</td>
+                <td className='stat-td'>{team.error}</td>
+                <td className='stat-td'>{team.proj_goals}</td>
+                <td className='stat-td'>{team.proj_goals_ag}</td>
+                <td className='stat-td'>{team.actual_goals}</td>
+                <td className='stat-td'>{team.actual_goals_ag}</td>
               </tr>
             ))}
           </tbody>
@@ -118,4 +123,4 @@ class PlayoffOdds extends Component {
   }
 }
 
-export default PlayoffOdds;
+export default FinalResults;
