@@ -102,7 +102,7 @@ class FinalResults extends Component {
                       alt={`${team.name} logo`} 
                     />
                     <Link to={`/team/${team.id}`} style={{ marginLeft: '8px' }}>
-                      <span>{team.abrv}</span>
+                      <span>{team.name}</span>
                     </Link>
                   </div>
                 </td>
