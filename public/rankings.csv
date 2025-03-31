@@ -6,17 +6,17 @@ place,name,logo,tier,rankChange
 5,Tampa Bay Lightning,/Images/lightning.png,Solid Contenders,1
 6,Carolina Hurricanes,/Images/canes.png,Solid Contenders,-1
 7,Colorado Avalanche,/Images/avalanche.png,Solid Contenders,0
-8,Toronto Maple Leafs,/Images/leafs.png,Playoff Teams,3
+8,Toronto Maple Leafs,/Images/leafs.png,Solid Contenders,3
 9,Los Angeles Kings,/Images/kings.png,Solid Contenders,0
 10,Florida Panthers,/Images/panthers.png,Solid Contenders,-2
 11,New Jersey Devils,/Images/devils.png,Playoff Teams,1
 12,Edmonton Oilers,/Images/oilers.png,Solid Contenders,-2
-13,St. Louis Blues,/Images/blues.png,The Bubble,1
+13,St. Louis Blues,/Images/blues.png,Playoff Teams,1
 14,Ottawa Senators,/Images/senators.png,Playoff Teams,-1
 15,Minnesota Wild,/Images/wild.png,Playoff Teams,0
 16,New York Rangers,/Images/rangers.png,The Bubble,0
 17,Vancouver Canucks,/Images/canucks.png,The Bubble,1
-18,Utah Hockey Club,/Images/utah.png,The Bubble,-1
+18,Utah Hockey Club,/Images/utah.png,No Mans Land,-1
 19,Calgary Flames,/Images/flames.png,The Bubble,1
 20,Montreal Canadiens,/Images/canadiens.png,The Bubble,-1
 21,Detroit Red Wings,/Images/red wings.png,No Mans Land,1
