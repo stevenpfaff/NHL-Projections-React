@@ -63,8 +63,9 @@ class OddsStandings extends Component {
                   alt="Mini Logo" 
                   style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
                 />
-                Divisional Playoff Odds
+                NHL Playoff Odds
               </h1>
+            <p>Updated as of 3/31/2025</p>
       <div className="divisionOdds-container">
         <div className="division-column">
           <Table striped bordered hover>
