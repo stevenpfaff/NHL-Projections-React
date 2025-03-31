@@ -118,6 +118,7 @@ class PowerRankings extends Component {
         />
         Power Rankings
       </h1>
+      <p>Updated as of 3/24/2025</p>
         {viewMode === 'tiered' ? (
           Object.keys(tiers).map((tier) => (
             <div key={tier} className={`tier-section tier-${tier.toLowerCase().replace(/\s+/g, '-')}`}>
