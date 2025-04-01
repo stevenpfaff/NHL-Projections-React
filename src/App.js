@@ -13,7 +13,7 @@ import Vibes from './components/Standings/Vibes';
 import PowerRankings from './components/Power Rankings/PowerRankings';
 import PlayoffOddsChart from './components/Playoff Odds/OddsChart';
 // import SimulatedPoints from './components/Standings/SimulatedPoints';
-import FinalResults from './components/Playoff Odds/FinalResults';
+import FinalResults from './components/Final Results/FinalResults';
 
 function App() {
     return (

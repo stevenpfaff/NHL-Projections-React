@@ -1,0 +1,51 @@
+.final-results-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .final-results-page h1 {
+    font-size: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .final-results-page table {
+    font-size: 0.9vw;
+    width: 100%;
+    max-height: 90vh;
+    overflow: hidden;
+    table-layout: fixed;
+    white-space: nowrap;
+  }
+  
+  .final-results-page th,
+  .final-results-page td {
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .final-results-page .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .final-results-page .logo {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .final-results-page .stat-td {
+    padding: 3px;
+    font-size: 1.2vw;
+  }
+  
