@@ -82,7 +82,7 @@ class FinalResults extends Component {
               <th onClick={() => this.sortData('name')}>Team</th>
               <th onClick={() => this.sortData('playoffs')}>Playoff %</th>
               <th onClick={() => this.sortData('proj_points')}>Proj PTS</th>
-              <th onClick={() => this.sortData('actual_points')}>PTS</th>
+              <th onClick={() => this.sortData('actual_points')}>Points</th>
               <th onClick={() => this.sortData('error')}>Error</th>
               <th onClick={() => this.sortData('proj_goals')}>Proj GF</th>
               <th onClick={() => this.sortData('proj_goals_ag')}>Proj GA</th>
