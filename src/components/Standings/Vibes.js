@@ -26,6 +26,15 @@ class Vibes extends Component {
     const metroTeams = getSortedTeams('Metropolitan');
 
     return (
+      <div>
+      <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+        <img 
+          src="../../Images/OnlyNorthCircle.png" 
+          alt="Mini Logo" 
+          style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
+        />
+        Preseason Playoff Picks
+      </h1>
       <div className="divisions-container">
         <div className="division-column">
           <Table striped bordered hover>
@@ -119,6 +128,7 @@ class Vibes extends Component {
             </tbody>
           </Table>
         </div>
+      </div>
       </div>
     );
   }
