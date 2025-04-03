@@ -12,7 +12,7 @@ id,name,abrv,division,primaryColor,logo,current_standing,current_playoffs,curren
 11,Edmonton Oilers,EDM,Pacific,#FF4C00,/Images/oilers.png,3,99.9%,51.0%,28.7%,16.1%,7.6%,101.3,267,239,28
 12,Florida Panthers,FLA,Atlantic,#c8102E,/Images/panthers.png,3,100%,51.6%,26.9%,14.6%,8.4%,100.4,259,223,36
 13,Los Angeles Kings,LAK,Pacific,#A2AAAD,/Images/kings.png,2,100%,50.6%,27.8%,15.1%,7.1%,102.7,242,207,35
-14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,5,94.0%,37.8%,17.5%,7.2%,2.6%,96.0,225,235,-10
+14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,4,94.0%,37.8%,17.5%,7.2%,2.6%,96.0,225,235,-10
 15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,5,32.6%,6.7%,1.6%,0.3%,0.1%,86.3,246,276,-30
 16,Nashville Predators,NSH - E,Central,#FFB81C,/Images/predators.png,7,0%,0%,0%,0%,0%,69.4,212,267,-55
 17,New Jersey Devils,NJD,Metropolitan,#CE1126,/Images/devils.png,3,99.7%,30.9%,11.2%,4.6%,2.0%,94.0,245,218,27
@@ -23,7 +23,7 @@ id,name,abrv,division,primaryColor,logo,current_standing,current_playoffs,curren
 22,Pittsburgh Penguins,PIT,Metropolitan,#FCB514,/Images/penguins.png,7,0%,0%,0%,0%,0%,77.9,239,297,-58
 23,San Jose Sharks,SJS - E,Pacific,#006D75,/Images/sharks.png,8,0%,0%,0%,0%,0%,56.2,213,310,-97
 24,Seattle Kraken,SEA - E,Pacific,#68a2b9,/Images/kraken.png,7,0%,0%,0%,0%,0%,75.7,245,264,-19
-25,St. Louis Blues,STL,Central,#002F87,/Images/blues.png,4,88.8%,27.8%,9.9%,3.2%,0.8%,95.1,247,230,17
+25,St. Louis Blues,STL,Central,#002F87,/Images/blues.png,5,88.8%,27.8%,9.9%,3.2%,0.8%,95.1,247,230,17
 26,Tampa Bay Lightning,TBL,Atlantic,#002868,/Images/lightning.png,2,100%,59.7%,34.7%,20.3%,12.4%,102.8,293,218,75
 27,Toronto Maple Leafs,TOR - X,Atlantic,#00205b,/Images/leafs.png,1,100%,48.7%,22.9%,9.8%,4.8%,104.0,267,242,25
 28,Utah Hockey Club,UTA,Central,#5c88da,/Images/utah.png,6,1.7%,0.8%,0.4%,0.2%,0.1%,87.8,233,250,-17
