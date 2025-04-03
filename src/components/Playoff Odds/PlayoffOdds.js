@@ -75,7 +75,7 @@ class PlayoffOdds extends Component {
                 NHL Playoff Odds
               </h1>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <p>Updated as of 4/2/2025</p>
+        <p>Updated as of 4/3/2025</p>
         <Table striped bordered hover>
           <thead>
             <tr>
