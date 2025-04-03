@@ -88,9 +88,9 @@ class PreseasonOdds extends Component {
     if (loading) return <div>Loading...</div>;
     if (error) return <div>{error}</div>;
 
-    return (
-      <div className="table-container">
-                <h1 style={{ marginTop: '2%', marginBottom: '5%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+return (
+      <div className="final-results-page">
+        <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
           <img 
             src="../../Images/OnlyNorthCircle.png" 
             alt="Mini Logo" 
@@ -99,8 +99,8 @@ class PreseasonOdds extends Component {
           Preseason Playoff Odds
         </h1>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <Table striped bordered hover>
-          <thead>
+        <Table striped bordered hover responsive size="sm">
+        <thead>
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>
               <th onClick={() => this.sortData('proj_points')}>Proj Points</th>

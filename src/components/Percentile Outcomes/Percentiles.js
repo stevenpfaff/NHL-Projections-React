@@ -71,11 +71,19 @@ class Percentiles extends Component {
     if (loading) return <div>Loading...</div>;
     if (error) return <div>{error}</div>;
 
-    return (
-      <div className="table-container">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <Table striped bordered hover>
-          <thead>
+   return (
+         <div className="final-results-page">
+           <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+             <img 
+               src="../../Images/OnlyNorthCircle.png" 
+               alt="Mini Logo" 
+               style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
+             />
+             Preseason Percentile Outcomes
+           </h1>
+           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+           <Table striped bordered hover responsive size="sm">
+           <thead>
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>
               <th onClick={() => this.sortData('low_points')}>25th PTS</th>
@@ -113,9 +121,9 @@ class Percentiles extends Component {
               </tr>
             ))}
           </tbody>
-        </Table>
-      </div>
-    );
+           </Table>
+         </div>
+       );
   }
 }
 
