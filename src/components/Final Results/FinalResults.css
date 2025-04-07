@@ -48,4 +48,28 @@
     padding: 3px;
     font-size: 1.2vw;
   }
+
+  @media (max-width: 768px) {
+    .final-results-page table, th, td {
+        font-size: 12px;
+    }
+
+    .final-results-page .stat-td {
+      font-size: 12px;
+    }
+
+    .final-results-page h1 {
+      font-size: 12px;
+    }
+
+    .final-results-page .logo {
+        width: 15px;
+        height: 15px;
+        margin-right: 2px;
+    }
+    
+    .p {
+        font-size: 0.5rem;
+    }
+}
   
