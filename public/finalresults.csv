@@ -1,6 +1,6 @@
 id,name,abrv,division,primaryColor,logo,playoffs,pick,result,proj_points,proj_goals,proj_goals_ag,Dif,actual_points,actual_goals,actual_goals_ag
 1,Anaheim Ducks,ANA,Pacific,#00685e,/Images/ducks.png,0.5%,,,67,222,291,-69,82,225,261
-2,Boston Bruins,BOS,Atlantic,#FFB81C,/Images/bruins.png,71.9%,TRUE,,95,261,238,23,76,221,269
+2,Boston Bruins,BOS,Atlantic,#FFB81C,/Images/bruins.png,71.9%,,,95,261,238,23,76,221,269
 3,Buffalo Sabres,BUF,Atlantic,#0037087,/Images/sabres.png,20.1%,,,84,237,252,-15,81,270,285
 4,Calgary Flames,CGY,Pacific,#D2001C,/Images/flames.png,16.1%,,,82,224,245,-21,93,216,240
 5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,81.3%,TRUE,TRUE,98,247,218,29,102,263,223
