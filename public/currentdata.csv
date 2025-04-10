@@ -26,8 +26,8 @@ id,name,abrv,division,primaryColor,logo,current_standing,current_playoffs,curren
 25,St. Louis Blues,STL,Central,#002F87,/Images/blues.png,5,92.5%,31.8%,11.9%,4.1%,1.3%,95.2,250,233,17
 26,Tampa Bay Lightning,TBL - X,Atlantic,#002868,/Images/lightning.png,2,100%,57.3%,32.7%,19.5%,11.9%,102.0,292,217,75
 27,Toronto Maple Leafs,TOR - X,Atlantic,#00205b,/Images/leafs.png,1,100%,52.5%,26.4%,11.0%,5.5%,104.7,268,239,29
-28,Utah Hockey Club,UTA,Central,#5c88da,/Images/utah.png,6,0%,0%,0%,0%,0%,88.3,237,247,-10
-29,Vancouver Canucks,VAN,Pacific,#00205B,/Images/canucks.png,5,0%,0%,0%,0%,0%,89.8,239,255,-16
+28,Utah Hockey Club,UTA - E,Central,#5c88da,/Images/utah.png,6,0%,0%,0%,0%,0%,88.3,237,247,-10
+29,Vancouver Canucks,VAN - E,Pacific,#00205B,/Images/canucks.png,5,0%,0%,0%,0%,0%,89.8,239,255,-16
 30,Vegas Golden Knights,VGK - X,Pacific,#B4975A,/Images/golden knights.png,1,100%,61.3%,34.4%,17.4%,7.9%,107.9,273,220,53
 31,Washington Capitals,WSH - Y,Metropolitan,#041E42,/Images/capitals.png,1,100%,77.1%,42.3%,19.4%,10.6%,113.2,294,225,69
 32,Winnipeg Jets,WPG - X,Central,#004C97,/Images/jets.png,1,100%,59.8%,29.6%,14.0%,5.9%,113.7,277,193,84
