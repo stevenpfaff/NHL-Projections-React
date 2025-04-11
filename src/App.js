@@ -12,7 +12,6 @@ import Percentiles from './components/Percentile Outcomes/Percentiles';
 import Vibes from './components/Standings/Vibes';
 import PowerRankings from './components/Power Rankings/PowerRankings';
 import PlayoffOddsChart from './components/Playoff Odds/OddsChart';
-// import SimulatedPoints from './components/Standings/SimulatedPoints';
 import FinalResults from './components/Final Results/FinalResults';
 
 function App() {
@@ -32,7 +31,6 @@ function App() {
                 <Route path="/PowerRankings" element={<PowerRankings />} />
                 <Route path="/Timeline" element={<PlayoffOddsChart />} />
                 <Route path="/FinalResults" element={<FinalResults />} />
-                {/* <Route path="/SimulatedPoints" element={<SimulatedPoints />} /> */}
             </Routes>
         </Router>
     );
