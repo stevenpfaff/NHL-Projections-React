@@ -81,11 +81,11 @@ class FinalResults extends Component {
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>
               <th onClick={() => this.sortData('playoffs')}>Playoff %</th>
+              <th onClick={() => this.sortData('result')}>Playoffs?</th>
               <th onClick={() => this.sortData('proj_points')}>Proj PTS</th>
               <th onClick={() => this.sortData('actual_points')}>PTS</th>
               <th onClick={() => this.sortData('error')}>Error</th>
               <th onClick={() => this.sortData('pick')}>Pick</th>
-              <th onClick={() => this.sortData('result')}>PLayoffs?</th>
               <th onClick={() => this.sortData('proj_goals')}>Proj GF</th>
               <th onClick={() => this.sortData('proj_goals_ag')}>Proj GA</th>
               <th onClick={() => this.sortData('actual_goals')}>GF</th>
@@ -106,11 +106,11 @@ class FinalResults extends Component {
                   </div>
                 </td>
                 <td className="stat-td">{team.playoffs}%</td>
+                <td className="stat-td">{team.result && team.result.trim() !== '' ? '✓' : 'X'}</td>
                 <td className="stat-td">{team.proj_points}</td>
                 <td className="stat-td">{team.actual_points}</td>
                 <td className="stat-td">{team.error}</td>
                 <td className="stat-td">{team.pick && team.pick.trim() !== '' ? '✓' : 'X'}</td>
-                <td className="stat-td">{team.result && team.result.trim() !== '' ? '✓' : 'X'}</td>
                 <td className="stat-td">{team.proj_goals}</td>
                 <td className="stat-td">{team.proj_goals_ag}</td>
                 <td className="stat-td">{team.actual_goals}</td>
