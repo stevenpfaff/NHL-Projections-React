@@ -28,7 +28,8 @@ class PlayoffOdds extends Component {
           current_win: parseFloat(team.current_win),
           current_points: parseFloat(team.current_points),
         }));
-        const sortedData = [...parsedData].sort((a, b) => b.current_win - a.current_win);
+        const filteredData = parsedData.filter(team => team.current_playoffs > 0);
+        const sortedData = [...filteredData].sort((a, b) => b.current_win - a.current_win);
         this.setState({ data: sortedData });
       },
       error: (error) => {
@@ -80,8 +81,8 @@ render() {
         <thead>
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>
-              <th onClick={() => this.sortData('current_points')}>Proj PTS</th>
-              <th onClick={() => this.sortData('current_playoffs')}>Playoff %</th>
+              {/* <th onClick={() => this.sortData('current_points')}>Proj PTS</th> */}
+              {/* <th onClick={() => this.sortData('current_playoffs')}>Playoff %</th> */}
               <th onClick={() => this.sortData('current_round2')}>Round 2 %</th>
               <th onClick={() => this.sortData('current_conf')}>Conf Final %</th>
               <th onClick={() => this.sortData('current_final')}>Cup Final %</th>
@@ -103,8 +104,8 @@ render() {
                     </Link>
                   </div>
                 </td>
-                <td className='stat-td'>{team.current_points}</td>
-                <td className='stat-td'>{team.current_playoffs}%</td>
+                {/* <td className='stat-td'>{team.current_points}</td>
+                <td className='stat-td'>{team.current_playoffs}%</td> */}
                 <td className='stat-td'>{team.current_round2}%</td>
                 <td className='stat-td'>{team.current_conf}%</td>
                 <td className='stat-td'>{team.current_final}%</td>
