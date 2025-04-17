@@ -13,7 +13,7 @@ id,name,abrv,division,primaryColor,logo,current_standing,current_playoffs,curren
 12,Florida Panthers,FLA - X,Atlantic,#c8102E,/Images/panthers.png,3,100%,46.5%,28.3%,16.1%,9.2%,98.0,252,223,29
 13,Los Angeles Kings,LAK - X,Pacific,#A2AAAD,/Images/kings.png,2,100%,53.4%,27.5%,14.2%,7.0%,106.3,252,203,49
 14,Minnesota Wild,MIN - X,Central,#154734,/Images/wild.png,4,100%,41.6%,18.8%,8.5%,3.4%,97.0,228,239,-11
-15,Montreal Canadiens,MTL - X,Atlantic,#AF1E2D,/Images/canadiens.png,5,100%,23.7%,5.6%,1.2%,0.3%,89.8,243,266,-23
+15,Montreal Canadiens,MTL - X,Atlantic,#AF1E2D,/Images/canadiens.png,5,100%,23.7%,5.6%,1.2%,0.3%,91.0,243,266,-23
 16,Nashville Predators,NSH - E,Central,#FFB81C,/Images/predators.png,7,0%,0%,0%,0%,0%,68.0,212,276,-64
 17,New Jersey Devils,NJD - X,Metropolitan,#CE1126,/Images/devils.png,3,100%,34.1%,16.2%,6.1%,2.6%,91.0,243,220,23
 18,New York Islanders,NYI - E,Metropolitan,#00539b,/Images/islanders.png,6,0%,0%,0%,0%,0%,83.0,226,257,-31
