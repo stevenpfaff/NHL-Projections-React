@@ -52,11 +52,11 @@
     padding: 3px;
     font-size: 1.2vw;
   }
-/* 
+
   .final-results-page table td:first-child,
   .final-results-page table th:first-child {
-  width: 150px;
-} */
+  width: 120px;
+}
 
 
   @media (max-width: 768px) {
