@@ -1,14 +1,14 @@
 id,name,abrv,division,primaryColor,logo,playoffs,pick,result,proj_points,proj_goals,proj_goals_ag,Dif,actual_points,actual_goals,actual_goals_ag
 1,Anaheim Ducks,ANA,Pacific,#00685e,/Images/ducks.png,0.5%,,,67,222,291,-69,80,221,263
 2,Boston Bruins,BOS,Atlantic,#FFB81C,/Images/bruins.png,71.9%,,,95,261,238,23,76,222,272
-3,Buffalo Sabres,BUF,Atlantic,#0037087,/Images/sabres.png,20.1%,,,84,237,252,-15,78,267,288
+3,Buffalo Sabres,BUF,Atlantic,#0037087,/Images/sabres.png,20.1%,,,84,237,252,-15,79,269,289
 4,Calgary Flames,CGY,Pacific,#D2001C,/Images/flames.png,16.1%,,,82,224,245,-21,95,222,240
-5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,81.3%,TRUE,TRUE,98,247,218,29,100,264,229
+5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,81.3%,TRUE,TRUE,98,247,218,29,99,266,233
 6,Chicago Blackhawks,CHI,Central,#CF0A2C,/Images/blackhawks.png,10.5%,,,80,221,249,-28,61,226,296
 7,Colorado Avalanche,COL,Central,#6F263D,/Images/avalanche.png,80.9%,TRUE,TRUE,97,261,231,30,102,277,234
-8,Columbus Blue Jackets,CBJ,Metropolitan,#002654,/Images/blue jackets.png,0.2%,,,65,213,291,-78,88,270,270
+8,Columbus Blue Jackets,CBJ,Metropolitan,#002654,/Images/blue jackets.png,0.2%,,,65,213,291,-78,89,237,268
 9,Dallas Stars,DAL,Central,#006847,/Images/stars.png,95.3%,TRUE,TRUE,104,281,227,54,106,277,224
-10,Detroit Red Wings,DET,Atlantic,#ce1126,/Images/red wings.png,28.4%,TRUE,,86,230,239,-9,86,238,258
+10,Detroit Red Wings,DET,Atlantic,#ce1126,/Images/red wings.png,28.4%,TRUE,,86,230,239,-9,86,238,259
 11,Edmonton Oilers,EDM,Pacific,#FF4C00,/Images/oilers.png,91.1%,TRUE,TRUE,101,281,237,44,101,259,236
 12,Florida Panthers,FLA,Atlantic,#c8102E,/Images/panthers.png,94.5%,TRUE,TRUE,104,252,203,49,98,252,223
 13,Los Angeles Kings,LAK,Pacific,#A2AAAD,/Images/kings.png,87.2%,,TRUE,100,238,205,33,106,252,203
@@ -16,18 +16,18 @@ id,name,abrv,division,primaryColor,logo,playoffs,pick,result,proj_points,proj_go
 15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,1.0%,,TRUE,70,227,286,-59,91,245,265
 16,Nashville Predators,NSH,Central,#FFB81C,/Images/predators.png,69.1%,TRUE,,94,262,242,20,68,214,274
 17,New Jersey Devils,NJD,Metropolitan,#CE1126,/Images/devils.png,87.2%,TRUE,TRUE,100,274,236,38,91,242,222
-18,New York Islanders,NYI,Metropolitan,#00539b,/Images/islanders.png,77.8%,,,97,259,232,27,83,226,257
-19,New York Rangers,NYR,Metropolitan,#0038A8,/Images/rangers.png,87.0%,TRUE,,100,258,221,37,84,255,258
-20,Ottawa Senators,OTT,Atlantic,#DA1A32,/Images/senators.png,46.9%,TRUE,TRUE,90,244,240,4,96,239,232
-21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,2.1%,,,73,217,266,-49,77,237,284
-22,Pittsburgh Penguins,PIT,Metropolitan,#FCB514,/Images/penguins.png,9.2%,,,79,235,265,-30,79,241,294
+18,New York Islanders,NYI,Metropolitan,#00539b,/Images/islanders.png,77.8%,,,97,259,232,27,82,224,260
+19,New York Rangers,NYR,Metropolitan,#0038A8,/Images/rangers.png,87.0%,TRUE,,100,258,221,37,85,256,255
+20,Ottawa Senators,OTT,Atlantic,#DA1A32,/Images/senators.png,46.9%,TRUE,TRUE,90,244,240,4,97,243,234
+21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,2.1%,,,73,217,266,-49,76,238,286
+22,Pittsburgh Penguins,PIT,Metropolitan,#FCB514,/Images/penguins.png,9.2%,,,79,235,265,-30,80,243,293
 23,San Jose Sharks,SJS,Pacific,#006D75,/Images/sharks.png,0%,,,52,187,307,-120,52,210,315
 24,Seattle Kraken,SEA,Pacific,#68a2b9,/Images/kraken.png,41.5%,,,89,234,235,-1,76,247,265
 25,St. Louis Blues,STL,Central,#002F87,/Images/blues.png,3.6%,,TRUE,75,218,262,-44,96,254,233
-26,Tampa Bay Lightning,TBL,Atlantic,#002868,/Images/lightning.png,59.2%,TRUE,TRUE,93,257,244,13,103,297,218
-27,Toronto Maple Leafs,TOR,Atlantic,#00205b,/Images/leafs.png,79.2%,TRUE,TRUE,97,262,233,29,107,267,231
+26,Tampa Bay Lightning,TBL,Atlantic,#002868,/Images/lightning.png,59.2%,TRUE,TRUE,93,257,244,13,102,294,219
+27,Toronto Maple Leafs,TOR,Atlantic,#00205b,/Images/leafs.png,79.2%,TRUE,TRUE,97,262,233,29,108,268,231
 28,Utah Hockey Club,UTA,Central,#5c88da,/Images/utah.png,19.7%,TRUE,,83,236,253,-17,89,241,251
 29,Vancouver Canucks,VAN,Pacific,#00205B,/Images/canucks.png,97.8%,TRUE,,107,269,208,61,90,236,253
 30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,47.1%,TRUE,TRUE,90,251,247,4,110,275,219
-31,Washington Capitals,WSH,Metropolitan,#041E42,/Images/capitals.png,53.9%,,TRUE,91,262,252,10,112,289,230
+31,Washington Capitals,WSH,Metropolitan,#041E42,/Images/capitals.png,53.9%,,TRUE,91,262,252,10,111,288,232
 32,Winnipeg Jets,WPG,Central,#004C97,/Images/jets.png,67.7%,,TRUE,94,242,226,16,116,277,191
