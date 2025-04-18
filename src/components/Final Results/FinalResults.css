@@ -17,8 +17,9 @@
   }
   
   .final-results-page table {
-    font-size: 0.9vw;
+    font-size: 1.2vw;
     width: 100%;
+    min-width: 1200px;
     max-height: 90vh;
     overflow: hidden;
     table-layout: fixed;
@@ -34,13 +35,14 @@
   }
 
   .final-results-page th {
-    font-size: .9em;
+    font-size: 1.0em;
   }
   
   .final-results-page .logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.2em;
   }
   
   .final-results-page .logo {
@@ -50,41 +52,49 @@
   
   .final-results-page .stat-td {
     padding: 3px;
-    font-size: 1.1vw;
+    font-size: 1.25vw;
   }
 
-  .final-results-page table td:first-child,
+  /* .final-results-page table td:first-child,
   .final-results-page table th:first-child {
-  width: 100px;
-}
+  width: 120px;
+} */
 
 
 
-  @media (max-width: 768px) {
-    .final-results-page table, th, td {
-        font-size: 12px;
-    }
-
-    .final-results-page .stat-td {
-      font-size: 12px;
-    }
-
-    .final-results-page h1 {
-      font-size: 18px;
-    }
-
-    .final-results-page .logo {
-        width: 15px;
-        height: 15px;
-        margin-right: 2px;
-    }
-    
-    .final-results-page p {
-        font-size: 0.7rem;
-    }
-    .final-results-page table td:first-child,
-    .final-results-page table th:first-child {
-    width: 50px;
+@media (max-width: 768px) {
+  .final-results-page table {
+    min-width: unset;
+    font-size: 3vw;
+    overflow-x: auto;
+    table-layout: unset;
   }
+
+  .final-results-page .stat-td {
+    font-size: 3.5vw;
+  }
+
+  .final-results-page h1 {
+    font-size: 5vw;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .final-results-page .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 4vw;
+  }
+  
+  .final-results-page .logo {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  
 }
   
