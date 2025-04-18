@@ -2,7 +2,7 @@ id,name,abrv,division,primaryColor,logo,playoffs,pick,result,proj_points,proj_go
 1,Anaheim Ducks,ANA,Pacific,#00685e,/Images/ducks.png,0.5%,,,67,222,291,-69,80,221,263
 2,Boston Bruins,BOS,Atlantic,#FFB81C,/Images/bruins.png,71.9%,,,95,261,238,23,76,222,272
 3,Buffalo Sabres,BUF,Atlantic,#0037087,/Images/sabres.png,20.1%,,,84,237,252,-15,79,269,289
-4,Calgary Flames,CGY,Pacific,#D2001C,/Images/flames.png,16.1%,,,82,224,245,-21,95,222,240
+4,Calgary Flames,CGY,Pacific,#D2001C,/Images/flames.png,16.1%,,,82,224,245,-21,96,225,238
 5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,81.3%,TRUE,TRUE,98,247,218,29,99,266,233
 6,Chicago Blackhawks,CHI,Central,#CF0A2C,/Images/blackhawks.png,10.5%,,,80,221,249,-28,61,226,296
 7,Colorado Avalanche,COL,Central,#6F263D,/Images/avalanche.png,80.9%,TRUE,TRUE,97,261,231,30,102,277,234
@@ -11,7 +11,7 @@ id,name,abrv,division,primaryColor,logo,playoffs,pick,result,proj_points,proj_go
 10,Detroit Red Wings,DET,Atlantic,#ce1126,/Images/red wings.png,28.4%,TRUE,,86,230,239,-9,86,238,259
 11,Edmonton Oilers,EDM,Pacific,#FF4C00,/Images/oilers.png,91.1%,TRUE,TRUE,101,281,237,44,101,259,236
 12,Florida Panthers,FLA,Atlantic,#c8102E,/Images/panthers.png,94.5%,TRUE,TRUE,104,252,203,49,98,252,223
-13,Los Angeles Kings,LAK,Pacific,#A2AAAD,/Images/kings.png,87.2%,,TRUE,100,238,205,33,106,252,203
+13,Los Angeles Kings,LAK,Pacific,#A2AAAD,/Images/kings.png,87.2%,,TRUE,100,238,205,33,105,250,206
 14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,72.0%,TRUE,TRUE,95,236,216,20,97,228,239
 15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,1.0%,,TRUE,70,227,286,-59,91,245,265
 16,Nashville Predators,NSH,Central,#FFB81C,/Images/predators.png,69.1%,TRUE,,94,262,242,20,68,214,274
