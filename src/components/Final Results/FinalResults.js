@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 import Papa from 'papaparse';
 import './FinalResults.css';
+import html2canvas from 'html2canvas';
 
 class FinalResults extends Component {
   constructor(props) {
@@ -11,6 +12,18 @@ class FinalResults extends Component {
       sortConfig: { key: 'name', direction: 'ascending' },
     };
   }
+
+  handleDownloadImage = () => {
+    const tableElement = document.getElementById('results-table');
+    if (tableElement) {
+      html2canvas(tableElement, { scale: 2 }).then((canvas) => {
+        const link = document.createElement('a');
+        link.download = 'final-results.png';
+        link.href = canvas.toDataURL();
+        link.click();
+      });
+    }
+  };
 
   componentDidMount() {
     Papa.parse('/finalresults.csv', {
@@ -74,9 +87,14 @@ class FinalResults extends Component {
             style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
           />
           Final Results
-        </h1>
+        </h1> 
+
+        <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+          <button onClick={this.handleDownloadImage}>Download Table as Image</button>
+        </div>
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <Table striped bordered hover responsive size="sm">
+        <Table id="results-table" striped bordered hover responsive size="sm">
           <thead>
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>
