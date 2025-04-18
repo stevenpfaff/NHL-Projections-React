@@ -34,7 +34,7 @@
   }
 
   .final-results-page th {
-    font-size: 1.1em;
+    font-size: .9em;
   }
   
   .final-results-page .logo-container {
@@ -50,12 +50,12 @@
   
   .final-results-page .stat-td {
     padding: 3px;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
   }
 
   .final-results-page table td:first-child,
   .final-results-page table th:first-child {
-  width: 120px;
+  width: 100px;
 }
 
 

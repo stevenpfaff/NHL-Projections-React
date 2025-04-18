@@ -27,7 +27,7 @@ class FinalResults extends Component {
           actual_goals_ag: parseFloat(team.actual_goals_ag),
           proj_points: parseFloat(team.proj_points),
           actual_points: parseFloat(team.actual_points),
-          error: parseFloat(team.actual_points - team.proj_points),
+          error: parseFloat(Math.abs(team.actual_points - team.proj_points)),
         }));
         const sortedData = [...parsedData].sort((a, b) => b.name - a.name);
         this.setState({ data: sortedData });
@@ -80,7 +80,7 @@ class FinalResults extends Component {
           <thead>
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>
-              <th onClick={() => this.sortData('playoffs')}>Playoff %</th>
+              <th onClick={() => this.sortData('playoffs')}>Playoff%</th>
               <th onClick={() => this.sortData('result')}>Playoffs?</th>
               <th onClick={() => this.sortData('proj_points')}>Proj PTS</th>
               <th onClick={() => this.sortData('actual_points')}>PTS</th>
