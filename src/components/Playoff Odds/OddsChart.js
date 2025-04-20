@@ -66,7 +66,7 @@ const PlayoffOddsChart = () => {
           const rawData = results.data.map((row) => ({
             date: row.date,
             team: row.name,
-            odds: parseFloat(row.current_playoffs.replace('%', '')) || 0,
+            odds: parseFloat(row.current_win.replace('%', '')) || 0,
             primaryColor: row.primaryColor,
             logo: row.logo,
           }));
@@ -128,7 +128,7 @@ const PlayoffOddsChart = () => {
 
   return (
     <div style={styles.chartContainer}>
-      <h1 style={{ marginTop: '2%' }}>NHL Playoff Odds Timeline</h1>
+      <h1 style={{ marginTop: '2%' }}>Stanley Cup Playoff Odds Timeline</h1>
 
       {/* Date Range Picker */}
       <div style={styles.dateFilter}>
@@ -147,7 +147,7 @@ const PlayoffOddsChart = () => {
       />
 
       <div style={styles.chartWrapper}>
-        <ResponsiveContainer width="80%" height={800}>
+        <ResponsiveContainer width="60%" height={600}>
           <LineChart data={filteredData} margin={{ top: 20, right: 50, left: 20, bottom: 30 }}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis
@@ -157,7 +157,7 @@ const PlayoffOddsChart = () => {
               angle={-45}
               textAnchor="end"
             />
-            <YAxis label={{ value: 'Playoff Odds (%)', angle: -90, position: 'insideLeft' }} />
+            <YAxis label={{ value: 'Stanley Cup Odds (%)', angle: -90, position: 'insideLeft' }} />
             <Tooltip content={<CustomTooltip hoveredTeam={hoveredTeam} />} />
 
             {/* Ensure filtering works and logos are retained */}
