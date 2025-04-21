@@ -75,7 +75,7 @@ render() {
           />
           NHL Playoff Odds
         </h1>
-        <p>Updated as of 4/20/2025</p>
+        <p>Updated as of 4/21/2025</p>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Table striped bordered hover responsive size="sm">
         <thead>
