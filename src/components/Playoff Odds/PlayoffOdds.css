@@ -1,9 +1,12 @@
 .table-container {
-    overflow-x: auto;
-    margin: 2% auto;
-    padding: 0 10px;
-    background-color: #ffffff;
-    max-width: fit-content;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
 }
 
 .table {
@@ -21,9 +24,6 @@
     background-color: #fff; /* Match the default table row background */
     /* border-right: 1px solid #dee2e6; */
 }
-
-
-
 
 .table th:first-child {
     background-color: #013a68; /* Match header row background */
@@ -81,6 +81,11 @@ td, th {
         width: 30px;
         height: 30px;
         margin-right: 8px;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
     }
     
     .p {

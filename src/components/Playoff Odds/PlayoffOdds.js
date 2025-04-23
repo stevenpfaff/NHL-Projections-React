@@ -66,7 +66,7 @@ render() {
     const { data } = this.state;
 
     return (
-      <div className="final-results-page">
+      <div className="table-container">
         <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
           <img 
             src="../../Images/OnlyNorthCircle.png" 
@@ -99,7 +99,7 @@ render() {
                       className="logo" 
                       alt={`${team.name} logo`} 
                     />
-                    <Link to={`/team/${team.id}`} style={{ marginLeft: '8px' }}>
+                    <Link to={`/team/${team.id}`} style={{ marginLeft: '2px' }}>
                       <span>{team.abrv}</span>
                     </Link>
                   </div>

@@ -19,7 +19,7 @@
   .final-results-page table {
     font-size: 1.2vw;
     width: 100%;
-    min-width: 1200px;
+    min-width: 1000px;
     max-height: 90vh;
     overflow: hidden;
     table-layout: fixed;

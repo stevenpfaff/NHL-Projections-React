@@ -89,9 +89,9 @@ class FinalResults extends Component {
           Final Results
         </h1> 
 
-        <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+        {/* <div style={{ textAlign: 'center', marginBottom: '20px' }}>
           <button onClick={this.handleDownloadImage}>Download Table as Image</button>
-        </div>
+        </div> */}
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Table id="results-table" striped bordered hover responsive size="sm">
