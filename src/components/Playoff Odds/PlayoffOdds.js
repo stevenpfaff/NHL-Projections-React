@@ -99,7 +99,7 @@ render() {
                       className="logo" 
                       alt={`${team.name} logo`} 
                     />
-                    <Link to={`/team/${team.id}`} style={{ marginLeft: '2px' }}>
+                    <Link to={`/team/${team.id}`}>
                       <span>{team.abrv}</span>
                     </Link>
                   </div>
