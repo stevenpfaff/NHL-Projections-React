@@ -28,7 +28,7 @@ class PlayoffOdds extends Component {
           current_win: parseFloat(team.current_win),
           current_points: parseFloat(team.current_points),
         }));
-        const filteredData = parsedData.filter(team => team.current_round2 > 0);
+        const filteredData = parsedData.filter(team => team.current_conf > 0);
         const sortedData = [...filteredData].sort((a, b) => b.current_win - a.current_win);
         this.setState({ data: sortedData });
       },
@@ -75,7 +75,7 @@ render() {
           />
           NHL Playoff Odds
         </h1>
-        <p>Updated as of 5/4/2025</p>
+        <p>Updated as of 5/5/2025</p>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Table striped bordered hover responsive size="sm">
         <thead>
@@ -83,7 +83,7 @@ render() {
               <th onClick={() => this.sortData('name')}>Team</th>
               {/* <th onClick={() => this.sortData('current_points')}>Proj PTS</th> */}
               {/* <th onClick={() => this.sortData('current_playoffs')}>Playoff %</th> */}
-              <th onClick={() => this.sortData('current_round2')}>Round 2 %</th>
+              {/* <th onClick={() => this.sortData('current_round2')}>Round 2 %</th> */}
               <th onClick={() => this.sortData('current_conf')}>Conf Final %</th>
               <th onClick={() => this.sortData('current_final')}>Cup Final %</th>
               <th onClick={() => this.sortData('current_win')}>Win Cup %</th>
@@ -106,7 +106,7 @@ render() {
                 </td>
                 {/* <td className='stat-td'>{team.current_points}</td>
                 <td className='stat-td'>{team.current_playoffs}%</td> */}
-                <td className='stat-td'>{team.current_round2}%</td>
+                {/* <td className='stat-td'>{team.current_round2}%</td> */}
                 <td className='stat-td'>{team.current_conf}%</td>
                 <td className='stat-td'>{team.current_final}%</td>
                 <td className='stat-td'>{team.current_win}%</td>
