@@ -319,3 +319,19 @@ id,date,name,abrv,primaryColor,logo,current_playoffs,current_round2,current_conf
 30,2025-05-08,Vegas Golden Knights,VGK,#B4975A,/Images/golden knights.png,100%,100%,38.1%,20.2%,10.8%
 31,2025-05-08,Washington Capitals,WSH,#041E42,/Images/capitals.png,100%,100%,27.0%,13.3%,6.1%
 32,2025-05-08,Winnipeg Jets,WPG,#004C97,/Images/jets.png,100%,100%,28.4%,12.6%,5.6%
+5,2025-05-09,Carolina Hurricanes,CAR,#CE1126,/Images/canes.png,100%,100%,57.3%,32.3%,17.2%
+7,2025-05-09,Colorado Avalanche,COL,#6F263D,/Images/avalanche.png,100%,0%,0%,0%,0%
+9,2025-05-09,Dallas Stars,DAL,#006847,/Images/stars.png,100%,100%,71.5%,37.9%,20.1%
+11,2025-05-09,Edmonton Oilers,EDM,#FF4C00,/Images/oilers.png,100%,100%,79.3%,38.2%,19.2%
+12,2025-05-09,Florida Panthers,FLA,#c8102E,/Images/panthers.png,100%,100%,21.9%,11.1%,5.5%
+13,2025-05-09,Los Angeles Kings,LAK,#A2AAAD,/Images/kings.png,100%,0%,0%,0%,0%
+14,2025-05-09,Minnesota Wild,MIN,#154734,/Images/wild.png,100%,0%,0%,0%,0%
+15,2025-05-09,Montreal Canadiens,MTL,#AF1E2D,/Images/canadiens.png,100%,0%,0%,0%,0%
+17,2025-05-09,New Jersey Devils,NJD,#CE1126,/Images/devils.png,100%,0%,0%,0%,0%
+20,2025-05-09,Ottawa Senators,OTT,#DA1A32,/Images/senators.png,100%,0%,0%,0%,0%
+25,2025-05-09,St. Louis Blues,STL,#002F87,/Images/blues.png,100%,0%,0%,0%,0%
+26,2025-05-09,Tampa Bay Lightning,TBL,#002868,/Images/lightning.png,100%,0%,0%,0%,0%
+27,2025-05-09,Toronto Maple Leafs,TOR,#00205b,/Images/leafs.png,100%,100%,78.1%,35.9%,16.8%
+30,2025-05-09,Vegas Golden Knights,VGK,#B4975A,/Images/golden knights.png,100%,100%,20.7%,11.0%,6.1%
+31,2025-05-09,Washington Capitals,WSH,#041E42,/Images/capitals.png,100%,100%,42.7%,20.8%,9.3%
+32,2025-05-09,Winnipeg Jets,WPG,#004C97,/Images/jets.png,100%,100%,28.6%,12.9%,5.8%
