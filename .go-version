@@ -1,0 +1,1 @@
+echo "1.19.14" > .go-version
