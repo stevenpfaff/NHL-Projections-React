@@ -75,7 +75,7 @@ render() {
           />
           NHL Playoff Odds
         </h1>
-        <p>Updated as of 5/18/2025</p>
+        <p>Updated as of 5/19/2025</p>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Table striped bordered hover responsive size="sm">
         <thead>
@@ -83,7 +83,7 @@ render() {
               <th onClick={() => this.sortData('name')}>Team</th>
               {/* <th onClick={() => this.sortData('current_points')}>Proj PTS</th> */}
               {/* <th onClick={() => this.sortData('current_playoffs')}>Playoff %</th> */}
-              {/* <th onClick={() => this.sortData('current_round2')}>Round 2 %</th> */}
+              <th onClick={() => this.sortData('current_round2')}>Round 2 %</th>
               <th onClick={() => this.sortData('current_conf')}>Conf Final %</th>
               <th onClick={() => this.sortData('current_final')}>Cup Final %</th>
               <th onClick={() => this.sortData('current_win')}>Win Cup %</th>
@@ -106,7 +106,7 @@ render() {
                 </td>
                 {/* <td className='stat-td'>{team.current_points}</td>
                 <td className='stat-td'>{team.current_playoffs}%</td> */}
-                {/* <td className='stat-td'>{team.current_round2}%</td> */}
+                <td className='stat-td'>{team.current_round2}%</td>
                 <td className='stat-td'>{team.current_conf}%</td>
                 <td className='stat-td'>{team.current_final}%</td>
                 <td className='stat-td'>{team.current_win}%</td>
