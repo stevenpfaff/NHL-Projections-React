@@ -90,14 +90,14 @@ class PreseasonOdds extends Component {
 
 return (
       <div className="final-results-page">
-        <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+        <h1 style={{ marginTop: '2%', marginBottom: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
           <img 
             src="../../Images/OnlyNorthCircle.png" 
             alt="Mini Logo" 
             style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
           />
           Preseason Playoff Odds
-        </h1>
+        </h1> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Table striped bordered hover responsive size="sm">
         <thead>
