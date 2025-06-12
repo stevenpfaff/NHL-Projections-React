@@ -52,7 +52,7 @@ class Preseason extends Component {
 
     return (
       <div>
-        <h1 style={{ marginTop: '2%' }}>NHL Preseason Projected Standings</h1>
+        <h1 style={{ marginTop: '2%' }}>2024/2025 NHL Preseason Projected Standings</h1>
         <div className="divisions-container">
           <div className="division-column">
             <Table striped bordered hover>
@@ -65,13 +65,15 @@ class Preseason extends Component {
               <tbody>
                 {centralTeams.map((team) => (
                   <tr key={team.name}>
-                    <td>
+                    <td className='teamCell'>
+                      <div className='teamWrapper'>
                       <img
                         src={team.logo}
                         className="imageColumn"
                         alt={`${team.name} logo`}
                       />
                       <span className="abrvColumn">{team.abrv}</span>
+                      </div>
                     </td>
                     <td className="pointsColumn">{Math.round(team.proj_points)}</td>
                   </tr>
@@ -90,13 +92,15 @@ class Preseason extends Component {
               <tbody>
                 {pacificTeams.map((team) => (
                   <tr key={team.name}>
-                    <td>
+                                        <td className='teamCell'>
+                      <div className='teamWrapper'>
                       <img
                         src={team.logo}
                         className="imageColumn"
                         alt={`${team.name} logo`}
                       />
                       <span className="abrvColumn">{team.abrv}</span>
+                      </div>
                     </td>
                     <td className="pointsColumn">{Math.round(team.proj_points)}</td>
                   </tr>
@@ -115,13 +119,15 @@ class Preseason extends Component {
               <tbody>
                 {atlanticTeams.map((team) => (
                   <tr key={team.name}>
-                    <td>
+                    <td className='teamCell'>
+                      <div className='teamWrapper'>
                       <img
                         src={team.logo}
                         className="imageColumn"
                         alt={`${team.name} logo`}
                       />
                       <span className="abrvColumn">{team.abrv}</span>
+                      </div>
                     </td>
                     <td className="pointsColumn">{Math.round(team.proj_points)}</td>
                   </tr>
@@ -139,14 +145,16 @@ class Preseason extends Component {
               </thead>
               <tbody>
                 {metroTeams.map((team) => (
-                  <tr key={team.name}>
-                    <td>
+                  <tr key={team.name}>                        
+                  <td className='teamCell'>
+                      <div className='teamWrapper'>
                       <img
                         src={team.logo}
                         className="imageColumn"
                         alt={`${team.name} logo`}
                       />
                       <span className="abrvColumn">{team.abrv}</span>
+                      </div>
                     </td>
                     <td className="pointsColumn">{Math.round(team.proj_points)}</td>
                   </tr>

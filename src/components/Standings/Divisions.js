@@ -70,13 +70,15 @@ class Divisions extends Component {
               <tbody>
                 {centralTeams.map((team) => (
                   <tr key={team.name}>
-                    <td>
-                      <img 
-                        src={team.logo} 
-                        className="imageColumn" 
-                        alt={`${team.name} logo`} 
-                      />
-                      <span className="abrvColumn">{team.abrv}</span>
+                    <td className="teamCell">
+                      <div className="teamWrapper">
+                        <img 
+                          src={team.logo} 
+                          className="imageColumn" 
+                          alt={`${team.name} logo`} 
+                        />
+                        <span className="abrvColumn">{team.abrv}</span>
+                      </div>
                     </td>
                     <td className="pointsColumn">{roundPoints(team.current_points)}</td>
                   </tr>
@@ -95,13 +97,15 @@ class Divisions extends Component {
               <tbody>
                 {pacificTeams.map((team) => (
                   <tr key={team.name}>
-                    <td>
-                      <img 
-                        src={team.logo} 
-                        className="imageColumn" 
-                        alt={`${team.name} logo`} 
-                      />
-                      <span className="abrvColumn">{team.abrv}</span>
+                    <td className="teamCell">
+                      <div className="teamWrapper">
+                        <img 
+                          src={team.logo} 
+                          className="imageColumn" 
+                          alt={`${team.name} logo`} 
+                        />
+                        <span className="abrvColumn">{team.abrv}</span>
+                      </div>
                     </td>
                     <td className="pointsColumn">{roundPoints(team.current_points)}</td>
                   </tr>
@@ -120,13 +124,15 @@ class Divisions extends Component {
               <tbody>
                 {atlanticTeams.map((team) => (
                   <tr key={team.name}>
-                    <td>
-                      <img 
-                        src={team.logo} 
-                        className="imageColumn" 
-                        alt={`${team.name} logo`} 
-                      />
-                      <span className="abrvColumn">{team.abrv}</span>
+                    <td className="teamCell">
+                      <div className="teamWrapper">
+                        <img 
+                          src={team.logo} 
+                          className="imageColumn" 
+                          alt={`${team.name} logo`} 
+                        />
+                        <span className="abrvColumn">{team.abrv}</span>
+                      </div>
                     </td>
                     <td className="pointsColumn">{roundPoints(team.current_points)}</td>
                   </tr>
@@ -138,20 +144,22 @@ class Divisions extends Component {
             <Table striped bordered hover>
               <thead className="headerStyleEast">
                 <tr>
-                  <th className="pointsColumn">Metropolitan</th>
+                  <th className="pointsColumn">Metro</th>
                   <th className="pointsColumn">Points</th>
                 </tr>
               </thead>
               <tbody>
                 {metroTeams.map((team) => (
                   <tr key={team.name}>
-                    <td>
-                      <img 
-                        src={team.logo} 
-                        className="imageColumn" 
-                        alt={`${team.name} logo`} 
-                      />
-                      <span className="abrvColumn">{team.abrv}</span>
+                    <td className="teamCell">
+                      <div className="teamWrapper">
+                        <img 
+                          src={team.logo} 
+                          className="imageColumn" 
+                          alt={`${team.name} logo`} 
+                        />
+                        <span className="abrvColumn">{team.abrv}</span>
+                      </div>
                     </td>
                     <td className="pointsColumn">{roundPoints(team.current_points)}</td>
                   </tr>

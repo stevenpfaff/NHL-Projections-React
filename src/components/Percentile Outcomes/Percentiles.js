@@ -79,7 +79,7 @@ class Percentiles extends Component {
                alt="Mini Logo" 
                style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
              />
-             Preseason Percentile Outcomes
+             2024/2025 Preseason Percentile Outcomes
            </h1>
            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
            <Table striped bordered hover responsive size="sm">

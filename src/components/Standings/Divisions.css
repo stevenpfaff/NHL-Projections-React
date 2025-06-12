@@ -47,6 +47,7 @@
   font-size: 28px;
   font-family: 'Bebas Neue', sans-serif;
   text-align: center;
+  width: 50%;
 }
 
 .abrvColumnOdds {
@@ -70,6 +71,23 @@
 .headerStyleWest {
   background-color: #013a68;
   /* color: #ffffff;  */
+}
+
+table .th, table .td {
+  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.teamCell {
+  padding: 8px;
+}
+
+.teamWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
 }
 
 h1 {
