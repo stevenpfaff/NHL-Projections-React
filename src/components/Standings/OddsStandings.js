@@ -37,12 +37,13 @@ class OddsStandings extends Component {
     this.fetchTeamsData();
   }
 
-  getSortedTeams = (division) => {
-    const { teamsData } = this.state;
-    return teamsData
-      .filter((team) => team.division === division)
-      .sort((a, b) => a.current_standing - b.current_standing);
-  };
+getSortedTeams = (division) => {
+  const { teamsData } = this.state;
+  return teamsData
+    .filter((team) => team.division === division)
+    .sort((a, b) => parseFloat(b.current_playoffs) - parseFloat(a.current_playoffs));
+};
+
 
   render() {
     const { loading, error } = this.state;
@@ -152,7 +153,7 @@ class OddsStandings extends Component {
           <Table striped bordered hover>
             <thead className="headerStyleEast">
               <tr>
-                <th className="oddsColumn">Metropolitan</th>
+                <th className="oddsColumn">Metro</th>
                 <th className="oddsColumn">PO%</th>
                 <th className="oddsColumn">Cup%</th>
               </tr>
