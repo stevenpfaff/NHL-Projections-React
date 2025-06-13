@@ -28,7 +28,7 @@ class PlayoffOdds extends Component {
           current_win: parseFloat(team.current_win),
           current_points: parseFloat(team.current_points),
         }));
-        const filteredData = parsedData.filter(team => team.current_conf > 0);
+        const filteredData = parsedData.filter(team => team.current_final > 0);
         const sortedData = [...filteredData].sort((a, b) => b.current_win - a.current_win);
         this.setState({ data: sortedData });
       },
