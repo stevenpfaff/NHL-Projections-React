@@ -9,8 +9,8 @@ id,name,abrv,division,primaryColor,logo,current_standing,current_playoffs,curren
 8,Columbus Blue Jackets,CBJ,Metropolitan,#002654,/Images/blue jackets.png,4,0%,0%,0%,0%,0%,88.1,270,270,0
 9,Dallas Stars,DAL,Central,#006847,/Images/stars.png,2,100%,100%,100%,0%,0%,107,277,224,53
 10,Detroit Red Wings,DET,Atlantic,#ce1126,/Images/red wings.png,6,0%,0%,0%,0%,0%,85.9,238,258,-20
-11,Edmonton Oilers,EDM,Pacific,#FF4C00,/Images/oilers.png,3,100%,100%,100%,100%,48.80%,101,259,236,23
-12,Florida Panthers,FLA,Atlantic,#c8102E,/Images/panthers.png,3,100%,100%,100%,100%,51.20%,98,252,223,29
+11,Edmonton Oilers,EDM,Pacific,#FF4C00,/Images/oilers.png,3,100%,100%,100%,100%,24.2%,101,259,236,23
+12,Florida Panthers,FLA,Atlantic,#c8102E,/Images/panthers.png,3,100%,100%,100%,100%,75.8%,98,252,223,29
 13,Los Angeles Kings,LAK,Pacific,#A2AAAD,/Images/kings.png,2,100%,0%,0%,0%,0%,106.3,252,203,49
 14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,4,100%,0%,0%,0%,0%,97,228,239,-11
 15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,5,100%,0%,0%,0%,0%,91,245,265,-20
