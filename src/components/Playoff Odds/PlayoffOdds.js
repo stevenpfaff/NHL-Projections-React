@@ -28,7 +28,7 @@ class PlayoffOdds extends Component {
           current_win: parseFloat(team.current_win),
           current_points: parseFloat(team.current_points),
         }));
-        const filteredData = parsedData.filter(team => team.current_final > 0);
+        const filteredData = parsedData.filter(team => team.current_playoffs > 0);
         const sortedData = [...filteredData].sort((a, b) => b.current_win - a.current_win);
         this.setState({ data: sortedData });
       },
@@ -75,7 +75,7 @@ render() {
           />
           2025/2026 NHL Playoff Odds
         </h1>
-        <p>Updated as of 6/18/2025</p>
+        <p>Updated as of 6/13/2025</p>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Table striped bordered hover responsive size="sm">
         <thead>
