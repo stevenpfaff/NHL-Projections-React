@@ -11,19 +11,20 @@ const NavBar = () => {
         <Nav className="mx-auto custom-nav-links">
         <img src={logo} alt="..." height="50" width="50"></img>
           <Nav.Link href="/">Home</Nav.Link>
-          <NavDropdown title="NHL Playoffs">
+          <NavDropdown title="2025/2026 Projections">
             <NavDropdown.Item href="/PlayoffOdds">Playoff Odds</NavDropdown.Item>
+            <NavDropdown.Item href="/Divisions">Projected Standings</NavDropdown.Item>
             {/* <NavDropdown.Item href="/OddsDivisional">Playoff Odds Standings View</NavDropdown.Item> */}
             {/* <NavDropdown.Item href="/SimulatedPoints">Simulated Points</NavDropdown.Item> */}
           </NavDropdown>
-          <NavDropdown title="Preseason Projections">
+          <NavDropdown title="2024/2025 Projections">
             <NavDropdown.Item href="/PreseasonOdds">Preseason Playoff Odds</NavDropdown.Item>
             <NavDropdown.Item href="/PreseasonStandings">Preseason Projected Standings</NavDropdown.Item>
             <NavDropdown.Item href="/Picks">Preseason Picks</NavDropdown.Item>
             <NavDropdown.Item href="/Percentiles">Preseason Percentile Outcomes</NavDropdown.Item>
             <NavDropdown.Item href="/finalresults">Final Results</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="/PowerRankings">Power Rankings</Nav.Link>
+          {/* <Nav.Link href="/PowerRankings">Power Rankings</Nav.Link> */}
           <Nav.Link href="/Timeline">Stanley Cup Odds Timeline</Nav.Link>
         </Nav>
       </Navbar.Collapse>

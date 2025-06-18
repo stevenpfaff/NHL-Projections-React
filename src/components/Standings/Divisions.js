@@ -55,9 +55,9 @@ class Divisions extends Component {
             alt="Mini Logo" 
             style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
           />
-          NHL Projected Standings
+          2025/2026 NHL Projected Standings
         </h1>
-        <p>Updated as of 4/17/2025</p>
+        <p>Updated as of 6/18/2025</p>
         <div className="divisions-container">
           <div className="division-column">
             <Table striped bordered hover>
