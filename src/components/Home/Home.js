@@ -28,6 +28,7 @@ class Home extends Component {
                         <li><Link to="https://www.advancedhockeystats.com/">Patrick Bacon's Website</Link></li>
                         <li><Link to="/Divisions">2025/2026 Projected Standings</Link></li>
                         <li><Link to="/PlayoffOdds">2025/2026 Playoff Odds</Link></li>
+                        <li><Link to="/Timeline">2025 Stanley Cup Timeline</Link></li>
                         <li><Link to="/PreseasonStandings">2024/2025 Preseason Projected Standings</Link></li>
                         <li><Link to="/PreseasonOdds">2024/2025 Preseason Playoff Odds</Link></li>
                         <li><Link to="/finalresults">2024/2025 Final Results</Link></li>
