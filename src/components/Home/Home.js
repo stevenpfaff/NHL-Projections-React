@@ -1,62 +1,38 @@
 import React, { Component } from 'react';
-import { Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import "./Home.css";
 
 class Home extends Component {
 
     render() {
-        const percentileData = [
-            { scale: 80, range: '98% – 100%' },
-            { scale: 70, range: '90% – 97%' },
-            { scale: 65, range: '80% – 89%' },
-            { scale: 60, range: '66% – 79%' },
-            { scale: 55, range: '60% – 65%' },
-            { scale: 50, range: '41% – 59%' },
-            { scale: 45, range: '35% – 40%' },
-            { scale: 40, range: '21% – 34%' },
-            { scale: 35, range: '11% – 20%' },
-            { scale: 30, range: '3% – 10%' },
-            { scale: 20, range: '0% – 2%' },
-        ];
-
         return (
             <div>
                 <section id="about">
-                  <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-                    <img 
-                      src="../../Images/OnlyNorthCircle.png" 
-                      alt="Mini Logo" 
-                      style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
-                    />
-                    Only North Hockey
-                  </h1>
+                    <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+                        <img 
+                          src="../../Images/OnlyNorthCircle.png" 
+                          alt="Mini Logo" 
+                          style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
+                        />
+                        Only North Hockey
+                    </h1>
                     <p>
-                        This website displays the results of a program written to simulate the entire NHL season.
-                        This simulation is run 100,000 times to get the widest range of outcomes.
-                    </p>
+                        Only North Hockey is an NHL analytics site that uses advanced simulation to project season outcomes. 
+                        We run 100,000 full-season simulations using player ratings based on Patrick Bacon’s WAR model.
+                        Daily updates are ran throughout the season to show projected standings and playoff odds.
+                    </p>  
 
-                    <h2>Player Evaluation</h2>
-                    <p>
-                        We use Patrick Bacon's WAR model to evaluate players. We take each skaters WAR Percentile and apply it on a 20-80 scale.
-                        The 6 WAR categories we use in our simulation are Shooting, Offensive Impact, Defensive Impact, Penalties, Powerplay, and
-                        Penalty Kill. Each team has ratings compiled from their associated skaters in these categories. 
-                    </p>
-                    <Table striped bordered hover>
-                        <thead>
-                            <tr>
-                                <th>Rating</th>
-                                <th>Percentile</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {percentileData.map((item) => (
-                                <tr key={item.scale}>
-                                    <td>{item.scale}</td>
-                                    <td>{item.range}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </Table>
+                    {/* Links Section */}
+                    <h2>Explore the site:</h2>
+                    <ul>
+                        <li><Link to="https://www.advancedhockeystats.com/">Patrick Bacon's Website</Link></li>
+                        <li><Link to="/Divisions">2025/2026 Projected Standings</Link></li>
+                        <li><Link to="/PlayoffOdds">2025/2026 Playoff Odds</Link></li>
+                        <li><Link to="/PreseasonStandings">2024/2025 Preseason Projected Standings</Link></li>
+                        <li><Link to="/PreseasonOdds">2024/2025 Preseason Playoff Odds</Link></li>
+                        <li><Link to="/finalresults">2024/2025 Final Results</Link></li>
+                    </ul>
+
                 </section>
             </div>
         );

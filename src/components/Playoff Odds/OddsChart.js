@@ -28,7 +28,7 @@ const CustomTooltip = ({ active, payload, label, hoveredTeam }) => {
               >
                   <p><strong>Date:</strong> {label}</p>
                   <p><strong>Team:</strong> {hoveredLine.dataKey}</p>
-                  <p><strong>Playoff Odds:</strong> {hoveredLine.value}%</p>
+                  <p><strong>Stanley Cup Odds:</strong> {hoveredLine.value}%</p>
               </div>
           );
       }
@@ -128,9 +128,14 @@ const PlayoffOddsChart = () => {
 
   return (
     <div style={styles.chartContainer}>
-      <h1 style={{ marginTop: '2%' }}>Stanley Cup Playoff Odds Timeline</h1>
-
-      {/* Date Range Picker */}
+      <h1 style={{ marginTop: '2%' }}>
+        <img 
+        src="../../Images/OnlyNorthCircle.png" 
+        alt="Mini Logo" 
+        style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
+        />
+          Stanley Cup Playoff Odds Timeline
+        </h1>
       <div style={styles.dateFilter}>
         <label>Start Date: </label>
         <input type="date" value={startDate} onChange={(e) => setStartDate(e.target.value)} />

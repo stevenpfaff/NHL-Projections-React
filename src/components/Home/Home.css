@@ -48,11 +48,12 @@ li {
     line-height: 1.6;
 }
 
+
+
 /* Table Styles */
 .projection-table {
-    width: 100%; /* Full width within the section */
-    max-width: 800px; /* Limit width to match the text body's width */
-    margin: 0 auto; /* Center the table */
+    width: fit-content;
+    margin: 0 auto;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
@@ -96,7 +97,7 @@ li {
     }
 
     .projection-table {
-        width: 100%;
+        width: fit-content;
     }
 
     .team-logo {
