@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import Papa from 'papaparse';
 import './PlayoffOdds.css';
 
@@ -89,7 +88,7 @@ class PreseasonOdds extends Component {
     if (error) return <div>{error}</div>;
 
 return (
-      <div className="final-results-page">
+      <div className="table-container">
         <h1 style={{ marginTop: '2%', marginBottom: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
           <img 
             src="../../Images/OnlyNorthCircle.png" 
@@ -121,9 +120,7 @@ return (
                       className="logo" 
                       alt={`${team.name} logo`} 
                     />
-                    <Link to={`/team/${team.id}`} style={{ marginLeft: '8px' }}>
-                      <span>{team.abrv}</span>
-                    </Link>
+                      <span>{team.abrv}</span>      
                   </div>
                 </td>
                 <td className='stat-td'>{team.proj_points}</td>

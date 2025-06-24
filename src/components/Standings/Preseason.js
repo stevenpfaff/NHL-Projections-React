@@ -139,7 +139,7 @@ class Preseason extends Component {
             <Table striped bordered hover>
               <thead className="headerStyleEast">
                 <tr>
-                  <th className="pointsColumn">Metropolitan</th>
+                  <th className="pointsColumn">Metro</th>
                   <th className="pointsColumn">Points</th>
                 </tr>
               </thead>

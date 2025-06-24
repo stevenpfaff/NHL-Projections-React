@@ -48,26 +48,6 @@ li {
     line-height: 1.6;
 }
 
-
-
-/* Table Styles */
-.projection-table {
-    width: fit-content;
-    margin: 0 auto;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-.projection-table th, .projection-table td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ddd;
-}
-
-.projection-table th {
-    color: white;
-}
-
 .team-logo {
     max-width: 100px;
     margin-bottom: 10px;
@@ -81,6 +61,18 @@ li {
     color: #013a68;
 }
 
+#about ul {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: center;
+}
+
+#about li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
 
 @media (max-width: 768px) {
     body {
@@ -89,15 +81,6 @@ li {
 
     h2 {
         font-size: 1.8em;
-    }
-
-    .projection-table th, .projection-table td {
-        padding: 8px;
-        font-size: 0.8em; 
-    }
-
-    .projection-table {
-        width: fit-content;
     }
 
     .team-logo {
