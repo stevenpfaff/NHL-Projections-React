@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Papa from 'papaparse';
 import './PlayoffOdds.css';
 
@@ -75,7 +75,7 @@ render() {
           />
           2025/2026 NHL Playoff Odds
         </h1>
-        <p>Updated as of 6/23/2025</p>
+        <p>Updated as of 6/25/2025</p>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Table striped bordered hover responsive size="sm">
         <thead>
@@ -99,9 +99,9 @@ render() {
                       className="logo" 
                       alt={`${team.name} logo`} 
                     />
-                    <Link to={`/team/${team.id}`}>
+                    {/* <Link to={`/team/${team.id}`}> */}
                       <span>{team.abrv}</span>
-                    </Link>
+                    {/* </Link> */}
                   </div>
                 </td>
                 <td className='stat-td'>{team.current_points}</td>
