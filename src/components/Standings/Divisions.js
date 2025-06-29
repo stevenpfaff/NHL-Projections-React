@@ -57,7 +57,7 @@ class Divisions extends Component {
           />
           2025/2026 NHL Projected Standings
         </h1>
-        <p>Updated as of 6/27/2025</p>
+        <p>Updated as of 6/29/2025</p>
         <div className="divisions-container">
           <div className="division-column">
             <Table striped bordered hover>
