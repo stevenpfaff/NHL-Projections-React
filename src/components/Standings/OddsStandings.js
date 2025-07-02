@@ -66,7 +66,7 @@ getSortedTeams = (division) => {
                 />
                 NHL Playoff Odds
               </h1>
-              <p>Updated as of 4/17/2025</p>
+              <p>Updated as of 7/2/2025</p>
       <div className="divisionOdds-container">
         <div className="division-column">
           <Table striped bordered hover>
