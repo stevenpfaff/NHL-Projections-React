@@ -71,7 +71,7 @@ const Percentiles = () => {
 
   return (
     <div className="table-container">
-      <h1
+      <h2
         style={{
           marginTop: '2%',
           display: 'flex',
@@ -86,7 +86,7 @@ const Percentiles = () => {
           style={{ width: '50px', height: '50px', marginLeft: '10px' }}
         />
         {seasonTitle}
-      </h1>
+      </h2>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <Table striped bordered hover responsive size="sm">
         <thead>

@@ -44,7 +44,7 @@ const Preseason = () => {
 
   return (
     <div>
-      <h1 style={{ marginTop: '2%' }}>
+      <h2 style={{ marginTop: '2%' }}>
         <img
           src="../../Images/OnlyNorthCircle.png"
           alt="Mini Logo"
@@ -53,7 +53,7 @@ const Preseason = () => {
         {year === '2026'
           ? '2025/2026 NHL Preseason Projected Standings'
           : '2024/2025 NHL Preseason Projected Standings'}
-      </h1>
+      </h2>
       <div className="divisions-container">
         {[
           { name: 'Central', teams: centralTeams, headerClass: 'headerStyleWest' },
