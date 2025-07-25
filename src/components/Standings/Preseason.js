@@ -1,78 +1,85 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import Papa from 'papaparse';
+import { useParams } from 'react-router-dom';
 import './Divisions.css';
 
-class Preseason extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      teamsData: [],
-    };
-  }
+const Preseason = () => {
+  const { year } = useParams(); // get year from route param
+  const [teamsData, setTeamsData] = useState([]);
 
-  componentDidMount() {
-    this.loadCSVData('/2025startdata.csv');
-  }
+  useEffect(() => {
+    const loadCSVData = async () => {
+      try {
+        const response = await fetch(`/${year}startdata.csv`);
+        const csvData = await response.text();
 
-  loadCSVData = (filePath) => {
-    fetch(filePath)
-      .then((response) => response.text())
-      .then((csvData) => {
         Papa.parse(csvData, {
           header: true,
           skipEmptyLines: true,
           complete: (result) => {
-            this.setState({ teamsData: result.data });
+            setTeamsData(result.data);
           },
           error: (err) => {
             console.error('Error parsing CSV:', err);
           },
         });
-      })
-      .catch((err) => {
+      } catch (err) {
         console.error('Error fetching CSV:', err);
-      });
-  };
-
-  render() {
-    const { teamsData } = this.state;
-
-    // Helper function to get sorted teams by division
-    const getSortedTeams = (division) => {
-      return teamsData
-        .filter((team) => team.division === division)
-        .sort((a, b) => b.proj_points - a.proj_points);
+      }
     };
 
-    const centralTeams = getSortedTeams('Central');
-    const pacificTeams = getSortedTeams('Pacific');
-    const atlanticTeams = getSortedTeams('Atlantic');
-    const metroTeams = getSortedTeams('Metropolitan');
+    loadCSVData();
+  }, [year]); // refetch if year param changes
 
-    return (
-      <div>
-        <h1 style={{ marginTop: '2%' }}>2024/2025 NHL Preseason Projected Standings</h1>
-        <div className="divisions-container">
-          <div className="division-column">
+  const getSortedTeams = (division) =>
+    teamsData
+      .filter((team) => team.division === division)
+      .sort((a, b) => b.proj_points - a.proj_points);
+
+  const centralTeams = getSortedTeams('Central');
+  const pacificTeams = getSortedTeams('Pacific');
+  const atlanticTeams = getSortedTeams('Atlantic');
+  const metroTeams = getSortedTeams('Metropolitan');
+
+  return (
+    <div>
+      <h1 style={{ marginTop: '2%' }}>
+        <img
+          src="../../Images/OnlyNorthCircle.png"
+          alt="Mini Logo"
+          style={{ width: '50px', height: '50px', marginLeft: '10px' }}
+        />
+        {year === '2026'
+          ? '2025/2026 NHL Preseason Projected Standings'
+          : '2024/2025 NHL Preseason Projected Standings'}
+      </h1>
+      <div className="divisions-container">
+        {[
+          { name: 'Central', teams: centralTeams, headerClass: 'headerStyleWest' },
+          { name: 'Pacific', teams: pacificTeams, headerClass: 'headerStyleWest' },
+          { name: 'Atlantic', teams: atlanticTeams, headerClass: 'headerStyleEast' },
+          { name: 'Metropolitan', teams: metroTeams, headerClass: 'headerStyleEast' },
+        ].map(({ name, teams, headerClass }) => (
+          <div className="division-column" key={name}>
             <Table striped bordered hover>
-              <thead className="headerStyleWest">
+              <thead className={headerClass}>
                 <tr>
-                  <th className="pointsColumn">Central</th>
+                  <th className="pointsColumn">{name}</th>
                   <th className="pointsColumn">Points</th>
                 </tr>
               </thead>
               <tbody>
-                {centralTeams.map((team) => (
+                {teams.map((team) => (
                   <tr key={team.name}>
-                    <td className='teamCell'>
-                      <div className='teamWrapper'>
-                      <img
-                        src={team.logo}
-                        className="imageColumn"
-                        alt={`${team.name} logo`}
-                      />
-                      <span className="abrvColumn">{team.abrv}</span>
+                    <td className="teamCell">
+                      <div className="teamWrapper">
+                        <img
+                          src={team.logo}
+                          className="imageColumn"
+                          alt={`${team.name} logo`}
+                        />
+                        <span className="abrvColumn">{team.abrv}</span>
                       </div>
                     </td>
                     <td className="pointsColumn">{Math.round(team.proj_points)}</td>
@@ -81,91 +88,10 @@ class Preseason extends Component {
               </tbody>
             </Table>
           </div>
-          <div className="division-column">
-            <Table striped bordered hover>
-              <thead className="headerStyleWest">
-                <tr>
-                  <th className="pointsColumn">Pacific</th>
-                  <th className="pointsColumn">Points</th>
-                </tr>
-              </thead>
-              <tbody>
-                {pacificTeams.map((team) => (
-                  <tr key={team.name}>
-                                        <td className='teamCell'>
-                      <div className='teamWrapper'>
-                      <img
-                        src={team.logo}
-                        className="imageColumn"
-                        alt={`${team.name} logo`}
-                      />
-                      <span className="abrvColumn">{team.abrv}</span>
-                      </div>
-                    </td>
-                    <td className="pointsColumn">{Math.round(team.proj_points)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </Table>
-          </div>
-          <div className="division-column">
-            <Table striped bordered hover>
-              <thead className="headerStyleEast">
-                <tr>
-                  <th className="pointsColumn">Atlantic</th>
-                  <th className="pointsColumn">Points</th>
-                </tr>
-              </thead>
-              <tbody>
-                {atlanticTeams.map((team) => (
-                  <tr key={team.name}>
-                    <td className='teamCell'>
-                      <div className='teamWrapper'>
-                      <img
-                        src={team.logo}
-                        className="imageColumn"
-                        alt={`${team.name} logo`}
-                      />
-                      <span className="abrvColumn">{team.abrv}</span>
-                      </div>
-                    </td>
-                    <td className="pointsColumn">{Math.round(team.proj_points)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </Table>
-          </div>
-          <div className="division-column">
-            <Table striped bordered hover>
-              <thead className="headerStyleEast">
-                <tr>
-                  <th className="pointsColumn">Metro</th>
-                  <th className="pointsColumn">Points</th>
-                </tr>
-              </thead>
-              <tbody>
-                {metroTeams.map((team) => (
-                  <tr key={team.name}>                        
-                  <td className='teamCell'>
-                      <div className='teamWrapper'>
-                      <img
-                        src={team.logo}
-                        className="imageColumn"
-                        alt={`${team.name} logo`}
-                      />
-                      <span className="abrvColumn">{team.abrv}</span>
-                      </div>
-                    </td>
-                    <td className="pointsColumn">{Math.round(team.proj_points)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </Table>
-          </div>
-        </div>
+        ))}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Preseason;

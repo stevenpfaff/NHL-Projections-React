@@ -12,16 +12,17 @@ const NavBar = () => {
         <img src={logo} alt="..." height="50" width="50"></img>
           <Nav.Link href="/">Home</Nav.Link>
           <NavDropdown title="2025/2026 Projections">
-            <NavDropdown.Item href="/PlayoffOdds">Playoff Odds</NavDropdown.Item>
-            <NavDropdown.Item href="/Divisions">Projected Standings</NavDropdown.Item>
+            <NavDropdown.Item href="/PreseasonOdds/2026">Preseason Playoff Odds</NavDropdown.Item>
+            <NavDropdown.Item href="/PreseasonStandings/2026">Preseason Projected Standings</NavDropdown.Item>
             <NavDropdown.Item href="/OddsDivisional">Playoff Odds Standings View</NavDropdown.Item>
+            <NavDropdown.Item href="/Percentiles/2026">Preseason Percentile Outcomes</NavDropdown.Item>
             {/* <NavDropdown.Item href="/SimulatedPoints">Simulated Points</NavDropdown.Item> */}
           </NavDropdown>
           <NavDropdown title="2024/2025 Projections">
-            <NavDropdown.Item href="/PreseasonOdds">Preseason Playoff Odds</NavDropdown.Item>
-            <NavDropdown.Item href="/PreseasonStandings">Preseason Projected Standings</NavDropdown.Item>
+            <NavDropdown.Item href="/PreseasonOdds/2025">Preseason Playoff Odds</NavDropdown.Item>
+            <NavDropdown.Item href="/PreseasonStandings/2025">Preseason Projected Standings</NavDropdown.Item>
             <NavDropdown.Item href="/Picks">Preseason Picks</NavDropdown.Item>
-            <NavDropdown.Item href="/Percentiles">Preseason Percentile Outcomes</NavDropdown.Item>
+            <NavDropdown.Item href="/Percentiles/2025">Preseason Percentile Outcomes</NavDropdown.Item>
             <NavDropdown.Item href="/finalresults">Final Results</NavDropdown.Item>
           </NavDropdown>
           {/* <Nav.Link href="/PowerRankings">Power Rankings</Nav.Link> */}
