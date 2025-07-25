@@ -112,13 +112,4 @@ h1 {
   .division-column {
     margin: 5px 0;
   }
-
-  h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: normal;
-    color: #333;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 10px;
-  }
 }
