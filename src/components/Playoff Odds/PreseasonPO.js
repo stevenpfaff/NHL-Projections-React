@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import Papa from 'papaparse';
 import './PlayoffOdds.css';
+import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
 const PreseasonOdds = () => {
@@ -125,7 +126,9 @@ const PreseasonOdds = () => {
                     className="logo"
                     alt={`${team.name} logo`}
                   />
-                  <span>{team.abrv}</span>
+                  <Link to={`/team/${team.id}`} style={{ marginLeft: '8px' }}>
+                    <span>{team.abrv}</span>
+                  </Link>
                 </div>
               </td>
               <td className='stat-td'>{team.proj_points}</td>
