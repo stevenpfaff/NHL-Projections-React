@@ -109,7 +109,7 @@ const Percentiles = () => {
               <td>
                 <div className="logo-container">
                   {team.logo && <img src={team.logo} className="logo" alt={`${team.name} logo`} />}
-                  <Link to={`/team/${team.id}`} style={{ marginLeft: '8px' }}>
+                  <Link to={`/team/${team.id}`}>
                     <span>{team.abrv}</span>
                   </Link>
                 </div>
