@@ -12,7 +12,7 @@ class Preseason extends Component {
   }
 
   componentDidMount() {
-    this.loadCSVData('/startdata.csv');
+    this.loadCSVData('/2025startdata.csv');
   }
 
   loadCSVData = (filePath) => {

@@ -14,7 +14,7 @@ const TeamCard = () => {
             try {
                 // Parse both CSVs
                 const [startData, currentData] = await Promise.all([
-                    parseCSV('/startdata.csv'),
+                    parseCSV('/2025startdata.csv'),
                     parseCSV('/currentdata.csv'),
                 ]);
 
@@ -57,40 +57,40 @@ const TeamCard = () => {
                     <thead>
                         <tr>
                             <th style={headerStyle}>Category</th>
-                            <th style={headerStyle}>Start</th>
-                            <th style={headerStyle}>Current</th>
+                            <th style={headerStyle}>2026</th>
+                            <th style={headerStyle}>2025</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td className='category-td'>Projected Points</td>
-                            <td className='stat-td'>{team.start_proj_points}</td>
                             <td className='stat-td'>{team.current_points}</td>
+                            <td className='stat-td'>{team.start_proj_points}</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Reach Playoffs</td>
-                            <td className='stat-td'>{team.start_playoffs}%</td>
                             <td className='stat-td'>{team.current_playoffs}%</td>
+                            <td className='stat-td'>{team.start_playoffs}%</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Reach Second Round</td>
-                            <td className='stat-td'>{team.start_second_round}%</td>
                             <td className='stat-td'>{team.current_round2}</td>
+                            <td className='stat-td'>{team.start_second_round}%</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Reach Conference Final</td>
-                            <td className='stat-td'>{team.start_conf_final}%</td>
                             <td className='stat-td'>{team.current_conf}</td>
+                            <td className='stat-td'>{team.start_conf_final}%</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Reach Cup Final</td>
-                            <td className='stat-td'>{team.start_cup_final}%</td>
                             <td className='stat-td'>{team.current_final}</td>
+                            <td className='stat-td'>{team.start_cup_final}%</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Win Cup</td>
-                            <td className='stat-td'>{team.start_cup_win}%</td>
                             <td className='stat-td'>{team.current_win}</td>
+                            <td className='stat-td'>{team.start_cup_win}%</td>
                         </tr>
                     </tbody>
                 </Table>

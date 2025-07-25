@@ -79,14 +79,14 @@ class FinalResults extends Component {
     const { data } = this.state;
 
     return (
-      <div className="final-results-page">
+      <div className="table-container">
         <h1 style={{ marginTop: '2%', marginBottom: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
           <img 
             src="../../Images/OnlyNorthCircle.png" 
             alt="Mini Logo" 
             style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
           />
-          Final Results
+          2024/2025 Final Results
         </h1> 
 
         {/* <div style={{ textAlign: 'center', marginBottom: '20px' }}>
@@ -94,7 +94,7 @@ class FinalResults extends Component {
         </div> */}
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <Table id="results-table" striped bordered hover responsive size="sm">
+        <Table className="playoff-odds-table" id="results-table" striped bordered hover responsive size="sm">
           <thead>
             <tr>
               <th onClick={() => this.sortData('name')}>Team</th>

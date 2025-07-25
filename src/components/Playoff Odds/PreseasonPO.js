@@ -16,7 +16,7 @@ class PreseasonOdds extends Component {
 
   fetchCSVData = async () => {
     try {
-      const response = await fetch('/startdata.csv');
+      const response = await fetch('/2025startdata.csv');
       const csvData = await response.text();
 
       // Parse the CSV data

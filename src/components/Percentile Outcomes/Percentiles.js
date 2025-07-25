@@ -15,7 +15,7 @@ class Percentiles extends Component {
   }
   fetchCSVData = async () => {
     try {
-      const response = await fetch('/startdata.csv');
+      const response = await fetch('/2025startdata.csv');
       const csvData = await response.text();
 
       Papa.parse(csvData, {
@@ -72,7 +72,7 @@ class Percentiles extends Component {
     if (error) return <div>{error}</div>;
 
    return (
-         <div className="final-results-page">
+         <div className="table-container">
            <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
              <img 
                src="../../Images/OnlyNorthCircle.png" 

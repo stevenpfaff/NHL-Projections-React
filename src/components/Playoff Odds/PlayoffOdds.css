@@ -14,8 +14,8 @@
     position: relative;
 }
 
-.table td:first-child,
-.table th:first-child {
+.playoff-odds-table td:first-child,
+.playoff-odds-table th:first-child {
     width: 120px;
     max-width: 120px;
     min-width: 100px;
@@ -23,6 +23,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
 
 
 .table th:first-child {
