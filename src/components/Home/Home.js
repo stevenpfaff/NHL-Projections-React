@@ -25,7 +25,7 @@ class Home extends Component {
                     {/* Links Section */}
                     <h2>Explore the site:</h2>
                     <ul>
-                        <li><Link to="https://www.advancedhockeystats.com/">Patrick Bacon's Website</Link></li>
+                        <li><Link to="https://www.advancedhockeystats.com/">Advanced Hockey Stats</Link></li>
                         <li><Link to="/PreseasonStandings/2026">2025/2026 Projected Standings</Link></li>
                         <li><Link to="/PreseasonOdds/2026">2025/2026 Playoff Odds</Link></li>
                         <li><Link to="/Timeline">2025 Stanley Cup Timeline</Link></li>
