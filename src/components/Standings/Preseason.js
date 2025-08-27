@@ -56,10 +56,10 @@ const Preseason = () => {
       </h2>
       <div className="divisions-container">
         {[
-          { name: 'Central', teams: centralTeams, headerClass: 'headerStyleWest' },
           { name: 'Pacific', teams: pacificTeams, headerClass: 'headerStyleWest' },
-          { name: 'Atlantic', teams: atlanticTeams, headerClass: 'headerStyleEast' },
+          { name: 'Central', teams: centralTeams, headerClass: 'headerStyleWest' },
           { name: 'Metropolitan', teams: metroTeams, headerClass: 'headerStyleEast' },
+          { name: 'Atlantic', teams: atlanticTeams, headerClass: 'headerStyleEast' },
         ].map(({ name, teams, headerClass }) => (
           <div className="division-column" key={name}>
             <Table striped bordered hover>

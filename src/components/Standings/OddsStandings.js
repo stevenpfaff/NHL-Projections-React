@@ -72,33 +72,6 @@ getSortedTeams = (division) => {
           <Table striped bordered hover>
             <thead className="headerStyleWest">
               <tr>
-                <th className="oddsColumn">Central</th>
-                <th className="oddsColumn">PO%</th>
-                <th className="oddsColumn">Cup%</th>
-              </tr>
-            </thead>
-            <tbody>
-              {centralTeams.map((team) => (
-                <tr key={team.name}>
-                  <td>
-                    <img 
-                      src={team.logo} 
-                      className="imageColumnOdds" 
-                      alt={`${team.name} logo`} 
-                    />
-                    <span className="abrvColumnOdds">{team.abrv}</span>
-                  </td>
-                  <td className="oddsColumn">{team.current_playoffs}</td>
-                  <td className="oddsColumn">{team.current_win}</td>
-                </tr>
-              ))}
-            </tbody>
-          </Table>
-        </div>
-        <div className="division-column">
-          <Table striped bordered hover>
-            <thead className="headerStyleWest">
-              <tr>
                 <th className="oddsColumn">Pacific</th>
                 <th className="oddsColumn">PO%</th>
                 <th className="oddsColumn">Cup%</th>
@@ -122,17 +95,17 @@ getSortedTeams = (division) => {
             </tbody>
           </Table>
         </div>
-        <div className="division-column">
+                <div className="division-column">
           <Table striped bordered hover>
-            <thead className="headerStyleEast">
+            <thead className="headerStyleWest">
               <tr>
-                <th className="oddsColumn">Atlantic</th>
+                <th className="oddsColumn">Central</th>
                 <th className="oddsColumn">PO%</th>
                 <th className="oddsColumn">Cup%</th>
               </tr>
             </thead>
             <tbody>
-              {atlanticTeams.map((team) => (
+              {centralTeams.map((team) => (
                 <tr key={team.name}>
                   <td>
                     <img 
@@ -160,6 +133,33 @@ getSortedTeams = (division) => {
             </thead>
             <tbody>
               {metroTeams.map((team) => (
+                <tr key={team.name}>
+                  <td>
+                    <img 
+                      src={team.logo} 
+                      className="imageColumnOdds" 
+                      alt={`${team.name} logo`} 
+                    />
+                    <span className="abrvColumnOdds">{team.abrv}</span>
+                  </td>
+                  <td className="oddsColumn">{team.current_playoffs}</td>
+                  <td className="oddsColumn">{team.current_win}</td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+        </div>
+        <div className="division-column">
+          <Table striped bordered hover>
+            <thead className="headerStyleEast">
+              <tr>
+                <th className="oddsColumn">Atlantic</th>
+                <th className="oddsColumn">PO%</th>
+                <th className="oddsColumn">Cup%</th>
+              </tr>
+            </thead>
+            <tbody>
+              {atlanticTeams.map((team) => (
                 <tr key={team.name}>
                   <td>
                     <img 

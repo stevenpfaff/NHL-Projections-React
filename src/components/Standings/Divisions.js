@@ -63,33 +63,6 @@ class Divisions extends Component {
             <Table striped bordered hover>
               <thead className="headerStyleWest">
                 <tr>
-                  <th className="pointsColumn">Central</th>
-                  <th className="pointsColumn">Points</th>
-                </tr>
-              </thead>
-              <tbody>
-                {centralTeams.map((team) => (
-                  <tr key={team.name}>
-                    <td className="teamCell">
-                      <div className="teamWrapper">
-                        <img 
-                          src={team.logo} 
-                          className="imageColumn" 
-                          alt={`${team.name} logo`} 
-                        />
-                        <span className="abrvColumn">{team.abrv}</span>
-                      </div>
-                    </td>
-                    <td className="pointsColumn">{roundPoints(team.current_points)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </Table>
-          </div>
-          <div className="division-column">
-            <Table striped bordered hover>
-              <thead className="headerStyleWest">
-                <tr>
                   <th className="pointsColumn">Pacific</th>
                   <th className="pointsColumn">Points</th>
                 </tr>
@@ -115,14 +88,14 @@ class Divisions extends Component {
           </div>
           <div className="division-column">
             <Table striped bordered hover>
-              <thead className="headerStyleEast">
+              <thead className="headerStyleWest">
                 <tr>
-                  <th className="pointsColumn">Atlantic</th>
+                  <th className="pointsColumn">Central</th>
                   <th className="pointsColumn">Points</th>
                 </tr>
               </thead>
               <tbody>
-                {atlanticTeams.map((team) => (
+                {centralTeams.map((team) => (
                   <tr key={team.name}>
                     <td className="teamCell">
                       <div className="teamWrapper">
@@ -150,6 +123,33 @@ class Divisions extends Component {
               </thead>
               <tbody>
                 {metroTeams.map((team) => (
+                  <tr key={team.name}>
+                    <td className="teamCell">
+                      <div className="teamWrapper">
+                        <img 
+                          src={team.logo} 
+                          className="imageColumn" 
+                          alt={`${team.name} logo`} 
+                        />
+                        <span className="abrvColumn">{team.abrv}</span>
+                      </div>
+                    </td>
+                    <td className="pointsColumn">{roundPoints(team.current_points)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </div>
+          <div className="division-column">
+            <Table striped bordered hover>
+              <thead className="headerStyleEast">
+                <tr>
+                  <th className="pointsColumn">Atlantic</th>
+                  <th className="pointsColumn">Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                {atlanticTeams.map((team) => (
                   <tr key={team.name}>
                     <td className="teamCell">
                       <div className="teamWrapper">
