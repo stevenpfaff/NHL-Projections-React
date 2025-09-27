@@ -58,7 +58,7 @@ const Preseason = () => {
         {[
           { name: 'Pacific', teams: pacificTeams, headerClass: 'headerStyleWest' },
           { name: 'Central', teams: centralTeams, headerClass: 'headerStyleWest' },
-          { name: 'Metropolitan', teams: metroTeams, headerClass: 'headerStyleEast' },
+          { name: 'Metro', teams: metroTeams, headerClass: 'headerStyleEast' },
           { name: 'Atlantic', teams: atlanticTeams, headerClass: 'headerStyleEast' },
         ].map(({ name, teams, headerClass }) => (
           <div className="division-column" key={name}>
