@@ -14,6 +14,7 @@ const NavBar = () => {
           <NavDropdown title="2025/2026 Projections">
             <NavDropdown.Item href="/PreseasonOdds/2026">Preseason Playoff Odds</NavDropdown.Item>
             <NavDropdown.Item href="/PreseasonStandings/2026">Preseason Projected Standings</NavDropdown.Item>
+            <NavDropdown.Item href="/Picks/2026">Preseason Picks</NavDropdown.Item>
             <NavDropdown.Item href="/OddsDivisional">Playoff Odds Standings View</NavDropdown.Item>
             <NavDropdown.Item href="/Percentiles/2026">Preseason Percentile Outcomes</NavDropdown.Item>
             {/* <NavDropdown.Item href="/SimulatedPoints">Simulated Points</NavDropdown.Item> */}
@@ -21,7 +22,7 @@ const NavBar = () => {
           <NavDropdown title="2024/2025 Projections">
             <NavDropdown.Item href="/PreseasonOdds/2025">Preseason Playoff Odds</NavDropdown.Item>
             <NavDropdown.Item href="/PreseasonStandings/2025">Preseason Projected Standings</NavDropdown.Item>
-            <NavDropdown.Item href="/Picks">Preseason Picks</NavDropdown.Item>
+            <NavDropdown.Item href="/Picks/2025">Preseason Picks</NavDropdown.Item>
             <NavDropdown.Item href="/Percentiles/2025">Preseason Percentile Outcomes</NavDropdown.Item>
             <NavDropdown.Item href="/finalresults">Final Results</NavDropdown.Item>
           </NavDropdown>

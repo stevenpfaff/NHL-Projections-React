@@ -1,137 +1,95 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
-import teamsData from '../../data/vibes.json';
+import Papa from 'papaparse';
+import { useParams } from 'react-router-dom';
 import './Divisions.css';
 
-class Vibes extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      teamsData: teamsData,
+const Vibes = () => {
+  const { year } = useParams(); // get year from route param
+  const [teamsData, setTeamsData] = useState([]);
+
+  useEffect(() => {
+    const loadCSVData = async () => {
+      try {
+        const response = await fetch(`/${year}vibes.csv`);
+        const csvData = await response.text();
+
+        Papa.parse(csvData, {
+          header: true,
+          skipEmptyLines: true,
+          complete: (result) => {
+            setTeamsData(result.data);
+          },
+          error: (err) => {
+            console.error('Error parsing CSV:', err);
+          },
+        });
+      } catch (err) {
+        console.error('Error fetching CSV:', err);
+      }
     };
-  }
 
-  render() {
-    const { teamsData } = this.state;
+    loadCSVData();
+  }, [year]); // refetch if year param changes
 
-    const getSortedTeams = (division) => {
-      return teamsData
-        .filter((team) => team.division === division)
-        .sort((a, b) => a.place - b.place);
-    };
+  const getSortedTeams = (division) =>
+    teamsData
+      .filter((team) => team.division === division)
+      .sort((a, b) => a.division_standing - b.division_standing);
 
-    const centralTeams = getSortedTeams('Central');
-    const pacificTeams = getSortedTeams('Pacific');
-    const atlanticTeams = getSortedTeams('Atlantic');
-    const metroTeams = getSortedTeams('Metropolitan');
+  const centralTeams = getSortedTeams('Central');
+  const pacificTeams = getSortedTeams('Pacific');
+  const atlanticTeams = getSortedTeams('Atlantic');
+  const metroTeams = getSortedTeams('Metropolitan');
 
-    return (
-      <div>
-      <h1 style={{ marginTop: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-        <img 
-          src="../../Images/OnlyNorthCircle.png" 
-          alt="Mini Logo" 
-          style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
+  return (
+    <div>
+      <h2 style={{ marginTop: '2%' }}>
+        <img
+          src="../../Images/OnlyNorthCircle.png"
+          alt="Mini Logo"
+          style={{ width: '50px', height: '50px', marginLeft: '10px' }}
         />
-        Preseason Playoff Picks
-      </h1>
+        {year === '2026'
+          ? '2025/2026 NHL Preseason Picks'
+          : '2024/2025 NHL Preseason Picks'}
+      </h2>
       <div className="divisions-container">
-        <div className="division-column">
-          <Table striped bordered hover>
-            <thead className="headerStyleWest">
-              <tr>
-                <th className="pointsColumn">Central</th>
-              </tr>
-            </thead>
-            <tbody>
-              {centralTeams.map((team) => (
-                <tr key={team.name}>
-                  <td>
-                    <img 
-                      src={team.logo} 
-                      className="imageColumn" 
-                      alt={`${team.name} logo`} 
-                    />
-                    <span className="abrvColumn">{team.abrv}</span>
-                  </td>
+        {[
+          { name: 'Pacific', teams: pacificTeams, headerClass: 'headerStyleWest' },
+          { name: 'Central', teams: centralTeams, headerClass: 'headerStyleWest' },
+          { name: 'Metro', teams: metroTeams, headerClass: 'headerStyleEast' },
+          { name: 'Atlantic', teams: atlanticTeams, headerClass: 'headerStyleEast' },
+        ].map(({ name, teams, headerClass }) => (
+          <div className="division-column" key={name}>
+            <Table striped bordered hover>
+              <thead className={headerClass}>
+                <tr>
+                  <th className="pointsColumn">{name}</th>
                 </tr>
-              ))}
-            </tbody>
-          </Table>
-        </div>
-        <div className="division-column">
-          <Table striped bordered hover>
-            <thead className="headerStyleWest">
-              <tr>
-                <th className="pointsColumn">Pacific</th>
-              </tr>
-            </thead>
-            <tbody>
-              {pacificTeams.map((team) => (
-                <tr key={team.name}>
-                  <td>
-                    <img 
-                      src={team.logo} 
-                      className="imageColumn" 
-                      alt={`${team.name} logo`} 
-                    />
-                    <span className="abrvColumn">{team.abrv}</span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </Table>
-        </div>
-        <div className="division-column">
-          <Table striped bordered hover>
-            <thead className="headerStyleEast">
-              <tr>
-                <th className="pointsColumn">Atlantic</th>
-              </tr>
-            </thead>
-            <tbody>
-              {atlanticTeams.map((team) => (
-                <tr key={team.name}>
-                  <td>
-                    <img 
-                      src={team.logo} 
-                      className="imageColumn" 
-                      alt={`${team.name} logo`} 
-                    />
-                    <span className="abrvColumn">{team.abrv}</span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </Table>
-        </div>
-        <div className="division-column">
-          <Table striped bordered hover>
-            <thead className="headerStyleEast">
-              <tr>
-                <th className="pointsColumn">Metropolitan</th>
-              </tr>
-            </thead>
-            <tbody>
-              {metroTeams.map((team) => (
-                <tr key={team.name}>
-                  <td>
-                    <img 
-                      src={team.logo} 
-                      className="imageColumn" 
-                      alt={`${team.name} logo`} 
-                    />
-                    <span className="abrvColumn">{team.abrv}</span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </Table>
-        </div>
+              </thead>
+              <tbody>
+                {teams.map((team) => (
+                  <tr key={team.name}>
+                    <td className="teamCell">
+                      <div className="teamWrapper">
+                        <img
+                          src={team.logo}
+                          className="imageColumn"
+                          alt={`${team.name} logo`}
+                        />
+                        <span className="abrvColumn">{team.abrv}</span>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </div>
+        ))}
       </div>
-      </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Vibes;

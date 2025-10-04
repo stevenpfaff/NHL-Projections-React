@@ -26,7 +26,7 @@ function App() {
                 <Route path="/PreseasonStandings/:year" element={<Preseason />} />
                 <Route path="/PreseasonOdds/:year" element={<PreseasonOdds />} />
                 <Route path="/percentiles/:year" element={<Percentiles />} />
-                <Route path="/Picks" element={<Vibes />} />
+                <Route path="/Picks/:year" element={<Vibes />} />
                 <Route path="/team/:id" element={<TeamCard />} />
                 <Route path="/PowerRankings" element={<PowerRankings />} />
                 <Route path="/Timeline" element={<PlayoffOddsChart />} />
