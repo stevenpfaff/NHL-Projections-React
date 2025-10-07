@@ -13,7 +13,7 @@ const NavBar = () => {
           <Nav.Link href="/">Home</Nav.Link>
           <NavDropdown title="2025/2026 Projections">
           <NavDropdown.Item href="/PlayoffOdds">Current Playoff Odds</NavDropdown.Item>
-          <NavDropdown.Item href="/OddsDivisional">Playoff Odds Standings View</NavDropdown.Item>
+          <NavDropdown.Item href="/OddsDivisional">Current Projected Standings</NavDropdown.Item>
             <NavDropdown.Item href="/PreseasonOdds/2026">Preseason Playoff Odds</NavDropdown.Item>
             <NavDropdown.Item href="/PreseasonStandings/2026">Preseason Projected Standings</NavDropdown.Item>
             <NavDropdown.Item href="/Percentiles/2026">Preseason Percentile Outcomes</NavDropdown.Item>
