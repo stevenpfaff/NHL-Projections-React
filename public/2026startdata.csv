@@ -1,33 +1,33 @@
 id,name,abrv,division,primaryColor,logo,playoffs,second_round,conf_final,cup_final,cup_win,low_points,proj_points,high_points,low_goals,proj_goals,high_goals,high_goals_against,proj_goals_against,low_goals_against
-1,Anaheim Ducks,ANA,Pacific,#00685e,/Images/ducks.png,7.7%,1.4%,0.4%,0.1%,0%,73,78.3,84,243,253,263,275,285,296
-2,Boston Bruins,BOS,Atlantic,#FFB81C,/Images/bruins.png,14.4%,3.3%,0.9%,0.3%,0.1%,74,79.7,85,208,217,227,234,244,254
-3,Buffalo Sabres,BUF,Atlantic,#0037087,/Images/sabres.png,28.0%,8.0%,2.6%,0.9%,0.3%,78,83.8,90,231,241,251,246,256,266
-5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,97.1%,67.6%,42.7%,21.7%,12.5%,99,104.5,110,245,255,265,200,209,219
-8,Columbus Blue Jackets,CBJ,Metropolitan,#002654,/Images/blue jackets.png,6.7%,1.3%,0.3%,0.1%,0%,70,75.7,81,235,245,255,274,285,295
-4,Calgary Flames,CGY,Pacific,#D2001C,/Images/flames.png,30.3%,7.6%,2.6%,0.7%,0.2%,80,86.2,92,218,228,238,227,237,246
-6,Chicago Blackhawks,CHI,Central,#CF0A2C,/Images/blackhawks.png,0.2%,0%,0%,0%,0%,59,64.4,70,198,208,217,270,281,291
-7,Colorado Avalanche,COL,Central,#6F263D,/Images/avalanche.png,90.0%,55.2%,28.1%,15.2%,7.1%,95,101,107,258,268,278,221,231,241
-9,Dallas Stars,DAL,Central,#006847,/Images/stars.png,95.0%,62.6%,37.8%,21.9%,11.1%,99,104.3,110,257,268,278,212,221,231
-10,Detroit Red Wings,DET,Atlantic,#ce1126,/Images/red wings.png,26.1%,7.3%,2.3%,0.8%,0.3%,77,83.2,89,237,247,257,254,264,274
-11,Edmonton Oilers,EDM,Pacific,#FF4C00,/Images/oilers.png,90.9%,47.3%,23.1%,10.9%,5.1%,96,101.6,107,259,269,280,221,231,240
-12,Florida Panthers,FLA,Atlantic,#c8102E,/Images/panthers.png,54.6%,19.9%,7.5%,3.2%,1.2%,84,89.6,95,224,233,243,222,232,242
-13,Los Angeles Kings,LAK,Pacific,#A2AAAD,/Images/kings.png,92.2%,49.0%,24.1%,11.5%,5.4%,97,102.2,108,246,256,266,207,217,226
-14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,45.0%,15.3%,5.2%,1.9%,0.6%,84,89.4,95,226,236,245,225,235,244
-15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,25.9%,7.3%,2.3%,0.8%,0.3%,77,83.2,89,249,260,270,266,276,287
-17,New Jersey Devils,NJD,Metropolitan,#CE1126,/Images/devils.png,82.0%,40.9%,18.5%,7.6%,3.7%,90,96.1,102,251,262,272,230,240,250
-16,Nashville Predators,NSH,Central,#FFB81C,/Images/predators.png,10.4%,2.2%,0.5%,0.1%,0%,74,79.6,85,222,232,241,249,260,270
-18,New York Islanders,NYI,Metropolitan,#00539b,/Images/islanders.png,30.0%,8.5%,2.7%,0.8%,0.3%,78,84.1,90,231,241,251,245,255,265
-19,New York Rangers,NYR,Metropolitan,#0038A8,/Images/rangers.png,65.7%,26.5%,10.7%,4.0%,1.8%,86,91.8,98,242,252,262,234,244,254
-20,Ottawa Senators,OTT,Atlantic,#DA1A32,/Images/senators.png,72.3%,31.2%,13.0%,6.2%,2.8%,88,93.5,99,229,239,249,216,226,235
-21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,3.2%,0.6%,0.1%,0%,0%,67,72.6,78,218,227,237,266,276,287
-22,Pittsburgh Penguins,PIT,Metropolitan,#FCB514,/Images/penguins.png,18.3%,4.5%,1.4%,0.4%,0.1%,75,80.8,87,250,261,271,274,285,296
-24,Seattle Kraken,SEA,Pacific,#68a2b9,/Images/kraken.png,2.4%,0.3%,0.1%,0%,0%,68,73.3,79,227,237,247,274,284,295
-23,San Jose Sharks,SJS,Pacific,#006D75,/Images/sharks.png,0.3%,0%,0%,0%,0%,61,66.4,72,221,230,240,288,299,310
-25,St. Louis Blues,STL,Central,#002F87,/Images/blues.png,42.9%,14.3%,4.8%,1.7%,0.5%,83,88.9,95,225,235,244,225,235,245
-26,Tampa Bay Lightning,TBL,Atlantic,#002868,/Images/lightning.png,95.6%,65.1%,39.6%,24.3%,13.8%,97,103.1,109,256,267,277,214,224,233
-27,Toronto Maple Leafs,TOR,Atlantic,#00205b,/Images/leafs.png,92.1%,58.4%,31.0%,18.1%,9.7%,95,100.5,106,253,264,274,219,229,238
-28,Utah Mammoth,UTA,Central,#5c88da,/Images/utah.png,52.5%,19.2%,7.1%,2.8%,1.0%,85,90.9,97,243,253,263,237,247,257
-29,Vancouver Canucks,VAN,Pacific,#00205B,/Images/canucks.png,85.3%,38.4%,17.4%,7.6%,3.2%,93,99.1,105,247,257,268,217,227,237
-30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,97.9%,66.0%,41.0%,22.6%,12.5%,102,107.5,113,272,283,293,215,225,234
-32,Winnipeg Jets,WPG,Central,#004C97,/Images/jets.png,57.2%,21.3%,7.9%,3.1%,1.1%,86,91.9,98,221,231,240,213,223,232
-31,Washington Capitals,WSH,Metropolitan,#041E42,/Images/capitals.png,88.2%,49.8%,24.3%,10.8%,5.5%,93,98.4,104,257,267,278,228,238,248
+1,Anaheim Ducks,ANA,Pacific,#00685e,/Images/ducks.png,7.5%,1.4%,0.4%,0.1%,0%,72,78.1,84,243,253,263,275,286,296
+2,Boston Bruins,BOS,Atlantic,#FFB81C,/Images/bruins.png,14.6%,3.4%,1.0%,0.3%,0.1%,74,79.6,85,208,217,226,235,244,254
+3,Buffalo Sabres,BUF,Atlantic,#0037087,/Images/sabres.png,28.1%,7.8%,2.6%,1.0%,0.3%,78,83.7,89,231,241,251,246,256,266
+5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,97.2%,67.7%,42.8%,21.8%,12.5%,99,104.4,110,245,255,265,200,210,219
+8,Columbus Blue Jackets,CBJ,Metropolitan,#002654,/Images/blue jackets.png,6.7%,1.3%,0.3%,0.1%,0%,70,75.6,81,234,245,254,274,285,295
+4,Calgary Flames,CGY,Pacific,#D2001C,/Images/flames.png,30.6%,7.8%,2.7%,0.8%,0.2%,80,86.1,92,218,228,238,227,237,246
+6,Chicago Blackhawks,CHI,Central,#CF0A2C,/Images/blackhawks.png,0.7%,0.1%,0%,0%,0%,63,68.4,74,201,210,220,261,271,282
+7,Colorado Avalanche,COL,Central,#6F263D,/Images/avalanche.png,89.9%,54.9%,28.0%,14.9%,7.0%,95,100.9,107,257,268,278,221,231,241
+9,Dallas Stars,DAL,Central,#006847,/Images/stars.png,95.1%,62.6%,38.2%,22.3%,11.4%,99,104.2,110,257,267,278,212,221,231
+10,Detroit Red Wings,DET,Atlantic,#ce1126,/Images/red wings.png,26.1%,7.5%,2.4%,0.8%,0.2%,77,83.1,89,237,247,257,254,264,274
+11,Edmonton Oilers,EDM,Pacific,#FF4C00,/Images/oilers.png,91.2%,47.4%,23.2%,11.0%,5.2%,96,101.6,107,259,269,280,221,231,240
+12,Florida Panthers,FLA,Atlantic,#c8102E,/Images/panthers.png,54.6%,20.2%,7.9%,3.3%,1.3%,84,89.5,95,223,233,243,223,232,242
+13,Los Angeles Kings,LAK,Pacific,#A2AAAD,/Images/kings.png,92.0%,48.8%,24.0%,11.2%,5.2%,96,102,108,245,256,266,208,217,226
+14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,44.8%,15.2%,5.1%,1.9%,0.6%,84,89.2,95,225,235,245,225,235,244
+15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,26.3%,7.4%,2.4%,0.8%,0.3%,77,83.1,89,249,259,270,266,276,287
+17,New Jersey Devils,NJD,Metropolitan,#CE1126,/Images/devils.png,82.0%,40.9%,18.5%,7.7%,3.7%,90,96.1,102,251,262,272,230,240,250
+16,Nashville Predators,NSH,Central,#FFB81C,/Images/predators.png,10.2%,2.1%,0.5%,0.1%,0%,74,79.4,85,222,231,241,250,260,270
+18,New York Islanders,NYI,Metropolitan,#00539b,/Images/islanders.png,29.4%,8.2%,2.7%,0.8%,0.3%,78,84,90,232,242,252,247,257,267
+19,New York Rangers,NYR,Metropolitan,#0038A8,/Images/rangers.png,65.9%,26.9%,10.8%,4.0%,1.7%,86,91.8,98,242,252,262,234,244,254
+20,Ottawa Senators,OTT,Atlantic,#DA1A32,/Images/senators.png,72.3%,31.7%,13.0%,6.2%,2.7%,88,93.5,99,229,239,248,216,226,236
+21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,3.3%,0.6%,0.1%,0%,0%,67,72.5,78,217,227,237,266,276,287
+22,Pittsburgh Penguins,PIT,Metropolitan,#FCB514,/Images/penguins.png,18.2%,4.4%,1.3%,0.3%,0.1%,75,80.7,86,250,260,271,274,285,296
+24,Seattle Kraken,SEA,Pacific,#68a2b9,/Images/kraken.png,2.5%,0.4%,0.1%,0%,0%,67,73.1,79,227,237,247,274,284,295
+23,San Jose Sharks,SJS,Pacific,#006D75,/Images/sharks.png,0.3%,0%,0%,0%,0%,61,66.3,72,220,230,239,288,299,310
+25,St. Louis Blues,STL,Central,#002F87,/Images/blues.png,42.7%,14.1%,4.7%,1.7%,0.6%,83,88.8,95,224,234,244,226,235,245
+26,Tampa Bay Lightning,TBL,Atlantic,#002868,/Images/lightning.png,95.6%,65.0%,39.7%,24.6%,14.1%,97,103,109,256,266,277,214,224,233
+27,Toronto Maple Leafs,TOR,Atlantic,#00205b,/Images/leafs.png,91.4%,57.1%,30.0%,17.3%,9.2%,94,100,106,253,263,274,220,230,240
+28,Utah Mammoth,UTA,Central,#5c88da,/Images/utah.png,52.6%,19.3%,6.9%,2.8%,0.9%,85,90.8,97,243,253,263,237,247,257
+29,Vancouver Canucks,VAN,Pacific,#00205B,/Images/canucks.png,85.4%,38.5%,17.3%,7.5%,3.2%,93,99,105,247,257,267,217,227,237
+30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,97.9%,66.3%,41.4%,22.7%,12.5%,102,107.5,113,272,283,293,215,225,235
+32,Winnipeg Jets,WPG,Central,#004C97,/Images/jets.png,56.8%,21.2%,7.7%,3.0%,1.0%,86,91.7,97,220,230,240,213,223,232
+31,Washington Capitals,WSH,Metropolitan,#041E42,/Images/capitals.png,88.4%,50.2%,24.4%,11.0%,5.7%,93,98.3,104,257,267,278,229,239,248
