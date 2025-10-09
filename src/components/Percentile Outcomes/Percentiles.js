@@ -41,6 +41,12 @@ const Percentiles = () => {
     fetchCSVData();
   }, [year]);
 
+  const roundPoints = (points) => {
+    const num = Number(points);
+    if (isNaN(num)) return '-';
+    return num.toFixed(0);
+  };
+
   const sortData = (key) => {
     let direction = 'ascending';
 
@@ -115,7 +121,7 @@ const Percentiles = () => {
                 </div>
               </td>
               <td className="stat-td">{team.low_points}</td>
-              <td className="stat-td">{team.proj_points}</td>
+              <td className="stat-td">{roundPoints(team.proj_points)}</td>
               <td className="stat-td">{team.high_points}</td>
               <td className="stat-td">{team.low_goals}</td>
               <td className="stat-td">{team.proj_goals}</td>
