@@ -28,7 +28,7 @@ const CustomTooltip = ({ active, payload, label, hoveredTeam }) => {
               >
                   <p><strong>Date:</strong> {label}</p>
                   <p><strong>Team:</strong> {hoveredLine.dataKey}</p>
-                  <p><strong>Stanley Cup Odds:</strong> {hoveredLine.value}%</p>
+                  <p><strong>Playoff Odds:</strong> {hoveredLine.value}%</p>
               </div>
           );
       }
@@ -58,7 +58,7 @@ const PlayoffOddsChart = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const csvFilePath = '/timelineOdds.csv';
+      const csvFilePath = '/timelineOdds2026.csv';
       Papa.parse(csvFilePath, {
         download: true,
         header: true,
@@ -66,7 +66,7 @@ const PlayoffOddsChart = () => {
           const rawData = results.data.map((row) => ({
             date: row.date,
             team: row.name,
-            odds: parseFloat(row.current_win.replace('%', '')) || 0,
+            odds: parseFloat(row.current_playoffs.replace('%', '')) || 0,
             primaryColor: row.primaryColor,
             logo: row.logo,
           }));
@@ -134,7 +134,7 @@ const PlayoffOddsChart = () => {
         alt="Mini Logo" 
         style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
         />
-          Stanley Cup Playoff Odds Timeline
+          NHL Playoff Odds Timeline
         </h1>
       <div style={styles.dateFilter}>
         <label>Start Date: </label>
