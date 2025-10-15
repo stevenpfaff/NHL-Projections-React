@@ -71,7 +71,7 @@ const OddsStandings = () => {
         />
         NHL Projected Standings
       </h1>
-      <p>Updated as of 10/14/2025</p>
+      <p>Updated as of 10/15/2025</p>
       <div className="divisionOdds-container">
         {[
           { title: 'Pacific', teams: pacificTeams, headerStyle: 'headerStyleWest' },
