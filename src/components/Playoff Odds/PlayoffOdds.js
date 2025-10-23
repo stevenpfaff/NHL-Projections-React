@@ -6,6 +6,7 @@ import './PlayoffOdds.css';
 
 const PlayoffOdds = () => {
   const [data, setData] = useState([]);
+  const [date, setLastUpdated] = useState('');
   const [sortConfig, setSortConfig] = useState({
     key: 'current_win',
     direction: 'descending',
@@ -35,6 +36,9 @@ const PlayoffOdds = () => {
         const sortedData = [...filteredData].sort(
           (a, b) => b.current_win - a.current_win
         );
+
+        const csvDate = parsedData[0]?.date || '';
+        setLastUpdated(csvDate);
 
         setData(sortedData);
       },
@@ -66,7 +70,6 @@ const PlayoffOdds = () => {
     setData(sorted);
     setSortConfig({ key, direction });
   };
-
   return (
     <div className="table-container">
       <h1
@@ -85,7 +88,7 @@ const PlayoffOdds = () => {
         />
         NHL Playoff Odds
       </h1>
-      <p>Updated as of 10/22/2025</p>
+      <p>Updated as of {date}</p>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
       <Table
@@ -107,7 +110,6 @@ const PlayoffOdds = () => {
             <th onClick={() => sortData('current_win')}>Win Cup %</th>
           </tr>
         </thead>
-
         <tbody>
           {data.map((team, index) => (
             <tr key={index}>

@@ -6,20 +6,38 @@ import './Divisions.css';
 const OddsStandings = () => {
   const [teamsData, setTeamsData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [lastUpdated, setLastUpdated] = useState('');
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchTeamsData = async () => {
       try {
-        const response = await fetch('/currentdata.csv');
+        const response = await fetch('/currentdata.csv', { method: 'GET' });
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
+
+        const lastModified = response.headers.get('Last-Modified');
+        if (lastModified) {
+          const formattedDate = new Date(lastModified).toLocaleDateString('en-US', {
+            month: '2-digit',
+            day: '2-digit',
+            year: 'numeric',
+          });
+          setLastUpdated(formattedDate);
+        }
+
         const text = await response.text();
         Papa.parse(text, {
           header: true,
           complete: (result) => {
-            setTeamsData(result.data);
+            const data = result.data;
+
+            if (data[0]?.date) {
+              setLastUpdated(data[0].date);
+            }
+
+            setTeamsData(data);
             setLoading(false);
           },
         });
@@ -71,7 +89,9 @@ const OddsStandings = () => {
         />
         NHL Projected Standings
       </h1>
-      <p>Updated as of 10/22/2025</p>
+
+      <p>Updated as of {lastUpdated || 'Loading...'}</p>
+
       <div className="divisionOdds-container">
         {[
           { title: 'Pacific', teams: pacificTeams, headerStyle: 'headerStyleWest' },
