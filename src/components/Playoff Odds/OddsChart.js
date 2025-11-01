@@ -152,7 +152,7 @@ const PlayoffOddsChart = () => {
       />
 
       <div style={styles.chartWrapper}>
-        <ResponsiveContainer width="60%" height={600}>
+        <ResponsiveContainer width="80%" height={800}>
           <LineChart data={filteredData} margin={{ top: 20, right: 50, left: 20, bottom: 30 }}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis
@@ -196,7 +196,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    minHeight: '100vh',
+    minHeight: '50vh',
     flexDirection: 'column',
   },
   chartWrapper: {
@@ -204,7 +204,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
-    marginTop: '20px',
+    marginTop: '10px',
   },
   dateFilter: {
     display: 'flex',
