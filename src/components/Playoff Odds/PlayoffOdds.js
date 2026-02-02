@@ -29,11 +29,11 @@ const PlayoffOdds = () => {
           current_points: parseFloat(team.current_points),
         }));
 
-        const filteredData = parsedData.filter(
-          (team) => team.current_playoffs > 0
-        );
+        // const filteredData = parsedData.filter(
+        //   (team) => team.current_playoffs > 0
+        // );
 
-        const sortedData = [...filteredData].sort(
+        const sortedData = [...parsedData].sort(
           (a, b) => b.current_win - a.current_win
         );
 
