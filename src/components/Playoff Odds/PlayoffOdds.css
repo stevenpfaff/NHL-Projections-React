@@ -37,6 +37,7 @@
 .logo-container {
     display: flex;
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
 }
 
 .logo {
