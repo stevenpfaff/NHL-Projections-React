@@ -64,33 +64,33 @@ const TeamCard = () => {
                     <tbody>
                         <tr>
                             <td className='category-td'>Projected Points</td>
-                            <td className='stat-td'>{team.current_points}</td>
-                            <td className='stat-td'>{team.start_proj_points}</td>
+                            <td className='card-stat-td'>{team.current_points}</td>
+                            <td className='card-stat-td'>{team.start_proj_points}</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Reach Playoffs</td>
-                            <td className='stat-td'>{team.current_playoffs}%</td>
-                            <td className='stat-td'>{team.start_playoffs}%</td>
+                            <td className='card-stat-td'>{team.current_playoffs}%</td>
+                            <td className='card-stat-td'>{team.start_playoffs}%</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Reach Second Round</td>
-                            <td className='stat-td'>{team.current_round2}</td>
-                            <td className='stat-td'>{team.start_second_round}%</td>
+                            <td className='card-stat-td'>{team.current_round2}</td>
+                            <td className='card-stat-td'>{team.start_second_round}%</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Reach Conference Final</td>
-                            <td className='stat-td'>{team.current_conf}</td>
-                            <td className='stat-td'>{team.start_conf_final}%</td>
+                            <td className='card-stat-td'>{team.current_conf}</td>
+                            <td className='card-stat-td'>{team.start_conf_final}%</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Reach Cup Final</td>
-                            <td className='stat-td'>{team.current_final}</td>
-                            <td className='stat-td'>{team.start_cup_final}%</td>
+                            <td className='card-stat-td'>{team.current_final}</td>
+                            <td className='card-stat-td'>{team.start_cup_final}%</td>
                         </tr>
                         <tr>
                             <td className='category-td'>Win Cup</td>
-                            <td className='stat-td'>{team.current_win}</td>
-                            <td className='stat-td'>{team.start_cup_win}%</td>
+                            <td className='card-stat-td'>{team.current_win}</td>
+                            <td className='card-stat-td'>{team.start_cup_win}%</td>
                         </tr>
                     </tbody>
                 </Table>

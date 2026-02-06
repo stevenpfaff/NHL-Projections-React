@@ -33,8 +33,9 @@
     width: 80%;
 }
 
-.stat-td {
+.card-stat-td {
     text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 /* .stat-td, .category-td {
@@ -120,7 +121,7 @@ Apply the iPhone layout for devices up to 1024px */
         width: 100%;
     }
     
-    .category-td, .stat-td{
+    .category-td, .card-stat-td{
         font-size: 18px;
     }
 

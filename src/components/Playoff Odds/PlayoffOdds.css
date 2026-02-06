@@ -37,7 +37,7 @@
 .logo-container {
     display: flex;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .logo {
@@ -57,9 +57,13 @@
         margin-right: 5px;
     }
 
-    .p {
-        font-size: 0.5rem;
+    .stat-td {
+        font-size: 14px;
     }
+
+    /* .p {
+        font-size: 0.5rem;
+    } */
 
     .playoff-odds-table th:first-child,
 .playoff-odds-table td:first-child {
