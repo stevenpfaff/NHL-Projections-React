@@ -27,14 +27,7 @@
   width: 40px;
   height: 40px;
   object-fit: contain; 
-  margin-right: 10px; 
-}
-
-.imageColumnOdds {
-  width: 40px;
-  height: 40px;
-  object-fit: contain; 
-  margin-right: 10px; 
+  /* margin-right: 10px;  */
 }
 
 .abrvColumn {
@@ -48,12 +41,6 @@
   font-family: 'Bebas Neue', sans-serif;
   text-align: center;
   width: 50%;
-}
-
-.abrvColumnOdds {
-  font-size: 28px;
-  font-family: 'Bebas Neue', sans-serif;
-  text-align: center;
 }
 
 .oddsColumn {
@@ -73,10 +60,12 @@
   /* color: #ffffff;  */
 }
 
-table .th, table .td {
-  width: 50%;
-  text-align: center;
-  vertical-align: middle;
+.headerStyleEast th {
+    background-color: #960000 !important;
+}
+
+.headerStyleWest th {
+    background-color: #013a68;
 }
 
 .teamCell {
@@ -90,13 +79,7 @@ table .th, table .td {
   gap: 2px;
 }
 
-h1 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-weight: normal;
-  color: #333;
-  text-transform: uppercase;
-  text-align: center;
-}
+
 
 @media (max-width: 768px) {
   .imageColumn {

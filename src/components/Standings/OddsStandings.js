@@ -112,12 +112,14 @@ const OddsStandings = () => {
                 {teams.map((team) => (
                   <tr key={team.name}>
                     <td>
-                      <img
-                        src={team.logo}
-                        className="imageColumnOdds"
-                        alt={`${team.name} logo`}
-                      />
-                      <span className="abrvColumnOdds">{team.abrv}</span>
+                      <div className="teamWrapper">
+                        <img
+                          src={team.logo}
+                          className="imageColumn"
+                          alt={`${team.name} logo`}
+                        />
+                        <span className="abrvColumn">{team.abrv}</span>
+                      </div>
                     </td>
                     <td className="oddsColumn">{roundPoints(team.current_points)}</td>
                     <td className="oddsColumn">{team.current_playoffs}</td>

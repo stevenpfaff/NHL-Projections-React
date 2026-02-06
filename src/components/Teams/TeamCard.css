@@ -37,9 +37,9 @@
     text-align: center;
 }
 
-.stat-td, .category-td {
+/* .stat-td, .category-td {
     font-size: 24px;
-}
+} */
 
 .table .category-td {
     width: auto;
@@ -50,6 +50,7 @@
     text-overflow: unset;
     word-wrap: break-word;
     text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 

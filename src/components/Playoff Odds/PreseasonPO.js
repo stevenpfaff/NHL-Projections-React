@@ -108,12 +108,12 @@ const PreseasonOdds = () => {
         <thead>
           <tr>
             <th onClick={() => sortData('name')}>Team</th>
-            <th onClick={() => sortData('proj_points')}>Proj Points</th>
-            <th onClick={() => sortData('playoffs')}>Playoff %</th>
-            <th onClick={() => sortData('second_round')}>Round 2 %</th>
-            <th onClick={() => sortData('conf_final')}>Conf Final %</th>
-            <th onClick={() => sortData('cup_final')}>Cup Final %</th>
-            <th onClick={() => sortData('cup_win')}>Win Cup %</th>
+            <th onClick={() => sortData('proj_points')}>PTS</th>
+            <th onClick={() => sortData('playoffs')}>PO%</th>
+            <th onClick={() => sortData('second_round')}>R2%</th>
+            <th onClick={() => sortData('conf_final')}>R3%</th>
+            <th onClick={() => sortData('cup_final')}>FinaL%</th>
+            <th onClick={() => sortData('cup_win')}>Cup%</th>
           </tr>
         </thead>
         <tbody>
@@ -127,7 +127,7 @@ const PreseasonOdds = () => {
                     alt={`${team.name} logo`}
                   />
                   <Link to={`/team/${team.id}`}>
-                    <span>{team.abrv}</span>
+                    <span>{team.name}</span>
                   </Link>
                 </div>
               </td>

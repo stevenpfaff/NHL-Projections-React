@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap');
 
+p {
+    text-align: center;
+}
+
+thead {
+    text-align: center;
+    background-color: #013a68;
+    color: white;
+}
+
+th {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+}
+
 body {
     font-family: 'Bebas Neue', sans-serif;
     background-color:#ffffff;
@@ -9,6 +25,20 @@ body {
     color: #333;
     line-height: 1.6;
     font-size: 20px;
+}
+
+table .th, table .td {
+  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: normal;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h2 {

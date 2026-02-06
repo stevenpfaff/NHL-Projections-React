@@ -102,12 +102,12 @@ const PlayoffOdds = () => {
         <thead>
           <tr>
             <th onClick={() => sortData('name')}>Team</th>
-            <th onClick={() => sortData('current_points')}>Proj PTS</th>
-            <th onClick={() => sortData('current_playoffs')}>Playoff %</th>
-            <th onClick={() => sortData('current_round2')}>Round 2 %</th>
-            <th onClick={() => sortData('current_conf')}>Conf Final %</th>
-            <th onClick={() => sortData('current_final')}>Cup Final %</th>
-            <th onClick={() => sortData('current_win')}>Win Cup %</th>
+            <th onClick={() => sortData('current_points')}>PTS</th>
+            <th onClick={() => sortData('current_playoffs')}>PO%</th>
+            <th onClick={() => sortData('current_round2')}>R2%</th>
+            <th onClick={() => sortData('current_conf')}>R3%</th>
+            <th onClick={() => sortData('current_final')}>Final%</th>
+            <th onClick={() => sortData('current_win')}>Cup%</th>
           </tr>
         </thead>
         <tbody>
@@ -121,7 +121,7 @@ const PlayoffOdds = () => {
                     alt={`${team.name} logo`}
                   />
                   <Link to={`/team/${team.id}`}>
-                    <span>{team.abrv}</span>
+                    <span>{team.name}</span>
                   </Link>
                 </div>
               </td>

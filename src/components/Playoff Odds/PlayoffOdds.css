@@ -9,97 +9,63 @@
 .table {
     width: 100%;
     border-collapse: collapse;
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
     position: relative;
 }
 
-.playoff-odds-table td:first-child,
-.playoff-odds-table th:first-child {
-    width: 120px;
-    max-width: 120px;
-    min-width: 100px;
+.playoff-odds-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.playoff-odds-table th:first-child,
+.playoff-odds-table td:first-child {
+    width: 180px;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
-
-
-.table th:first-child {
-    background-color: #013a68;
-}
-
-p {
-    text-align: center;
-}
-
-
-thead {
-    text-align: center;
-    background-color: #013a68;
-    color: white;
-}
-
-td, th {
-    text-align: center;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 20px;
-    border: 1px solid #dee2e6;
-}
 
 .stat-td {
     text-align: center;
     vertical-align: middle;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .logo-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
+    font-family: 'Bebas Neue', sans-serif;
 }
-
 
 .logo {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
 }
 
-.headerStyleEast th {
-    background-color: #960000 !important;
-}
-
-.headerStyleWest th {
-    background-color: #013a68;
-}
-
-/* Mobile responsiveness */
 @media (max-width: 768px) {
     .table {
         font-size: 14px;
     }
 
     .logo {
-        width: 20px;
-        height: 20px;
-        margin-right: 8px;
-    }
-    
-    .logo-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 18px;
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
     }
 
     .p {
         font-size: 0.5rem;
     }
 
-    th {
-        font-size: 1rem;
-    }
+    .playoff-odds-table th:first-child,
+.playoff-odds-table td:first-child {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 }
