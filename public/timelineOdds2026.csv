@@ -575,3 +575,35 @@ id,date,name,abrv,primaryColor,logo,current_playoffs,current_win
 30,2/2/2026,Vegas Golden Knights,VGK,#B4975A,/Images/golden knights.png,69.2%,5.4%
 31,2/2/2026,Washington Capitals,WSH,#041E42,/Images/capitals.png,35.6%,3.3%
 32,2/2/2026,Winnipeg Jets,WPG,#004C97,/Images/jets.png,7.2%,0.5%
+1,2/6/2026,Anaheim Ducks,ANA,#00685e,/Images/ducks.png,53.0%,2.1%
+2,2/6/2026,Boston Bruins,BOS,#FFB81C,/Images/bruins.png,65.7%,5.0%
+3,2/6/2026,Buffalo Sabres,BUF,#003087,/Images/sabres.png,71.4%,2.7%
+4,2/6/2026,Calgary Flames,CGY,#D2001C,/Images/flames.png,5.7%,0.1%
+5,2/6/2026,Carolina Hurricanes,CAR,#CE1126,/Images/canes.png,99.9%,5.3%
+6,2/6/2026,Chicago Blackhawks,CHI,#CF0A2C,/Images/blackhawks.png,0.8%,0.0%
+7,2/6/2026,Colorado Avalanche,COL,#6F263D,/Images/avalanche.png,100.0%,12.3%
+8,2/6/2026,Columbus Blue Jackets,CBJ,#002654,/Images/blue jackets.png,43.1%,1.8%
+9,2/6/2026,Dallas Stars,DAL,#006847,/Images/stars.png,100.0%,10.4%
+10,2/6/2026,Detroit Red Wings,DET,#ce1126,/Images/red wings.png,52.9%,1.2%
+11,2/6/2026,Edmonton Oilers,EDM,#FF4C00,/Images/oilers.png,84.0%,2.5%
+12,2/6/2026,Florida Panthers,FLA,#c8102E,/Images/panthers.png,7.1%,0.3%
+13,2/6/2026,Los Angeles Kings,LAK,#A2AAAD,/Images/kings.png,57.0%,3.0%
+14,2/6/2026,Minnesota Wild,MIN,#154734,/Images/wild.png,100.0%,2.7%
+15,2/6/2026,Montreal Canadiens,MTL,#AF1E2D,/Images/canadiens.png,95.4%,6.8%
+16,2/6/2026,Nashville Predators,NSH,#FFB81C,/Images/predators.png,17.1%,0.4%
+17,2/6/2026,New Jersey Devils,NJD,#CE1126,/Images/devils.png,1.4%,0.0%
+18,2/6/2026,New York Islanders,NYI,#00539b,/Images/islanders.png,32.2%,0.7%
+19,2/6/2026,New York Rangers,NYR,#0038A8,/Images/rangers.png,0.1%,0.0%
+20,2/6/2026,Ottawa Senators,OTT,#DA1A32,/Images/senators.png,47.2%,4.4%
+21,2/6/2026,Philadelphia Flyers,PHI,#F74902,/Images/flyers.png,22.2%,0.4%
+22,2/6/2026,Pittsburgh Penguins,PIT,#FCB514,/Images/penguins.png,85.2%,3.1%
+23,2/6/2026,San Jose Sharks,SJS,#006D75,/Images/sharks.png,28.2%,0.4%
+24,2/6/2026,Seattle Kraken,SEA,#68a2b9,/Images/kraken.png,76.6%,3.9%
+25,2/6/2026,St. Louis Blues,STL,#002F87,/Images/blues.png,0.5%,0.0%
+26,2/6/2026,Tampa Bay Lightning,TBL,#002868,/Images/lightning.png,100.0%,11.2%
+27,2/6/2026,Toronto Maple Leafs,TOR,#00205b,/Images/leafs.png,44.7%,3.5%
+28,2/6/2026,Utah Mammoth,UTA,#5c88da,/Images/utah.png,91.2%,6.7%
+29,2/6/2026,Vancouver Canucks,VAN,#00205B,/Images/canucks.png,0.0%,0.0%
+30,2/6/2026,Vegas Golden Knights,VGK,#B4975A,/Images/golden knights.png,82.1%,6.2%
+31,2/6/2026,Washington Capitals,WSH,#041E42,/Images/capitals.png,31.6%,2.9%
+32,2/6/2026,Winnipeg Jets,WPG,#004C97,/Images/jets.png,4.0%,0.2%
