@@ -30,6 +30,7 @@
     text-align: center;
     vertical-align: middle;
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
 }
 
 .logo-container {
@@ -44,16 +45,11 @@
     margin-right: 5px;
 }
 
-.conference-wrapper {
-  display: flex;
-  /* gap: 30px; */
-  align-items: flex-start;
-}
 
 .division-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 25px;
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
@@ -95,10 +91,6 @@
     .stat-td {
         font-size: 14px;
     }
-
-    /* .p {
-        font-size: 0.5rem;
-    } */
 
     .playoff-odds-table th:first-child,
 .playoff-odds-table td:first-child {
