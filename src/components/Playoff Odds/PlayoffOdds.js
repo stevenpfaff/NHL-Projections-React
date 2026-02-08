@@ -116,7 +116,7 @@ const renderTable = (teams, title) => (
                   alt={`${team.name} logo`}
                 />
                 <Link to={`/team/${team.id}`}>
-                  <span>{team.name}</span>
+                  <span>{team.abrv}</span>
                 </Link>
               </div>
             </td>
