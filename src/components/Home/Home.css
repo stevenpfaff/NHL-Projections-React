@@ -46,8 +46,8 @@ h2 {
     font-size: 2em;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    /* margin-bottom: 20px;
+    margin-top: 20px; */
 }
 
 #about {
