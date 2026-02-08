@@ -14,7 +14,7 @@ thead {
 th {
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 body {
@@ -125,6 +125,9 @@ li {
     .page-header {
         font-size: 2rem;
         margin: 20px;
+    }
+    th{
+        font-size: 14px;
     }
 }
 
