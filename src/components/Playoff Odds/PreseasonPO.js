@@ -2,15 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import Papa from 'papaparse';
 import './PlayoffOdds.css';
-import { Link } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const PreseasonOdds = () => {
-  const {year} = useParams();
+  const { year } = useParams();
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [sortConfig, setSortConfig] = useState({ key: 'cup_win', direction: 'descending' });
+  const [sortConfig, setSortConfig] = useState({
+    key: 'proj_points',
+    direction: 'descending',
+  });
 
   useEffect(() => {
     const fetchCSVData = async () => {
@@ -32,8 +34,7 @@ const PreseasonOdds = () => {
               proj_points: parseFloat(team.proj_points),
             }));
 
-            const sortedData = [...processedData].sort((a, b) => b.cup_win - a.cup_win);
-            setData(sortedData);
+            setData(processedData);
             setLoading(false);
           },
           error: (err) => {
@@ -52,28 +53,24 @@ const PreseasonOdds = () => {
     fetchCSVData();
   }, [year]);
 
-
   const sortData = (key) => {
     let direction = 'ascending';
     if (sortConfig.key === key && sortConfig.direction === 'ascending') {
       direction = 'descending';
     }
 
-    const sortedData = [...data].sort((a, b) => {
-      let aValue = a[key];
-      let bValue = b[key];
+    const sorted = [...data].sort((a, b) => {
+      const aVal = parseFloat(a[key]);
+      const bVal = parseFloat(b[key]);
 
-      if (typeof aValue === 'string') {
-        aValue = aValue.toLowerCase();
-        bValue = bValue.toLowerCase();
+      if (!isNaN(aVal) && !isNaN(bVal)) {
+        return direction === 'ascending' ? aVal - bVal : bVal - aVal;
       }
 
-      if (aValue < bValue) return direction === 'ascending' ? -1 : 1;
-      if (aValue > bValue) return direction === 'ascending' ? 1 : -1;
-      return 0;
+      return a[key].localeCompare(b[key]);
     });
 
-    setData(sortedData);
+    setData(sorted);
     setSortConfig({ key, direction });
   };
 
@@ -84,6 +81,67 @@ const PreseasonOdds = () => {
     year === '2026'
       ? '2025/2026 Preseason Playoff Odds'
       : '2024/2025 Preseason Playoff Odds';
+
+  const atlantic = data.filter(team => team.division === 'Atlantic');
+  const metro = data.filter(team => team.division === 'Metropolitan');
+  const central = data.filter(team => team.division === 'Central');
+  const pacific = data.filter(team => team.division === 'Pacific');
+
+  const sortTeams = (teams, key = 'proj_points') =>
+    [...teams].sort((a, b) => b[key] - a[key]);
+
+  const renderTable = (teams, title) => (
+    <div className="conference-table">
+      <h2>{title}</h2>
+
+      <Table
+        className="playoff-odds-table"
+        striped
+        bordered
+        hover
+        responsive
+        size="sm"
+      >
+        <thead>
+          <tr>
+            <th onClick={() => sortData('name')}>Team</th>
+            <th onClick={() => sortData('proj_points')}>PTS</th>
+            <th onClick={() => sortData('playoffs')}>PO%</th>
+            <th onClick={() => sortData('second_round')}>R2%</th>
+            <th onClick={() => sortData('conf_final')}>R3%</th>
+            <th onClick={() => sortData('cup_final')}>Final%</th>
+            <th onClick={() => sortData('cup_win')}>Cup%</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {teams.map((team, index) => (
+            <tr key={team.name || index}>
+              <td>
+                <div className="logo-container">
+                  <img
+                    src={team.logo}
+                    className="logo"
+                    alt={`${team.name} logo`}
+                  />
+                  <Link to={`/team/${team.id}`}>
+                    <span>{team.name}</span>
+                  </Link>
+                </div>
+              </td>
+
+              <td className="stat-td">{team.proj_points}</td>
+              <td className="stat-td">{team.playoffs}%</td>
+              <td className="stat-td">{team.second_round}%</td>
+              <td className="stat-td">{team.conf_final}%</td>
+              <td className="stat-td">{team.cup_final}%</td>
+              <td className="stat-td">{team.cup_win}%</td>
+            </tr>
+          ))}
+        </tbody>
+      </Table>
+    </div>
+  );
 
   return (
     <div className="table-container">
@@ -103,44 +161,13 @@ const PreseasonOdds = () => {
         />
         {seasonTitle}
       </h2>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <Table striped bordered hover responsive size="sm">
-        <thead>
-          <tr>
-            <th onClick={() => sortData('name')}>Team</th>
-            <th onClick={() => sortData('proj_points')}>PTS</th>
-            <th onClick={() => sortData('playoffs')}>PO%</th>
-            <th onClick={() => sortData('second_round')}>R2%</th>
-            <th onClick={() => sortData('conf_final')}>R3%</th>
-            <th onClick={() => sortData('cup_final')}>FinaL%</th>
-            <th onClick={() => sortData('cup_win')}>Cup%</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((team, index) => (
-            <tr key={team.name || index}>
-              <td>
-                <div className="logo-container">
-                  <img
-                    src={team.logo}
-                    className="logo"
-                    alt={`${team.name} logo`}
-                  />
-                  <Link to={`/team/${team.id}`}>
-                    <span>{team.name}</span>
-                  </Link>
-                </div>
-              </td>
-              <td className='stat-td'>{team.proj_points}</td>
-              <td className='stat-td'>{team.playoffs}%</td>
-              <td className='stat-td'>{team.second_round}%</td>
-              <td className='stat-td'>{team.conf_final}%</td>
-              <td className='stat-td'>{team.cup_final}%</td>
-              <td className='stat-td'>{team.cup_win}%</td>
-            </tr>
-          ))}
-        </tbody>
-      </Table>
+
+      <div className="division-grid">
+        {renderTable(sortTeams(pacific), 'Pacific')}
+        {renderTable(sortTeams(central), 'Central')}
+        {renderTable(sortTeams(metro), 'Metropolitan')}
+        {renderTable(sortTeams(atlantic), 'Atlantic')}
+      </div>
     </div>
   );
 };

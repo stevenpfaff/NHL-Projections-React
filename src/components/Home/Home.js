@@ -26,10 +26,8 @@ class Home extends Component {
                     <h2>Explore the site:</h2>
                     <ul>
                         <li><Link to="https://www.advancedhockeystats.com/">Advanced Hockey Stats</Link></li>
-                        <li><Link to="/OddsDivisional">Current Projected Standings</Link></li>
                         <li><Link to="/PlayoffOdds">Current Playoff Odds</Link></li>
                         <li><Link to="/Timeline">2026 Playoff Odds Timeline</Link></li>
-                        <li><Link to="/PreseasonStandings/2026">2025/2026 Preseason Projected Standings</Link></li>
                         <li><Link to="/PreseasonOdds/2026">2025/2026 Preseason Playoff Odds</Link></li>
                         <li><Link to="/finalresults">2024/2025 Final Results</Link></li>
                     </ul>

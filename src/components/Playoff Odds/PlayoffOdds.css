@@ -1,5 +1,5 @@
 .table-container {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: block;
     overflow-x: auto;
@@ -9,8 +9,6 @@
 .table {
     width: 100%;
     border-collapse: collapse;
-    max-width: 600px;
-    margin: 0 auto;
     position: relative;
 }
 
@@ -37,7 +35,7 @@
 .logo-container {
     display: flex;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .logo {
@@ -45,6 +43,43 @@
     height: 25px;
     margin-right: 5px;
 }
+
+.conference-wrapper {
+  display: flex;
+  /* gap: 30px; */
+  align-items: flex-start;
+}
+
+.division-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.conference-table {
+  width: 100%;
+  margin: 0; /* remove extra margins */
+}
+
+
+/* mobile */
+@media (max-width: 900px) {
+.division-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding: 0;
+}
+}
+
+.playoff-odds-table {
+  margin-bottom: 0;
+}
+
 
 @media (max-width: 768px) {
     .table {
@@ -71,6 +106,11 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.logo-container {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
 }
 
 }

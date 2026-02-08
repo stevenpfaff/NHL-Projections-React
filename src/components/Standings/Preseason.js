@@ -65,8 +65,9 @@ const Preseason = () => {
             <Table striped bordered hover>
               <thead className={headerClass}>
                 <tr>
-                  <th className="pointsColumn">{name}</th>
-                  <th className="pointsColumn">Points</th>
+                  <th className="oddsColumn">{name}</th>
+                  <th className="oddsColumn">PTS</th>
+                  <th className="oddsColumn">PO%</th>
                 </tr>
               </thead>
               <tbody>
@@ -82,7 +83,8 @@ const Preseason = () => {
                         <span className="abrvColumn">{team.abrv}</span>
                       </div>
                     </td>
-                    <td className="pointsColumn">{Math.round(team.proj_points)}</td>
+                    <td className="oddsColumn">{Math.round(team.proj_points)}</td>
+                    <td className="oddsColumn">{team.playoffs}</td>
                   </tr>
                 ))}
               </tbody>

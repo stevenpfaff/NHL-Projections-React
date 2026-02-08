@@ -11,20 +11,14 @@ const NavBar = () => {
         <Nav className="mx-auto custom-nav-links">
         <img src={logo} alt="..." height="50" width="50"></img>
           <Nav.Link href="/">Home</Nav.Link>
-          <NavDropdown title="2025/2026 Projections">
+          <NavDropdown title="Projections">
           <NavDropdown.Item href="/PlayoffOdds">Current Playoff Odds</NavDropdown.Item>
-          <NavDropdown.Item href="/OddsDivisional">Current Projected Standings</NavDropdown.Item>
-            <NavDropdown.Item href="/PreseasonOdds/2026">Preseason Playoff Odds</NavDropdown.Item>
-            <NavDropdown.Item href="/PreseasonStandings/2026">Preseason Projected Standings</NavDropdown.Item>
-            <NavDropdown.Item href="/Picks/2026">Preseason Picks</NavDropdown.Item>
+            <NavDropdown.Item href="/PreseasonOdds/2026">25/26 Preseason Playoff Odds</NavDropdown.Item>
+            <NavDropdown.Item href="/Picks/2026">25/26 Preseason Picks</NavDropdown.Item>
+            <NavDropdown.Item href="/PreseasonOdds/2025">24/25 Preseason Playoff Odds</NavDropdown.Item>
+            <NavDropdown.Item href="/Picks/2025">24/25 Preseason Picks</NavDropdown.Item>
+                        <NavDropdown.Item href="/finalresults">24/25 Final Results</NavDropdown.Item>
           </NavDropdown>
-          <NavDropdown title="2024/2025 Projections">
-            <NavDropdown.Item href="/PreseasonOdds/2025">Preseason Playoff Odds</NavDropdown.Item>
-            <NavDropdown.Item href="/PreseasonStandings/2025">Preseason Projected Standings</NavDropdown.Item>
-            <NavDropdown.Item href="/Picks/2025">Preseason Picks</NavDropdown.Item>
-            <NavDropdown.Item href="/finalresults">Final Results</NavDropdown.Item>
-          </NavDropdown>
-          {/* <Nav.Link href="/PowerRankings">Power Rankings</Nav.Link> */}
           <Nav.Link href="/Timeline">Playoff Odds Timeline</Nav.Link>
         </Nav>
       </Navbar.Collapse>

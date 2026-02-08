@@ -70,6 +70,69 @@ const PlayoffOdds = () => {
     setData(sorted);
     setSortConfig({ key, direction });
   };
+
+  const atlantic = data.filter(team => team.division === 'Atlantic');
+  const metro = data.filter(team => team.division === 'Metropolitan');
+  const central = data.filter(team => team.division === 'Central');
+  const pacific = data.filter(team => team.division === 'Pacific');
+
+  const sortTeams = (teams, key = 'current_points') => {
+  return [...teams].sort((a, b) => b[key] - a[key]);
+};
+
+
+const renderTable = (teams, title) => (
+  <div className="conference-table">
+    <h2>{title}</h2>
+
+    <Table
+      className="playoff-odds-table"
+      striped
+      bordered
+      hover
+      responsive
+      size="sm"
+    >
+      <thead>
+        <tr>
+          <th onClick={() => sortData('name')}>Team</th>
+          <th onClick={() => sortData('current_points')}>PTS</th>
+          <th onClick={() => sortData('current_playoffs')}>PO%</th>
+          <th onClick={() => sortData('current_round2')}>R2%</th>
+          <th onClick={() => sortData('current_conf')}>R3%</th>
+          <th onClick={() => sortData('current_final')}>Final%</th>
+          <th onClick={() => sortData('current_win')}>Cup%</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {teams.map((team, index) => (
+          <tr key={index}>
+            <td>
+              <div className="logo-container">
+                <img
+                  src={team.logo}
+                  className="logo"
+                  alt={`${team.name} logo`}
+                />
+                <Link to={`/team/${team.id}`}>
+                  <span>{team.name}</span>
+                </Link>
+              </div>
+            </td>
+            <td className="stat-td">{team.current_points}</td>
+            <td className="stat-td">{team.current_playoffs}%</td>
+            <td className="stat-td">{team.current_round2}%</td>
+            <td className="stat-td">{team.current_conf}%</td>
+            <td className="stat-td">{team.current_final}%</td>
+            <td className="stat-td">{team.current_win}%</td>
+          </tr>
+        ))}
+      </tbody>
+    </Table>
+  </div>
+);
+
   return (
     <div className="table-container">
       <h1
@@ -91,50 +154,13 @@ const PlayoffOdds = () => {
       <p>Updated as of {date}</p>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <Table
-        className="playoff-odds-table"
-        striped
-        bordered
-        hover
-        responsive
-        size="sm"
-      >
-        <thead>
-          <tr>
-            <th onClick={() => sortData('name')}>Team</th>
-            <th onClick={() => sortData('current_points')}>PTS</th>
-            <th onClick={() => sortData('current_playoffs')}>PO%</th>
-            <th onClick={() => sortData('current_round2')}>R2%</th>
-            <th onClick={() => sortData('current_conf')}>R3%</th>
-            <th onClick={() => sortData('current_final')}>Final%</th>
-            <th onClick={() => sortData('current_win')}>Cup%</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((team, index) => (
-            <tr key={index}>
-              <td>
-                <div className="logo-container">
-                  <img
-                    src={team.logo}
-                    className="logo"
-                    alt={`${team.name} logo`}
-                  />
-                  <Link to={`/team/${team.id}`}>
-                    <span>{team.name}</span>
-                  </Link>
-                </div>
-              </td>
-              <td className="stat-td">{team.current_points}</td>
-              <td className="stat-td">{team.current_playoffs}%</td>
-              <td className="stat-td">{team.current_round2}%</td>
-              <td className="stat-td">{team.current_conf}%</td>
-              <td className="stat-td">{team.current_final}%</td>
-              <td className="stat-td">{team.current_win}%</td>
-            </tr>
-          ))}
-        </tbody>
-      </Table>
+<div className="division-grid">
+        {renderTable(sortTeams(pacific), 'Pacific')}
+        {renderTable(sortTeams(central), 'Central')}
+        {renderTable(sortTeams(metro), 'Metropolitan')}
+        {renderTable(sortTeams(atlantic), 'Atlantic')}
+</div>
+
     </div>
   );
 };
