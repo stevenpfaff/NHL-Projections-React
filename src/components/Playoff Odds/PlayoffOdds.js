@@ -136,8 +136,6 @@ const renderTable = (teams, title) => (
 
 const renderCupOddsTable = () => (
   <div className="league-table">
-    <h2>Stanley Cup Odds</h2>
-
     <Table
       className="playoff-odds-table"
       striped
