@@ -65,6 +65,39 @@
   margin: 0; /* remove extra margins */
 }
 
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.view-toggle button {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.view-toggle button.active {
+  background: #013a68;
+  color: white;
+}
+
+.league-table {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.league-table h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.league-table .stat-td {
+  text-align: center;
+  min-width: 65px;
+}
 
 /* mobile */
 @media (max-width: 900px) {

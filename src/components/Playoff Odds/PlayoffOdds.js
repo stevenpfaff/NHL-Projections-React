@@ -6,6 +6,7 @@ import './PlayoffOdds.css';
 
 const PlayoffOdds = () => {
   const [data, setData] = useState([]);
+  const [view, setView] = useState('division');
   const [date, setLastUpdated] = useState('');
   const [sortConfig, setSortConfig] = useState({
     key: 'current_win',
@@ -81,10 +82,10 @@ const PlayoffOdds = () => {
 };
 
 
+
 const renderTable = (teams, title) => (
   <div className="conference-table">
     <h2>{title}</h2>
-
     <Table
       className="playoff-odds-table"
       striped
@@ -133,6 +134,58 @@ const renderTable = (teams, title) => (
   </div>
 );
 
+const renderCupOddsTable = () => (
+  <div className="league-table">
+    <h2>Stanley Cup Odds</h2>
+
+    <Table
+      className="playoff-odds-table"
+      striped
+      bordered
+      hover
+      responsive
+      size="sm"
+    >
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>PTS</th>
+          <th>PO%</th>
+          <th>R2%</th>
+          <th>R3%</th>
+          <th>Final%</th>
+          <th>Cup%</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {[...data]
+          .sort((a, b) => b.current_win - a.current_win)
+          .map((team, index) => (
+            <tr key={team.id}>
+
+              <td>
+                <div className="logo-container">
+                  <img src={team.logo} className="logo" alt={team.name} />
+                  <Link to={`/team/${team.id}`}>
+                    <span>{team.abrv}</span>
+                  </Link>
+                </div>
+              </td>
+
+              <td className="stat-td">{team.current_points}</td>
+              <td className="stat-td">{team.current_playoffs}%</td>
+              <td className="stat-td">{team.current_round2}%</td>
+              <td className="stat-td">{team.current_conf}%</td>
+              <td className="stat-td">{team.current_final}%</td>
+              <td className="stat-td">{team.current_win}%</td>
+            </tr>
+          ))}
+      </tbody>
+    </Table>
+  </div>
+);
+
   return (
     <div className="table-container">
       <h1
@@ -152,14 +205,32 @@ const renderTable = (teams, title) => (
         NHL Playoff Odds
       </h1>
       <p>Updated as of {date}</p>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <div className="view-toggle">
+  <button
+    className={view === 'division' ? 'active' : ''}
+    onClick={() => setView('division')}
+  >
+    Division View
+  </button>
 
-<div className="division-grid">
-        {renderTable(sortTeams(pacific), 'Pacific')}
-        {renderTable(sortTeams(central), 'Central')}
-        {renderTable(sortTeams(metro), 'Metropolitan')}
-        {renderTable(sortTeams(atlantic), 'Atlantic')}
+  <button
+    className={view === 'cup' ? 'active' : ''}
+    onClick={() => setView('cup')}
+  >
+    League View
+  </button>
 </div>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{view === 'division' && (
+  <div className="division-grid">
+    {renderTable(sortTeams(pacific), 'Pacific')}
+    {renderTable(sortTeams(central), 'Central')}
+    {renderTable(sortTeams(metro), 'Metropolitan')}
+    {renderTable(sortTeams(atlantic), 'Atlantic')}
+  </div>
+)}
+
+{view === 'cup' && renderCupOddsTable()}
 
     </div>
   );
