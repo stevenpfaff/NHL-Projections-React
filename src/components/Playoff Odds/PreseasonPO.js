@@ -90,6 +90,11 @@ const PreseasonOdds = () => {
   const sortTeams = (teams, key = 'proj_points') =>
     [...teams].sort((a, b) => b[key] - a[key]);
 
+  const formatNumber = (num) => {
+  if (num === null || num === undefined || isNaN(num)) return '';
+  return Math.round(num);
+};
+
   const renderTable = (teams, title) => (
     <div className="conference-table">
       <h2>{title}</h2>
@@ -130,12 +135,12 @@ const PreseasonOdds = () => {
                 </div>
               </td>
 
-              <td className="stat-td">{team.proj_points}</td>
-              <td className="stat-td">{team.playoffs}%</td>
-              <td className="stat-td">{team.second_round}%</td>
-              <td className="stat-td">{team.conf_final}%</td>
-              <td className="stat-td">{team.cup_final}%</td>
-              <td className="stat-td">{team.cup_win}%</td>
+              <td className="stat-td">{formatNumber(team.proj_points)}</td>
+              <td className="stat-td">{formatNumber(team.playoffs)}%</td>
+              <td className="stat-td">{formatNumber(team.second_round)}%</td>
+              <td className="stat-td">{formatNumber(team.conf_final)}%</td>
+              <td className="stat-td">{formatNumber(team.cup_final)}%</td>
+              <td className="stat-td">{formatNumber(team.cup_win)}%</td>
             </tr>
           ))}
         </tbody>

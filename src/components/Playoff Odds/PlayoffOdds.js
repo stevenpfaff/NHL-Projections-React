@@ -81,6 +81,10 @@ const PlayoffOdds = () => {
   return [...teams].sort((a, b) => b[key] - a[key]);
 };
 
+const formatNumber = (num) => {
+  if (num === null || num === undefined || isNaN(num)) return '';
+  return Math.round(num);
+};
 
 
 const renderTable = (teams, title) => (
@@ -121,18 +125,19 @@ const renderTable = (teams, title) => (
                 </Link>
               </div>
             </td>
-            <td className="stat-td">{team.current_points}</td>
-            <td className="stat-td">{team.current_playoffs}%</td>
-            <td className="stat-td">{team.current_round2}%</td>
-            <td className="stat-td">{team.current_conf}%</td>
-            <td className="stat-td">{team.current_final}%</td>
-            <td className="stat-td">{team.current_win}%</td>
+            <td className="stat-td">{formatNumber(team.current_points)}</td>
+            <td className="stat-td">{formatNumber(team.current_playoffs)}%</td>
+            <td className="stat-td">{formatNumber(team.current_round2)}%</td>
+            <td className="stat-td">{formatNumber(team.current_conf)}%</td>
+            <td className="stat-td">{formatNumber(team.current_final)}%</td>
+            <td className="stat-td">{formatNumber(team.current_win)}%</td>
           </tr>
         ))}
       </tbody>
     </Table>
   </div>
 );
+
 
 const renderCupOddsTable = () => (
   <div className="league-table">
