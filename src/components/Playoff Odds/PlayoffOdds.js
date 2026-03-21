@@ -96,7 +96,6 @@ const renderTable = (teams, title) => (
       bordered
       hover
       responsive
-      size="sm"
     >
       <thead>
         <tr>
@@ -147,7 +146,6 @@ const renderCupOddsTable = () => (
       bordered
       hover
       responsive
-      size="sm"
     >
       <thead>
         <tr>
