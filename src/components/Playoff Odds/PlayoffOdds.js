@@ -76,6 +76,13 @@ const PlayoffOdds = () => {
   const metro = data.filter(team => team.division === 'Metropolitan');
   const central = data.filter(team => team.division === 'Central');
   const pacific = data.filter(team => team.division === 'Pacific');
+  const east = data.filter(
+  team => team.division === 'Atlantic' || team.division === 'Metropolitan'
+);
+
+  const west = data.filter(
+    team => team.division === 'Central' || team.division === 'Pacific'
+  );
 
   const sortTeams = (teams, key = 'current_points') => {
   return [...teams].sort((a, b) => b[key] - a[key]);
@@ -173,13 +180,12 @@ const renderCupOddsTable = () => (
                   </Link>
                 </div>
               </td>
-
-              <td className="stat-td">{team.current_points}</td>
-              <td className="stat-td">{team.current_playoffs}%</td>
-              <td className="stat-td">{team.current_round2}%</td>
-              <td className="stat-td">{team.current_conf}%</td>
-              <td className="stat-td">{team.current_final}%</td>
-              <td className="stat-td">{team.current_win}%</td>
+            <td className="stat-td">{formatNumber(team.current_points)}</td>
+            <td className="stat-td">{formatNumber(team.current_playoffs)}%</td>
+            <td className="stat-td">{formatNumber(team.current_round2)}%</td>
+            <td className="stat-td">{formatNumber(team.current_conf)}%</td>
+            <td className="stat-td">{formatNumber(team.current_final)}%</td>
+            <td className="stat-td">{formatNumber(team.current_win)}%</td>
             </tr>
           ))}
       </tbody>
@@ -215,6 +221,13 @@ const renderCupOddsTable = () => (
   </button>
 
   <button
+  className={view === 'conference' ? 'active' : ''}
+  onClick={() => setView('conference')}
+>
+  Conference View
+</button>
+
+  <button
     className={view === 'cup' ? 'active' : ''}
     onClick={() => setView('cup')}
   >
@@ -228,6 +241,13 @@ const renderCupOddsTable = () => (
     {renderTable(sortTeams(central), 'Central')}
     {renderTable(sortTeams(metro), 'Metropolitan')}
     {renderTable(sortTeams(atlantic), 'Atlantic')}
+  </div>
+)}
+
+{view === 'conference' && (
+  <div className="division-grid">
+    {renderTable(sortTeams(west), 'West')}
+    {renderTable(sortTeams(east), 'East')}
   </div>
 )}
 

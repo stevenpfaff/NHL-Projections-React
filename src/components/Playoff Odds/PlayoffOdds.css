@@ -32,13 +32,13 @@
     text-align: center;
     vertical-align: middle;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .logo-container {
     display: flex;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     justify-content: center;
 }
 
@@ -62,7 +62,7 @@
 
 .conference-table {
   width: 100%;
-  margin: 0; /* remove extra margins */
+  margin: 0;
 }
 
 .conference-table h2 {
@@ -120,17 +120,16 @@
 
 @media (max-width: 768px) {
     .table {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .logo {
-        width: 25px;
-        height: 25px;
-        margin-right: 5px;
+        width: 22px;
+        height: 22px;
     }
 
     .stat-td {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .playoff-odds-table th:first-child,
@@ -143,7 +142,7 @@
 
 .logo-container {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 }
