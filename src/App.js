@@ -8,7 +8,7 @@ import Preseason from './components/Standings/Preseason';
 import PreseasonOdds from './components/Playoff Odds/PreseasonPO';
 import TeamCard from './components/Teams/TeamCard';
 import Vibes from './components/Standings/Vibes';
-import PlayoffOddsChart from './components/Playoff Odds/OddsChart';
+// import PlayoffOddsChart from './components/Playoff Odds/OddsChart';
 import FinalResults from './components/Final Results/FinalResults';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
                 <Route path="/PreseasonOdds/:year" element={<PreseasonOdds />} />
                 <Route path="/Picks/:year" element={<Vibes />} />
                 <Route path="/team/:id" element={<TeamCard />} />
-                <Route path="/Timeline" element={<PlayoffOddsChart />} />
+                {/* <Route path="/Timeline" element={<PlayoffOddsChart />} /> */}
                 <Route path="/FinalResults" element={<FinalResults />} />
             </Routes>
         </Router>

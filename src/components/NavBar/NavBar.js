@@ -19,7 +19,7 @@ const NavBar = () => {
             <NavDropdown.Item href="/Picks/2025">24/25 Preseason Picks</NavDropdown.Item>
                         <NavDropdown.Item href="/finalresults">24/25 Final Results</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="/Timeline">Playoff Odds Timeline</Nav.Link>
+          {/* <Nav.Link href="/Timeline">Playoff Odds Timeline</Nav.Link> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
