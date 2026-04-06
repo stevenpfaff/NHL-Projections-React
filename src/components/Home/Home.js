@@ -29,7 +29,7 @@ class Home extends Component {
                         <li><Link to="/PlayoffOdds">Current Playoff Odds</Link></li>
                         {/* <li><Link to="/Timeline">2026 Playoff Odds Timeline</Link></li> */}
                         <li><Link to="/PreseasonOdds/2026">2025/2026 Preseason Playoff Odds</Link></li>
-                        <li><Link to="/finalresults">2024/2025 Final Results</Link></li>
+                        <li><Link to="/finalresults/2025">2024/2025 Final Results</Link></li>
                     </ul>
 
                 </section>

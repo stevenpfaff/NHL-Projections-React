@@ -1,36 +1,36 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 import Papa from 'papaparse';
+import { useParams } from 'react-router-dom';
 import './FinalResults.css';
-import html2canvas from 'html2canvas';
+// import html2canvas from 'html2canvas';
 
-class FinalResults extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: [],
-      sortConfig: { key: 'name', direction: 'ascending' },
-    };
-  }
+const FinalResults = () => {
+  const { year } = useParams();
 
-  handleDownloadImage = () => {
-    const tableElement = document.getElementById('results-table');
-    if (tableElement) {
-      html2canvas(tableElement, { scale: 2 }).then((canvas) => {
-        const link = document.createElement('a');
-        link.download = 'final-results.png';
-        link.href = canvas.toDataURL();
-        link.click();
-      });
-    }
-  };
+  const [data, setData] = useState([]);
+  const [sortConfig, setSortConfig] = useState({ key: 'name', direction: 'ascending' });
 
-  componentDidMount() {
-    Papa.parse('/finalresults.csv', {
+  // const handleDownloadImage = () => {
+  //   const tableElement = document.getElementById('results-table');
+
+  //   if (tableElement) {
+  //     html2canvas(tableElement, { scale: 2 }).then((canvas) => {
+  //       const link = document.createElement('a');
+  //       link.download = `final-results-${year}.png`;
+  //       link.href = canvas.toDataURL();
+  //       link.click();
+  //     });
+  //   }
+  // };
+
+  useEffect(() => {
+    Papa.parse(`/finalresults${year}.csv`, {
       download: true,
       header: true,
       skipEmptyLines: true,
       complete: (result) => {
+
         const parsedData = result.data.map((team) => ({
           ...team,
           playoffs: parseFloat(team.playoffs),
@@ -40,107 +40,136 @@ class FinalResults extends Component {
           actual_goals_ag: parseFloat(team.actual_goals_ag),
           proj_points: parseFloat(team.proj_points),
           actual_points: parseFloat(team.actual_points),
-          error: parseFloat(Math.abs(team.actual_points - team.proj_points)),
+          error: Math.abs(team.actual_points - team.proj_points)
         }));
-        const sortedData = [...parsedData].sort((a, b) => b.name - a.name);
-        this.setState({ data: sortedData });
+
+        setData(parsedData);
       },
       error: (error) => {
         console.error('Error loading CSV:', error);
       },
     });
-  }
 
-  sortData = (key) => {
-    const { data, sortConfig } = this.state;
+  }, [year]);
+
+  const sortData = (key) => {
+
     let direction = 'ascending';
 
-    if (sortConfig && sortConfig.key === key && sortConfig.direction === 'ascending') {
+    if (sortConfig.key === key && sortConfig.direction === 'ascending') {
       direction = 'descending';
     }
 
     const sortedData = [...data].sort((a, b) => {
+
       if (typeof a[key] === 'number' && typeof b[key] === 'number') {
-        return direction === 'ascending' ? a[key] - b[key] : b[key] - a[key];
+        return direction === 'ascending'
+          ? a[key] - b[key]
+          : b[key] - a[key];
       }
-      if (a[key] < b[key]) {
-        return direction === 'ascending' ? -1 : 1;
-      }
-      if (a[key] > b[key]) {
-        return direction === 'ascending' ? 1 : -1;
-      }
+
+      if (a[key] < b[key]) return direction === 'ascending' ? -1 : 1;
+      if (a[key] > b[key]) return direction === 'ascending' ? 1 : -1;
+
       return 0;
     });
 
-    this.setState({ data: sortedData, sortConfig: { key, direction } });
+    setData(sortedData);
+    setSortConfig({ key, direction });
   };
 
-  render() {
-    const { data } = this.state;
+  return (
+    <div className="results-table-container">
 
-    return (
-      <div className="table-container">
-        <h1 style={{ marginTop: '2%', marginBottom: '2%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-          <img 
-            src="../../Images/OnlyNorthCircle.png" 
-            alt="Mini Logo" 
-            style={{ width: '50px', height: '50px', marginLeft: '10px' }} 
-          />
-          2024/2025 Final Results
-        </h1> 
+      <h1 style={{
+        marginTop: '2%',
+        marginBottom: '2%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '10px'
+      }}>
+        <img
+          src="../../Images/OnlyNorthCircle.png"
+          alt="Mini Logo"
+          style={{ width: '50px', height: '50px' }}
+        />
 
-        {/* <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-          <button onClick={this.handleDownloadImage}>Download Table as Image</button>
-        </div> */}
+        {year - 1}/{year} Final Results
+      </h1>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <Table className="playoff-odds-table" id="results-table" striped bordered hover responsive size="sm">
-          <thead>
-            <tr>
-              <th onClick={() => this.sortData('name')}>Team</th>
-              <th onClick={() => this.sortData('playoffs')}>Playoff%</th>
-              <th onClick={() => this.sortData('result')}>Playoffs?</th>
-              <th onClick={() => this.sortData('pick')}>Pick</th>
-              <th onClick={() => this.sortData('proj_points')}>Proj PTS</th>
-              <th onClick={() => this.sortData('actual_points')}>PTS</th>
-              <th onClick={() => this.sortData('error')}>Error</th>
-              <th onClick={() => this.sortData('proj_goals')}>Proj GF</th>
-              <th onClick={() => this.sortData('proj_goals_ag')}>Proj GA</th>
-              <th onClick={() => this.sortData('actual_goals')}>GF</th>
-              <th onClick={() => this.sortData('actual_goals_ag')}>GA</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((team, index) => (
-              <tr key={index}>
-                <td>
-                  <div className="logo-container">
-                    <img 
-                      src={team.logo} 
-                      className="logo" 
-                      alt={`${team.name} logo`} 
-                    />
-                      <span>{team.abrv}</span>
-                  </div>
-                </td>
-                <td className="stat-td">{team.playoffs}%</td>
-                <td className="stat-td">{team.result && team.result.trim() !== '' ? '✓' : 'X'}</td>
-                <td className="stat-td">{team.pick && team.pick.trim() !== '' ? '✓' : 'X'}</td>
-                <td className="stat-td">{team.proj_points}</td>
-                <td className="stat-td">{team.actual_points}</td>
-                <td className="stat-td">{team.error}</td>
-                <td className="stat-td">{team.proj_goals}</td>
-                <td className="stat-td">{team.proj_goals_ag}</td>
-                <td className="stat-td">{team.actual_goals}</td>
-                <td className="stat-td">{team.actual_goals_ag}</td>
-              </tr>
-            ))}
-          </tbody>
-        </Table>
+      {/* Optional screenshot button */}
+      {/* 
+      <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+        <button onClick={handleDownloadImage}>Download Table as Image</button>
       </div>
-    );
-    
-  }
-}
+      */}
+
+      <Table
+        className="results-table"
+        striped
+        bordered
+        hover
+        responsive
+        size="sm"
+      >
+
+<thead>
+  <tr>
+    <th rowSpan="2" onClick={() => sortData('name')}>Team</th>
+    <th rowSpan="2" onClick={() => sortData('playoffs')}>Playoff%</th>
+    <th rowSpan="2" onClick={() => sortData('result')}>Playoffs?</th>
+    <th rowSpan="2" onClick={() => sortData('pick')}>Pick</th>
+
+    <th colSpan="3">Points</th>
+    <th colSpan="2">Goals For</th>
+    <th colSpan="2">Goals Against</th>
+  </tr>
+
+  <tr>
+    <th onClick={() => sortData('proj_points')}>Proj</th>
+    <th onClick={() => sortData('actual_points')}>Actual</th>
+    <th onClick={() => sortData('error')}>Error</th>
+
+    <th onClick={() => sortData('proj_goals')}>Proj</th>
+    <th onClick={() => sortData('actual_goals')}>Actual</th>
+
+    <th onClick={() => sortData('proj_goals_ag')}>Proj</th>
+    <th onClick={() => sortData('actual_goals_ag')}>Actual</th>
+  </tr>
+</thead>
+
+        <tbody>
+          {data.map((team, index) => (
+            <tr key={index}>
+              <td>
+                <div className="logo-container">
+                  <img
+                    src={team.logo}
+                    className="logo"
+                    alt={`${team.name} logo`}
+                  />
+                  <span>{team.abrv}</span>
+                </div>
+              </td>
+
+              <td className="stat-td">{team.playoffs}%</td>
+              <td className="stat-td">{team.result?.trim() ? '✓' : 'X'}</td>
+              <td className="stat-td">{team.pick?.trim() ? '✓' : 'X'}</td>
+              <td className="stat-td">{team.proj_points}</td>
+              <td className="stat-td">{team.actual_points}</td>
+              <td className="stat-td">{team.error}</td>
+              <td className="stat-td">{team.proj_goals}</td>
+              <td className="stat-td">{team.proj_goals_ag}</td>
+              <td className="stat-td">{team.actual_goals}</td>
+              <td className="stat-td">{team.actual_goals_ag}</td>
+            </tr>
+          ))}
+        </tbody>
+
+      </Table>
+    </div>
+  );
+};
 
 export default FinalResults;

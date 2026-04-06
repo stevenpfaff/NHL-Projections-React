@@ -24,7 +24,7 @@ function App() {
                 <Route path="/Picks/:year" element={<Vibes />} />
                 <Route path="/team/:id" element={<TeamCard />} />
                 {/* <Route path="/Timeline" element={<PlayoffOddsChart />} /> */}
-                <Route path="/FinalResults" element={<FinalResults />} />
+                <Route path="/finalresults/:year" element={<FinalResults />} />
             </Routes>
         </Router>
     );

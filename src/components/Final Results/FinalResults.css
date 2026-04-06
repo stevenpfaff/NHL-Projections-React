@@ -1,100 +1,12 @@
-.final-results-page {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding: 10px;
-  }
-  
-  .final-results-page h1 {
-    font-size: 2.5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .final-results-page table {
-    font-size: 1.2vw;
-    width: 100%;
-    min-width: 1000px;
-    max-height: 90vh;
-    overflow: hidden;
-    table-layout: fixed;
-    white-space: nowrap;
-  }
-  
-  .final-results-page th,
-  .final-results-page td {
-    padding: 5px;
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .final-results-page th {
-    font-size: 1.2em;
-  }
-  
-  .final-results-page .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3em;
-  }
-  
-  .final-results-page .logo {
-    width: 32px;
-    height: 32px;
-  }
-  
-  .final-results-page .stat-td {
-    padding: 3px;
-    font-size: 1.5vw;
-  }
-
-  /* .final-results-page table td:first-child,
-  .final-results-page table th:first-child {
-  width: 120px;
-} */
-
-
-
-@media (max-width: 768px) {
-  .final-results-page table {
-    min-width: unset;
-    font-size: 3vw;
-    overflow-x: auto;
-    table-layout: unset;
-  }
-
-  .final-results-page .stat-td {
-    font-size: 3.5vw;
-  }
-
-  .final-results-page h1 {
-    font-size: 5vw;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .final-results-page .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 4vw;
-  }
-  
-  .final-results-page .logo {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-  }
-  
+.results-table-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto; 
+  padding: 10px;
+  overflow-x: auto;
 }
-  
+
+.results-table {
+    table-layout: fixed;
+    width: 100%;
+}
