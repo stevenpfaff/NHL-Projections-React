@@ -48,7 +48,7 @@ const TeamCard = () => {
     return (
         <div className='card-container'>
             <div className="logo-section">
-      <h1>{team.name}</h1>
+      {/* <h1>{team.name}</h1> */}
                 
                 <img src={team.logo} className="big-logo" alt={`${team.name}`} />
             </div>

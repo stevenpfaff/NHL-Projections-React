@@ -36,6 +36,7 @@
 .card-stat-td {
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
 }
 
 /* .stat-td, .category-td {
@@ -52,6 +53,7 @@
     word-wrap: break-word;
     text-align: left;
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
 }
 
 
@@ -104,6 +106,7 @@ Apply the iPhone layout for devices up to 1024px */
         width: 100%;
         max-width: 350px;
         padding: 10px;
+        font-size: 18px;
     }
 
     .logo-section {
@@ -113,7 +116,7 @@ Apply the iPhone layout for devices up to 1024px */
     }
 
     .big-logo {
-        width: 175px;
+        width: 150px;
         height: auto;
     }
 
@@ -121,7 +124,8 @@ Apply the iPhone layout for devices up to 1024px */
         width: 100%;
     }
     
-    .category-td, .card-stat-td{
+    .table .category-td,
+    .table .card-stat-td {
         font-size: 18px;
     }
 
