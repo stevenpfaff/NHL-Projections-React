@@ -160,8 +160,8 @@ const FinalResults = () => {
               <td className="stat-td">{team.actual_points}</td>
               <td className="stat-td">{team.error}</td>
               <td className="stat-td">{team.proj_goals}</td>
-              <td className="stat-td">{team.proj_goals_ag}</td>
               <td className="stat-td">{team.actual_goals}</td>
+              <td className="stat-td">{team.proj_goals_ag}</td>
               <td className="stat-td">{team.actual_goals_ag}</td>
             </tr>
           ))}
