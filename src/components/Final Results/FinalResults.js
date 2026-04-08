@@ -5,20 +5,25 @@ import { useParams } from 'react-router-dom';
 import './FinalResults.css';
 
 const FinalResults = () => {
+
   const { year } = useParams();
 
   const [data, setData] = useState([]);
-  const [sortConfig, setSortConfig] = useState({ key: 'name', direction: 'ascending' });
-
+  const [sortConfig, setSortConfig] = useState({
+    key: 'proj_points',
+    direction: 'descending'
+  });
 
   useEffect(() => {
+
     Papa.parse(`/finalresults${year}.csv`, {
       download: true,
       header: true,
       skipEmptyLines: true,
+
       complete: (result) => {
 
-        const parsedData = result.data.map((team) => ({
+        const parsedData = result.data.map(team => ({
           ...team,
           playoffs: parseFloat(team.playoffs),
           proj_goals: parseFloat(team.proj_goals),
@@ -32,12 +37,15 @@ const FinalResults = () => {
 
         setData(parsedData);
       },
-      error: (error) => {
-        console.error('Error loading CSV:', error);
-      },
+
+      error: (err) => {
+        console.error('CSV error:', err);
+      }
+
     });
 
   }, [year]);
+
 
   const sortData = (key) => {
 
@@ -47,12 +55,15 @@ const FinalResults = () => {
       direction = 'descending';
     }
 
-    const sortedData = [...data].sort((a, b) => {
+    const sorted = [...data].sort((a, b) => {
 
-      if (typeof a[key] === 'number' && typeof b[key] === 'number') {
+      const aVal = parseFloat(a[key]);
+      const bVal = parseFloat(b[key]);
+
+      if (!isNaN(aVal) && !isNaN(bVal)) {
         return direction === 'ascending'
-          ? a[key] - b[key]
-          : b[key] - a[key];
+          ? aVal - bVal
+          : bVal - aVal;
       }
 
       if (a[key] < b[key]) return direction === 'ascending' ? -1 : 1;
@@ -61,36 +72,25 @@ const FinalResults = () => {
       return 0;
     });
 
-    setData(sortedData);
+    setData(sorted);
     setSortConfig({ key, direction });
   };
 
-  return (
-    <div className="results-table-container">
 
-      <h1 style={{
-        marginTop: '2%',
-        marginBottom: '2%',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: '10px'
-      }}>
-        <img
-          src="../../Images/OnlyNorthCircle.png"
-          alt="Mini Logo"
-          style={{ width: '50px', height: '50px' }}
-        />
+const east = data.filter(
+  team => team.division === 'Atlantic' || team.division === 'Metropolitan'
+);
 
-        {year - 1}/{year} Final Results
-      </h1>
+const west = data.filter(
+  team => team.division === 'Central' || team.division === 'Pacific'
+);
 
-      {/* Optional screenshot button */}
-      {/* 
-      <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-        <button onClick={handleDownloadImage}>Download Table as Image</button>
-      </div>
-      */}
+
+  const renderTable = (teams, title) => (
+
+    <div className="conference-table">
+
+      <h2>{title}</h2>
 
       <Table
         className="results-table"
@@ -106,34 +106,36 @@ const FinalResults = () => {
     <th rowSpan="2" onClick={() => sortData('name')}>Team</th>
     <th rowSpan="2" onClick={() => sortData('playoffs')}>PO%</th>
     <th rowSpan="2" onClick={() => sortData('result')}>PO?</th>
-    {/* <th rowSpan="2" onClick={() => sortData('pick')}>Pick</th> */}
 
     <th colSpan="3">PTS</th>
-    <th colSpan="2">GF</th>
-    <th colSpan="2">GA</th>
+    {/* <th colSpan="2">GF</th>
+    <th colSpan="2">GA</th> */}
   </tr>
 
   <tr>
     <th onClick={() => sortData('proj_points')}>Proj</th>
-    <th onClick={() => sortData('actual_points')}>Actual</th>
-    <th onClick={() => sortData('error')}>Error</th>
+    <th onClick={() => sortData('actual_points')}>Act</th>
+    <th onClick={() => sortData('error')}>Err</th>
 
-    <th onClick={() => sortData('proj_goals')}>Proj</th>
+    {/* <th onClick={() => sortData('proj_goals')}>Proj</th>
     <th onClick={() => sortData('actual_goals')}>Actual</th>
 
     <th onClick={() => sortData('proj_goals_ag')}>Proj</th>
-    <th onClick={() => sortData('actual_goals_ag')}>Actual</th>
+    <th onClick={() => sortData('actual_goals_ag')}>Actual</th> */}
   </tr>
 </thead>
 
         <tbody>
-          {data.map((team, index) => (
+
+          {teams.map((team, index) => (
+
             <tr key={index}>
+
               <td>
                 <div className="results-logo-container">
                   <img
                     src={team.logo}
-                    className="results-logo"
+                    className="logo"
                     alt={`${team.name} logo`}
                   />
                   <span>{team.abrv}</span>
@@ -142,21 +144,65 @@ const FinalResults = () => {
 
               <td className="final-stat-td">{team.playoffs}%</td>
               <td className="final-stat-td">{team.result?.trim() ? '✓' : 'X'}</td>
-              {/* <td className="stat-td">{team.pick?.trim() ? '✓' : 'X'}</td> */}
+
               <td className="final-stat-td">{team.proj_points}</td>
               <td className="final-stat-td">{team.actual_points}</td>
               <td className="final-stat-td">{team.error}</td>
-              <td className="final-stat-td">{team.proj_goals}</td>
+
+              {/* <td className="final-stat-td">{team.proj_goals}</td>
               <td className="final-stat-td">{team.actual_goals}</td>
+
               <td className="final-stat-td">{team.proj_goals_ag}</td>
-              <td className="final-stat-td">{team.actual_goals_ag}</td>
+              <td className="final-stat-td">{team.actual_goals_ag}</td> */}
+
             </tr>
+
           ))}
+
         </tbody>
 
       </Table>
+
     </div>
   );
+
+
+  return (
+
+    <div className="table-container">
+
+      <h1
+        style={{
+          marginTop: '2%',
+          marginBottom: '2%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '10px'
+        }}
+      >
+        <img
+          src="../../Images/OnlyNorthCircle.png"
+          alt="Mini Logo"
+          style={{ width: '50px', height: '50px' }}
+        />
+
+        {year - 1}/{year} Final Results
+
+      </h1>
+
+
+      <div className="division-grid">
+
+        {renderTable(west, "Western Conference")}
+        {renderTable(east, "Eastern Conference")}
+
+      </div>
+
+    </div>
+
+  );
+
 };
 
 export default FinalResults;
