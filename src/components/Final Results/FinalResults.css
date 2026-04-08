@@ -1,6 +1,6 @@
 .results-table-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 750px;
   margin: 20px auto; 
   padding: 10px;
   overflow-x: auto;
@@ -9,4 +9,49 @@
 .results-table {
     table-layout: fixed;
     width: 100%;
+}
+
+.final-stat-td {
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+
+.results-logo-container {
+    display: flex;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.results-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.conference-wrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .final-stat-td {
+    font-size: 14px;
+}
+
+.results-logo-container {
+    display: flex;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    justify-content: center;
+}
+
+.results-logo {
+    width: 15px;
+    height: 15px;
+}
 }

@@ -21,7 +21,7 @@ const NavBar = () => {
             <NavDropdown.Item href="/Picks/2025">24/25 Preseason Picks</NavDropdown.Item>   
           </NavDropdown>
           <NavDropdown title="Final Results">
-            <NavDropdown.Item href="/finalresults/2026">25/26 Final Results</NavDropdown.Item>
+            {/* <NavDropdown.Item href="/finalresults/2026">25/26 Final Results</NavDropdown.Item> */}
             <NavDropdown.Item href="/finalresults/2025">24/25 Final Results</NavDropdown.Item>
           </NavDropdown>
           {/* <Nav.Link href="/Timeline">Playoff Odds Timeline</Nav.Link> */}

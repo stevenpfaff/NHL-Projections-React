@@ -3,7 +3,6 @@ import { Table } from 'react-bootstrap';
 import Papa from 'papaparse';
 import { useParams } from 'react-router-dom';
 import './FinalResults.css';
-// import html2canvas from 'html2canvas';
 
 const FinalResults = () => {
   const { year } = useParams();
@@ -11,18 +10,6 @@ const FinalResults = () => {
   const [data, setData] = useState([]);
   const [sortConfig, setSortConfig] = useState({ key: 'name', direction: 'ascending' });
 
-  // const handleDownloadImage = () => {
-  //   const tableElement = document.getElementById('results-table');
-
-  //   if (tableElement) {
-  //     html2canvas(tableElement, { scale: 2 }).then((canvas) => {
-  //       const link = document.createElement('a');
-  //       link.download = `final-results-${year}.png`;
-  //       link.href = canvas.toDataURL();
-  //       link.click();
-  //     });
-  //   }
-  // };
 
   useEffect(() => {
     Papa.parse(`/finalresults${year}.csv`, {
@@ -117,13 +104,13 @@ const FinalResults = () => {
 <thead>
   <tr>
     <th rowSpan="2" onClick={() => sortData('name')}>Team</th>
-    <th rowSpan="2" onClick={() => sortData('playoffs')}>Playoff%</th>
-    <th rowSpan="2" onClick={() => sortData('result')}>Playoffs?</th>
-    <th rowSpan="2" onClick={() => sortData('pick')}>Pick</th>
+    <th rowSpan="2" onClick={() => sortData('playoffs')}>PO%</th>
+    <th rowSpan="2" onClick={() => sortData('result')}>PO?</th>
+    {/* <th rowSpan="2" onClick={() => sortData('pick')}>Pick</th> */}
 
-    <th colSpan="3">Points</th>
-    <th colSpan="2">Goals For</th>
-    <th colSpan="2">Goals Against</th>
+    <th colSpan="3">PTS</th>
+    <th colSpan="2">GF</th>
+    <th colSpan="2">GA</th>
   </tr>
 
   <tr>
@@ -143,26 +130,26 @@ const FinalResults = () => {
           {data.map((team, index) => (
             <tr key={index}>
               <td>
-                <div className="logo-container">
+                <div className="results-logo-container">
                   <img
                     src={team.logo}
-                    className="logo"
+                    className="results-logo"
                     alt={`${team.name} logo`}
                   />
                   <span>{team.abrv}</span>
                 </div>
               </td>
 
-              <td className="stat-td">{team.playoffs}%</td>
-              <td className="stat-td">{team.result?.trim() ? '✓' : 'X'}</td>
-              <td className="stat-td">{team.pick?.trim() ? '✓' : 'X'}</td>
-              <td className="stat-td">{team.proj_points}</td>
-              <td className="stat-td">{team.actual_points}</td>
-              <td className="stat-td">{team.error}</td>
-              <td className="stat-td">{team.proj_goals}</td>
-              <td className="stat-td">{team.actual_goals}</td>
-              <td className="stat-td">{team.proj_goals_ag}</td>
-              <td className="stat-td">{team.actual_goals_ag}</td>
+              <td className="final-stat-td">{team.playoffs}%</td>
+              <td className="final-stat-td">{team.result?.trim() ? '✓' : 'X'}</td>
+              {/* <td className="stat-td">{team.pick?.trim() ? '✓' : 'X'}</td> */}
+              <td className="final-stat-td">{team.proj_points}</td>
+              <td className="final-stat-td">{team.actual_points}</td>
+              <td className="final-stat-td">{team.error}</td>
+              <td className="final-stat-td">{team.proj_goals}</td>
+              <td className="final-stat-td">{team.actual_goals}</td>
+              <td className="final-stat-td">{team.proj_goals_ag}</td>
+              <td className="final-stat-td">{team.actual_goals_ag}</td>
             </tr>
           ))}
         </tbody>
