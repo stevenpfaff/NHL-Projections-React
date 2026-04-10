@@ -10,6 +10,7 @@ import TeamCard from './components/Teams/TeamCard';
 import Vibes from './components/Standings/Vibes';
 // import PlayoffOddsChart from './components/Playoff Odds/OddsChart';
 import FinalResults from './components/Final Results/FinalResults';
+import PlayoffBracket from './components/Playoff Odds/Bracket';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/PlayoffOdds" element={<PlayoffOdds />} />
+                <Route path="/PlayoffBracket" element={<PlayoffBracket />} />
                 {/* <Route path="/OddsDivisional" element={<OddsStandings />} /> */}
                 <Route path="/PreseasonStandings/:year" element={<Preseason />} />
                 <Route path="/PreseasonOdds/:year" element={<PreseasonOdds />} />

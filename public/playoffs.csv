@@ -1,0 +1,17 @@
+id,name,abrv,division,primaryColor,logo,current_round2,current_conf,current_final,current_win,date
+5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,57.1%,39.3%,24.7%,14.3%,04/09/2026
+7,Colorado Avalanche,COL,Central,#6F263D,/Images/avalanche.png,63.4%,37.6%,22.4%,13.1%,04/09/2026
+26,Tampa Bay Lightning,TBL,Atlantic,#002868,/Images/lightning.png,62.8%,39.8%,21.5%,11.4%,04/09/2026
+30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,68.3%,37.2%,19.2%,10.3%,04/09/2026
+20,Ottawa Senators,OTT,Atlantic,#DA1A32,/Images/senators.png,42.9%,26.1%,14.4%,7.4%,04/09/2026
+9,Dallas Stars,DAL,Central,#006847,/Images/stars.png,52.9%,24.7%,12.9%,6.5%,04/09/2026
+28,Utah Mammoth,UTA,Central,#5c88da,/Images/utah.png,51.1%,27.2%,12.6%,6.5%,04/09/2026
+14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,47.1%,21.0%,10.7%,5.5%,04/09/2026
+11,Edmonton Oilers,EDM,Pacific,#FF4C00,/Images/oilers.png,48.9%,24.7%,11.1%,5.1%,04/09/2026
+13,Los Angeles Kings,LAK,Pacific,#A2AAAD,/Images/kings.png,36.6%,16.7%,7.8%,3.7%,04/09/2026
+15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,37.2%,19.5%,8.1%,3.2%,04/09/2026
+22,Pittsburgh Penguins,PIT,Metropolitan,#FCB514,/Images/penguins.png,51.7%,17.9%,8.4%,3.2%,04/09/2026
+21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,48.3%,16.8%,7.6%,3.1%,04/09/2026
+2,Boston Bruins,BOS,Atlantic,#FFB81C,/Images/bruins.png,51.1%,21.0%,8.0%,2.9%,04/09/2026
+3,Buffalo Sabres,BUF,Atlantic,#003087,/Images/sabres.png,48.9%,19.7%,7.3%,2.7%,04/09/2026
+1,Anaheim Ducks,ANA,Pacific,#00685e,/Images/ducks.png,31.7%,10.8%,3.4%,1.2%,04/09/2026

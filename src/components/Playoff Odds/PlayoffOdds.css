@@ -103,6 +103,84 @@
   min-width: 65px;
 }
 
+.view-toggle{
+  margin-bottom:20px;
+}
+
+.bracket-grid{
+  display:flex;
+  justify-content:center;
+  gap:80px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+}
+
+
+.round{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.matchup{
+  border:1px solid #ddd;
+  padding:8px;
+  background:white;
+  width:170px;
+}
+
+.team{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.bracket-grid{
+  display:flex;
+  justify-content:center;
+  gap:120px;
+}
+
+.bracket{
+  display:flex;
+  gap:60px;
+}
+
+.round-column{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  gap:40px;
+}
+
+.matchup{
+  border:1px solid #ccc;
+  background:white;
+  padding:6px;
+  width:160px;
+}
+
+.odds{
+  font-size:22px;
+}
+
+.placeholder{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:50px;
+  font-size:12px;
+  color:#777;
+}
+
+.conference-bracket.left .bracket{
+  flex-direction: row-reverse;
+}
+
+.conference-bracket.left .team{
+  flex-direction: row-reverse;
+}
+
 /* mobile */
 @media (max-width: 900px) {
 .division-grid {
@@ -144,5 +222,22 @@
     font-family: 'Bebas Neue', sans-serif;
     font-size: 18px;
 }
+
+  .bracket-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    overflow-x: visible;
+  }
+
+  .conference-bracket {
+    width: 100%;
+    align-items: center;
+  }
+
+  .bracket {
+    flex-direction: column;
+    gap: 18px;
+  }
 
 }
