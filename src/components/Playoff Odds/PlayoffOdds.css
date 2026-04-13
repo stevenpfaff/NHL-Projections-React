@@ -107,15 +107,6 @@
   margin-bottom:20px;
 }
 
-.bracket-grid{
-  display:flex;
-  justify-content:center;
-  gap:80px;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 22px;
-}
-
-
 .round{
   display:flex;
   flex-direction:column;
@@ -129,21 +120,45 @@
   width:170px;
 }
 
-.team{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+.team {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  color: white;
 }
 
-.bracket-grid{
-  display:flex;
-  justify-content:center;
-  gap:120px;
+.team:first-child {
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.bracket{
-  display:flex;
-  gap:60px;
+.team:nth-child(1) {
+  background-color: #f7f7f7;
+}
+
+.team:nth-child(2) {
+  background-color: #ffffff;
+}
+
+.leading {
+  background-color: #e8f3ff;
+  font-weight: 700;
+}
+
+.bracket-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+}
+
+.bracket {
+  display: flex;
+  gap: 35px;
+  min-width: 420px;
 }
 
 .round-column{
@@ -160,8 +175,10 @@
   width:160px;
 }
 
-.odds{
-  font-size:22px;
+.odds {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
 }
 
 .placeholder{
@@ -223,21 +240,26 @@
     font-size: 18px;
 }
 
-  .bracket-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    overflow-x: visible;
-  }
-
   .conference-bracket {
     width: 100%;
     align-items: center;
   }
 
   .bracket {
-    flex-direction: column;
-    gap: 18px;
+    gap: 5px;
   }
+
+  .bracket-grid {
+  justify-content: flex-start;
+    gap:5px;
+}
+
+    .matchup {
+    width: 140px;
+  }
+
+  .bracket-grid {
+  scroll-behavior: smooth;
+}
 
 }

@@ -103,33 +103,30 @@ const Matchup = ({ m }) => {
 
   if (!team1 || !team2) return null;
 
+  const team1Leading = m.team1_wins > m.team2_wins;
+  const team2Leading = m.team2_wins > m.team1_wins;
+
   return (
     <div className="matchup">
 
-      <div className="team">
-        <img src={team1.logo} className="logo" alt="" />
-
-        <span className="abrv">{team1.abrv}</span>
-
-        {/* WINS replaces seed */}
+      <div
+  className={`team ${team1Leading ? "leading" : ""}`}
+  style={{ backgroundColor: team1.primaryColor }}
+>
         <span className="wins">{m.team1_wins}</span>
-
-        <span className="odds">
-          {formatNumber(team1.current_round2)}%
-        </span>
+        <img src={team1.logo} className="logo" alt="" />
+        <span className="abrv">{team1.abrv}</span>
+        <span className="odds">{formatNumber(team1.current_round2)}%</span>
       </div>
 
-      <div className="team">
-        <img src={team2.logo} className="logo" alt="" />
-
-        <span className="abrv">{team2.abrv}</span>
-
-        {/* WINS replaces seed */}
+            <div
+  className={`team ${team2Leading ? "leading" : ""}`}
+  style={{ backgroundColor: team2.primaryColor }}
+>
         <span className="wins">{m.team2_wins}</span>
-
-        <span className="odds">
-          {formatNumber(team2.current_round2)}%
-        </span>
+        <img src={team2.logo} className="logo" alt="" />
+        <span className="abrv">{team2.abrv}</span>
+        <span className="odds">{formatNumber(team2.current_round2)}%</span>
       </div>
 
     </div>
