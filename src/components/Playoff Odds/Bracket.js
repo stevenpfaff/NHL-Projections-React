@@ -12,6 +12,13 @@ const PlayoffBracket = () => {
     direction: 'descending',
   });
 
+  const ROUNDS = [
+  { key: "Round 1", odds: "current_round2" },
+  { key: "Round 2", odds: "current_conf" },
+  { key: "Conference Final", odds: "current_final" },
+  { key: "Cup Final", odds: "current_win" },
+];
+
   // Fetch CSV data on mount
   useEffect(() => {
     Papa.parse('/playoffs.csv', {
@@ -134,67 +141,35 @@ const Matchup = ({ m }) => {
 };
 
 
-const eastMatchups = matchups.filter(
-  (m) => m.conf === "Eastern" && m.round === "Round 1"
-);
-
-const westMatchups = matchups.filter(
-  (m) => m.conf === "Western" && m.round === "Round 1"
-);
-
-const buildRounds = (series) => {
-
-  const round1 = series;
-
-  const round2 = [
-    [series[0], series[1]],
-    [series[2], series[3]]
-  ];
-
-  const confFinal = [
-    [round2[0], round2[1]]
-  ];
-
-  return { round1, round2, confFinal };
+const getMatchups = (conf, round) => {
+  return matchups.filter(
+    (m) => m.conf === conf && m.round === round
+  );
 };
 
-const eastRounds = buildRounds(eastMatchups);
-const westRounds = buildRounds(westMatchups);
 
-const RoundColumn = ({ matchups }) => (
-  <div className="round-column">
+const RoundColumn = ({ conf, round }) => {
+  const roundMatchups = getMatchups(conf, round.key);
 
-    {matchups.map((m, i) => {
+  return (
+    <div className="round-column">
+      {roundMatchups.map((m, i) => (
+        <Matchup key={i} m={m} oddsKey={round.odds} />
+      ))}
+    </div>
+  );
+};
 
-      if (Array.isArray(m)) {
-        return (
-          <div key={i} className="matchup placeholder">
-            TBD
-          </div>
-        );
-      }
-
-      return <Matchup key={i} m={m} />;
-    })}
-
-  </div>
-);
-
-const renderBracket = (rounds, title, side) => {
-
-  const roundColumns = [rounds.round1, rounds.round2, rounds.confFinal];
-
+const renderBracket = (conf, title, side) => {
   return (
     <div className={`conference-bracket ${side}`}>
 
       <h2>{title}</h2>
 
       <div className="bracket">
-
-        {roundColumns.map((round, i) => (
-          <RoundColumn key={i} matchups={round} />
+        {ROUNDS.map((round, i) => (
+          <RoundColumn key={i} conf={conf} round={round} />
         ))}
-
       </div>
 
     </div>
@@ -281,8 +256,8 @@ const renderTable = (teams, title) => (
 ) : (
 
 <div className="bracket-grid">
-  {renderBracket(westRounds, "Western Conference", "right")}
-  {renderBracket(eastRounds, "Eastern Conference", "left")}
+  {renderBracket("Western", "Western Conference", "right")}
+  {renderBracket("Eastern", "Eastern Conference", "left")}
 </div>
 )}
 

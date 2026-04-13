@@ -1,9 +1,9 @@
-round,conf,div,team1,team2,team1_wins,team2_wins,team1_seed,team2_seed
-Round 1,Eastern,Metropolitan,CAR,BOS,0,0,1,8
-Round 1,Eastern,Metropolitan,PIT,PHI,0,0,4,5
-Round 1,Eastern,Atlantic,BUF,OTT,0,0,2,7
-Round 1,Eastern,Atlantic,TBL,MTL,0,0,3,6
-Round 1,Western,Central,COL,LAK,0,0,1,8
-Round 1,Western,Central,DAL,MIN,0,0,4,5
-Round 1,Western,Pacific,VGK,UTA,0,0,2,7
-Round 1,Western,Pacific,EDM,ANA,0,0,3,6
+round,conf,div,team1,team2,team1_wins,team2_wins
+Round 1,Eastern,Metropolitan,CAR,OTT,0,0
+Round 1,Eastern,Metropolitan,PIT,PHI,0,0
+Round 1,Eastern,Atlantic,BUF,BOS,0,0
+Round 1,Eastern,Atlantic,MTL,TBL,0,0
+Round 1,Western,Central,COL,LAK,0,0
+Round 1,Western,Central,DAL,MIN,0,0
+Round 1,Western,Pacific,VGK,UTA,0,0
+Round 1,Western,Pacific,EDM,ANA,0,0
