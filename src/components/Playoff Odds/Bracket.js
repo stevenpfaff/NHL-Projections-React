@@ -12,12 +12,13 @@ const PlayoffBracket = () => {
     direction: 'descending',
   });
 
-  const ROUNDS = [
+const ROUNDS = [
   { key: "Round 1", odds: "current_round2" },
   { key: "Round 2", odds: "current_conf" },
-  { key: "Conference Final", odds: "current_final" },
-  { key: "Cup Final", odds: "current_win" },
+  { key: "Conference Final", odds: "current_final" }
 ];
+
+const CUP_FINAL = { key: "Cup Final", odds: "current_win" };
 
   // Fetch CSV data on mount
   useEffect(() => {
@@ -81,6 +82,26 @@ const PlayoffBracket = () => {
     setSortConfig({ key, direction });
   };
 
+  const ROUND_MATCHUP_COUNT = {
+  "Round 1": 4,
+  "Round 2": 2,
+  "Conference Final": 1,
+  "Cup Final": 0
+};
+
+const PlaceholderMatchup = () => {
+  return (
+    <div className="matchup placeholder">
+      <div className="team placeholder-team">
+        <span className="abrv">TBD</span>
+      </div>
+      <div className="team placeholder-team">
+        <span className="abrv">TBD</span>
+      </div>
+    </div>
+  );
+};
+
   const east = data.filter(
   team => team.division === 'Atlantic' || team.division === 'Metropolitan'
 );
@@ -104,7 +125,7 @@ const getTeam = (abrv) => {
   return data.find((t) => t.abrv === abrv);
 };
 
-const Matchup = ({ m }) => {
+const Matchup = ({ m, oddsKey }) => {
   const team1 = getTeam(m.team1);
   const team2 = getTeam(m.team2);
 
@@ -123,7 +144,7 @@ const Matchup = ({ m }) => {
         <span className="wins">{m.team1_wins}</span>
         <img src={team1.logo} className="logo" alt="" />
         <span className="abrv">{team1.abrv}</span>
-        <span className="odds">{formatNumber(team1.current_round2)}%</span>
+        <span className="odds">{formatNumber(team1[oddsKey])}%</span>
       </div>
 
             <div
@@ -133,7 +154,7 @@ const Matchup = ({ m }) => {
         <span className="wins">{m.team2_wins}</span>
         <img src={team2.logo} className="logo" alt="" />
         <span className="abrv">{team2.abrv}</span>
-        <span className="odds">{formatNumber(team2.current_round2)}%</span>
+        <span className="odds">{formatNumber(team2[oddsKey])}%</span>
       </div>
 
     </div>
@@ -150,12 +171,21 @@ const getMatchups = (conf, round) => {
 
 const RoundColumn = ({ conf, round }) => {
   const roundMatchups = getMatchups(conf, round.key);
+  const expected = ROUND_MATCHUP_COUNT[round.key] || 0;
+
+  const placeholdersNeeded = expected - roundMatchups.length;
 
   return (
     <div className="round-column">
+
       {roundMatchups.map((m, i) => (
-        <Matchup key={i} m={m} oddsKey={round.odds} />
+        <Matchup key={`real-${i}`} m={m} oddsKey={round.odds} />
       ))}
+
+      {Array.from({ length: placeholdersNeeded }).map((_, i) => (
+        <PlaceholderMatchup key={`placeholder-${i}`} />
+      ))}
+
     </div>
   );
 };
@@ -171,6 +201,22 @@ const renderBracket = (conf, title, side) => {
           <RoundColumn key={i} conf={conf} round={round} />
         ))}
       </div>
+
+    </div>
+  );
+};
+
+const renderCupFinal = () => {
+  const finalMatchup = matchups.find(m => m.round === "Cup Final");
+
+  return (
+    <div className="cup-final">
+
+      {finalMatchup ? (
+        <Matchup m={finalMatchup} oddsKey={CUP_FINAL.odds} />
+      ) : (
+        <PlaceholderMatchup />
+      )}
 
     </div>
   );
@@ -256,8 +302,13 @@ const renderTable = (teams, title) => (
 ) : (
 
 <div className="bracket-grid">
+
   {renderBracket("Western", "Western Conference", "right")}
+
+  {renderCupFinal()}
+
   {renderBracket("Eastern", "Eastern Conference", "left")}
+
 </div>
 )}
 

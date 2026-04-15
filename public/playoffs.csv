@@ -1,13 +1,13 @@
 id,name,abrv,division,primaryColor,logo,current_round2,current_conf,current_final,current_win,date
-20,Ottawa Senators,OTT,Atlantic,#DA1A32,/Images/senators.png,41.9%,26.4%,15.4%,8.1%,04/14/2026
+20,Ottawa Senators,OTT,Atlantic,#000000,/Images/senators.png,41.9%,26.4%,15.4%,8.1%,04/14/2026
 28,Utah Mammoth,UTA,Central,#5c88da,/Images/utah.png,43.4%,26.2%,12.4%,6.1%,04/14/2026
-14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,50.5%,23.5%,12.1%,6.0%,04/14/2026
-9,Dallas Stars,DAL,Central,#006847,/Images/stars.png,49.5%,22.5%,11.4%,5.5%,04/14/2026
+14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,50%,23.5%,12.1%,6.0%,04/14/2026
+9,Dallas Stars,DAL,Central,#006847,/Images/stars.png,50%,22.5%,11.4%,5.5%,04/14/2026
 11,Edmonton Oilers,EDM,Pacific,#FF4C00,/Images/oilers.png,61.2%,24.7%,10.4%,4.5%,04/14/2026
 3,Buffalo Sabres,BUF,Atlantic,#003087,/Images/sabres.png,52.6%,22.7%,8.8%,3.6%,04/14/2026
 22,Pittsburgh Penguins,PIT,Metropolitan,#FCB514,/Images/penguins.png,53.0%,18.1%,8.4%,3.5%,04/14/2026
 15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,36.6%,18.4%,7.0%,2.7%,04/14/2026
-13,Los Angeles Kings,LAK,Pacific,#A2AAAD,/Images/kings.png,34.2%,15.1%,6.6%,2.7%,04/14/2026
+13,Los Angeles Kings,LAK,Pacific,#000000,/Images/kings.png,34.2%,15.1%,6.6%,2.7%,04/14/2026
 2,Boston Bruins,BOS,Atlantic,#FFB81C,/Images/bruins.png,47.4%,18.9%,6.9%,2.6%,04/14/2026
 21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,47.0%,14.8%,6.6%,2.5%,04/14/2026
 5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,58.1%,40.6%,26.7%,16.0%,04/14/2026
