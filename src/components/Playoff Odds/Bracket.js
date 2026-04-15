@@ -142,7 +142,7 @@ const Matchup = ({ m, oddsKey }) => {
   style={{ backgroundColor: team1.primaryColor }}
 >
         <span className="wins">{m.team1_wins}</span>
-        <img src={team1.logo} className="logo" alt="" />
+        <img src={team1.logo} className="bracket-logo" alt="" />
         <span className="abrv">{team1.abrv}</span>
         <span className="odds">{formatNumber(team1[oddsKey])}%</span>
       </div>
@@ -152,7 +152,7 @@ const Matchup = ({ m, oddsKey }) => {
   style={{ backgroundColor: team2.primaryColor }}
 >
         <span className="wins">{m.team2_wins}</span>
-        <img src={team2.logo} className="logo" alt="" />
+        <img src={team2.logo} className="bracket-logo" alt="" />
         <span className="abrv">{team2.abrv}</span>
         <span className="odds">{formatNumber(team2[oddsKey])}%</span>
       </div>

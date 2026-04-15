@@ -5,13 +5,13 @@ id,name,abrv,division,primaryColor,logo,current_round2,current_conf,current_fina
 9,Dallas Stars,DAL,Central,#006847,/Images/stars.png,50%,22.5%,11.4%,5.5%,04/14/2026
 11,Edmonton Oilers,EDM,Pacific,#FF4C00,/Images/oilers.png,61.2%,24.7%,10.4%,4.5%,04/14/2026
 3,Buffalo Sabres,BUF,Atlantic,#003087,/Images/sabres.png,52.6%,22.7%,8.8%,3.6%,04/14/2026
-22,Pittsburgh Penguins,PIT,Metropolitan,#FCB514,/Images/penguins.png,53.0%,18.1%,8.4%,3.5%,04/14/2026
+22,Pittsburgh Penguins,PIT,Metropolitan,#000000,/Images/penguins.png,53.0%,18.1%,8.4%,3.5%,04/14/2026
 15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,36.6%,18.4%,7.0%,2.7%,04/14/2026
 13,Los Angeles Kings,LAK,Pacific,#000000,/Images/kings.png,34.2%,15.1%,6.6%,2.7%,04/14/2026
-2,Boston Bruins,BOS,Atlantic,#FFB81C,/Images/bruins.png,47.4%,18.9%,6.9%,2.6%,04/14/2026
+2,Boston Bruins,BOS,Atlantic,#000000,/Images/bruins.png,47.4%,18.9%,6.9%,2.6%,04/14/2026
 21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,47.0%,14.8%,6.6%,2.5%,04/14/2026
 5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,58.1%,40.6%,26.7%,16.0%,04/14/2026
 7,Colorado Avalanche,COL,Central,#6F263D,/Images/avalanche.png,65.8%,39.0%,23.3%,13.4%,04/14/2026
 30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,56.6%,37.8%,20.2%,11.1%,04/14/2026
 26,Tampa Bay Lightning,TBL,Atlantic,#002868,/Images/lightning.png,63.4%,40.0%,20.3%,10.7%,04/14/2026
-1,Anaheim Ducks,ANA,Pacific,#00685e,/Images/ducks.png,38.8%,11.4%,3.5%,1.2%,04/14/2026
+1,Anaheim Ducks,ANA,Pacific,#532A44,/Images/ducks.png,38.8%,11.4%,3.5%,1.2%,04/14/2026
