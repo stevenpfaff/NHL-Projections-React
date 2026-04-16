@@ -176,7 +176,7 @@ const RoundColumn = ({ conf, round }) => {
   const placeholdersNeeded = expected - roundMatchups.length;
 
   return (
-    <div className="round-column">
+    <div className={`round-column round-${round.key.replace(" ", "-").toLowerCase()}`}>
 
       {roundMatchups.map((m, i) => (
         <Matchup key={`real-${i}`} m={m} oddsKey={round.odds} />
@@ -268,24 +268,6 @@ const renderTable = (teams, title) => (
 
   return (
   <div className="table-container">
-    <h1
-      style={{
-        marginTop: '2%',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: '10px',
-      }}
-    >
-      <img
-        src="../../Images/OnlyNorthCircle.png"
-        alt="Mini Logo"
-        style={{ width: '50px', height: '50px', marginLeft: '10px' }}
-      />
-      NHL Playoff Bracket
-    </h1>
-
-    <p>Updated as of {date}</p>
 
     <div className="view-toggle">
     <button onClick={() => setView("bracket")}>Bracket</button>
@@ -301,14 +283,22 @@ const renderTable = (teams, title) => (
 
 ) : (
 
-<div className="bracket-grid">
+<div className="bracket-page">
+  <div className="bracket-header">
+    <img
+      src="../../Images/OnlyNorthCircle.png"
+      alt="Site Logo"
+      className="site-logo"
+    />
+    <h1>NHL Playoff Bracket</h1>
+    <p>Updated as of {date}</p>
+  </div>
 
-  {renderBracket("Western", "Western Conference", "right")}
-
-  {renderCupFinal()}
-
-  {renderBracket("Eastern", "Eastern Conference", "left")}
-
+  <div className="bracket-grid">
+    {renderBracket("Western", "Western Conference", "right")}
+    {renderCupFinal()}
+    {renderBracket("Eastern", "Eastern Conference", "left")}
+  </div>
 </div>
 )}
 

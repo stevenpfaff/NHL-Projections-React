@@ -12,7 +12,7 @@ const NavBar = () => {
         <img src={logo} alt="..." height="50" width="50"></img>
           <NavDropdown title="Projections">
             <NavDropdown.Item href="/">Playoff Bracket</NavDropdown.Item>
-            <NavDropdown.Item href="/PlayoffOdds">Current Playoff Odds</NavDropdown.Item>
+            {/* <NavDropdown.Item href="/PlayoffOdds">Current Playoff Odds</NavDropdown.Item> */}
             <NavDropdown.Item href="/PreseasonOdds/2026">25/26 Preseason Playoff Odds</NavDropdown.Item>
             <NavDropdown.Item href="/PreseasonOdds/2025">24/25 Preseason Playoff Odds</NavDropdown.Item>                      
           </NavDropdown>

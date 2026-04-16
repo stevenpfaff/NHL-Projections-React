@@ -9,6 +9,7 @@ const FinalResults = () => {
   const { year } = useParams();
 
   const [data, setData] = useState([]);
+  const [avgError, setAvgError] = useState(null);
   const [sortConfig, setSortConfig] = useState({
     key: 'proj_points',
     direction: 'descending'
@@ -36,6 +37,10 @@ const FinalResults = () => {
         }));
 
         setData(parsedData);
+          const totalError = parsedData.reduce((sum, t) => sum + (t.error || 0), 0);
+  const avg = parsedData.length ? totalError / parsedData.length : 0;
+
+  setAvgError(avg);
       },
 
       error: (err) => {
@@ -190,8 +195,16 @@ const west = data.filter(
         {year - 1}/{year} Final Results
 
       </h1>
-
-
+<p style={{
+  textAlign: 'center',
+  fontSize: '16px',
+  marginBottom: '10px',
+  fontWeight: '600'
+}}>
+  Avg Projection Error: <span style={{ color: '#013a68' }}>
+    {avgError !== null ? avgError.toFixed(1) : 'Loading...'}
+  </span> points
+</p>
       <div className="division-grid">
 
         {renderTable(west, "Western Conference")}
