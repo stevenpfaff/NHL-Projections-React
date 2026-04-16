@@ -176,25 +176,15 @@ const west = data.filter(
 
     <div className="table-container">
 
-      <h1
-        style={{
-          marginTop: '2%',
-          marginBottom: '2%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '10px'
-        }}
-      >
-        <img
-          src="../../Images/OnlyNorthCircle.png"
-          alt="Mini Logo"
-          style={{ width: '50px', height: '50px' }}
-        />
+    <div className="results-header">
+    <img
+      src="../../Images/OnlyNorthCircle.png"
+      alt="Site Logo"
+      className="site-logo"
+    />
+    <h1>      {year - 1}/{year} Final Results</h1>
+  </div>
 
-        {year - 1}/{year} Final Results
-
-      </h1>
 <p style={{
   textAlign: 'center',
   fontSize: '16px',

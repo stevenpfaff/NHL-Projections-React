@@ -201,7 +201,7 @@
 }
 
 .bracket-page {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 10px;
   display: flex;
@@ -351,6 +351,9 @@
 .bracket-logo {
   width: 16px;
   height: 16px;
+        filter: drop-shadow(0 0 0 white)
+          drop-shadow(0 0 0 white)
+          drop-shadow(0 0 0 white);
 }
 
 .wins {

@@ -275,6 +275,7 @@ const renderTable = (teams, title) => (
     </div>  
 
 {view === "table" ? (
+  
 
   <div className="division-grid">
     {renderTable(sortTeams(west), "Western Conference")}

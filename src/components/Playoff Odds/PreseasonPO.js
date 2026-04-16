@@ -150,22 +150,14 @@ const PreseasonOdds = () => {
 
   return (
     <div className="table-container">
-      <h2
-        style={{
-          marginTop: '2%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '10px',
-        }}
-      >
-        <img
-          src="../../Images/OnlyNorthCircle.png"
-          alt="Mini Logo"
-          style={{ width: '50px', height: '50px', marginLeft: '10px' }}
-        />
-        {seasonTitle}
-      </h2>
+  <div className="bracket-header">
+    <img
+      src="../../Images/OnlyNorthCircle.png"
+      alt="Site Logo"
+      className="site-logo"
+    />
+    <h1>{seasonTitle}</h1>
+  </div>
 
       <div className="division-grid">
         {renderTable(sortTeams(pacific), 'Pacific')}

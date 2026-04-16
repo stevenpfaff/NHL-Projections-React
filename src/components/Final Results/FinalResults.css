@@ -23,6 +23,20 @@
     margin-right: 5px;
 }
 
+.results-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.results-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
 .conference-wrapper {
   display: flex;
   gap: 40px;
