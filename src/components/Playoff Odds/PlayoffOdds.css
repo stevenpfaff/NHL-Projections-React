@@ -175,9 +175,10 @@
 
 .matchup{
   border:5px solid #ccc;
-  background:white;
+  /* background:white; */
   padding:6px;
   width:160px;
+  border-radius: 12px;
 }
 
 .odds {
@@ -202,6 +203,8 @@
 
 .bracket-page {
   max-width: 1100px;
+  background-color:#e0e0e0;
+  border-radius: 12px;
   margin: 0 auto;
   padding: 10px;
   display: flex;

@@ -154,12 +154,6 @@ const west = data.filter(
               <td className="final-stat-td">{team.actual_points}</td>
               <td className="final-stat-td">{team.error}</td>
 
-              {/* <td className="final-stat-td">{team.proj_goals}</td>
-              <td className="final-stat-td">{team.actual_goals}</td>
-
-              <td className="final-stat-td">{team.proj_goals_ag}</td>
-              <td className="final-stat-td">{team.actual_goals_ag}</td> */}
-
             </tr>
 
           ))}
@@ -182,7 +176,7 @@ const west = data.filter(
       alt="Site Logo"
       className="site-logo"
     />
-    <h1>      {year - 1}/{year} Final Results</h1>
+    <h1>{year - 1}/{year} Final Results</h1>
   </div>
 
 <p style={{
@@ -191,7 +185,7 @@ const west = data.filter(
   marginBottom: '10px',
   fontWeight: '600'
 }}>
-  Avg Projection Error: <span style={{ color: '#013a68' }}>
+  Avg Projection Error: <span>
     {avgError !== null ? avgError.toFixed(1) : 'Loading...'}
   </span> points
 </p>
