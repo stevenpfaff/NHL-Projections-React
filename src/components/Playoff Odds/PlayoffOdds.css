@@ -114,17 +114,17 @@
 }
 
 .matchup{
-  border:1px solid #ddd;
-  padding:8px;
+  border:3px solid #ccc;
   background:white;
-  width:150px;
+  padding:4px;
+  width:120px;
 }
 
 .team {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 4px 6px;
+  padding: 2px;
   color: white;
 }
 
@@ -157,15 +157,14 @@
 
 .bracket {
   display: flex;
-  gap: 35px;
-  min-width: 420px;
+  gap: 18px;
 }
 
 .round-column{
   display:flex;
   flex-direction:column;
   justify-content:space-around;
-  gap:40px;
+  gap:20px;
 }
 
 .matchup{
@@ -188,20 +187,11 @@
 }
 
 .bracket-logo {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
       filter: drop-shadow(0 0 0 white)
           drop-shadow(0 0 0 white)
           drop-shadow(0 0 0 white);
-}
-
-.placeholder{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  /* height:50px; */
-  font-size:12px;
-  color:#777;
 }
 
 .conference-bracket.left .bracket{
@@ -212,8 +202,13 @@
   flex-direction: row-reverse;
 }
 
-.placeholder {
-  opacity: 0.4;
+.placeholder{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /* height:50px; */
+  font-size:12px;
+  color:#777;
 }
 
 .placeholder-team {
@@ -275,26 +270,48 @@
     font-size: 18px;
 }
 
-  .conference-bracket {
-    width: 100%;
-    align-items: center;
-  }
-
-  .bracket {
-    gap: 5px;
-  }
-
   .bracket-grid {
   justify-content: flex-start;
-    gap:5px;
+  gap: 4px;
+  font-size: 14px;
+  max-width: 100%;
 }
 
-    .matchup {
-    width: 140px;
-  }
-
-  .bracket-grid {
-  scroll-behavior: smooth;
+.bracket {
+  gap: 8px;
 }
+
+.round-column{
+  gap: 12px;
+}
+
+.matchup {
+  width: 95px;
+  padding: 3px;
+  border: 2px solid #ccc;
+}
+
+.team {
+  padding: 2px 3px;
+  gap: 3px;
+}
+
+.bracket-logo {
+  width: 16px;
+  height: 16px;
+}
+
+.wins {
+  font-size: 12px;
+}
+
+.odds {
+  font-size: 12px;
+}
+
+.abrv {
+  font-size: 14px;
+}
+
 
 }
