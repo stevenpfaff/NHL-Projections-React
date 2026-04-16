@@ -69,6 +69,12 @@
   font-size: 28px;
 }
 
+.conference-bracket h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
 .view-toggle {
   display: flex;
   justify-content: center;
@@ -359,14 +365,13 @@
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
-
 .round-round-2,
 .round-conference-final {
   display: none;
 }
 
-}
-
+  .conference-bracket h2 {
+    font-size: 12px;
+  }
 
 }

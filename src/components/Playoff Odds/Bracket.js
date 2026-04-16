@@ -95,9 +95,9 @@ const PlaceholderMatchup = () => {
       <div className="team placeholder-team">
         <span className="abrv">TBD</span>
       </div>
-      <div className="team placeholder-team">
+      {/* <div className="team placeholder-team">
         <span className="abrv">TBD</span>
-      </div>
+      </div> */}
     </div>
   );
 };
