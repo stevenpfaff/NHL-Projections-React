@@ -112,7 +112,7 @@ const west = data.filter(
     <th rowSpan="2" onClick={() => sortData('playoffs')}>PO%</th>
     <th rowSpan="2" onClick={() => sortData('result')}>PO?</th>
 
-    <th colSpan="3">PTS</th>
+    <th colSpan="3">Points</th>
     {/* <th colSpan="2">GF</th>
     <th colSpan="2">GA</th> */}
   </tr>
