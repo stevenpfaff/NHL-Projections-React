@@ -130,8 +130,9 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 2px;
+  padding: 6px;
   color: white;
+  border-radius: 4px;
 }
 
 .team:first-child {
@@ -221,6 +222,17 @@
   text-align: center;
 }
 
+.bracket-table-container {
+    background-color:#e0e0e0;
+    margin: 10px auto;
+    padding: 20px;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 .site-logo {
   width: 70px;
   height: 70px;
@@ -272,6 +284,7 @@
   justify-content: center;
   margin: 0 30px;
 }
+
 
 /* mobile */
 @media (max-width: 900px) {
@@ -341,9 +354,9 @@
 }
 
 .matchup {
-  width: 95px;
-  padding: 3px;
-  border: 2px solid #ccc;
+  width: 100px;
+  /* padding: 2px; */
+  /* border: 2px solid #ccc; */
 }
 
 .team {
@@ -379,5 +392,9 @@
   .conference-bracket h2 {
     font-size: 12px;
   }
+
+  .bracket-table-container {
+    margin:auto;
+}
 
 }

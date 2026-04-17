@@ -267,24 +267,13 @@ const renderTable = (teams, title) => (
 );
 
   return (
-  <div className="table-container">
+<div className="bracket-table-container">
 
-    <div className="view-toggle">
+  <div className="view-toggle">
     <button onClick={() => setView("bracket")}>Bracket</button>
     <button onClick={() => setView("table")}>Table</button>
-    </div>  
-
-{view === "table" ? (
-  
-
-  <div className="division-grid">
-    {renderTable(sortTeams(west), "Western Conference")}
-    {renderTable(sortTeams(east), "Eastern Conference")}
   </div>
 
-) : (
-
-<div className="bracket-page">
   <div className="bracket-header">
     <img
       src="../../Images/OnlyNorthCircle.png"
@@ -295,15 +284,26 @@ const renderTable = (teams, title) => (
     <p>Updated as of {date}</p>
   </div>
 
-  <div className="bracket-grid">
-    {renderBracket("Western", "Western Conference", "right")}
-    {renderCupFinal()}
-    {renderBracket("Eastern", "Eastern Conference", "left")}
-  </div>
-</div>
-)}
+  {view === "table" ? (
 
-  </div>
+    <div className="division-grid">
+      {renderTable(sortTeams(west), "Western Conference")}
+      {renderTable(sortTeams(east), "Eastern Conference")}
+    </div>
+
+  ) : (
+
+    <div className="bracket-page">
+      <div className="bracket-grid">
+        {renderBracket("Western", "Western Conference", "right")}
+        {renderCupFinal()}
+        {renderBracket("Eastern", "Eastern Conference", "left")}
+      </div>
+    </div>
+
+  )}
+
+</div>
 );
 };
 
