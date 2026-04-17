@@ -226,7 +226,7 @@ const renderTable = (teams, title) => (
   <div className="conference-table">
     <h2>{title}</h2>
     <Table
-      className="playoff-odds-table"
+      className="playoff-odds-table-bracket"
       striped
       bordered
       hover

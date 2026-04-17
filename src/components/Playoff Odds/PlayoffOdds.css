@@ -285,6 +285,15 @@
   margin: 0 30px;
 }
 
+.playoff-odds-table {
+  border-collapse: collapse;
+}
+
+.playoff-odds-table-bracket th,
+.playoff-odds-table-bracket td {
+  border: 1px solid black !important;
+}
+
 
 /* mobile */
 @media (max-width: 900px) {
