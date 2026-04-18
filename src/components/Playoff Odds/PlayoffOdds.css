@@ -285,8 +285,9 @@
   margin: 0 30px;
 }
 
-.playoff-odds-table {
+.playoff-odds-table-bracket {
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .playoff-odds-table-bracket th,
