@@ -131,14 +131,11 @@ const Matchup = ({ m, oddsKey }) => {
 
   if (!team1 || !team2) return null;
 
-  const team1Leading = m.team1_wins > m.team2_wins;
-  const team2Leading = m.team2_wins > m.team1_wins;
-
   return (
     <div className="matchup">
 
       <div
-  className={`team ${team1Leading ? "leading" : ""}`}
+  className={`team`}
   style={{ backgroundColor: team1.primaryColor }}
 >
         <span className="wins">{m.team1_wins}</span>
@@ -148,7 +145,7 @@ const Matchup = ({ m, oddsKey }) => {
       </div>
 
             <div
-  className={`team ${team2Leading ? "leading" : ""}`}
+  className={`team`}
   style={{ backgroundColor: team2.primaryColor }}
 >
         <span className="wins">{m.team2_wins}</span>

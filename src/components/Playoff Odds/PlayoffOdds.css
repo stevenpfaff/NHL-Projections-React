@@ -147,11 +147,6 @@
   background-color: #ffffff;
 }
 
-.leading {
-  background-color: #e8f3ff;
-  font-weight: 700;
-}
-
 .bracket-grid {
   display: flex;
   justify-content: center;
