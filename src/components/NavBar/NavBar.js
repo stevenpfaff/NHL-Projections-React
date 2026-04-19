@@ -10,15 +10,14 @@ const NavBar = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mx-auto custom-nav-links">
         <img src={logo} alt="..." height="50" width="50"></img>
-          <NavDropdown title="Projections">
-            <NavDropdown.Item href="/">Playoff Bracket</NavDropdown.Item>
+            <NavDropdown title="Current Odds">
+            <NavDropdown.Item href="/">Playoff Bracket</NavDropdown.Item>    
+            <NavDropdown.Item href="/PlayoffOdds">Playoff Odds</NavDropdown.Item>                  
+          </NavDropdown>
+          <NavDropdown title="Preseason Projections">
             {/* <NavDropdown.Item href="/PlayoffOdds">Current Playoff Odds</NavDropdown.Item> */}
             <NavDropdown.Item href="/PreseasonOdds/2026">25/26 Preseason Playoff Odds</NavDropdown.Item>
             <NavDropdown.Item href="/PreseasonOdds/2025">24/25 Preseason Playoff Odds</NavDropdown.Item>                      
-          </NavDropdown>
-          <NavDropdown title="Preseason Picks">
-            <NavDropdown.Item href="/Picks/2026">25/26 Preseason Picks</NavDropdown.Item>
-            <NavDropdown.Item href="/Picks/2025">24/25 Preseason Picks</NavDropdown.Item>   
           </NavDropdown>
           <NavDropdown title="Final Results">
             <NavDropdown.Item href="/finalresults/2026">25/26 Final Results</NavDropdown.Item>
