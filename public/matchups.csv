@@ -1,9 +1,9 @@
 round,conf,div,team1,team2,team1_wins,team2_wins
-Round 1,Eastern,Metropolitan,CAR,OTT,4,0
-Round 1,Eastern,Metropolitan,PIT,PHI,1,3
+Round 1,Eastern,Metropolitan,CAR,OTT,2,0
+Round 1,Eastern,Metropolitan,PIT,PHI,0,3
 Round 1,Eastern,Atlantic,BUF,BOS,2,1
-Round 1,Eastern,Atlantic,TBL,MTL,1,2
+Round 1,Eastern,Atlantic,TBL,MTL,2,1
 Round 1,Western,Central,COL,LAK,3,0
-Round 1,Western,Central,DAL,MIN,2,2
-Round 1,Western,Pacific,VGK,UTA,1,2
+Round 1,Western,Central,DAL,MIN,2,1
+Round 1,Western,Pacific,VGK,UTA,1,1
 Round 1,Western,Pacific,EDM,ANA,1,2
