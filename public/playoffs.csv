@@ -1,7 +1,7 @@
 id,name,abrv,division,primaryColor,logo,current_round2,current_conf,current_final,current_win,date
 14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,73.9%,29.6%,14.9%,6.9%,04/30/2026
-3,Buffalo Sabres,BUF,Atlantic,#003087,/Images/sabres.png,89.5%,45.3%,16.7%,6.8%,04/30/2026
-21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,100.0%,28.5%,13.4%,5.0%,04/30/2026
+3,Buffalo Sabres,BUF,Atlantic,#003087,/Images/sabres.png,89%,45.3%,16.7%,6.8%,04/30/2026
+21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,100.0%,28%,13.4%,5.0%,04/30/2026
 26,Tampa Bay Lightning,TBL,Atlantic,#002868,/Images/lightning.png,31.7%,19.0%,8.7%,4.2%,04/30/2026
 15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,68.3%,31.1%,10.4%,3.8%,04/30/2026
 5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,100.0%,71.5%,49.3%,29.1%,04/30/2026
