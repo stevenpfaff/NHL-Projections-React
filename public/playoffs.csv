@@ -3,7 +3,7 @@ id,name,abrv,division,primaryColor,logo,current_round2,current_conf,current_fina
 3,Buffalo Sabres,BUF,Atlantic,#003087,/Images/sabres.png,89.6%,45.2%,16.9%,6.9%,05/01/2026
 21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,100.0%,28.4%,13.4%,4.9%,05/01/2026
 26,Tampa Bay Lightning,TBL,Atlantic,#002868,/Images/lightning.png,31.5%,18.8%,8.7%,4.3%,05/01/2026
-15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,68.5%,31.4%,10.4%,3.8%,05/01/2026
+15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,68%,31.4%,10.4%,3.8%,05/01/2026
 1,Anaheim Ducks,ANA,Pacific,#CF4520,/Images/ducks.png,100.0%,30.6%,9.4%,3.1%,05/01/2026
 28,Utah Mammoth,UTA,Central,#5c88da,/Images/utah.png,22.2%,14.5%,6.5%,3.1%,05/01/2026
 5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,100.0%,71.6%,49.0%,28.9%,05/01/2026
