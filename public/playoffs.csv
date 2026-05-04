@@ -5,8 +5,8 @@ id,name,abrv,division,primaryColor,logo,current_round2,current_conf,current_fina
 21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,100.0%,28.4%,13.7%,4.9%,05/04/2026
 5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,100.0%,71.6%,50.1%,28.8%,05/04/2026
 7,Colorado Avalanche,COL,Central,#6F263D,/Images/avalanche.png,100.0%,73.4%,43.3%,24.4%,05/04/2026
-1,Anaheim Ducks,ANA,Pacific,#CF4520,/Images/ducks.png,100.0%,29.5%,8.6%,2.9%,05/04/2026
-30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,100.0%,70.5%,34.9%,18.9%,05/04/2026
+1,Anaheim Ducks,ANA,Pacific,#CF4520,/Images/ducks.png,100.0%,30%,8.6%,2.9%,05/04/2026
+30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,100.0%,70%,34.9%,18.9%,05/04/2026
 20,Ottawa Senators,OTT,Atlantic,#000000,/Images/senators.png,0.0%,0.0%,0.0%,0.0%,05/04/2026
 13,Los Angeles Kings,LAK,Pacific,#000000,/Images/kings.png,0.0%,0.0%,0.0%,0.0%,05/04/2026
 22,Pittsburgh Penguins,PIT,Metropolitan,#040707,/Images/penguins.png,0.0%,0.0%,0.0%,0.0%,05/04/2026
