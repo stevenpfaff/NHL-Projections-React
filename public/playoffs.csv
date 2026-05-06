@@ -1,12 +1,12 @@
 id,name,abrv,division,primaryColor,logo,current_round2,current_conf,current_final,current_win,date
 3,Buffalo Sabres,BUF,Atlantic,#003087,/Images/sabres.png,100.0%,52.5%,17.3%,6.5%,05/06/2026
-15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,100.0%,47.5%,14.9%,5.3%,05/06/2026
+15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,100.0%,47%,14.9%,5.3%,05/06/2026
 5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,100.0%,91.5%,63.7%,36.2%,05/06/2026
 14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,100.0%,13.9%,6.7%,3.0%,05/06/2026
 7,Colorado Avalanche,COL,Central,#6F263D,/Images/avalanche.png,100.0%,86.1%,48.9%,26.0%,05/06/2026
-30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,100.0%,81.5%,39.3%,20.0%,05/06/2026
+30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,100.0%,81%,39.3%,20.0%,05/06/2026
 1,Anaheim Ducks,ANA,Pacific,#CF4520,/Images/ducks.png,100.0%,18.5%,5.2%,1.6%,05/06/2026
-21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,100.0%,8.5%,4.1%,1.4%,05/06/2026
+21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,100.0%,8%,4.1%,1.4%,05/06/2026
 28,Utah Mammoth,UTA,Central,#5c88da,/Images/utah.png,0.0%,0.0%,0.0%,0.0%,05/06/2026
 13,Los Angeles Kings,LAK,Pacific,#000000,/Images/kings.png,0.0%,0.0%,0.0%,0.0%,05/06/2026
 9,Dallas Stars,DAL,Central,#00843D,/Images/stars.png,0.0%,0.0%,0.0%,0.0%,05/06/2026
