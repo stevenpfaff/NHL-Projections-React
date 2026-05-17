@@ -1,17 +1,17 @@
 id,name,abrv,division,primaryColor,logo,current_round2,current_conf,current_final,current_win,date
-15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,100.0%,73.8%,21.7%,7.3%,05/16/2026
-5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,100.0%,100.0%,70.1%,38.5%,05/16/2026
-3,Buffalo Sabres,BUF,Atlantic,#003087,/Images/sabres.png,100.0%,26.2%,8.2%,3.0%,05/16/2026
-7,Colorado Avalanche,COL,Central,#6F263D,/Images/avalanche.png,100.0%,100.0%,52.9%,27.7%,05/16/2026
-30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,100.0%,100.0%,47.1%,23.4%,05/16/2026
-14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,100.0%,0.0%,0.0%,0.0%,05/16/2026
-28,Utah Mammoth,UTA,Central,#5c88da,/Images/utah.png,0.0%,0.0%,0.0%,0.0%,05/16/2026
-21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,100.0%,0.0%,0.0%,0.0%,05/16/2026
-11,Edmonton Oilers,EDM,Pacific,#00205B,/Images/oilers.png,0.0%,0.0%,0.0%,0.0%,05/16/2026
-26,Tampa Bay Lightning,TBL,Atlantic,#002868,/Images/lightning.png,0.0%,0.0%,0.0%,0.0%,05/16/2026
-1,Anaheim Ducks,ANA,Pacific,#CF4520,/Images/ducks.png,100.0%,0.0%,0.0%,0.0%,05/16/2026
-20,Ottawa Senators,OTT,Atlantic,#000000,/Images/senators.png,0.0%,0.0%,0.0%,0.0%,05/16/2026
-2,Boston Bruins,BOS,Atlantic,#000000,/Images/bruins.png,0.0%,0.0%,0.0%,0.0%,05/16/2026
-9,Dallas Stars,DAL,Central,#00843D,/Images/stars.png,0.0%,0.0%,0.0%,0.0%,05/16/2026
-13,Los Angeles Kings,LAK,Pacific,#000000,/Images/kings.png,0.0%,0.0%,0.0%,0.0%,05/16/2026
-22,Pittsburgh Penguins,PIT,Metropolitan,#040707,/Images/penguins.png,0.0%,0.0%,0.0%,0.0%,05/16/2026
+3,Buffalo Sabres,BUF,Atlantic,#003087,/Images/sabres.png,100.0%,52.3%,16.2%,5.9%,05/17/2026
+15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,100.0%,47.7%,14.0%,4.8%,05/17/2026
+5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,100.0%,100.0%,69.8%,38.2%,05/17/2026
+7,Colorado Avalanche,COL,Central,#6F263D,/Images/avalanche.png,100.0%,100.0%,53.2%,27.9%,05/17/2026
+30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,100.0%,100.0%,46.8%,23.2%,05/17/2026
+11,Edmonton Oilers,EDM,Pacific,#00205B,/Images/oilers.png,0.0%,0.0%,0.0%,0.0%,05/17/2026
+28,Utah Mammoth,UTA,Central,#5c88da,/Images/utah.png,0.0%,0.0%,0.0%,0.0%,05/17/2026
+2,Boston Bruins,BOS,Atlantic,#000000,/Images/bruins.png,0.0%,0.0%,0.0%,0.0%,05/17/2026
+20,Ottawa Senators,OTT,Atlantic,#000000,/Images/senators.png,0.0%,0.0%,0.0%,0.0%,05/17/2026
+22,Pittsburgh Penguins,PIT,Metropolitan,#040707,/Images/penguins.png,0.0%,0.0%,0.0%,0.0%,05/17/2026
+1,Anaheim Ducks,ANA,Pacific,#CF4520,/Images/ducks.png,100.0%,0.0%,0.0%,0.0%,05/17/2026
+9,Dallas Stars,DAL,Central,#00843D,/Images/stars.png,0.0%,0.0%,0.0%,0.0%,05/17/2026
+14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,100.0%,0.0%,0.0%,0.0%,05/17/2026
+26,Tampa Bay Lightning,TBL,Atlantic,#002868,/Images/lightning.png,0.0%,0.0%,0.0%,0.0%,05/17/2026
+21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,100.0%,0.0%,0.0%,0.0%,05/17/2026
+13,Los Angeles Kings,LAK,Pacific,#000000,/Images/kings.png,0.0%,0.0%,0.0%,0.0%,05/17/2026
