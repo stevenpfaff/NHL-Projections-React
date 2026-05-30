@@ -266,10 +266,6 @@ const renderTable = (teams, title) => (
   return (
 <div className="bracket-table-container">
 
-  <div className="view-toggle">
-    <button onClick={() => setView("bracket")}>Bracket</button>
-    <button onClick={() => setView("table")}>Table</button>
-  </div>
 
   <div className="bracket-header">
     <img
