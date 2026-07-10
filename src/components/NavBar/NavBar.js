@@ -11,8 +11,8 @@ const NavBar = () => {
         <Nav className="mx-auto custom-nav-links">
         <img src={logo} alt="..." height="50" width="50"></img>
             <NavDropdown title="Current Odds">
-            <NavDropdown.Item href="/">Playoff Bracket</NavDropdown.Item>    
-            <NavDropdown.Item href="/PlayoffOdds">Playoff Odds</NavDropdown.Item>                  
+            <NavDropdown.Item href="/">Playoff Odds</NavDropdown.Item>    
+            <NavDropdown.Item href="/Playoff Bracket">Playoff Bracket</NavDropdown.Item>                  
           </NavDropdown>
           <NavDropdown title="Preseason Projections">
             {/* <NavDropdown.Item href="/PlayoffOdds">Current Playoff Odds</NavDropdown.Item> */}

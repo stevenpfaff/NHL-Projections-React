@@ -13,8 +13,8 @@ function App() {
         <Router>
             <NavBar />
             <Routes>
-                <Route path="/" element={<PlayoffBracket />} />
-                <Route path="/PlayoffOdds" element={<PlayoffOdds />} />
+                <Route path="/" element={<PlayoffOdds />} />
+                <Route path="/PlayoffBracket" element={<PlayoffBracket />} />
                 <Route path="/About" element={<Home />} />
                 <Route path="/PreseasonOdds/:year" element={<PreseasonOdds />} />
                 <Route path="/team/:id" element={<TeamCard />} />
