@@ -77,10 +77,9 @@ const PreseasonOdds = () => {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>{error}</div>;
 
-  const seasonTitle =
-    year === '2026'
-      ? '2025/2026 Preseason Playoff Odds'
-      : '2024/2025 Preseason Playoff Odds';
+const seasonTitle = year
+  ? `${Number(year) - 1}/${year} Preseason Playoff Odds`
+  : '2024/2025 Preseason Playoff Odds';
 
   const atlantic = data.filter(team => team.division === 'Atlantic');
   const metro = data.filter(team => team.division === 'Metropolitan');
