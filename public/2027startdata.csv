@@ -1,33 +1,33 @@
 id,name,abrv,division,primaryColor,logo,playoffs,second_round,conf_final,cup_final,cup_win,proj_points,proj_goals,proj_goals_against
-1,Anaheim Ducks,ANA,Pacific,#CF4520,/Images/ducks.png,35.20%,14.00%,5.20%,1.80%,0.60%,85.2,240,258
-2,Boston Bruins,BOS,Atlantic,#000000,/Images/bruins.png,29.20%,11.50%,4.60%,1.80%,0.70%,88.2,246,254
-3,Buffalo Sabres,BUF,Atlantic,#003087,/Images/sabres.png,32.00%,12.90%,5.10%,2.00%,0.80%,88.8,246,253
-4,Calgary Flames,CGY,Pacific,#D2001C,/Images/flames.png,14.60%,4.90%,1.50%,0.50%,0.10%,79.4,229,266
-5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,86.10%,52.10%,31.20%,17.90%,10.30%,101.9,268,233
-6,Chicago Blackhawks,CHI,Central,#CF0A2C,/Images/blackhawks.png,9.60%,2.80%,0.90%,0.30%,0.10%,79.1,229,266
-7,Colorado Avalanche,COL,Central,#6F263D,/Images/avalanche.png,85.10%,47.90%,26.40%,14.80%,7.70%,99.2,263,237
-8,Columbus Blue Jackets,CBJ,Metropolitan,#002654,/Images/blue jackets.png,37.20%,15.60%,6.50%,2.70%,1.20%,89.9,252,256
-9,Dallas Stars,DAL,Central,#00843D,/Images/stars.png,86.90%,49.70%,28.10%,16.00%,8.40%,99.9,265,236
-10,Detroit Red Wings,DET,Atlantic,#ce1126,/Images/red wings.png,17.40%,6.10%,2.20%,0.70%,0.30%,84.7,242,261
-11,Edmonton Oilers,EDM,Pacific,#00205B,/Images/oilers.png,69.30%,34.80%,16.10%,7.10%,3.00%,92.4,255,250
-12,Florida Panthers,FLA,Atlantic,#c8102E,/Images/panthers.png,74.80%,40.80%,22.00%,11.50%,6.40%,98.5,262,239
-13,Los Angeles Kings,LAK,Pacific,#000000,/Images/kings.png,77.30%,41.50%,20.10%,9.20%,4.10%,94.5,256,245
-14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,82.30%,44.90%,24.10%,13.20%,6.60%,98.3,264,241
-15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,36.50%,15.30%,6.40%,2.70%,1.20%,89.9,251,255
-16,Nasvhille Predators,NSH,Central,#FFB81C,/Images/predators.png,43.30%,17.70%,7.50%,3.10%,1.30%,89,250,256
-17,New Jersey Devils,NJD,Metropolitan,#CE1126,/Images/devils.png,59.00%,28.60%,13.60%,6.50%,3.30%,94.6,254,243
-18,New York Islanders,NYI,Metropolitan,#00539b,/Images/islanders.png,11.90%,3.90%,1.30%,0.40%,0.10%,82.4,236,263
-19,New York Rangers,NYR,Metropolitan,#0038A8,/Images/rangers.png,55.00%,26.20%,12.10%,5.60%,2.60%,93.7,255,246
-20,Ottawa Senators,OTT,Atlantic,#000000,/Images/senators.png,69.20%,35.90%,18.30%,9.20%,5.00%,97,260,241
-21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,26.60%,10.40%,4.00%,1.60%,0.60%,87.3,241,253
-22,Pittsburgh Penguins,PIT,Metropolitan,#040707,/Images/penguins.png,41.40%,17.90%,7.40%,3.20%,1.50%,90.8,252,252
-23,San Jose Sharks,SJS,Pacific,#006D75,/Images/sharks.png,13.90%,4.40%,1.40%,0.40%,0.10%,79.2,228,265
-24,Seattle Kraken,SEA,Pacific,#68a2b9,/Images/kraken.png,23.60%,8.60%,2.90%,0.90%,0.30%,82.3,236,263
-25,St. Louis Blues,STL,Central,#002F87,/Images/blues.png,42.20%,17.10%,7.00%,3.00%,1.10%,88.8,250,257
-26,Tampa Bay Lightning,TBL,Atlantic,#002868,/Images/lightning.png,77.60%,43.40%,23.80%,12.70%,6.90%,99.2,261,236
-27,Toronto Maple Leafs,TOR,Atlantic,#00205b,/Images/leafs.png,72.40%,38.90%,20.50%,10.50%,5.60%,97.8,265,243
-28,Utah Mammoth,UTA,Central,#5c88da,/Images/utah.png,71.00%,35.50%,17.70%,8.90%,4.20%,95,258,245
-29,Vancouver Canucks,VAN,Pacific,#00205B,/Images/canucks.png,6.70%,1.90%,0.50%,0.10%,0.00%,75.4,225,274
-30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,89.70%,53.10%,31.30%,16.50%,8.30%,99,268,242
-31,Washington Capitals,WSH,Metropolitan,#041E42,/Images/capitals.png,73.80%,40.30%,21.10%,10.90%,5.80%,98.1,261,239
-32,Winnipeg Jets,WPG,Central,#004C97,/Images/jets.png,49.40%,21.20%,9.30%,4.10%,1.70%,90.3,245,247
+1,Anaheim Ducks,ANA,Pacific,#CF4520,/Images/ducks.png,37.70%,15.00%,5.70%,2.10%,0.70%,85.9,241,257
+2,Boston Bruins,BOS,Atlantic,#000000,/Images/bruins.png,30.60%,12.40%,5.00%,1.90%,0.80%,88.4,246,254
+3,Buffalo Sabres,BUF,Atlantic,#003087,/Images/sabres.png,32.70%,13.30%,5.50%,2.20%,0.90%,88.8,246,253
+4,Calgary Flames,CGY,Pacific,#D2001C,/Images/flames.png,11.60%,3.60%,1.10%,0.30%,0.10%,78.2,226,266
+5,Carolina Hurricanes,CAR,Metropolitan,#CE1126,/Images/canes.png,88.70%,54.60%,33.10%,19.50%,11.70%,103,266,228
+6,Chicago Blackhawks,CHI,Central,#CF0A2C,/Images/blackhawks.png,11.20%,3.30%,1.10%,0.30%,0.10%,79.7,231,266
+7,Colorado Avalanche,COL,Central,#6F263D,/Images/avalanche.png,84.40%,47.00%,25.40%,14.20%,7.10%,98.7,262,238
+8,Columbus Blue Jackets,CBJ,Metropolitan,#002654,/Images/blue jackets.png,27.70%,10.60%,4.10%,1.60%,0.70%,87.6,246,257
+9,Dallas Stars,DAL,Central,#00843D,/Images/stars.png,89.10%,53.10%,30.80%,18.00%,9.50%,100.7,268,236
+10,Detroit Red Wings,DET,Atlantic,#ce1126,/Images/red wings.png,13.20%,4.50%,1.50%,0.50%,0.10%,83,236,261
+11,Edmonton Oilers,EDM,Pacific,#00205B,/Images/oilers.png,58.90%,27.30%,11.80%,4.80%,1.90%,90.2,249,252
+12,Florida Panthers,FLA,Atlantic,#c8102E,/Images/panthers.png,74.80%,41.20%,22.30%,11.60%,6.20%,98.3,262,239
+13,Los Angeles Kings,LAK,Pacific,#000000,/Images/kings.png,82.50%,47.10%,24.50%,12.00%,5.60%,96.2,263,246
+14,Minnesota Wild,MIN,Central,#154734,/Images/wild.png,81.20%,44.00%,23.10%,12.50%,6.20%,97.7,262,241
+15,Montreal Canadiens,MTL,Atlantic,#AF1E2D,/Images/canadiens.png,34.80%,14.40%,6.00%,2.40%,1.10%,89.3,250,255
+16,Nasvhille Predators,NSH,Central,#FFB81C,/Images/predators.png,45.20%,18.70%,7.90%,3.30%,1.30%,89.1,251,256
+17,New Jersey Devils,NJD,Metropolitan,#CE1126,/Images/devils.png,61.40%,30.00%,14.40%,7.00%,3.50%,95.1,256,243
+18,New York Islanders,NYI,Metropolitan,#00539b,/Images/islanders.png,12.20%,4.00%,1.30%,0.40%,0.20%,82.5,239,265
+19,New York Rangers,NYR,Metropolitan,#0038A8,/Images/rangers.png,54.70%,25.40%,11.40%,5.20%,2.50%,93.7,255,247
+20,Ottawa Senators,OTT,Atlantic,#000000,/Images/senators.png,66.70%,34.30%,17.40%,8.50%,4.40%,96.3,258,242
+21,Philadelphia Flyers,PHI,Metropolitan,#F74902,/Images/flyers.png,32.50%,12.90%,5.10%,2.10%,0.90%,88.8,246,253
+22,Pittsburgh Penguins,PIT,Metropolitan,#040707,/Images/penguins.png,49.20%,21.90%,9.50%,4.30%,2.00%,92.5,256,251
+23,San Jose Sharks,SJS,Pacific,#006D75,/Images/sharks.png,25.00%,9.00%,3.10%,1.00%,0.30%,82.7,239,265
+24,Seattle Kraken,SEA,Pacific,#68a2b9,/Images/kraken.png,20.10%,7.00%,2.30%,0.70%,0.20%,81.3,234,264
+25,St. Louis Blues,STL,Central,#002F87,/Images/blues.png,41.30%,16.50%,6.80%,2.80%,1.00%,88.4,249,257
+26,Tampa Bay Lightning,TBL,Atlantic,#002868,/Images/lightning.png,76.70%,42.90%,23.40%,12.10%,6.60%,98.8,261,236
+27,Toronto Maple Leafs,TOR,Atlantic,#00205b,/Images/leafs.png,67.70%,35.10%,18.00%,8.80%,4.60%,96.5,261,244
+28,Utah Mammoth,UTA,Central,#5c88da,/Images/utah.png,70.10%,34.40%,17.00%,8.40%,3.80%,94.6,257,246
+29,Vancouver Canucks,VAN,Pacific,#00205B,/Images/canucks.png,10.40%,3.10%,0.90%,0.20%,0.10%,77.5,231,273
+30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,89.30%,54.00%,31.70%,16.60%,8.40%,99.1,269,243
+31,Washington Capitals,WSH,Metropolitan,#041E42,/Images/capitals.png,76.50%,42.50%,22.20%,11.90%,6.60%,98.9,266,241
+32,Winnipeg Jets,WPG,Central,#004C97,/Images/jets.png,42.00%,16.90%,6.90%,2.90%,1.10%,88.4,245,253
