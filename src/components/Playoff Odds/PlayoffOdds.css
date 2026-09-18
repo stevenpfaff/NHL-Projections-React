@@ -1,9 +1,7 @@
 .table-container {
     width: 100%;
-    height: auto;
-    display: block;
-    overflow-x: auto;
-    padding: 0px;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .table {
@@ -79,10 +77,19 @@
   margin-bottom: 10px;
 }
 
+.preseason-division-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    width: min(1100px, 96%);
+    margin: 0 auto 10px;
+    padding: 0;
+}
 
 .conference-table {
-  width: 100%;
-  margin: 0;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
 }
 
 .conference-table h2 {
@@ -103,7 +110,7 @@
 }
 
 .view-toggle button {
-  padding: 8px 14px;
+  padding: 3px 7px;
   border: 1px solid #ccc;
   background: white;
   cursor: pointer;
@@ -236,6 +243,7 @@
   justify-content: center;
   margin-bottom: 10px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .bracket-table-container {
@@ -256,7 +264,7 @@
 }
 
 .bracket-header h1 {
-  margin: 0;
+  margin-bottom: 20px;
   font-size: 28px;
 }
 
@@ -328,99 +336,20 @@
 
 
 @media (max-width: 768px) {
-    .table {
-        font-size: 18px;
-    }
 
-    .logo {
-        width: 22px;
-        height: 22px;
-    }
-
-    .stat-td {
-        font-size: 18px;
-    }
-
-    .playoff-odds-table th:first-child,
-.playoff-odds-table td:first-child {
-    width: 60px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    .preseason-division-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto 10px;
+    padding: 0;
 }
 
-.logo-container {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 18px;
+    .division-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto 10px;
+    padding: 0;
 }
 
-  .bracket-grid {
-  justify-content: center;
-  gap: 4px;
-  font-size: 14px;
-  max-width: 100%;
-}
-
-.bracket {
-  gap: 10px;
-  justify-content: center;
-}
-
-.conference-bracket {
-  align-items: center;
-}
-
-.cup-final {
-  margin: 0 10px;
-}
-
-
-.round-column{
-  gap: 12px;
-}
-
-.matchup {
-  width: 100px;
-  /* padding: 2px; */
-  /* border: 2px solid #ccc; */
-}
-
-.team {
-  padding: 2px 3px;
-  gap: 3px;
-}
-
-.bracket-logo {
-  width: 16px;
-  height: 16px;
-        filter: drop-shadow(0 0 0 white)
-          drop-shadow(0 0 0 white)
-          drop-shadow(0 0 0 white);
-}
-
-.wins {
-  font-size: 12px;
-}
-
-.odds {
-  font-size: 12px;
-}
-
-.abrv {
-  font-size: 14px;
-}
-
-.round-round-2,
-.round-conference-final {
-  display: none;
-}
-
-  .conference-bracket h2 {
-    font-size: 12px;
-  }
-
-  .bracket-table-container {
-    margin:auto;
-}
 
 }

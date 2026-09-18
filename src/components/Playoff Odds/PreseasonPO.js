@@ -78,7 +78,7 @@ const PreseasonOdds = () => {
   if (error) return <div>{error}</div>;
 
 const seasonTitle = year
-  ? `${Number(year) - 1}/${year} Preseason Playoff Odds`
+  ? `${Number(year) - 1}/${year} Preseason Projections`
   : '2024/2025 Preseason Playoff Odds';
 
   const atlantic = data.filter(team => team.division === 'Atlantic');
@@ -111,9 +111,6 @@ const seasonTitle = year
             <th onClick={() => sortData('name')}>Team</th>
             <th onClick={() => sortData('proj_points')}>PTS</th>
             <th onClick={() => sortData('playoffs')}>PO%</th>
-            <th onClick={() => sortData('second_round')}>R2%</th>
-            <th onClick={() => sortData('conf_final')}>R3%</th>
-            <th onClick={() => sortData('cup_final')}>Final%</th>
             <th onClick={() => sortData('cup_win')}>Cup%</th>
           </tr>
         </thead>
@@ -136,9 +133,6 @@ const seasonTitle = year
 
               <td className="stat-td">{formatNumber(team.proj_points)}</td>
               <td className="stat-td">{formatNumber(team.playoffs)}%</td>
-              <td className="stat-td">{formatNumber(team.second_round)}%</td>
-              <td className="stat-td">{formatNumber(team.conf_final)}%</td>
-              <td className="stat-td">{formatNumber(team.cup_final)}%</td>
               <td className="stat-td">{formatNumber(team.cup_win)}%</td>
             </tr>
           ))}
@@ -158,7 +152,7 @@ const seasonTitle = year
     <h1>{seasonTitle}</h1>
   </div>
 
-      <div className="division-grid">
+      <div className="preseason-division-grid">
         {renderTable(sortTeams(pacific), 'Pacific')}
         {renderTable(sortTeams(central), 'Central')}
         {renderTable(sortTeams(metro), 'Metropolitan')}
