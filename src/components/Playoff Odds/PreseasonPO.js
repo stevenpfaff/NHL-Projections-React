@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import Papa from 'papaparse';
 import './PlayoffOdds.css';
+import { useParams } from 'react-router-dom';
 
 const PreseasonOdds = () => {
   const { year } = useParams();
