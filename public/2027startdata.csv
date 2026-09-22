@@ -30,4 +30,4 @@ id,name,abrv,division,primaryColor,logo,playoffs,second_round,conf_final,cup_fin
 29,Vancouver Canucks,VAN,Pacific,#00205B,/Images/canucks.png,7.3%,2.1%,0.5%,0.1%,0.0%,75.9,227,274
 30,Vegas Golden Knights,VGK,Pacific,#B4975A,/Images/golden knights.png,89.6%,54.3%,31.9%,16.8%,8.6%,99.2,270,243
 31,Washington Capitals,WSH,Metropolitan,#041E42,/Images/capitals.png,77.4%,43.3%,23.6%,12.7%,7.1%,99.1,266,240
-32,Winnipeg Jets,WPG,Central,#004C97,/Images/jets.png,42.2%,17.0%,7.1%,2.9%,1.1%,88.5,245,253
+32,Winnipeg Jets,WPG,Central,#004C97,/Images/jets.png,42.2%,17.0%,7.1%,2.9%,1.1%,88.51,245,253
