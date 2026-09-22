@@ -14,7 +14,7 @@ const TeamCard = () => {
             try {
                 // Parse both CSVs
                 const [startData, currentData] = await Promise.all([
-                    parseCSV('/2026startdata.csv'),
+                    parseCSV('/2027startdata.csv'),
                     parseCSV('/currentdata.csv'),
                 ]);
 

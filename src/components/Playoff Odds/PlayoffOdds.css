@@ -242,7 +242,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .bracket-table-container {
@@ -316,6 +316,30 @@
 .playoff-odds-table-bracket th,
 .playoff-odds-table-bracket td {
   border: 1px solid black !important;
+}
+
+/* Preseason tables - tighter rows */
+.preseason-division-grid .playoff-odds-table thead th {
+    padding: 2px 4px;
+    font-size: 18px;
+}
+
+.preseason-division-grid .playoff-odds-table td {
+    padding: 2px 4px;
+    /* line-height: 1; */
+}
+
+.preseason-division-grid .stat-td {
+    font-size: 18px;
+}
+
+.preseason-division-grid .logo {
+    width: 22px;
+    height: 22px;
+}
+
+.preseason-division-grid .logo-container {
+    font-size: 18px;
 }
 
 
