@@ -7,6 +7,7 @@ import PreseasonOdds from './components/Playoff Odds/PreseasonPO';
 import TeamCard from './components/Teams/TeamCard';
 import FinalResults from './components/Final Results/FinalResults';
 import PlayoffBracket from './components/Playoff Odds/Bracket';
+import Picks from './components/Playoff Odds/Picks';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/PreseasonOdds/:year" element={<PreseasonOdds />} />
                 <Route path="/team/:id" element={<TeamCard />} />
                 <Route path="/finalresults/:year" element={<FinalResults />} />
+                <Route path="/picks" element={<Picks />} />
             </Routes>
         </Router>
     );

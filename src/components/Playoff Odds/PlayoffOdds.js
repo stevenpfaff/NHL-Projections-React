@@ -9,7 +9,7 @@ const PlayoffOdds = () => {
   const [view, setView] = useState('division');
   const [date, setLastUpdated] = useState('');
   const [sortConfig, setSortConfig] = useState({
-    key: 'current_win',
+    key: 'current_points',
     direction: 'descending',
   });
 
@@ -50,27 +50,18 @@ const PlayoffOdds = () => {
   }, []);
 
   // Sorting function
-  const sortData = (key) => {
-    let direction = 'ascending';
-    if (sortConfig.key === key && sortConfig.direction === 'ascending') {
-      direction = 'descending';
-    }
+const sortData = (key) => {
+  let direction = 'ascending';
 
-    const sorted = [...data].sort((a, b) => {
-      const aVal = parseFloat(a[key]);
-      const bVal = parseFloat(b[key]);
+  if (
+    sortConfig.key === key &&
+    sortConfig.direction === 'ascending'
+  ) {
+    direction = 'descending';
+  }
 
-      if (!isNaN(aVal) && !isNaN(bVal)) {
-        return direction === 'ascending' ? aVal - bVal : bVal - aVal;
-      }
-      if (a[key] < b[key]) return direction === 'ascending' ? -1 : 1;
-      if (a[key] > b[key]) return direction === 'ascending' ? 1 : -1;
-      return 0;
-    });
-
-    setData(sorted);
-    setSortConfig({ key, direction });
-  };
+  setSortConfig({ key, direction });
+};
 
   const atlantic = data.filter(team => team.division === 'Atlantic');
   const metro = data.filter(team => team.division === 'Metropolitan');
@@ -84,8 +75,32 @@ const PlayoffOdds = () => {
     team => team.division === 'Central' || team.division === 'Pacific'
   );
 
-  const sortTeams = (teams, key = 'current_points') => {
-  return [...teams].sort((a, b) => b[key] - a[key]);
+const sortTeams = (teams) => {
+  return [...teams].sort((a, b) => {
+    const aVal = a[sortConfig.key];
+    const bVal = b[sortConfig.key];
+
+    // Numeric columns
+    if (typeof aVal === 'number' && typeof bVal === 'number') {
+      return sortConfig.direction === 'ascending'
+        ? aVal - bVal
+        : bVal - aVal;
+    }
+
+    // Team/name columns
+    const aString = String(aVal ?? '').toLowerCase();
+    const bString = String(bVal ?? '').toLowerCase();
+
+    if (aString < bString) {
+      return sortConfig.direction === 'ascending' ? -1 : 1;
+    }
+
+    if (aString > bString) {
+      return sortConfig.direction === 'ascending' ? 1 : -1;
+    }
+
+    return 0;
+  });
 };
 
 const formatNumber = (num) => {
@@ -154,65 +169,67 @@ const renderCupOddsTable = () => (
       hover
       responsive
     >
-      <thead>
-        <tr>
-          <th>Team</th>
-          <th>PTS</th>
-          <th>PO%</th>
-          <th>R2%</th>
-          <th>R3%</th>
-          <th>Final%</th>
-          <th>Cup%</th>
-        </tr>
-      </thead>
+<thead>
+  <tr>
+    <th onClick={() => sortData('name')}>Team</th>
+    <th onClick={() => sortData('current_points')}>PTS</th>
+    <th onClick={() => sortData('current_playoffs')}>PO%</th>
+    <th onClick={() => sortData('current_round2')}>R2%</th>
+    <th onClick={() => sortData('current_conf')}>R3%</th>
+    <th onClick={() => sortData('current_final')}>Final%</th>
+    <th onClick={() => sortData('current_win')}>Cup%</th>
+  </tr>
+</thead>
 
-      <tbody>
-        {[...data]
-          .sort((a, b) => b.current_win - a.current_win)
-          .map((team, index) => (
-            <tr key={team.id}>
+<tbody>
+  {sortTeams(data).map((team, index) => (
+    <tr key={team.id}>
+      <td>
+        <div className="logo-container">
+          <img
+            src={team.logo}
+            className="logo"
+            alt={team.name}
+          />
+          <Link to={`/team/${team.id}`}>
+            <span>{team.abrv}</span>
+          </Link>
+        </div>
+      </td>
 
-              <td>
-                <div className="logo-container">
-                  <img src={team.logo} className="logo" alt={team.name} />
-                  <Link to={`/team/${team.id}`}>
-                    <span>{team.abrv}</span>
-                  </Link>
-                </div>
-              </td>
-            <td className="stat-td">{formatNumber(team.current_points)}</td>
-            <td className="stat-td">{formatNumber(team.current_playoffs)}%</td>
-            <td className="stat-td">{formatNumber(team.current_round2)}%</td>
-            <td className="stat-td">{formatNumber(team.current_conf)}%</td>
-            <td className="stat-td">{formatNumber(team.current_final)}%</td>
-            <td className="stat-td">{formatNumber(team.current_win)}%</td>
-            </tr>
-          ))}
-      </tbody>
+      <td className="stat-td">
+        {formatNumber(team.current_points)}
+      </td>
+
+      <td className="stat-td">
+        {formatNumber(team.current_playoffs)}%
+      </td>
+
+      <td className="stat-td">
+        {formatNumber(team.current_round2)}%
+      </td>
+
+      <td className="stat-td">
+        {formatNumber(team.current_conf)}%
+      </td>
+
+      <td className="stat-td">
+        {formatNumber(team.current_final)}%
+      </td>
+
+      <td className="stat-td">
+        {formatNumber(team.current_win)}%
+      </td>
+    </tr>
+  ))}
+</tbody>
     </Table>
   </div>
 );
 
   return (
     <div className="table-container">
-      <h1
-        style={{
-          marginTop: '2%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '10px',
-        }}
-      >
-        <img
-          src="../../Images/OnlyNorthCircle.png"
-          alt="Mini Logo"
-          style={{ width: '50px', height: '50px', marginLeft: '10px' }}
-        />
-        NHL Playoff Odds
-      </h1>
-      <p>Updated as of {date}</p>
-      <div className="view-toggle">
+            <div className="view-toggle">
   <button
     className={view === 'division' ? 'active' : ''}
     onClick={() => setView('division')}
@@ -234,13 +251,29 @@ const renderCupOddsTable = () => (
     League View
   </button>
 </div>
+      <h1
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '10px',
+        }}
+      >
+        <img
+          src="../../Images/OnlyNorthCircle.png"
+          alt="Mini Logo"
+          style={{ width: '50px', height: '50px', marginLeft: '10px' }}
+        />
+        NHL Playoff Odds
+      </h1>
+      <p>Updated as of {date}</p>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 {view === 'division' && (
   <div className="division-grid">
-    {renderTable(sortTeams(pacific), 'Pacific')}
-    {renderTable(sortTeams(central), 'Central')}
-    {renderTable(sortTeams(metro), 'Metropolitan')}
-    {renderTable(sortTeams(atlantic), 'Atlantic')}
+{renderTable(sortTeams(pacific), 'Pacific')}
+{renderTable(sortTeams(central), 'Central')}
+{renderTable(sortTeams(metro), 'Metropolitan')}
+{renderTable(sortTeams(atlantic), 'Atlantic')}
   </div>
 )}
 

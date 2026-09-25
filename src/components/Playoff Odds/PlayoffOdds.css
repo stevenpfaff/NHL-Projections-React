@@ -16,11 +16,21 @@
     margin-bottom: 0;
 }
 
+.playoff-odds-table th:first-child,
+.playoff-odds-table td:first-child {
+    width: 45px;
+}
+
+.playoff-odds-table th:not(:first-child),
+.playoff-odds-table td:not(:first-child) {
+    width: 30px;
+}
+
 .playoff-odds-table thead th {
     background: #013a68;
     color: white;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.5px;
     text-align: center;
@@ -35,16 +45,32 @@
     background: #02508e;
 }
 
-.playoff-odds-table th:first-child,
-.playoff-odds-table td:first-child {
-    width: 80px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: center;
-    vertical-align: middle;
+/* Thinner playoff odds rows */
+.playoff-odds-table thead th {
+    padding: 2px 4px;
+    line-height: 1.5;
 }
 
+.playoff-odds-table tbody td {
+    padding: 2px 4px;
+    line-height: 1;
+    height: 29px;
+}
+
+.playoff-odds-table .stat-td {
+    font-size: 16px;
+}
+
+.playoff-odds-table .logo-container {
+    font-size: 16px;
+    line-height: 1;
+    align-items: center;
+}
+
+.playoff-odds-table .logo {
+    width: 22px;
+    height: 22px;
+}
 
 .stat-td {
     text-align: center;
@@ -68,18 +94,27 @@
 
 
 .division-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  max-width: 950px;
-  margin: 0 auto;
-  padding: 0 10px;
-  margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 5px;
+    margin-bottom: 10px;
 }
 
 .preseason-division-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: min(600px, 96%);
+    margin: 0 auto 5px;
+    padding: 0;
+}
+
+.picks-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     width: min(600px, 96%);
     margin: 0 auto 5px;
@@ -136,9 +171,6 @@
   min-width: 65px;
 }
 
-.view-toggle{
-  margin-bottom:20px;
-}
 
 .round{
   display:flex;
@@ -348,8 +380,6 @@
 .division-grid {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0 auto;
-  padding: 0;
 }
 }
 
@@ -368,11 +398,9 @@
     width: min(60%);
 }
 
-    .division-grid {
+.division-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    margin: 0 auto 10px;
-    padding: 0;
+  grid-template-columns: 1fr;
 }
 
 
