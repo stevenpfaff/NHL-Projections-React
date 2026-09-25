@@ -107,7 +107,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    width: min(600px, 96%);
+    width: min(500px, 96%);
     margin: 0 auto 5px;
     padding: 0;
 }
@@ -157,7 +157,7 @@
 }
 
 .league-table {
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -350,29 +350,6 @@
   border: 1px solid black !important;
 }
 
-/* Preseason tables - tighter rows */
-.preseason-division-grid .playoff-odds-table thead th {
-    padding: 2px 4px;
-    font-size: 18px;
-}
-
-.preseason-division-grid .playoff-odds-table td {
-    padding: 2px 4px;
-    /* line-height: 1; */
-}
-
-.preseason-division-grid .stat-td {
-    font-size: 18px;
-}
-
-.preseason-division-grid .logo {
-    width: 22px;
-    height: 22px;
-}
-
-.preseason-division-grid .logo-container {
-    font-size: 18px;
-}
 
 
 /* mobile */
@@ -392,16 +369,35 @@
 
     .preseason-division-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     margin: 0 auto 10px;
     padding: 0;
-    width: min(60%);
+    /* width: min(60%); */
 }
 
 .division-grid {
     display: grid;
   grid-template-columns: 1fr;
 }
+
+.league-table {
+  margin: 5px;
+}
+
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.view-toggle button {
+  padding: 1px 3px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
 
 
 }
